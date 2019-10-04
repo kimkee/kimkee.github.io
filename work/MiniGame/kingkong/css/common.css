@@ -1,0 +1,208 @@
+/* CSS Document */
+@charset "utf-8";
+@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+html,body{  font-size:12px;  }
+a{ text-decoration:none;}
+body,div,td,th,textarea,input{margin:0; padding:0;  letter-spacing:-0.8px; font-family:"Nanum Gothic","맑은 고딕","Malgun Gothic","AppleGothic","helvetica","sans-serif"; -webkit-text-size-adjust:none;outline:none; }
+p{   margin:0; padding:0;}
+img { border:0; vertical-align:middle; }
+ul, ol, li ,dl , dt , dd { list-style:none; margin:0; padding:0;}
+h1, h2, h3, h4, h5, h6, h7 ,form { font-size:100%; font-weight:normal;  margin:0; padding:0 }
+textarea{ overflow:auto; outline:none;}
+fieldset{margin:0; padding:0; border:none;}
+caption{ position:absolute; top:-9999%; height:0px; overflow:hidden; line-height:0;}
+strong{ font-weight:bold;}
+legend{ position:absolute; top:-9999%; height:0px; overflow:hidden; line-height:0;}
+em,i{ font-style:normal;}
+
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{ font-size:12px; border:#dbdbdb solid 1px; line-height:16px; padding:3px 4px 5px 4px;  height:16px; vertical-align:middle; zoom:1;  border-radius:2px;transition: all .0s ease .0s;}
+
+
+/* 모달 스크린*/
+.mdScreen{background:#000000; width:640px; height:400px; zoom:1; position:absolute; left:0px; z-index:150; top:0px; opacity:0.5; filter:alpha(opacity=50); }
+
+/* 스크롤바 */
+.mCSB_scrollTools .mCSB_draggerRail{ background:#cccccc;}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{ background:#aaaaaa;}
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{background:#999999;}
+
+.mCSB_vertical.mCSB_inside>.mCSB_container{ margin-right:10px;}
+.mCSB_scrollTools.mCSB_scrollTools_vertical{ width:10px; }
+.mCSB_scrollTools.mCSB_scrollTools_vertical .mCSB_dragger .mCSB_dragger_bar{}
+.mCSB_scrollTools.mCSB_scrollTools_vertical .mCSB_draggerRail{ }
+.mCSB_scrollTools.mCSB_scrollTools_horizontal{ height:10px;}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_draggerRail{}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar{ }
+.ie67 .mCSB_scrollTools .mCSB_draggerRail{ display:none;}
+
+
+
+
+.temp{ width:640px; box-sizing:border-box;  margin:auto;}
+.temp>li{ font-size:14px; border:#999 solid 1px; margin:7px 0; padding:6px 6px; vertical-align:middle; letter-spacing:0px; border-radius:2px;}
+.temp>li>a,
+.temp>li>button{ padding:4px 5px; display:inline-block; vertical-align:middle; color:#CCC; position:relative; line-height:15px; background:#222222; border:#999999 solid  1px; border-radius:2px;}
+.temp>li>em{ padding:5px; display:inline-block; vertical-align:middle; color:#CCC; font-weight:bold; color:#fff; min-width:80px; border:#333 solid 1px; text-align:center; margin-right:5px;}
+
+.body{ background-color:#000; color:#FFF; overflow:hidden;}
+.loading{ width:48px; height:48px; position:absolute; left:50%; top:50%; margin:-24px 0 0 -24px; z-index:1500; background:url(../img/main/loading.gif);}
+a,button{ color:#FFF; border:none; background-color:transparent; outline:none;}
+button:hover,a:hover{ margin:-1px 0 1px 0 !important; position:relative;}
+a.press,button.press{ margin:0px 0 0px 0 !important; position:relative;}
+
+.wrap{ width:640px; height:400px; margin:auto; background:url(../img/main/bg.jpg) no-repeat; position:relative;}
+.wrap>.btnOut{ background:url(../img/board/Exit.png) no-repeat; width:70px; height:33px; display:block; position:absolute; left:5px; top:5px; line-height:100px; overflow:hidden;}
+
+.sysMsg{ display:none; background:#111111; text-align:center; min-width:400px; max-width:500px; margin:auto; left:50%; top:50%; position:absolute; z-index:200; border-radius:4px;}
+.sysMsg .msg{ font-size:14px; line-height:160%; padding:40px 30px; color:#eee;}
+.sysMsg .close{ transition:all .3s ease .0s; position:absolute; right:2px; top:2px; background:url(/Img/common/popLayerClose.png) no-repeat center center; width:24px; height:24px; display:block; text-indent:-999px; overflow:hidden; }
+.sysMsg .close:hover{ transform:rotate(-180deg); }
+
+.preLoad{ width:0px; height:0px; overflow:hidden; position:absolute; left:-9999px; top:-9999px;}
+
+.kingkong{ width:158px; height:144px; position:absolute; left:247px; top:-10px; overflow:hidden; display:block;}
+
+/* 결과애니 */
+.gmotion{ display:none; width:640px; height:400px; position:absolute; left:0px; top:0px; z-index:10; overflow:hidden;}
+.gmotion img{ position:absolute; left:92px; top:0;}
+.gmotion ul{}
+.gmotion ul>li{ display: none;}
+
+.throw{ background:url(../img/motion/throw.png); display:none; width:157px; height:143px; position:absolute; left:247px; top:-10px; text-indent:-9999px; overflow:hidden;}
+.throw.left{}
+.throw.right{}
+
+.radCrist{ position:absolute; left:0px; bottom:24px; width:100%; height:62px;}
+.radCrist em{ background-repeat:no-repeat; width:62px; height:62px; display:block; text-indent:-9999px; overflow:hidden; position:absolute; top:0px; z-index:50;}
+.radCrist em.hol{ left:156px; background-image:url(../img/main/hol.png)}
+.radCrist em.zak{ right:156px; background-image:url(../img/main/jak.png)}
+
+.lamp { position:absolute; left:0px; top:-5px; width:100%; height:60px;}
+.lamp em{ background:url(../img/motion/lamp.png) no-repeat; width:60px; height:60px; display:block; text-indent:-9999px; overflow:hidden; position:absolute; top:0px; z-index:50;}
+.lamp em.left{ left:67px; }
+.lamp em.right{ right:67px;}
+
+
+
+.table{ border:none; width:100%; border-collapse:collapse;}
+.table th,
+.table td{ border:none; padding:0px;}
+
+/* 시간안내창 */
+.timeMsgBox{ display:none; position:absolute; left:50%; top:50%; margin:-50px 0 0 -200px; width:400px; height:100px; background:#111111; border-radius:10px; text-align:center;}
+.timeMsgBox .time{ font-size:18px; padding:20px 0 5px;}
+.timeMsgBox .time .timeSecond{ color:#76e85b; font-size:24px;}
+.timeMsgBox .txt{ font-size:16px; padding:5px 0 0 0px;}
+
+.popLayer{ display:none;}
+.popLayer>.btnClose{ background:url(../img/board/close.png) no-repeat; width:32px; height:32px; display:inline-block; line-height:100px; overflow:hidden;}
+
+/* 선택창+이전내역 */
+.popLayerSelect{ width:348px; height:400px; background-color:transparent; position:absolute; left:50%; top:0px; margin-left:-174px; z-index:100;}
+.popLayerSelect .panPresult{ background:url(../img/board/panPresult.png) no-repeat; width:180px; height:130px; margin:auto;}
+.popLayerSelect .panSelect{ position:absolute; left:0px; top:120px; background:url(../img/board/selectBg.png) no-repeat; width:348px; height:272px; margin:auto;}
+.popLayerSelect>.btn{ background:url(../img/board/Result_Btn.png) no-repeat; width:76px; height:28px; display:block; position:absolute; top:93px; text-indent:-999px; }
+.popLayerSelect>.btn.result{ left:10px;}
+.popLayerSelect>.btn.game{ right:10px; background-image:url(../img/board/History_Btn.png)}
+
+/* 이전내역 */
+.panPresult{}
+.panPresult .list{ position:absolute; width:100px; height:82px; left:134px; top:29px; }
+.panPresult .list table { table-layout:fixed;}
+.panPresult .list table tr{ margin-top:-2px;}
+.panPresult .list table td{ color:#FFF; font-size:12px; font-weight:bold; text-align:center; height:17px; line-height:15px;}
+.panPresult .list table td em.ico{ width:18px; height:17px; display:inline-block; vertical-align:middle; text-indent:-9999px; overflow:hidden;}
+.panPresult .list table td.no{}
+.panPresult .list table td.ball{}
+.panPresult .list table td.ball .soccer{ background:url(../img/board/ball_soccer.png)}
+.panPresult .list table td.ball .basketball{ background:url(../img/board/ball_basketball.png)}
+.panPresult .list table td.ball .baseball{ background:url(../img/board/ball_baseball.png)}
+.panPresult .list table td.way{}
+.panPresult .list table td.way .left{ background:url(../img/board/king_left.png)}
+.panPresult .list table td.way .right{ background:url(../img/board/king_right.png)}
+.panPresult .list table td.holzak{}
+.panPresult .list table td.holzak .hol{ background:url(../img/board/ico_hol.png)}
+.panPresult .list table td.holzak .zak{ background:url(../img/board/ico_zak.png)}
+
+/* 선택창 */
+.panSelect .msg{ width:288px; height:60px; margin:auto; position:relative; color:#FFF; font-size:12px; font-weight:bold; text-align:center;}
+.panSelect .msg .time{ font-size:16px; padding:14px 0 5px;}
+.panSelect .msg .time .timeSecond{ font-size:20px; color:#76e85b;}
+.panSelect .msg .time .timeSecond span{}
+.panSelect .selectList{ position:absolute; left:107px; top:69px;}
+.panSelect .selectList>li{ height:50px;}
+.panSelect .selectList>li>button.active:after{ content:""; display:block; background:url(../img/board/check.png) no-repeat; width:32px; height:24px; display:block; position:absolute; left:50%; top:1px; margin-left:-16px;}
+.panSelect .selectList>li.ball{}
+.panSelect .selectList>li.ball>button{ background-repeat:no-repeat; width:65px; height:36px; display:inline-block; line-height:100px; overflow:hidden; position:relative; vertical-align:middle;}
+.panSelect .selectList>li.ball>button.soccer{ background-image:url(../img/board/soccer_Btn.png)}
+.panSelect .selectList>li.ball>button.basketball{ background-image:url(../img/board/basketball_Btn.png)}
+.panSelect .selectList>li.ball>button.baseball{ background-image:url(../img/board/baseball_Btn.png)}
+.panSelect .selectList>li.way>button.btn{ background-repeat:no-repeat; width:100px; height:36px; display:inline-block; line-height:100px;  overflow:hidden; position:relative; vertical-align:middle;}
+.panSelect .selectList>li.way>button.left{ background-image:url(../img/board/left_Btn.png)}
+.panSelect .selectList>li.way>button.right{ background-image:url(../img/board/right_Btn.png)}
+.panSelect .selectList>li.holzak>button.btn{ background-repeat: no-repeat; width:100px; height:36px; display:inline-block; line-height:100px; overflow:hidden; position:relative; vertical-align:middle;}
+.panSelect .selectList>li.holzak>button.hol{ background-image:url(../img/board/One_Btn.png)}
+.panSelect .selectList>li.holzak>button.zak{ background-image:url(../img/board/Two_Btn.png)}
+.panSelect .btnList{ text-align:center; position:absolute; width:100%; left:0px; top:210px;}
+.panSelect .btnList .btnBuy{ background:url(../img/board/Buy_Btn.png) no-repeat; width:88px; height:43px; display:inline-block; line-height:100px; overflow:hidden; position:relative;}
+
+/* 베팅창 */
+.popLayerBet{ position:absolute; background:url(../img/board/betBg.png) no-repeat; top:160px; left:220px; width:200px; height:240px; z-index:150;}
+.popLayerBet .btnClose{ position:absolute; right:0px; top:-4px;}
+.popLayerBet .result{ padding:16px 28px 0 31px; min-height:75px;}
+.popLayerBet .result .table{}
+.popLayerBet .result .table td{ font-weight:bold; color:#79f100; text-align:center; height:25px;}
+.popLayerBet .btnBet{ position:relative; margin:0 0 0 28px; width:150px;}
+.popLayerBet .btnBet ul.amt{ overflow:hidden; width:110px;}
+.popLayerBet .btnBet ul.amt>li{ float:left;}
+.popLayerBet .btnBet ul.amt>li button{ width:53px; height:23px; display:block; text-indent:-999px; overflow:hidden;}
+.popLayerBet .btnBet ul.amt>li.b100 button{ background-image:url(../img/board/100.png)}
+.popLayerBet .btnBet ul.amt>li.b300 button{ background-image:url(../img/board/300.png)}
+.popLayerBet .btnBet ul.amt>li.b500 button{ background-image:url(../img/board/500.png)}
+.popLayerBet .btnBet ul.amt>li.bmax button{ background-image:url(../img/board/Max.png)}
+.popLayerBet .btnBet ul.rate{ overflow:hidden; width:42px; position: absolute; right: 0px; top: 0px;}
+.popLayerBet .btnBet ul.rate>li{ float:left;}
+.popLayerBet .btnBet ul.rate>li button{ width:42px; height:23px; display:block; text-indent:-999px; overflow:hidden;}
+.popLayerBet .btnBet ul.rate>li.m10 button{ background-image:url(../img/board/X10.png)}
+.popLayerBet .btnBet ul.rate>li.d10 button{ background-image:url(../img/board/_10.png)}
+.popLayerBet .btnBet .val{ padding:4px 0px 0px 0px; position:relative;}
+.popLayerBet .btnBet .val input.value{ font-size:13px; background-color:transparent; border:none; color:#FFF; text-align:right; width:95px;}
+.popLayerBet .btnBet .val button.btnCancel{ position:absolute; right:0px; top:4px; background-image:url(../img/board/btncancel.png); width:42px; height:23px; display:block; text-indent:-999px; overflow:hidden;}
+.popLayerBet .btnBet .rateTot{ position: absolute; left:70px; top:78px; width:70px; text-align:center;}
+.popLayerBet .btnBet .rateTot .txt{ color:#f3e947}
+.popLayerBet .btnList{ text-align:center; position:absolute; width:100%; left:0px; top:187px;}
+.popLayerBet .btnList .btnBuy{ background:url(../img/board/Buy_Btn_S.png) no-repeat; width:66px; height:32px; display:inline-block; line-height:100px; overflow:hidden; position:relative;}
+
+
+
+/* 결과창 */
+.popLayerResult{ background:url(../img/result/result_bg.png) no-repeat; width:240px; height:300px; position:absolute; left:200px; top:63px; margin:0 0 0 0px; z-index:200;}
+.popLayerResult{}
+.popLayerResult .status{ width:153px; height:62px; position:absolute; left:47px; top:-43px; background-image:url(../img/motion/success.png);}
+.popLayerResult .status.success{/*background:url(/MiniGame/img/result/msg_suc.png) no-repeat;*/ }
+.popLayerResult .status.fail{/*background:url(/MiniGame/img/result/msg_fail.png) no-repeat;*/ }
+.popLayerResult .selectList{ overflow:hidden; position:absolute; left:68px; top:24px;}
+.popLayerResult .selectList>li{ float:left; margin-right:16px;}
+.popLayerResult .selectList>li em{ width:24px; height:24px; display:block; text-indent:-999px; overflow:hidden;}
+.popLayerResult .selectList>li.ball em.soccer{ background-image:url(../img/result/ball_soccer.png)}
+.popLayerResult .selectList>li.ball em.basketball{ background-image:url(../img/result/ball_basketball.png)}
+.popLayerResult .selectList>li.ball em.baseball{ background-image:url(../img/result/ball_baseball.png)}
+.popLayerResult .selectList>li.way em.left{ background-image:url(../img/result/king_left.png)}
+.popLayerResult .selectList>li.way em.right{ background-image:url(../img/result/king_right.png)}
+.popLayerResult .selectList>li.holzak em.hol{ background-image:url(../img/result/hol.png)}
+.popLayerResult .selectList>li.holzak em.zak{ background-image:url(../img/result/zak.png)}
+.popLayerResult .priceBuy{ position:absolute; left:90px; top:59px; width:90px; text-align:center;text-shadow:#000 0 0 3px;}
+.popLayerResult .priceResult{ position:absolute; left:43px; top:89px; width:153px; text-align:center; font-size:18px; font-weight:bold; color:#fdd842;text-shadow:#000 0 0 3px;}
+.popLayerResult .listTable{ position:absolute; left:17px; top:160px; width:208px; height:130px; overflow:hidden;}
+.popLayerResult .listTable .table{}
+.popLayerResult .listTable .table td{ text-align:center; padding:5px 0; text-shadow:#000 0 0 3px;}
+.popLayerResult .listTable .table td.no{ width:30px;}
+.popLayerResult .listTable .table td.nick{ width:80px;}
+.popLayerResult .listTable .table td.price{ text-align:right;}
+
+	

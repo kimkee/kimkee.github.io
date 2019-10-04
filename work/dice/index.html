@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta content="width=1210" name="viewport">
+<meta http-equiv="Imagetoolbar" content="No">
+<link href="favicon.ico" rel="shrtcut icon">
+<link rel="apple-touch-icon-precomposed" href="favicon.png">
+<title>주사위게임</title>
+<link href="base.css" rel="stylesheet" type="text/css">
+<link href="dice.css" rel="stylesheet" type="text/css">
+<style></style>
+</head>
+<body>
+<div class="wrap">
+	<section class="board">
+		<em class="mal" pos="0"></em>
+		<div class="amt myDice"> <strong class="nick">김선생</strong> 님 모은 주사위 : <strong class="ea">100</strong> 개</div>
+		<div class="amt myBall"> 획득한 볼 : <strong class="ea">10,000</strong> 개</div>
+		<button class="btnRoll">주사위굴리기</button>
+		<div class="dice">
+			<div class="dc"></div>
+		</div>
+		<div class="gudMsg">
+			<ul class="list">
+				<li>- 주사위는 하루 30개까지 획득 가능합니다.</li>
+				<li>- 주사위 1번 굴리는데, 1개의 주사위가 소모 됩니다.</li>
+				<li>- 닉네임 수정권, 클럽개설권은 이벤트 기간동안 1회만 지급됩니다.</li>
+			</ul>
+		</div>
+	</section>
+</div>
+<ul class="temp">
+	<li>
+		<em>주사위</em> 
+		<a href="javascript:dice.roll.count(1);">굴리기(1)</a>
+		<a href="javascript:dice.roll.count(2);">굴리기(2)</a>
+		<a href="javascript:dice.roll.count(3);">굴리기(3)</a>
+		<a href="javascript:dice.roll.count(4);">굴리기(4)</a>
+		<a href="javascript:dice.roll.count(5);">굴리기(5)</a>
+		<a href="javascript:dice.roll.count(6);">굴리기(6)</a>
+	</li>
+	<li>
+		<em>로딩화면</em>
+		<a href="javascript:uiGame.loading.show();">로딩.중</a> , 
+		<a href="javascript:uiGame.loading.hide();">로딩.끝</a>
+	</li>
+	<li>
+		<em>게임결과</em>
+		<a href="javascript:gameResult.open('success');">성공</a> , 
+		<a href="javascript:gameResult.open('fail');">실패</a> , 
+		<a href="javascript:gameResult.close();">닫기</a>
+	</li>
+	<li>
+		<em>메시지창</em>
+		<a href="javascript:sysMsg.open('메시지 출력 입니다.');">메시지.열기</a>
+		<a href="javascript:sysMsg.close();">메시지.닫기</a>
+		<a href="javascript:sysMsg.open('메시지 출력 입니다.','close');">메시지.열었다 자동닫기</a>
+		<a href="javascript:sysMsg.open('킹콩 <strong>150회차</strong> 게임이 <strong>55초</strong> 후 시작됩니다.<br>게임시작 후 배팅 가능합니다.','open');">메시지 닫기버튼없음</a>
+		<a href="javascript:sysMsg.open(errmsg);">게임재시작.열기</a>
+	</li>
+	<li>
+		<em>사운드</em>
+		<a href="javascript:sound.cate('success');">성공 사운드</a>
+		<a href="javascript:sound.cate('fail');">실패 사운드</a>
+		<a href="javascript:sound.cate('btn');">버튼 틱</a>
+	</li>
+</ul>
+<script src="jquery-browser.js"></script>
+<!--[if lt IE 9]> <script src="jquery-1.11.3.js"></script> <![endif]-->
+<!--[if gte IE 9]><!--><script src="jquery-2.1.4.js"></script><!--<![endif]-->
+<script src="jquery-migrate-1.2.1.js"></script>
+<script src="jquery-ui-1.11.4.js"></script>
+
+<!--[if gte IE 9]><!-->  
+<script src="dice.js"></script>
+<script src="style.js"></script>
+<script src="ui.js"></script>
+</body>
+</html>

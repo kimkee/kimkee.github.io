@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+
+body{}
+button{ border:none;}
+
+.board{ position:relative; width:1210px; height:1080px; background:url(img/dice/board.jpg) no-repeat;}
+.board:before{ content:""; display:block; position:absolute; left:670px; top:350px; width:376px; height:357px; background:url(img/dice/dice_img.png) no-repeat;}
+.board .amt{ display:inline-block; padding:25px 35px; color:#FFF; border-radius:10px; position:absolute; left:230px; background:#9f9f9f; font-size:26px; vertical-align:middle; box-shadow:inset #666 5px 5px 10px;}
+.board .amt .nick{ color:#000; font-size:30px; display:inline-block; vertical-align:middle;}
+.board .amt .ea{ color:#14f9f9; font-size:40px; display:inline-block; vertical-align:middle;}
+.board .amt.myDice{top:290px; }
+.board .amt.myBall{ top:400px;}
+.board .btnRoll{ width:470px; height:150px; position:absolute; left:220px; top:540px; border:none; text-indent:-9999px; overflow:hidden; background:url(img/dice/btn_roll.png) no-repeat;}
+.board .btnRoll:hover{ background-position:0 -150px; margin:-2px 0 2px 0;}
+.board .btnRoll.press{ margin:0;}
+.board .gudMsg{ position:absolute; left:220px; bottom:230px;}
+.board .gudMsg ul.list{}
+.board .gudMsg ul.list>li{ font-size:20px; color:#01224d; margin:13px 0;}
+
+.board .dice{ width:112px; height:112px; overflow:hidden; position:absolute; left:870px; top:730px; background:#98989b; box-shadow:inset #5E5E5E 2px 2px 10px; border-radius:5px;}
+.board .dice .dc{ background:url(img/dice/dice.png) no-repeat; width:100px; height:700px; position:absolute; left:7px; top:0px; margin-top:8px; /* transition:all .2s ease .0s */}
+.board .dice .dc.d-1{ background-position:0px 0px}
+.board .dice .dc.d-2{ background-position:0px -100px}
+.board .dice .dc.d-3{ background-position:0px -200px}
+.board .dice .dc.d-4{ background-position:0px -300px}
+.board .dice .dc.d-5{ background-position:0px -400px}
+.board .dice .dc.d-6{ background-position:0px -500px}
+
+em.mal{ position:absolute; left:218px; top:186px; z-index:10; width:100px; height:100px; display:block; background:url(img/dice/mal.png) no-repeat;transition:all .2s ease .0s}
+
+ol.mals{}
+ol.mals>li{ width:100px; height:100px; position:absolute; text-indent:-9999px; overflow:hidden; /* background-color:rgba(0,0,0,.3); */ }
+ol.mals>li.m1{ left:24px; top:5px;}
+ol.mals>li.m2{left: 170px;top:5px;}
+ol.mals>li.m3{left: 300px;top:5px;}
+ol.mals>li.m4{left: 424px;top: 25px;}
+ol.mals>li.m5{left: 556px;top:5px;}
+ol.mals>li.m6{left: 684px;top:5px;}
+ol.mals>li.m7{left: 814px;top:5px;}
+ol.mals>li.m8{left: 944px;top: 25px;}
+ol.mals>li.m9{left: 1087px;top:5px;}
+
+ol.mals>li.m10{left: 1105px;top: 164px;}
+ol.mals>li.m11{left: 1105px;top: 294px;}
+ol.mals>li.m12{left: 1105px;top: 424px;}
+ol.mals>li.m13{left: 1105px;top: 554px;}
+ol.mals>li.m14{left: 1085px;top: 684px;}
+ol.mals>li.m15{left: 1105px;top: 815px;}
+ol.mals>li.m16{left: 1085px;top: 974px;}
+
+ol.mals>li.m17{left: 944px;top: 974px;}
+ol.mals>li.m18{left: 814px;top: 954px;}
+ol.mals>li.m19{left: 684px;top: 974px;}
+ol.mals>li.m20{left: 555px;top: 974px;}
+ol.mals>li.m21{left: 424px;top: 974px;}
+ol.mals>li.m22{left: 295px;top: 974px;}
+ol.mals>li.m23{left: 164px;top: 974px;}
+ol.mals>li.m24{left: 24px;top: 954px;}
+
+ol.mals>li.m25{left: 4px;top: 814px;}
+ol.mals>li.m26{left: 4px;top: 687px;}
+ol.mals>li.m27{left: 4px;top: 556px;}
+ol.mals>li.m28{left: 27px;top: 425px;}
+ol.mals>li.m29{left: 4px;top: 295px;}
+ol.mals>li.m30{left: 4px;top: 166px;}
+
+
+.sysMsg{ display:none; background:#111111; text-align:center; width:600px; margin:auto; left:50%; top:50%; position:absolute; z-index:200; border-radius:10px;}
+.sysMsg .msg{ font-size:24px; line-height:160%; padding:60px 50px; color:#eee;}
+.sysMsg .msg strong{ font-weight:bold; color:#FC0; font-size:30px;}
+.sysMsg .close{ transition:all .3s ease .0s; position:absolute; right:8px; top:8px; background:url(/Img/common/popLayerClose.png) no-repeat center center; width:24px; height:24px; display:block; text-indent:-999px; overflow:hidden; }
+.sysMsg .close:hover{ transform:rotate(-180deg); }
+
+/* 모달 스크린*/
+.mdScreen{background:#000000; width:1210px; height:1080px; zoom:1; position:absolute; left:0px; top:0px; z-index:150; opacity:0.5; filter:alpha(opacity=50); }
+
+.betScreen{background:#000000; width:208px; height:372px; zoom:1; position:absolute; right:0px; top:0px; z-index:150; opacity:0.3; filter:alpha(opacity=30); }
+
+.preLoad{ width:0px; height:0px; overflow:hidden; position:absolute; left:-9999px; top:-9999px;}
+.loading{ width:70px; height:70px; position:absolute; left:50%; top:50%; margin:-24px 0 0 -24px; z-index:1500; animation:fa-spin 1s infinite steps(8);}
+.loading:before{ font-size:70px; content:"\f110"; font-family:'FontAwesome'; color:#FFF;}
+
+
+
+@media screen and (max-width:1250px) {
+.temp{ display:none}
+.soundArea{ display:none;}
+}

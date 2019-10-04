@@ -1,0 +1,296 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta content="width=640" name="viewport">
+<meta http-equiv="Imagetoolbar" content="No">
+<title>킹콩게임</title>
+<link rel="stylesheet" type="text/css" href="./css/common.css">
+<link rel="stylesheet" type="text/css" href="./css/scrollbar.css">
+
+</head>
+
+<body class="body">
+<div class="wrap">
+	<div class="lamp">
+		<em class="left">좌</em><em class="right">우</em>
+	</div>
+
+	<div class="kingkong"><img src="./img/kingkong/idle/1.png"></div>
+	
+	<div class="throw"></div>
+
+	<div class="gmotion"></div>
+	
+	<div class="radCrist">
+		<em class="hol">홀</em>
+		<em class="zak">짝</em>
+	</div>
+
+	<div class="timeMsgBox">
+		<div class="time"><span class="timeSecond"></span> 후</div>
+		<p class="txt">12월31일 [174회차] 게임을 시작합니다.</p>
+	</div>
+	
+	
+	<!-- 베팅선택창 -->
+	<div class="popLayer popLayerSelect">
+		
+		<!-- 이전회차결과 -->
+		<div class="panPresult">
+			
+			<div class="list">
+				<table class="table">
+					<tbody>
+						<tr>
+							<td class="no">99</td>
+							<td class="ball"><em class="ico soccer">축구</em></td>
+							<td class="way"><em class="ico left"></em></td>
+							<td class="holzak"><em class="ico hol">홀</em></td>
+						</tr>
+						<tr>
+							<td class="no">100</td>
+							<td class="ball"><em class="ico basketball">농구</em></td>
+							<td class="way"><em class="ico right"></em></td>
+							<td class="holzak"><em class="ico zak">짝</em></td>
+						</tr>
+						<tr>
+							<td class="no">101</td>
+							<td class="ball"><em class="ico baseball">야구</em></td>
+							<td class="way"><em class="ico left"></em></td>
+							<td class="holzak"><em class="ico hol">홀</em></td>
+						</tr>
+						<tr>
+							<td class="no">102</td>
+							<td class="ball"><em class="ico soccer">축구</em></td>
+							<td class="way"><em class="ico left"></em></td>
+							<td class="holzak"><em class="ico hol">홀</em></td>
+						</tr>
+						<tr>
+							<td class="no">103</td>
+							<td class="ball"><em class="ico soccer">축구</em></td>
+							<td class="way"><em class="ico left"></em></td>
+							<td class="holzak"><em class="ico hol">홀</em></td>
+						</tr>
+					<tbody>
+				</table>
+			</div>
+		</div>
+	
+		<!-- 베팅창 -->
+		<div class="panSelect">
+			<div class="msg">
+				<div class="time"><em class="timeSecond"></em>후</div>
+				<div class="txt">[100회차] 게임을 시작합니다. 1가지만 선택해도 됩니다.</div>
+			</div>
+			
+			<ul class="selectList">
+				<li class="ball">
+					<button class="btn soccer">축구공</button>
+					<button class="btn basketball">농구공</button>
+					<button class="btn baseball">야구공</button>
+				</li>
+				<li class="way">
+					<button class="btn left">좌측출발</button>
+					<button class="btn right">우측출발</button>
+				</li>
+				<li class="holzak">
+					<button class="btn hol">홀</button>
+					<button class="btn zak">짝</button>
+				</li>
+			</ul>
+			<div class="btnList">
+				<button class="btn btnBuy" onClick="javascript:popLayerBet.open()">구매하기</button>
+			</div>
+		</div>
+		<!--<button class="btn result" href="javascript:;">결과통계</button>
+		<button class="btn game" href="javascript:;">내역보기</button> -->
+	</div>
+	
+	
+	<!-- 베팅선택창 -->
+	<div class="popLayer popLayerBet">
+		<button class="btnClose" onClick="javascript:popLayerBet.close();">닫기</button>
+		<div class="result">
+			<table class="table">
+				<tbody>
+					<tr class="ball">
+						<td class="th">공선택</td>
+						<td class="sel">[농구공]</td>
+						<td class="odds">3.00</td>
+					</tr>
+					<tr class="way">
+						<td class="th">출발방향 선택</td>
+						<td class="sel">[좌측]</td>
+						<td class="odds">3.00</td>
+					</tr>
+					<tr class="holzak">
+						<td class="th">공선택</td>
+						<td class="sel">[짝]</td>
+						<td class="odds">1.55</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="btnBet">
+			<ul class="amt">
+				<li class="b100"><button value="100">100</button></li>
+				<li class="b300"><button value="100">300</button></li>
+				<li class="b500"><button value="100">500</button></li>
+				<li class="bmax"><button value="100">MAX</button></li>
+			</ul>
+			<ul class="rate">
+				<li class="m10"><button value="*10">*10</button></li>
+				<li class="d10"><button value="/10">/10</button></li>
+			</ul>
+			<div class="val">
+				<input class="value" type="text" value="0">
+				<button class="btnCancel">취소</button>
+			</div>
+			<div class="rateTot">
+				<div class="txt">12.52</div>
+			</div>
+		</div>
+		<div class="btnList">
+			<button class="btn btnBuy" onClick="javascript:popLayerBet.close()">구매하기</button>
+		</div>
+	</div>
+	
+	<!-- 결과창 -->
+
+	<div class="popLayer popLayerResult">
+		<div class="status"></div>
+		<ul class="selectList">
+			<li class="ball"><em class="soccer">농구공</em></li>
+			<li class="way"><em class="left">좌</em></li>
+			<li class="holzak"><em class="hol">홀</em></li>
+		</ul>
+		<div class="priceBuy">1,000,000,000</div>
+		<div class="priceResult">9,999,000,000,000</div>
+		<div class="listTable">
+			<table class="table">
+				<tbody>
+					<tr>
+						<td class="no">100</td>
+						<td class="nick">김선생</td>
+						<td class="price">900,000,000</td>
+					</tr>
+					<tr>
+						<td class="no">101</td>
+						<td class="nick">김선생</td>
+						<td class="price">9,999,000,000,000</td>
+					</tr>
+					<tr>
+						<td class="no">102</td>
+						<td class="nick">김선생</td>
+						<td class="price">9,999,000,000,000</td>
+					</tr>
+					<tr>
+						<td class="no">103</td>
+						<td class="nick">김선생</td>
+						<td class="price">9,999,000,000,000</td>
+					</tr>
+					<tr>
+						<td class="no">104</td>
+						<td class="nick">김선생</td>
+						<td class="price">9,999,000,000,000</td>
+					</tr>
+					<tr>
+						<td class="no">105</td>
+						<td class="nick">김선생</td>
+						<td class="price">9,999,000,000,000</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	
+	
+	<button class="btnOut" onClick="javascript:uiGame.gameOut();">게임 나가기</button>
+	
+</div>
+
+<!--[if lt IE 9]> <script src="./js/jquery-1.11.3.js"></script> <![endif]-->
+<!--[if gte IE 9]><!-->  <script src="./js/jquery-2.1.4.js"></script>  <!--<![endif]-->
+<script src="./js/jquery-migrate-1.2.1.js"></script>
+<script src="./js/jquery-ui-1.11.4.js"></script>
+<script src="./js/jquery-browser.js"></script>
+<script src="./js/jquery-mCustomScrollbar.js"></script>
+<script src="./js/jquery-timers.js"></script>
+
+<script src="./js/kingkong.js"></script>
+
+<ul class="temp">
+	<li>
+		<em>회차시간</em> 
+		<a href="javascript:gameTimeCount('03','00');">시작(03,00)</a> , 
+		<a href="javascript:gameTimeCount('00','15');">시작(00,15)</a>  , 
+		<a href="javascript:gameTimeCount('00','3')">시작(00,3)</a>
+	</li>
+	<li>
+		<em>킹콩던지기</em> 
+		<a href="javascript:kingkong.throw.init(1);">던지기(1)</a> , 
+		<a href="javascript:kingkong.throw.init(2);">던지기(2)</a> , 
+		<a href="javascript:kingkong.throw.init(3);">던지기(3)</a>
+	</li>
+	<li>
+		<em>공애니</em> 
+		<a href="javascript:kingkong.ball.init(1);">공애니(1)</a> , 
+		<a href="javascript:kingkong.ball.init(2);">공애니(2)</a> , 
+		<a href="javascript:kingkong.ball.init(3);">공애니(3)</a>
+	</li>
+	<li>
+		<em>선택창</em> 
+		<a href="javascript:popLayerSelect.open()">열기()</a> , 
+		<a href="javascript:popLayerSelect.close()">닫기()</a> 
+	</li>
+	<li>
+		<em>베팅창</em> 
+		<a href="javascript:popLayerBet.open()">열기()</a> , 
+		<a href="javascript:popLayerBet.close()">닫기()</a>
+	</li>
+	<li>
+		<em>결과창</em> 
+		<a href="javascript:popLayerResult.open('success');">열기('success')</a> , 
+		<a href="javascript:popLayerResult.open('fail');">열기('fail')</a> , 
+		<a href="javascript:popLayerResult.close();">닫기()</a>
+	</li>
+	<li>
+		<em>로딩화면</em>
+		<a href="javascript:uiGame.loading.show();">로딩.중</a> , 
+		<a href="javascript:uiGame.loading.hide();">로딩.끝</a>
+	</li>
+	<li>
+		<em>메시지창</em>
+		<a href="javascript:uiGame.msg.open('메시지 출력 입니다.');">메시지.열기</a>
+		<a href="javascript:uiGame.msg.close();">메시지.닫기</a>
+		<a href="javascript:uiGame.msg.open('메시지 출력 입니다.','close');">메시지.열었다 자동닫기</a>
+	</li>
+</ul>
+
+<script>
+	
+
+		
+var kkk = function(m){
+	// if(m==1){ rs = ["1","2"];}
+	// if(m==2){ rs = ["3","4"];}
+	// if(m==3){ rs = ["5","6"];}
+/*	rs1 = new Array("1","2");
+	rs2 = new Array("3","4");
+	rs3 = new Array("5","6");*/
+	
+/*	rs = [m*2-1,m*2];
+
+	t = Math.floor(rs.length*Math.random());
+	
+	return rs[t];*/
+	
+	m = m * 2 - (  Math.floor( Math.random() * 2 )  )
+	return m ; 
+}
+
+</script>
+</body>
+</html>
