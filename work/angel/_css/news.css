@@ -1,7 +1,0 @@
-@charset "utf-8";
-/* 뉴스 */
-#subWrap{ background:url(/work/angel/news/images/subBg2.jpg) repeat-x}
-#subNewsBg{ background:url(/work/angel/news/images/subBg.jpg) no-repeat center top}
-#subNews{ width:940px; margin:auto;}
-#subNews #top{ height:357px;}
-#subNews #center{ min-height:700px; _height:700px; *min-height:700px;}

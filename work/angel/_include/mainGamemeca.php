@@ -1,1 +1,0 @@
-<div class="bannerTopic"><a href="#"><img src="/work/angel/images/main/bannerGameMeca.gif" alt="게임메카바로가기" width="206" height="62" /></a></div>
