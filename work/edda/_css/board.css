@@ -1,0 +1,108 @@
+/* CSS Document */
+
+
+
+.bbsList{ border:none; width:100%; border-bottom:2px solid #2f373f; font:12px Dotum; margin-bottom:15px;}
+.bbsList thead tr{ background:url(/work/edda/images/board/hImgBar.gif) no-repeat; height:30px;}
+
+.bbsList thead th{ border:none; padding:0 7px; height:30px; line-height:18px; background:url(/work/edda/images/board/hImgBar.gif) no-repeat -5px;}
+.bbsList thead th.left{ background:url(/work/edda/images/board/hImgBar.gif) no-repeat 0px;}
+.bbsList thead th.right{ background:url(/work/edda/images/board/hImgBar.gif) no-repeat right 0px;}
+.bbsList tbody tr{ background:url(/work/edda/images/board/dotLine.gif) repeat-x bottom;}
+.bbsList tbody tr.bgNone{ background:none}
+.bbsList tbody td{ border:none; padding:7px 3px 6px 3px; text-align:center; line-height:18px; border-bottom:#2f373f solid 1px;}
+
+.bbsList .bNum{ font-size:11px; color:#505a62; font-family:Tahoma;}
+.bbsList .bTit{ text-align:left;}
+.bbsList .bName{ font-size:11px;  color:#505a62; font-family:Tahoma,Dotum;}
+.bbsList .bDate{ font-size:11px; color:#505a62; font-family:Tahoma;}
+.bbsList .bHit{ font-size:11px; color:#505a62; font-family:Tahoma;}
+.bbsList .comCount{ font-size:10px; font-family:Tahoma; font-weight:bold; color:#a2bc50; padding-left:18px; padding-right:4px; display:inline-block; background:url(/work/edda/images/board/icoComent.gif) no-repeat 4px 4px;}
+
+.bbsView{ width:100%;}
+.bbsView .head{ background:url(/work/edda/images/board/hImgBar.gif) no-repeat; height:30px; position:relative}
+.bbsView .head .bTit{ position:absolute; left:20px; top:8px; font-weight:bold; font-size:11px;}
+.bbsView .head img{ position:relative; top:-2px;}
+.bbsView .postInfo{ border-bottom:#2f373f solid 1px; height:28px; position:relative;}
+.bbsView .postInfo .bName{ position:absolute; left:10px; top:8px; font-size:11px; color:#505a62}
+.bbsView .postInfo .bDate{ position:absolute; left:440px; top:8px; font-size:11px; color:#505a62}
+.bbsView .memo{ padding:20px; line-height:160%; min-height:250px; _height:250px;}
+
+.linkPage{ border-bottom:#2f373f solid 2px; margin-bottom:20px;}
+.linkPage .prev{border-top:#2f373f solid 1px; padding:8px 15px ;}
+.linkPage img{ margin-right:10px;}
+.linkPage .next{border-top:#2f373f solid 1px; padding:8px 15px;}
+.linkPage a{ font-size:11px; color:#828589}
+
+.bbsWrite{ margin-bottom:20px;}
+.bbsWrite .head { background:url(/work/edda/images/board/hImgBar.gif) no-repeat; height:30px; position:relative; margin-bottom:10px;}
+.bbsWrite .head .bTit{ position:absolute; width:100%; text-align:center; left:0px; top:8px; font-weight:bold; font-size:11px;}
+.bbsWrite .item{ border-bottom:#2f373f solid 1px; padding:5px 5px;}
+.bbsWrite .item strong{ font-weight:normal; color:#505a62; width:53px; display:inline-block; padding-left:10px; font-size:11px;}
+.bbsWrite  input,
+.bbsWrite  select{ border:#2c3946 solid 1px; padding:3px; background:#0b1218}
+.bbsWrite  textarea{ border:#2c3946 solid 1px; padding:3px; background:#0b1218; width:530px; height:260px;}
+.bbsWrite  .filed{ font-size:11px; padding:5px 3px 5px 70px; color:#505a62 }
+.bbsWrite .writeBox{ width:616px; overflow:hidden;}
+
+.divinputfile { background:url(/work/edda/images/board/btnFileSch.gif) no-repeat 0 0px; display:inline-block; height:23px; width:63px; vertical-align:middle; _top:1px; position:relative;  }
+.divinputfile input{}
+.divinputfile:hover { background:url(/work/edda/images/board/btnFileSch.gif) no-repeat 0 -26px; }
+.fileInput { border:#CCCCCC solid 1px; padding:4px 3px 3px 3px; vertical-align:middle; font-size:11px; width:465px; }
+.fileList { padding:2px 0; width:100% }
+
+
+
+.coment{ background:#141b21; padding:10px 10px 20px 10px }
+.coment .comtWrite{ background:url(/work/edda/images/board/lineDuble.gif) repeat-x bottom; width:580px; padding:10px 0px 15px 10px ; color:#888461; font-weight:bold; position:relative; vertical-align:top;}
+.coment .comtWrite .inputComt{ border:#2c3946 solid 1px; padding:2px; background:#0b1218; width:435px; height:40px; vertical-align:text-top }
+.coment .comtWrite input{position:absolute; right:0px; top:11px;}
+.coment .comtList{ background:url(/work/edda/images/board/lineDot.gif) repeat-x bottom; padding:10px 10px 10px 10px ; width:570px; overflow:hidden;}
+.coment .comtList .info{ color:#666666; margin-bottom:10px;}
+.coment .comtList .info .date{ font-size:10px; font-family:Tahoma;}
+.coment .comtList .comText{ color:#4a5865; font-size:11px;}
+
+/*
+
+.bbsWrite{ border:none; width:100%;}
+.bbsWrite th{ border:none; padding:5px 5px 5px 5px ;}
+.bbsWrite td{ border:none; padding:5px 5px 5px 5px ;} */	
+
+
+
+
+
+
+.btnList{ padding-bottom:20px;}
+
+
+
+
+
+
+
+
+
+
+
+/* Paginate */
+.paginate{ padding:15px 0 0 0; text-align:center; margin-bottom:15px;}
+.paginate *{ margin:0; padding:0; vertical-align:middle}
+.paginate a,
+.paginate strong{ _position:relative; display:inline-block; margin-right:-6px; padding:3px 7px 4px 8px; _padding-bottom:5px; color:#505a62; text-decoration:none !important; line-height:normal; font:11px Tahoma, Serif;}
+.paginate strong{ color:#ffffff !important; font-weight:bold;}
+.paginate a.pre,
+.paginate a.pre_end,
+.paginate a.next,
+.paginate a.next_end{ font:11px "µ¸¿ò", Dotum, "±¼¸²", Gulim, AppleGothic, Sans-serif;}
+.paginate a.pre{ padding:4px 2px 4px 2px;}
+.paginate a.pre_end{ padding:4px 3px 4px 2px;}
+.paginate a.next{ padding:4px 2px 4px 2px;}
+.paginate a.next_end { padding:4px 3px 4px 2px;}
+
+.bbsSch{height:30px; text-align:center; padding-top:10px;}
+.bbsSch select{border:#2c3946 solid 1px; padding:2px; background:#0b1218}
+.bbsSch input{ border:#2c3946 solid 1px; padding:3px; background:#0b1218}
+.bbsSch .btn{ border:none; padding:0;}
+.bbsSch .keyword{ width:190px;}
+

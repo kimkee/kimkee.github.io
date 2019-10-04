@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* 고객센터 */
+#subWrap{ background:url(/work/angel/guide/images/subBg2.jpg) repeat-x}
+#subGuideBg{ background:url(/work/angel/guide/images/subBg.jpg) no-repeat center top}
+#subGuide{ width:940px; margin:auto;}
+#subGuide #top{ height:357px;}
+#subGuide #center{ min-height:700px; _height:700px; *min-height:700px;}
+
+.gudTab{ position:relative; height:47px;}
+.gudTab img{ position:absolute; top:-23px;}
+
+.mousePop{}
+

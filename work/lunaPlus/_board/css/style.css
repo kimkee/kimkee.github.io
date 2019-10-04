@@ -1,0 +1,123 @@
+/* CSS Document */
+
+
+
+.bbsList{ border:none; width:100%; border-bottom:1px solid #a6bde4; font:12px Dotum; margin-bottom:10px;}
+.bbsList thead tr{ background:url(/work/lunaPlus/_board/images/hImgBar.gif) no-repeat; height:32px;}
+
+.bbsList thead th{ border:none; padding:0 7px; height:30px; line-height:18px; background:url(/work/lunaPlus/_board/images/hImgBar.gif) no-repeat -5px;}
+.bbsList thead th.left{ background:url(/work/lunaPlus/_board/images/hImgBar.gif) no-repeat 0px;}
+.bbsList thead th.right{ background:url(/work/lunaPlus/_board/images/hImgBar.gif) no-repeat right 0px;}
+.bbsList tbody tr{ background:url(/work/lunaPlus/images/board/dotLine.gif) repeat-x bottom;}
+.bbsList tbody tr.bgNone{ background:none}
+.bbsList tbody td{ border:none; padding:4px 3px 3px 3px; text-align:center; line-height:22px; border-bottom:#e4e4e4 solid 1px;}
+
+.bbsList .bNum{ font-size:11px; color:#505a62; font-family:Tahoma;padding:4px 0px 3px 0;}
+.bbsList .bTit{ text-align:left;}
+.bbsList .bTit strong a{color:#3c7ebb}
+.bbsList .bName{ font-size:11px;  color:#505a62; font-family:Tahoma,Dotum;}
+.bbsList .bDate{ font-size:11px; color:#505a62; font-family:Tahoma;}
+.bbsList .bHit{ font-size:11px; color:#505a62; font-family:Tahoma;}
+.bbsList .comCount{ font-size:10px; font-family:Tahoma; font-weight:bold; color:#a2bc50; padding-left:18px; padding-right:4px; display:inline-block; background:url(/work/lunaPlus/_board/images/icoComent.gif) no-repeat 4px 4px;}
+
+.bbsView{ width:100%;}
+.bbsView img{ vertical-align:middle}
+.bbsView .head{ background:url(/work/lunaPlus/_board/images/hImgBar.gif) no-repeat; height:32px; position:relative}
+.bbsView .head .bTit{ position:absolute; left:25px; top:8px; font-weight:bold; font-size:12px; color:#3c7ebb}
+.bbsView .head img{ position:relative;}
+.bbsView .postInfo{ border-bottom:#a6bde4 solid 1px; height:35px; position:relative;}
+.bbsView .postInfo .bName{ position:absolute; left:10px; top:8px; font-size:11px; color:#7f7e7e}
+.bbsView .postInfo .bDate{ position:absolute; right:10px; top:12px; font-size:11px; color:#7f7e7e}
+.bbsView .postInfo .bVote{ color:#f5512b; font-weight:bold; font-size:11px;}
+
+.bbsView .memo{ padding:20px; line-height:160%; min-height:250px; _height:250px;}
+
+.linkPage{ border-bottom:#a6bde4 solid 1px; margin-bottom:10px;}
+.linkPage .prev{border-top:#a6bde4 solid 1px; padding:8px 15px ;}
+.linkPage img{ margin-right:10px;}
+.linkPage .next{border-top:#e4e4e4 solid 1px; padding:8px 15px;}
+.linkPage a{ font-size:11px; color:#828589}
+
+.bbsWrite{ margin-bottom:10px; width:590px;}
+.bbsWrite .head { background:url(/work/lunaPlus/_board/images/hImgBar.gif) no-repeat; height:32px; position:relative; margin-bottom:10px;}
+.bbsWrite .head .bTit{ position:absolute; width:100%; text-align:center; left:0px; top:8px; font-weight:bold; font-size:11px;}
+.bbsWrite .item.title{background:url(/work/lunaPlus/_board/images/hImgBar.gif) no-repeat; height:20px; padding:6px; border:none !important;}
+.bbsWrite .item{ border-bottom:#e4e4e4 solid 1px; padding:5px 5px;}
+.bbsWrite .item strong{ font-weight:normal; color:#3281cd; width:53px; display:inline-block; padding-left:0px; text-align:center; font-size:11px;}
+.bbsWrite  input,
+.bbsWrite  select{ border:#dbdcde solid 1px;; padding:2px; background:#fff}
+.bbsWrite  textarea{ border:#dbdcde solid 1px; padding:3px; background:#fff; width:500px; height:260px;}
+.bbsWrite  .filed{ font-size:11px; padding:3px 3px 1px 70px; color:#505a62 }
+.bbsWrite .writeBox{ width:590px; overflow:hidden;}
+
+.divinputfile { background:url("/work/lunaPlus/_board/images/btnFileSch.gif") no-repeat 0 0px; display:inline-block; height:23px; width:72px; vertical-align:middle; top:1px; _top:2px; position:relative;  }
+.divinputfile input{}
+.divinputfile:hover { background:url("/work/lunaPlus/_board/images/btnFileSch.gif") no-repeat 0 -26px; }
+.fileInput { border:#CCCCCC solid 1px; padding:4px 3px 3px 3px; vertical-align:middle; font-size:11px; width:430px; }
+.fileList { padding:2px 0; width:100% }
+
+
+
+.coment{ width:590px; }
+.coment .comtTop{ background:url(/work/lunaPlus/_board/images/comtTop.gif) no-repeat; height:8px; line-height:0px; font-size:0px;}
+.coment .comtCtn{ background:url(/work/lunaPlus/_board/images/comtBg.gif) repeat-y; padding:5px 20px;}
+.coment .comtBot{ background:url(/work/lunaPlus/_board/images/comtBot.gif) no-repeat; height:8px; line-height:0px; font-size:0px;}
+.coment .comtWrite{  width:550px; height:66px; margin:0; overflow:hidden; color:#888461; font-weight:bold; position:relative; }
+.coment .comtWrite .comtTit{ width:88px; position:absolute; left:0px; top:14px;}
+.coment .comtWrite .inputComt{ position:absolute; left:78px; top:0; border:#e4e4e4 solid 1px; padding:2px; background:#fff; width:380px; height:39px;}
+.coment .comtWrite .comtByte{ position:absolute; right:88px; top:50px; font-size:10px; font-family:Tahoma; font-weight:normal; }
+.coment .comtWrite .comtBtn{position:absolute; right:0px; top:0px;}
+.coment .comtList{ border-bottom:#e4e4e4 solid 1px; padding:10px 0px 10px 0px ; width:550px; overflow:hidden;}
+.coment .comtList .name{font-size:11px; color:#3281cd; font-weight:bold; margin-bottom:5px;}
+.coment .comtList .name .date { font-size:10px; font-family:Tahoma; font-weight:normal; color:#999999; width:80px; margin-left:10px;}
+.coment .comtList .comText{ color:#666666; font-size:11px; float:left; width:410px; line-height:16px;}
+.coment .comtList .info { font-size:10px; font-family:Tahoma; float:right; width:80px; text-align:right;}
+
+
+/*
+
+.bbsWrite{ border:none; width:100%;}
+.bbsWrite th{ border:none; padding:5px 5px 5px 5px ;}
+.bbsWrite td{ border:none; padding:5px 5px 5px 5px ;} */	
+
+
+
+
+
+
+.btnList{ padding:10px 0; width:100%; text-align:center;}
+.btnList:after{ content:""; clear:both; display:block; *zoom:1;}
+.btnList .left{ float:left}
+.btnList .right{ float:right}
+.btnList img{ vertical-align:text-bottom}
+
+
+
+
+
+
+
+
+
+
+/* Paginate */
+.paginate{ padding:10px 0; text-align:center;}
+.paginate *{ margin:0; padding:0; vertical-align:middle}
+.paginate a,
+.paginate strong{ _position:relative; display:inline-block; margin-right:-6px; padding:3px 7px 4px 8px; _padding-bottom:5px; color:#505a62; text-decoration:none !important; line-height:normal; font:11px Tahoma, Serif;}
+.paginate strong{ color:#3c7ebb !important; font-weight:bold;}
+.paginate a.pre,
+.paginate a.pre_end,
+.paginate a.next,
+.paginate a.next_end{ font:11px "µ¸¿ò", Dotum, "±¼¸²", Gulim, AppleGothic, Sans-serif;}
+.paginate a.pre{ padding:4px 2px 4px 2px;}
+.paginate a.pre_end{ padding:4px 3px 4px 2px;}
+.paginate a.next{ padding:4px 2px 4px 2px;}
+.paginate a.next_end { padding:4px 3px 4px 2px;}
+
+.bbsSch{height:30px; text-align:center; padding:10px 0;}
+.bbsSch select{border:#c5c6c1 solid 1px; padding:1px; background:#fff}
+.bbsSch input{ border:#c5c6c1 solid 1px; padding:2px; background:#fff}
+.bbsSch .btn{ border:none; padding:0;}
+.bbsSch .keyword{ width:100px;}
+

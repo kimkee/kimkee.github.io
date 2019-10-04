@@ -1,0 +1,116 @@
+@charset "euc-kr";
+@import url(png.css);
+@import url(member.css);
+@import url(board.css);
+@import url(button.css);
+@import url(customer.css);
+@import url(download.css);
+@import url(introduction.css);
+@import url(event.css);
+@import url(etc.css);
+/* 공통 스타일 */
+*{margin:0; padding:0; font-size:12px; font-family: Dotum, Tahoma, Sans-serif; color:#666666}
+html,body{ height:100%}
+caption{display:none}
+img { border:0; vertical-align:middle; }
+input,select {vertical-align:middle}
+.clear{display:block; float:none; clear:both; height:0; width:100%; font-size:0 !important; line-height:0 !important; overflow:hidden; margin:0 !important; padding:0 !important;}
+ul, ol, li { list-style:none; }
+h1, h2, h3, h4, h5, h6, h7 { font-size:100%; font-weight:normal; }
+html:first-child select{padding-right:6px; height:20px;} /* Opera 9 & Below Fix */ 
+option {padding-right:6px;} /* Firefox Fix */
+legend {position:absolute; top:0; left:0; width:0; height:0; overflow:hidden; visibility:hidden; font-size:0; line-height:0;} /* For Screen Reader */ 
+a:link { color:#666666; text-decoration: none; }
+a:visited { color:#666666; text-decoration: none; }
+a:active { color:#666666; text-decoration: none; }
+a:hover { color:#333333; text-decoration:none; }
+
+.blind {visibility:hidden;overflow:hidden;position:absolute;width:0;height:0;font-size:0;line-height:0;}
+hr{display:none}
+fieldset{ border:0; position:relative; clear:both;}
+fieldset:after{ content:""; display:block; float:none; clear:both;}
+legend{ position:absolute; width:0; height:0; overflow:hidden; font:0/0 Sans-serif; visibility:hidden;}
+
+.aLeft{ text-align:left !important}
+.nobor{ border:none !important}
+
+
+
+#wrap {background:url(/work/eyaPc/images/main/bgRight.gif) repeat-x; height:100%; }
+#bgLeft{ background:url(/work/eyaPc/images/main/bgLeft.gif) repeat-x; height:113px; width:50%; position:absolute; left:0; top:0; float:left; z-index:10}
+#center { width:956px; background:url(/work/eyaPc/images/main/leftBg.gif) repeat-y; position:relative; z-index:20; min-height:100%; _height:100%; margin:auto; margin-bottom:-120px;}
+
+
+#left { width:260px; float:left; padding-bottom:135px; background:url(/work/eyaPc/images/main/leftBg.gif) repeat-y }
+#right { width:688px; float:right; padding-top:19px;}
+#footer{ background:url(/work/eyaPc/images/main/footerBg.gif) repeat-x; height:120px;}
+#footer .foot{ width:956px; height:120px; margin:auto; position:relative; z-index:30}
+#footer .foot {background:url(/work/eyaPc/images/main/leftBgFoot.gif) repeat-y}
+#footer .foot .logo{ position:absolute; left:95px; top:31px; width:72px; height:50px; padding:0}
+#footer .foot .info{ position:absolute; left:260px; top:25px;}
+#footer .foot .info .link { height:22px;}
+#footer .foot .info .link li{ float:left; border-right:#CCCCCC solid 1px; padding:0 10px; margin-bottom:8px;}
+#footer .foot .info .comInfo { color:#a8a8a8; font-size:11px; padding:0 0 0 10px; margin-bottom:8px;}
+#footer .foot .info .copyRight { color:#5d5d5d; font-size:11px; padding:0 0 0 10px;}
+#footer .foot .info .copyRight strong{ color:#d80000}
+
+
+
+#left .top{ background:url(/work/eyaPc/images/main/leftTopBg.gif); margin-bottom:23px; width:268px; height:117px; position:relative}
+.logo{ width:174px;  height:61px; margin-bottom:5px; position:absolute; left:43px; top:19px;}
+.logoText{ width:220px; position:absolute; left:20px; top:85px;}
+
+.loginBox{width:192px; height:172px; margin:auto; position:relative; background:url(/work/eyaPc/images/main/dotLine.gif) repeat-x bottom; margin-bottom:13px;}
+.loginBox .id{ width:110px; height:20px; position:absolute; left:0px; top:48px;}
+.loginBox .id input{ border:#dcdcdc solid 1px; background:#FF9966; padding:2px 2px 1px 2px; height:15px; width:113px;}
+.loginBox .pw{ width:110px; height:20px; position:absolute; left:0px; top:72px;}
+.loginBox .pw input{ border:#dcdcdc solid 1px; background:#FF9966; padding:2px 2px 1px 2px; height:15px; width:113px;}
+.loginBox .btnLogin{ width:49px; height:44px; position:absolute; left:123px; top:48px;}
+.loginBox ul{ position:absolute; left:10px; top:102px; width:180px;}
+.loginBox li{ float:left; margin-right:5px; font-size:11px;}
+.loginBox li a{font-size:11px; color:#6c6c6c}
+.loginBox .contactIp{ position:absolute; left:0px; top:134px; width:192px; height:20px; padding:6px 0 0 0 ; text-align:center; font-size:11px; background:url(/work/eyaPc/images/main/ipBg.gif) no-repeat;}
+.loginBox .contactIp strong{ color:#f63507}
+
+
+.logoutBox{width:206px; height:145px; position:relative; overflow:hidden; background:url(/work/eyaPc/images/main/logoutBg.png) no-repeat; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/main/logoutBg.png', sizingMethod='crop');}
+.logoutBox .memText{ position:absolute; left:23px; top:58px; width:160px; height:25px; padding:12px 0 0 0; text-align:center; font-size:11px;}
+.logoutBox .memText strong{ color:#b65570}
+.logoutBox ul{}
+.logoutBox li{ float:left; font-size:11px;}
+
+#left .quickLink{ width:192px; height:135px; margin:auto; margin-bottom:20px;}
+#left .quickLink li{ float:left}
+#left .quickLink li img{ _vertical-align:text-bottom; *vertical-align:text-bottom}
+#left .bannerCall{ width:192px; margin:auto;}
+
+#right .menu{ margin-bottom:13px;}
+#right .notLED{ height:28px; font-size:11px; margin-bottom:13px; padding-left:10px;}
+
+
+.contents{ padding-bottom:140px}
+.headTit{ height:57px; position:relative; border-top:#f79a1b solid 4px;}
+.headTit .tit img{ vertical-align:text-bottom}
+.headTit .tit{ position:absolute; left:0; top:0}
+.headTit .location{ position:absolute; right:10px; top:37px; font:11px Dotum}
+.line{border-bottom:#dededf solid 1px; margin-bottom:30px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

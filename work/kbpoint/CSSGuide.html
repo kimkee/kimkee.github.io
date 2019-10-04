@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<title>HTML/CSS/JS 개발가이드</title>
+<style type="text/css">
+<!--
+.tcRed { color: #FF0000 }
+.tcBlue { color: #0000FF }
+.tcGreen { color: #00FF00 }
+* { font-size:12px; font-family:Tahoma, Dotum; color:#555555; line-height:160% }
+h1, h2 { font-size:20px; color:#333333 }
+h3 { font-size:14px; }
+h4 { font-size:12px; }
+h5, h6 { font-size:12px; }
+body { margin:20px; }
+hr { margin:0; padding:0px; border:none; border-bottom:#dddddd solid 2px; }
+table { border:none; border-collapse:collapse; margin:10px 0; background:#FFFFFF }
+table th { border:#dddddd solid 1px; padding:5px 7px; background:#f1f1f1; font-weight:normal }
+table td { border:#dddddd solid 1px; padding:5px 7px; }
+div.box { border:#dddddd solid 1px; padding:8px 12px; margin:10px 0; }
+-->
+</style>
+</head>
+<body>
+<h1>HTML/XHTML/CSS/JS 개발가이드 - 김기현</h1>
+<hr />
+<h3>1. HTML 작성시 유의사항 </h3>
+<ol>
+	<li>
+		<h4>DTD가 XHTML형식일 때에는 닫기와 따옴표를 생략할 수 없습니다 .</h4>
+		<table border="1">
+			<tr>
+				<th>이미지 </th>
+				<td>&lt;img src=&quot;이미지경로.gif&quot; alt=&quot;&quot; <span class="tcRed">/</span>&gt;</td>
+			</tr>
+			<tr>
+				<th>텍스트 필드 </th>
+				<td>&lt;input type=&quot;text&quot;<span class="tcRed"> /</span>&gt;</td>
+			</tr>
+			<tr>
+				<th>줄바꿈</th>
+				<td>&lt;br <span class="tcRed">/</span>&gt;</td>
+			</tr>
+		</table>
+	</li>
+	<li>
+		<h4>주석처리방법</h4>
+		<div class="box">&lt;!-- 본문시작 --&gt; <span class="tcRed">O</span><br />
+			&lt;!-- 본문끝 //--&gt;<br />
+			<br />
+			&lt;!--------------------------------- 본문 시작 ----------------------------------------&gt; <span class="tcRed">X</span><br />
+		</div>
+	</li>
+	<li>
+		<h4>특수문자는 Entity코드로 변환합니다 </h4>
+		<div class="box">Entity로 변환하지 않은 특수문자는 모두 오류코드로 판정됩니다. <br />
+			사용자에 의하여 글쓰기 폼에 입력된 특수문자가 Entity로 변환되지 않고 출력되는 경우가 많습니다. <br />
+			그리고 하이퍼링크의 URI 속에도 Entity로 변환하지 않은 특수문자 '&amp;' 를 사용하는 사례가 많습니다. <span class="tcRed">'&amp;'</span>의 Entity 코드는 <span class="tcBlue">'&amp;amp;'</span> 입니다. </div>
+	</li>
+</ol>
+<h3>2. CSS 작성시 유의사항</h3>
+<ol>
+	<li>
+		<h4>CSS파일 삽입하는 방법</h4>
+		<div class="box">&lt;link href=&quot;default.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt; <span class="tcRed">O</span><br />
+			&lt;div style=&quot;width:100px&quot;&gt;...&lt;/div&gt; <span class="tcRed">△</span> Inline 형식으로 기술하여 유지보수가 어려움 <br />
+			&lt;style type=&quot;text/css&quot;&gt;...&lt;/style&gt; <span class="tcRed">△</span> Internal 형식으로 기술하여 유지보수가 어려움 </div>
+	</li>
+</ol>
+<h3>3. 자바스크립트 작성시 유의사항</h3>
+<ol>
+	<li>
+		<h4>head 또는 body 태그 안에서 자바스크립트 선언</h4>
+		<div class="box"><span class="tcBlue">&lt;script&gt; <span class="tcRed">X</span><br />
+			&lt;script language=&quot;javascript&quot;&gt; <span class="tcRed">X</span><br />
+			&lt;script type=&quot;text/javascript&quot;&gt;</span> <span class="tcRed">O</span><br />
+			&lt;!--<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;function mEvent(K){ //<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;abcd = 1 ;<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+			//--&gt;<br />
+			&lt;/script&gt;<br />
+		</div>
+		.js 파일 임포트 할때는<br />
+		<div class="box"><span class="tcBlue">&lt;script type=&quot;text/javascript&quot; src=&quot;default.js&quot; /&gt;</span> <span class="box" style="width:300px;"><span class="tcRed">O</span></span></div>
+		<br />
+	</li>
+	<li>
+		<h4>이미지에 클릭이벤트로 자바스크립트 함수를 호출할 경우</h4>
+		<div class="box">&lt;a href=&quot;javascript:event();&quot;&gt;&lt;img src=&quot;btn.gif&quot; alt=&quot;버튼&quot; &gt;&lt;/a&gt; <span class="tcRed">O</span><br />
+			&lt;img src=&quot;btn.gif&quot; onclick=&quot;javascript:event();&quot; &gt; <span class="tcRed">X</span><br />
+		</div>
+	</li>
+	<li>
+		<h4>웹접근성을 고려한 팝업창 열기 <strong class="tcRed">( 이건 참고만 )</strong></h4>
+		<div class="box">&lt;a href=&quot;http://www.naver.com&quot; target=&quot;_blank&quot; onclick=&quot;window.open(this.href, 'popupName', 'width=800, height=500, left=50, top=50, statusbar=0, scrollbars=1'); return false;&quot; onkeypress=&quot;this.onclick(); return false;&quot;&gt;팝업창 띄우기&lt;/a&gt;<br />
+			<br />
+			<ul>
+				<li> 자바스크립트가 사용 가능할 경우 open_popup()에 의해 팝업창이 뜨게됨 </li>
+				<li>자바스크립트가 사용 가능하지 않을 경우에는 새창으로 http://www.naver.com 을 띄우게 됨</li>
+				<li><a href="http://www.naver.com" target="_blank" onclick="window.open(this.href, 'popupName', 'width=800, height=500, left=50, top=50, statusbar=0, scrollbars=1'); return false;">팝업창 띄우기</a> </li>
+			</ul>
+			<p>팝업창 옵션</p>
+			<ul>
+				<li> width : 팝업 윈도우의 넓이를 지정하는곳 입니다. </li>
+				<li> height : 팝업 윈도우의 높이를 지정하는곳 입니다,</li>
+				<li> top : 화면의 상단으로 부터의 팝업 윈도우의 위치를 지정하는곳 입니다. </li>
+				<li> left : 화면의 좌측으로 부터의 팝업 윈도우의 위치를 지정하는곳 입니다. </li>
+				<li> titlebar : 팝업윈도우의 제목 막대를 보일 것인가를 지정하는곳 입니다. </li>
+				<li> menubar : 메뉴막대를 보일것인가를 지정하는 곳입니다.</li>
+				<li> toolbar : 브라우저의 도구막대를 보일것인가를 지정하는 곳입니다. </li>
+				<li> location : locationbar를 보일 것인가를 지정하는 곳입니다. </li>
+				<li> status : 팝업윈도우에 상태바를 보일 것인가를 지정하는 곳입니다. </li>
+				<li> scrollbars : 팝업윈도우에 수직, 수평 스크롤 막대를 보일 것인가를 지정하는 곳입니다. </li>
+				<li> resizable : 팝업윈도우의 크기를 변경할 수 있는가를 지정하는 곳입니다.</li>
+			</ul>
+		</div>
+	</li>
+</ol>
+<hr style="margin-top:30px;" />
+<p style="text-align:right">김기현 : kimkee@naver.com</p>
+</body>
+</html>

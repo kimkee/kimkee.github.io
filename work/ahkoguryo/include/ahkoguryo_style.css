@@ -1,0 +1,34 @@
+BODY,TD,DIV,form,TEXTAREA,center,option,pre,blockquote {font-size:12px;color:#DDDDDD;font-family:µ¸¿ò;line-height:22px;}
+BODY {margin:0px; background-color:#000000;}
+input,{font-size:12px;color:#AFA687;font-family:µ¸¿ò;}
+
+
+.bg_index { background-image:url(../images/bg.jpg);
+	background-repeat: no-repeat;
+	margin: 0px;
+}
+.bg_sub {
+	background-image:   url(images/bg_sub.jpg);
+	background-repeat: no-repeat;
+	margin: 0px;
+}
+body
+    {
+        scrollbar-face-color:#F2F2F2;
+        scrollbar-highlight-color:#FFFFFF;
+        scrollbar-3dlight-color:#E6E6E6;
+        scrollbar-shadow-color:#D6D6DD;
+        scrollbar-darkshadow-color:#C0C0C0;
+        scrollbar-track-color:F2F2F2;
+        scrollbar-arrow-color:777777;
+    }
+
+a:link { color: #333333;	text-decoration: none;}
+a:visited {	color: #333333;	text-decoration: none;}
+a:active {	color: #333333;	text-decoration: none;}
+a:hover {	color: #000000;	text-decoration: none;}
+
+.notice:link { color: #ffffff;	text-decoration: none;}
+.notice:visited {	color: #ffffff;	text-decoration: none;}
+.notice:active {	color: #ffffff;	text-decoration: none;}
+.notice:hover {	color: #ffffff;	text-decoration: none; text-decoration:underline;}

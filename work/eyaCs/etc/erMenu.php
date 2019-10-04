@@ -1,0 +1,7 @@
+<ul class="erMenu">
+				<li><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('erM01','','/etc/images/erM01On.gif',0)"><img src="/work/eyaCs/etc/images/erM01.gif" alt="도움말" name="erM01" width="125" height="113" id="erM01" /></a></li>
+				<li><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('erM02','','/etc/images/erM02On.gif',0)"><img src="/work/eyaCs/etc/images/erM02.gif" alt="상담" name="erM02" width="124" height="113" id="erM02" /></a></li>
+				<li><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('erM03','','/etc/images/erM03On.gif',0)"><img src="/work/eyaCs/etc/images/erM03.gif" alt="신고/처벌" name="erM03" width="125" height="113" id="erM03" /></a></li>
+				<li><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('erM04','','/etc/images/erM04On.gif',0)"><img src="/work/eyaCs/etc/images/erM04.gif" alt="보안설정" name="erM04" width="124" height="113" id="erM04" /></a></li>
+				<li><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('erM05','','/etc/images/erM05On.gif',0)"><img src="/work/eyaCs/etc/images/erM05.gif" alt="고객센터" name="erM05" width="125" height="113" id="erM05" /></a></li>
+			</ul>

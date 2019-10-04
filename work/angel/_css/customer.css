@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* 고객센터 */
+#subWrap{ background:url(/work/angel/customer/images/subBg2.jpg) repeat-x}
+#subCustomerBg{ background:url(/work/angel/customer/images/subBg.jpg) no-repeat center top}
+#subCustomer{ width:940px; margin:auto;}
+#subCustomer #top{ height:357px;}
+#subCustomer #center{ min-height:700px; _height:700px; *min-height:700px;}
+

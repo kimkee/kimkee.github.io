@@ -1,0 +1,246 @@
+/*장바구니*/
+.basketHead{ position:relative; height:40px; border-bottom:#dddddd solid 1px; margin-bottom:10px; width:910px;}
+.basketHead .shopTit{ position:absolute; left:0; top:0}
+.basketHead .location{position:absolute; left:0px; top:12px; height:20px; width:500px;}
+.basketHead .btnHisBack{ position:absolute; right:0px; top:12px;}
+.basketStep{ margin-bottom:20px;}
+
+.basketMsg{ margin-bottom:20px; background:url(/work/kbpoint/images/main/btnOrderComBul1.gif) no-repeat 0 10px; padding-left:7px;}
+.basketMsg img{vertical-align:middle}
+.basketTit{ font-size:16px; font-weight:bold; margin-bottom:10px;}
+
+.baketList{ border:none ;border-top:#9b9b9b solid 2px; width:100%}
+.baketList img{vertical-align:middle}
+.baketList th,
+.baketList td{ border:none; line-height:18px; text-align:center }
+.baketList th{ border-bottom:#cccccc solid 1px; padding:7px 5px 6px 5px; background:#f4f4f4}
+.baketList td{ border-bottom:#e1e1e1 solid 1px; padding:18px 5px 17px 5px;}
+.baketList .bName{ text-align:left; padding-left:10px; padding-right:10px;}
+.baketList .bName .iName{ margin-bottom:3px;}
+.baketList .bName .iOptName{ font-size:11px;}
+.baketList .bEa{ width:80px;}
+.baketList .bPoint{ width:70px;}
+.baketList .btnNum{width:79px;}
+.baketList .bPrice{width:79px;}
+.baketList .bPrice .priceCommon { color: #5C5C5C; font-weight: bold;}
+.baketList .bPrice .priceSale { color: #49B407; font-weight: bold;}
+.baketList .bPrice p{ padding:3px 0;}
+.baketList .bCarry{ width:50px;}
+.baketList .bBuy2{border-left:#e1e1e1 solid 1px;}
+.baketList .btnNum .inputPnum{ border:#CCCCCC solid 1px; padding:2px; width:30px; float:left; margin-right:3px; vertical-align:middle;}
+.baketList .btnNum .btnArrow{ float:left; width:9px; overflow:hidden; vertical-align:middle}
+.baketList .btnNum .btnArrow a{}
+.baketList .btnNum .btnArrow img{ margin-bottom:1px; vertical-align:middle;}
+.baketList .btnNum .btnArrow span{ line-height:0px; font-size:0px; margin-bottom:1px; display:block;}
+.baketList .btnNum .btnMod img{ vertical-align:middle;}
+.baketList .benefit{ width:80px;}
+.baketList .benefit p{ padding:2px 0; text-align:left;}
+
+.basketTotalPriceBox{ background:#f4f4f4; border:#9b9b9b solid 1px; padding:20px; border-left:none; border-right:none; border-top-width:0px; margin-bottom:10px;}
+.basketTotalPriceBox .priceS{ text-align:right; color:#000000; margin-bottom:10px}
+.basketTotalPriceBox .priceTotal{ text-align:right;color:#000000; font-weight:bold; font-size:14px;}
+.basketTotalPriceBox .priceTotal .totalPrice{color:#49b407; font-weight:bold; font-size:20px;}
+
+.basketBtnList{ height:22px; margin-bottom:20px;}
+.basketBtnList .bLeft{float:left}
+.basketBtnList .bRight{float:right}
+
+
+.basketInfoBox{ border:#efefef solid 2px; padding:20px 20px 0px 20px ; margin-bottom:40px;}
+.basketInfoBox h4{font-size:14px; color:#000000; margin-bottom:10px; font-weight:bold;}
+.basketInfoBox ul { margin-bottom:10px;}
+.basketInfoBox ul li{ background:url(/work/kbpoint/images/main/basketBul01.gif) no-repeat 0 6px; padding:1px 1px 1px 8px;  line-height:16px;}
+
+.basketInfoBox2{ padding:20px 20px 20px 20px ;}
+
+
+.orderTit{font-size:20px; height:30px; font-weight:bold; margin-bottom:10px; color:#313131}
+.orderTit img{ vertical-align:middle;}
+.orderTit .bLeft{font-size:20px; font-weight:bold; padding-top:5px; float:left;}
+.orderTit .bRight{ float:right; padding-top:15px;}
+
+
+.orderTit2{ position:relative;}
+.orderTit2 .bRight{ position:absolute; right:0px; top:2px; padding:0; width:340px; _width:360px;}
+.orderTit2 .bRight2{ position:absolute; right:0px; top:2px; padding:0; padding-top:0px; }
+.orderTit2 .orderTabTit{ padding-top:6px; margin-right:0px; float:left;}
+.orderTit2 .orderBtnTab{ float:right;}
+.orderTit2 .orderBtnTab li{ float:left; margin-left:5px;}
+
+.orderGift{ margin-bottom:30px;}
+.orderGift .orderGiftTable{ border:none; width:100%;}
+.orderGift .orderGiftTable th,
+.orderGift .orderGiftTable td{ border:none; padding:8px 5px 7px 5px ; border-top:#e4e4e4 solid 1px}
+.orderGift .orderGiftTable th{ text-align:left; width:90px;}
+.orderGift .orderGiftTable img{ vertical-align:middle;}
+.orderGift .orderGiftTable .pImg {}
+.orderGift .orderGiftTable .pImg img{ border:#e4e4e4 solid 1px;}
+.orderGift .orderGiftTable .gItem {}
+.orderGift .orderGiftTable .gItem p{ line-height:18px; position:relative; width:340px;}
+.orderGift .orderGiftTable .gItem img{vertical-align:text-bottom}
+.orderGift .orderGiftTable .gItem .btnBox{ float:right; position:relative;}
+.orderGift .orderGiftTable .gItem .btn{}
+.orderGift .orderGiftTable .gItem .btn li{float:left; margin-left:5px;}
+.orderGift .orderGiftTable .gItem .btn .totalEA{ margin-left:30px;}
+.orderGift .orderGiftTable .gItem .btn select{ border:#CCCCCC solid 1px; padding:1px;}
+.orderGift .orderGiftTable input{ border:#e4e4e4 solid 1px; padding:1px;}
+.orderGift .calendar{ position:absolute; left:225px; top:145px;}
+.btnAdds{ border-top:#e4e4e4 solid 1px}
+
+.oderAdrTableBox{ height:110px; overflow-x: hidden; overflow-y: scroll; width:910px;
+	scrollbar-face-color:#e9e9e9;
+	scrollbar-shadow-color:#cccccc;
+	scrollbar-highlight-color: #cccccc;
+	scrollbar-3dlight-color: #FFFFFF;
+	scrollbar-darkshadow-color: #FFFFFF;
+	scrollbar-track-color: #ffffff;
+	scrollbar-arrow-color: #777777;
+}
+.orderAdrsList{ margin-bottom:30px;}
+.orderAdrTable{ border:none ;border-top:#cccccc solid 1px; width:100%; }
+.orderAdrTable img{vertical-align:middle}
+.orderAdrTable th,
+.orderAdrTable td{ border:none; line-height:18px; text-align:center !important; padding:7px 3px 6px 3px; }
+.orderAdrTable th{ border-bottom:#cccccc solid 1px; background:#f4f4f4}
+.orderAdrTable td{ border-bottom:#e1e1e1 solid 1px;}
+.orderAdrTable .bNum{ width:30px;}
+.orderAdrTable .bName{ width:80px;}
+.orderAdrTable .bPhone{ width:90px;}
+.orderAdrTable .bAds{ width:300px;}
+.orderAdrTable .bMemo{}
+.orderAdrTable .bEa{ width:70px;}
+.orderAdrTableList{border-top:none;}
+
+.totalAddPay{ border-bottom:#cccccc solid 1px; height:30px; padding:7px 5px 6px 5px; background:#f4f4f4}
+.totalAddPay .tLeft{ float:left; padding-top:7px; padding-left:10px;}
+.totalAddPay .tRight{ float:right; padding-top:7px; padding-right:10px; font-size:14px; font-weight:bold;}
+
+.orderExlForm{ border:none ;border-top:#cccccc solid 1px; width:100%; margin-bottom:30px; }
+.orderExlForm img{vertical-align:middle}
+.orderExlForm th,
+.orderExlForm td{ border:none; line-height:18px; text-align:left; }
+.orderExlForm th{ border-bottom:#cccccc solid 1px; padding:7px 5px 6px 15px; background:#f4f4f4; width:100px;}
+.orderExlForm td{ border-bottom:#e1e1e1 solid 1px; padding:7px 5px 6px 15px;}
+
+.orderExlForm .olNum2{ margin-bottom:20px; margin-left:15px; padding-left:2px;}
+.orderExlForm .olNum2 li{ line-height:24px; list-style:decimal; margin-bottom:10px;}
+.orderExlForm .ulBul2{  margin-left:15px; padding-left:2px;}
+.orderExlForm .ulBul2 li{ line-height:14px; list-style:disc; margin-top:5px; }
+.orderExlForm input{ border:#e4e4e4 solid 1px; padding:1px;}
+
+.orderForm{ border:none; border-top:#9c9c9c solid 2px; border-bottom:#9b9b9b solid 1px; width:100%; margin-bottom:20px;}
+.orderForm img{vertical-align:middle}
+.orderForm th,
+.orderForm td{ border:none; border-bottom:#e3e3e3 solid 1px; color:#000000; padding:10px 15px 10px 15px }
+.orderForm th{ width:100px; text-align:left; padding-left:14px; color:#5c5c5c; background:#f4f4f4; }
+.orderForm .tLine th,
+.orderForm .tLine td{ border-bottom:#9b9b9b solid 1px;}
+.orderForm .tLine .th2{ text-align:center}
+.orderForm .tLine .th3{ text-align:center}
+.orderForm input,
+.orderForm select,
+.orderForm textarea{ border:#CCCCCC solid 1px; padding:2px; color:#9a9a9a; font-size:11px;}
+.orderForm select{ padding:1px;}
+
+.payInfo img{vertical-align:middle}
+.payInfo input,
+.payInfo select,
+.payInfo textarea{ border:#d4d4d4 solid 1px; padding:1px;}
+
+.payInfo{ margin-bottom:10px; position:relative; width:910px;}
+.payInfo .payInfoLeft{ width:574px; float:left; border-top:#CCCCCC solid 2px;}
+.payInfo .payInfoLeft .tit{ border-bottom:#CCCCCC solid 1px;}
+.payInfo .payInfoLeft .info{ border-bottom:#CCCCCC solid 1px; min-height:180px; _height:180px; background:url(/work/kbpoint/images/main/thGrayBg.gif) repeat-y -80px 0; padding:0px 0px 0px 0px;}
+
+
+.payInfo .payInfoRight{ width:331px; float:right; border-top:#CCCCCC solid 2px;}
+.payInfo .payInfoRight .tit{ border-bottom:#CCCCCC solid 1px;}
+.payInfo .payInfoRight .info{ border-bottom:#CCCCCC solid 1px; min-height:180px; _height:180px; background:url(/work/kbpoint/images/main/thGrayBg.gif) repeat-y -70px 0; padding:0px 0px 0px 0px; }
+
+.payInfo .pInfo{ border:none; width:100%;}
+.payInfo .pInfo th,
+.payInfo .pInfo td{ border:none; padding:7px 5px ;}
+.payInfo .pInfo .tLine th,
+.payInfo .pInfo .tLine td{ border-bottom:#dedede solid 1px;}
+.payInfo .pInfo th{ font-weight:bold; text-align:left; width:90px; background:#f4f4f4; padding:10px 15px 10px 15px }
+.payInfo .pInfo .tPoint{ padding-top:10px; padding-left:5px;}
+.payInfo .pInfo .tPoint h6{ color:#50ac19; font-size:11px; margin-bottom:3px;}
+.payInfo .pInfo .tPoint p{ font-size:11px; margin-bottom:3px;}
+.payInfo .pInfo .payPriceEnd{ color:#ff6600; font-size:16px;}
+
+.payInfo .pInfo2{ border:none; width:100%; }
+.payInfo .pInfo2 th,
+.payInfo .pInfo2 td{ border:none;  padding:10px 15px 10px 15px ;}
+.payInfo .pInfo2 th{ font-weight:bold; text-align:left; width:100px; background:#f4f4f4;}
+.payInfo .pInfo2 td{ text-align:left;}
+.payInfo .pInfo2 .tLine th,
+.payInfo .pInfo2 .tLine td{ border-bottom:#dedede solid 1px;}
+.payInfo .pInfo2 .tPoint{ padding-top:10px; padding-left:5px;}
+.payInfo .pInfo2 .tPoint h6{ color:#50ac19; font-size:11px; margin-bottom:3px;}
+.payInfo .pInfo2 .tPoint p{ font-size:11px; margin-bottom:3px;}
+.payInfo .pInfo2 .payPriceEnd{ color:#49b407; font-size:14px;}
+.payInfo .pInfo2 .tcBlue{ color:#000000 !important}
+
+.payBtn{ text-align:right; margin-bottom:20px;}
+
+.btnSecProgram{ padding:0px 0px 0px 8px }
+
+.orderComBox{ background:#fff; border:#e4e4e4 solid 0px; padding:0px 0px; margin-bottom:10px;}
+.orderComBox .oLeft{float:left; width:450px; min-height:272px; _height:272px;  border-bottom:solid #9b9b9b 1px;background:url(/work/kbpoint/images/main/thGrayBg.gif) no-repeat -70px 30px;}
+.orderComBox .oRight{float:right; width:450px; min-height:272px; _height:272px; border-bottom:solid #9b9b9b 1px;background:url(/work/kbpoint/images/main/thGrayBg.gif) no-repeat -70px 30px;}
+.orderComList{ border:none; width:450px; margin:auto; border-top:solid #e4e4e4 1px; border-left:solid #e4e4e4 1px;}
+.orderComList th,
+.orderComList td{ border:none; padding:12px 14px; font-size:14px; border-bottom:solid #e4e4e4 1px; border-right:solid #e4e4e4 1px;}
+.orderComList th{ border-right:none;}
+.orderComList th { text-align:left;}
+.orderComList td { text-align:right;}
+.orderComList .ts{ font-size:12px; font-weight:normal; padding:8px 14px;}
+.orderComList .totalPrice.tcOrange{color:#49b407 !important}
+.orderComInfo{ border:none; width:500px; margin:auto; border-top:dotted #CCCCCC 1px;}
+.orderComInfo th,
+.orderComInfo td{ border:none; padding:12px 5px; border-bottom:dotted #CCCCCC 1px;}
+.orderComInfo th { text-align:left;}
+.orderComInfo td {}
+
+.orderNumberBox{ background:#f4f4f4; padding:20px 20px; margin-bottom:15px; font-size:21px; text-align:left;}
+.orderNumberBox .tcOrange {color:#e10002 !important; font-weight:bold;}
+
+.orderComTit{ font-size:16px; font-weight:bold; color:#333333; margin-bottom:10px;}
+
+.orderFormCom td{ color:#666666}
+.orderFormComHead{ border-bottom:none; margin-bottom:0px;}
+.orderFormComHead .tLine th,
+.orderFormComHead .tLine td{border-bottom:none; }
+
+.orderComDcInfo { border:none; width:450px; border-top:solid #9b9b9b 2px; }
+.orderComDcInfo th,
+.orderComDcInfo td{ border:none; padding:12px 15px; border-top:solid #dedede 1px;}
+.orderComDcInfo th { text-align:left; background:#f4f4f4; width:100px;}
+.orderComDcInfo td { text-align:right; font-weight:bold;}
+.orderComDcInfo .tDC th,
+.orderComDcInfo .tDC td{ font-size:11px; font-weight:normal; padding:12px 15px 12px 30px ;}
+.orderComDcInfo .tDC th{ padding-right:0px;}
+.orderComDcInfo .tDC p{font-size:11px; line-height:18px;}
+.orderComDcInfo .totPay{ font-size:16px; color:#333333; font-weight:bold;}
+.orderComDcInfo .totPayCom{ font-size:16px; color:#49b407; font-weight:bold;}
+.orderComDcInfo .totPayTop th,
+.orderComDcInfo .totPayTop td{ border-top:none;}
+.orderComDcInfo .totPayBot th,
+.orderComDcInfo .totPayBot td{ border-top:#9b9b9b solid 1px;}
+
+
+.orderComList2 { border:none; width:450px; border-top:solid #9b9b9b 2px; }
+.orderComList2 th,
+.orderComList2 td{ border:none; padding:12px 12px; border-bottom:solid #dedede 1px;}
+.orderComList2 th { text-align:left; background:#f4f4f4; width:100px;}
+.orderComList2 td { text-align:right; font-weight:bold;}
+.orderComList2 .totPayTop th,
+.orderComList2 .totPayTop td{ border-bottom:solid #9b9b9b 1px;}
+.orderComList2 .totPayCom{ font-size:16px; color:#49b407; font-weight:bold;}	
+.orderComList2 .totPayBot th,
+.orderComList2 .totPayBot td{  border-bottom:none; }
+
+
+
+
+

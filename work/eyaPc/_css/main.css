@@ -1,0 +1,35 @@
+/* CSS Document */
+
+.mainBanner{ margin-bottom:10px;}
+.mainCtn1{ float:left; width:472px;}
+.mainCtn2{ float:right; width:196px; padding:6px 0 0 0}
+
+.pcAdvantage{ margin-bottom:19px}
+
+.mainNotice{ float:left; width:225px;}
+.mainNotice h3{ margin-bottom:8px;}
+.mainNotice table { border-collapse:collapse; width:100%}
+.mainNotice th{ padding:3px 3px 3px 0px; text-align:left; font-weight:normal}
+.mainNotice td{ padding:3px 0px 3px 0px; text-align:right }
+
+.mainNews{ float:right; width:225px;}
+.mainNews h3{ margin-bottom:8px;}
+.mainNews table { border-collapse:collapse; width:100%}
+.mainNews th{ padding:3px 3px 3px 8px; text-align:left; font-weight:normal; background:url(/work/eyaPc/images/main/bul01.gif) no-repeat 0 9px;}
+.mainNews td{ padding:3px 0px 3px 0px; text-align:right }
+
+.pcSch{ background:url(/work/eyaPc/images/main/pcSchBg.gif) no-repeat; width:196px; height:67px; position:relative; margin-bottom:15px;}
+.pcSch .sch{ position:absolute; left:10px; top:38px;}
+.pcSch  select{ border:#d2d2d2 solid 1px; padding:1px; width:50px;}
+.pcSch .keyword{ border:#e3e3e3 solid 1px; padding:2px; width:74px;}
+
+.pcHot{ margin-bottom:15px}
+.pcHot h3{ margin-bottom:5px;}
+.pcHot .img{ width:95px; height:72px; border:#CCCCCC solid 1px; padding:1px; float:left; margin-bottom:5px;}
+.pcHot .img a{}
+.pcHot .tit{ font-size:12px; font-weight:bold; float:right; width:90px; margin-bottom:5px;}
+.pcHot .info{ font-size:11px; float:right; width:85px; padding-right:5px;}
+
+
+
+

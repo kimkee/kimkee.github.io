@@ -1,0 +1,51 @@
+
+.globalTopWrap{ background:url(/work/edda/images/globalTop/globalTopBg.gif) #FFFFFF; height:34px; position:relative; z-index:30}
+.globalTop img{ border:none}
+.globalTop li{ list-style:none}
+.globalTop a{ text-decoration:none}
+.globalTop *{ margin:0px; padding:0px; font-size:12px; color:#666666}
+
+.globalTop { position:relative; width:980px; z-index:100; margin:auto }
+.globalTop .gamelink { position:absolute; left:0px; }
+.globalTop .gamelink li { float:left }
+.globalTop .family { position:absolute; left:324px; top:6px }
+.globalTop .familyLink { }
+.globalTop .familyLink a { font-size:11px; }
+.globalTop .familyLink .sel { border:#CCCCCC solid 1px; width:100px; padding:3px; background:url(/work/edda/images/globalTop/globalTopSelect.gif) no-repeat right top #fcfcfb }
+.globalTop .familyLink .list { border:#CCCCCC solid 1px; width:106px; padding:0px; border-top:none; background:#fcfcfb }
+.globalTop .familyLink .list li { margin:0 }
+.globalTop .familyLink .list li a { width:102px; display:inline-block; padding:2px; margin:0 }
+.globalTop .familyLink .list li a:hover { background:#eaeaea ; color:#333333}
+.globalTop .banner { position:absolute; left:480px; }
+
+.globalTop .logInfo{ position:absolute; right:0; top:6px; height:17px; text-align:center}
+.globalTop .logInfo .left{ background:url(/work/edda/images/globalTop/globalTopLoinLeft.gif) no-repeat; width:5px; height:22px; font-size:0px; line-height:0px; position:absolute; left:0px; top:0px;}
+.globalTop .logInfo .ctn{ background:url(/work/edda/images/globalTop/globalTopLoinBg.gif) repeat-x; height:22px; font-size:11px; padding:5px 0 0 0px; color:#c5c4c4}
+.globalTop .logInfo .right{ background:url(/work/edda/images/globalTop/globalTopLoinRight.gif) no-repeat; width:5px; height:22px; font-size:0px; line-height:0px; position:absolute; right:0px; top:0px;}
+.globalTop .logInfo a{ font-size:11px;}
+
+.globalTop .logInfo .custPopWrap{ position:absolute; left:0px; top:17px;padding-top:10px;}
+.globalTop .logInfo .custPop{ border:#5a5a5a solid 2px; width:190px;  padding:7px 14px 5px; background:#FFFFFF}
+.globalTop .logInfo .custPop .arrow{ background:url(http://cs.enpang.com/images/globalTop/globalArrow.gif) no-repeat; width:7px; height:7px; position:absolute; right:30px; top:5px;}
+.globalTop .logInfo .custPop .custList{ border:none; width:100%; border-collapse:collapse}
+.globalTop .logInfo .custPop .custList th,
+.globalTop .logInfo .custPop .custList td{ border:none; line-height:14px; padding:3px 0px 3px; font-size:11px; background:url(/work/edda/images/globalTop/globalDotline.gif) repeat-x bottom; letter-spacing:-1px; text-align:left; font-weight:normal; color:#bbbbbb}
+.globalTop .logInfo .custPop .custList th{ width:78px;}
+.globalTop .logInfo .custPop .custList th strong{ font-weight:normal; padding-left:5px;  background:url(/work/edda/images/globalTop/globalBul1.gif) no-repeat 0 5px;}
+.globalTop .logInfo .custPop .custList th a{ color:#888888}
+.globalTop .logInfo .custPop .custList th a:link,
+.globalTop .logInfo .custPop .custList th a:visited,
+.globalTop .logInfo .custPop .custList th a:active{ color:#888888}
+.globalTop .logInfo .custPop .custList th a:hover{ color:#515151 !important; text-decoration:underline}
+.globalTop .logInfo .custPop .custList .txtColor1{ color:#ff8400 !important; font-size:11px;}
+.globalTop .logInfo .custPop .custList .noDot{background-image:none;}
+
+.globalTop .bannerBox{ width:224px; position:absolute; left:5px; top:32px;}
+.globalTop .bannerBox .arrow{ background:url(/work/edda/images/globalTop/globalTopArrow.gif) no-repeat; width:7px; height:5px; font-size:0px; line-height:0px; position:absolute; top:-4px;}
+.globalTop .bannerBox .top{ background:url(/work/edda/images/globalTop/globalTopBtop.gif) no-repeat; height:7px;  font-size:0px; line-height:0px;}
+.globalTop .bannerBox .ctn{ background:url(/work/edda/images/globalTop/globalTopBbg.gif) repeat-y; padding:0 7px;}
+.globalTop .bannerBox .bot{ background:url(/work/edda/images/globalTop/globalTopBbot.gif) no-repeat; height:7px;  font-size:0px; line-height:0px;}
+.globalTop .bannerBox .txt{ font-size:11px; padding:5px 0 0 0}
+
+
+

@@ -1,0 +1,69 @@
+/* CSS Document */
+
+.faqSchBox{ background:url(/work/eyaCs/faq/images/faqSchBg.gif) no-repeat; height:74px; position:relative; margin-bottom:30px;}
+.faqSchBox .sch{ position:absolute; left:23px; top:14px;}
+.faqSchBox .sch select{ width:100px;}
+.faqSchBox .sch .keyword{ border:#cdcdcd solid 1px; padding:2px; width:370px; margin-right:5px;}
+.faqSchBox .schWord{ padding:12px 0 0 0; width:500px; position:absolute; top:35px; left:130px;}
+.faqSchBox .schWord strong{ color:#d63c00; font-weight:normal}
+
+
+
+.faqList{ border:none; width:100%; border-top:#e1e1e0 solid 2px; margin-bottom:15px;}
+.faqList th{ border:none;  border-bottom:#dbdbdb solid 1px; padding:8px 3px 7px 3px; color:#686868; background:#f4f4f2; font-size:11px; }
+.faqList td{border:none; border-bottom:#e1e1e0 solid 1px; padding:8px 3px 7px 3px; text-align:center }
+
+.faqList .bNum{ font-size:11px; color:#999999}
+.faqList .bTit{ text-align:left; padding-left:10px;}
+.faqList .bTit strong{ margin-right:5px;}
+.faqList .bName{ font-size:12px;}
+.faqList .bDate{ font-size:10px; color:#999999; font-family:Verdana}
+.faqList .bHit{ font-size:10px; color:#999999; font-family:Verdana}
+.faqList .bStat{ font-size:11px; color:#999999}
+.faqList .bStat .new{ font-size:11px;}
+.faqList .bStat .ing{ font-size:11px; color:#f63507}
+.faqList .bStat .com{ font-size:11px; color:#3786e8}
+.faqList .reply .img{ float:left}
+.faqList .reply .msg{float:left; margin-left:7px; line-height:18px; margin-bottom:10px;}
+.faqList .reply .comt{ background:#f4f4f2; border:#e1e1e0 solid 1px;  width:560px; margin-left:22px; padding:12px 22px; margin-bottom:10px;}
+.faqList .reply .comt .info{ font-weight:bold; margin-bottom:8px;}
+.faqList .reply .comt .sel{ margin-bottom:8px;}
+.faqList .reply .comt .sel input{ width:13px; height:13px;}
+.faqList .reply .comt .sel label{ margin-right:10px; font-size:11px;}
+.faqList .reply .comt .textBox{ height:50px; margin-bottom:7px;}
+.faqList .reply .comt .textBox textarea{ border:#e1e1e0 solid 1px; width:483px; height:52px; float:left}
+.faqList .reply .comt .textBox .textNum{ font-size:11px; float:right; width:68px; color:#a1a1a1; margin-bottom:2px;}
+.faqList .reply .comt .textBox .textNum strong{ font-weight:normal; color:#f24927; margin:0}
+.faqList .reply .comt .textBox .btn{ float:right; padding-bottom:1px;}
+
+
+
+
+
+.faqSchResult{ height:20px; position:relative; background:url(/work/eyaCs/faq/images/bul01.gif) no-repeat 0 5px; z-index:1px;}
+.faqSchResult .msg{ position:absolute; left:0; top:0px; padding: 0 0 0 10px;}
+.faqSchResult .msg strong{font-size:11px;}
+.faqSchResult .btnReset{ position:absolute; right:0px; top:0px;}
+.faqSchResult .btnReset a{ font:11px Dotum; text-decoration:underline}
+
+.faqHelpMore{ background:url(/work/eyaCs/faq/images/helpMoreBg.gif) no-repeat; height:51px; position:relative; margin-top:40px}
+.faqHelpMore .msg{ position:absolute; left:15px; top:20px; font:11px Dotum;}
+.faqHelpMore .msg img{ margin-bottom:2px;}
+.faqHelpMore .btn{ position:absolute; right:10px; top:14px;} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

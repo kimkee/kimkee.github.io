@@ -1,0 +1,1 @@
+<div class="rollBanner"><a href="#"><img src="/work/edda/itemMall/images/EventBanner.gif" alt="" /></a></div>

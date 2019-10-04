@@ -1,0 +1,393 @@
+/* CSS Document */
+
+#csBody { background-color:#ffffff }
+#csWrap { background:url(/work/citibank/images/main/mainBg.jpg) repeat-x center top #ffffff }
+.csCenter{ width:988px; margin:auto; position:relative;}
+.mainCsArea{  width:910px; min-height:610px !important ; _height:610px !important ; padding-bottom:40px; position:relative; }
+.mainCsArea .leftArea{ float:left; width:170px;}
+.mainCsArea .rightArea{ float:right; width:718px;}
+
+.csHead{ position:relative; height:29px; width:740px;}
+.csHead .tit{ position:absolute; left:0; top:0}
+.csHead .btnHisBack{ position:absolute; right:0px; top:5px;}
+
+.csSubTopVisual{ margin-bottom:10px;}
+.csMainTopVisual{ margin-bottom:0px;}
+
+.csLeftMenu {margin-bottom:5px; width:160px;}
+.csLeftMenu ul{ padding:0px;}
+.csLeftMenu ul li{ padding:2px 0 0; border-bottom:#ebebeb solid 1px;}
+.csLeftMenu .bot{ background:url(/work/citibank/images/customer/csLeftMenuBot.gif) no-repeat; height:6px; font-size:0px; line-height:0px}
+.csLeftMenu ul li ul {background:none; padding-top:4px;}
+
+.csLeftMenu .menu li{ font-size:11px; padding:1px 1px 1px 12px; line-height:15px; width:100px; border:none !important; }
+.csLeftMenu img{ vertical-align:middle}
+
+.csLeftMenu .myTit{ margin-top:15px;}
+
+.csLeftMenu .menu{ padding:5px 10px 5px 2px !important;}
+
+.csMainCounsel{ float:left; width:370px; height:190px; overflow:hidden; position:relative}
+.csMainCounsel ul{ position:absolute; left:28px; top:107px; width:280px;}
+.csMainCounsel ul li{float:left; width:70px; padding:1px 1px 1px 12px ; background:url(/work/citibank/images/customer/mainQnaBul.gif) no-repeat 0 6px; line-height:20px; font-weight:bold;}
+.csMainCounsel ul li a{ color:#9f9f9f}
+
+
+.csMainNotice{ float:right; position:relative; width:370px; height:190px; overflow:hidden;}
+.csMainNotice .tit{}
+.csMainNotice .list{ position:absolute; left:19px; top:80px; width:311px; border:none; margin-left:10px; position:absolute;}
+.csMainNotice .list th,
+.csMainNotice .list td{border:none; font-size:11px; line-height:26px; padding:3px 3px 3px 8px; font-weight:normal; }
+.csMainNotice .list th{ text-align:left; background:url(/work/citibank/images/customer/mainNoticeBul.gif) no-repeat 0px 15px;}
+.csMainNotice .list th a{ font-size:12px;}
+.csMainNotice .list td{ text-align:right}
+
+.csMainOrder{ float:left; width:370px; overflow:hidden}
+
+.csMainFaq{ float:left; position:relative; width:370px; overflow:hidden}
+.csMainFaq .list{ position:absolute; left:68px; top:86px;}
+.csMainFaq .list li{ font-size:11px; line-height:28px; letter-spacing:-1px;}
+
+.csFaqList{border-bottom:#cbcbcb solid 1px;}
+.csFaqList ul .listQ{ padding:4px 10px 3px 40px; border-top:#ededed solid 1px; line-height:18px; font-size:11px; cursor:pointer; }
+.csFaqList ul .listQ strong{ margin-right:60px; font-weight:normal;}
+.csFaqList ul .listA{ display:none; padding:18px 10px 16px 25px;background:url(/work/citibank/images/customer/csFaqListDot.gif) repeat-x;  line-height:160%; font-size:11px;   }
+.csFaqList ul .listA img{vertical-align:middle}
+.csFaqList ul .listA p{ font-size:11px;}
+
+.faqTit{ font-weight:bold; color:#3196CE; padding:10px 0 5px 0}
+.csFaqListHead{ margin-bottom:-1px;}
+.csFaqList .uList{ padding-bottom:10px;}
+.csFaqList .uList li{ background:url(/work/citibank/images/main/bul1.gif) no-repeat 0 6px; padding:0px 0px 0px 8px  }
+
+
+
+.csFaqTable{ border:none; width:100%; border-top:#9b9b9b solid 2px;  border-left:#dedede solid 1px; margin-bottom:20px;}
+.csFaqTable p{ padding:2px 0}
+.csFaqTable img{vertical-align:middle;}
+.csFaqTable label{ margin-right:20px;}
+.csFaqTable th,
+.csFaqTable td{ padding:3px 10px; border:none; border-bottom:#dedede solid 1px; border-right:#dedede solid 1px; text-align:left; font-size:11px; line-height:20px;}
+.csFaqTable th{ background:#f4f4f4; text-align:left;}
+.csFaqTable input{ border:#e4e4e4 solid 1px; padding:1px; font-size:11px; color:#666}
+
+
+.orderTop{ margin-bottom:20px; margin-top:10px;}
+
+.orderTable1 img, 
+.orderTable2 img{vertical-align:middle}
+.orderTable2 p{padding:2px 0}
+.orderTable1{ width:100%; border:none; border-top:#d2d2d2 solid 2px; border-left:none; border-right:none; margin-bottom:20px;}
+.orderTable1 th,
+.orderTable1 td{ border:none; padding:8px 9px 7px 9px; border-bottom:#e4e4e4 solid 1px; }
+.orderTable1 th{ background:#ecf4f7; font-size:11px;}
+
+.orderFormTit{ padding:0px 0px 0px 0px; margin-bottom:10px; font-size:14px; font-weight:bold; color:#464646; margin-bottom:5px; margin-top:10px; }
+
+.orderTable2{ width:100%; border:none; border:#d2d2d2 solid 1px; border-left:none; border-right:none; margin-bottom:20px;}
+.orderTable2 th,
+.orderTable2 td{ border:none; padding:9px 12px 8px 12px; border-bottom:#e4e4e4 solid 1px; }
+.orderTable2 th{ background:#f2f2f2; font-size:11px; font-weight:bold;}
+.orderTable2 .th1{ background:#f2f2f2; font-size:11px; font-weight:bold;}
+.orderTable2 .csOrderPrint{ margin-left:80px;}
+
+.baketWishList img{vertical-align:middle}
+.baketWishList p{padding:1px 0}
+.baketWishList th{ text-align:left !important}
+
+.csCounTab{ background:url(/work/citibank/images/customer/csCounTabBg.gif) repeat-x; height:41px; width:740px;}
+.csCounTab li{ float:left; margin-right:2px;}
+.csCounTab .gap{ margin-left:10px;}
+
+.csCounSelTop{ margin-bottom:20px;}
+.csCounDayOpt{ background:url(/work/citibank/images/customer/CounDayBg.gif) no-repeat; padding:12px 20px 13px 81px; font-size:11px; margin-bottom:20px;}
+.csCounDayOpt .tit{margin-right:10px}
+.csCounDayOpt img{ vertical-align:middle}
+
+
+.bbsWriteCoun{ border-right:#e3e3e3 solid 1px; border-left:#e3e3e3 solid 1px !important;}
+.bbsWriteCoun th,
+.bbsWriteCoun td{border-right:#e3e3e3 solid 1px !important;border-bottom:#e3e3e3 solid 1px;}
+
+.counTable{ border:none; width:100%;}
+.counTable th,
+.counTable td{padding:8px 3px 8px 3px; border-bottom:#e3e3e3 solid 1px; font-size:11px; text-align:center;}
+.counTable th{ background:#f3f3f3; font-size:11px;}
+.counTable .t1{ width:60px;}
+.counTable .t2{ width:100px;}
+.counTable .t3{}
+.counTable .t4{ width:110px;}
+.counTable .t5{ width:100px;}
+.counTable .t6{ width:100px;}
+.counTable .t7{ width:100px;}
+.counTableTop{ border-top:#e7e7e7 solid 1px;}
+
+.counHead{ height:12px; padding:5px 5px}
+.counHead .tit{ float:left; font-weight:bold; margin-bottom:5px;}
+.counHead .btn{float:right}
+
+.counTableVeiw{ border:none; width:734px;}
+.counTableVeiw img{vertical-align:middle}
+.counTableVeiw th,
+.counTableVeiw td{ border:none; padding:8px 7px 7px 7px ; border-bottom:#e7e7e7 solid 1px;}
+.counTableVeiw th{ background:#f2f2f2; font-size:11px;}
+
+.counTableVeiw2{ border-top:#e7e7e7 solid 1px;}
+
+.counReplyBox{ border:#efefef solid 3px; display:none;}
+
+
+.counTableNew{}
+.counTableNew{ border:none; width:100%; font:12px Dotum;}
+.counTableNew thead tr{ background:url(/work/citibank/images/customer/hImgBar.gif) no-repeat; height:30px;}
+.counTableNew thead th{ border:none; padding:0px 7px 1px; height:26px; line-height:16px; font-size:11px; background:url(/work/citibank/images/customer/hImgBar.gif) no-repeat -5px;}
+.counTableNew thead th.left{ background:url(/work/citibank/images/customer/hImgBar.gif) no-repeat 0px;}
+.counTableNew thead th.right{ background:url(/work/citibank/images/customer/hImgBar.gif) no-repeat right 0px;}
+.counTableNew tbody tr{}
+.counTableNew tbody tr.bgNone{ background:none}
+.counTableNew tbody td{ border:none; padding:3px 3px 2px 3px; text-align:center; line-height:20px; border-bottom:#ededed solid 1px; font-size:11px; color:#999999}
+.counTableNew .bNum{  font-family:Tahoma;padding:4px 0px 3px 0;}
+.counTableNew .bTit{ text-align:left;}
+.counTableNew .bTit a,
+.counTableNew .bTit strong a{color:#999999}
+.counTableNew .bName{ font-family:Dotum;}
+.counTableNew .bDate{  font-family:Tahoma;}
+.counTableNew .bHit{ font-family:Tahoma;}
+.counTableNew .comCount{ font-size:10px; font-family:Tahoma; font-weight:bold; color:#999999; padding-left:18px; padding-right:4px; display:inline-block; background:url(/work/lunaPlus/_board/images/icoComent.gif) no-repeat 4px 4px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.csCouponList{}
+.csCouponList th{ padding:6px 3px 5px 3px !important; border-bottom:1px solid #cccccc !important;}
+.csCouponList td{ padding:15px 3px !important;}
+
+
+.counBot{margin-bottom:20px;}
+.counTableIn{width:700px; margin-bottom:0px; border-left:#e3e3e3 solid 1px;}
+
+.deliveryTable{}
+.deliveryTable{ border:none; width:100%; border-top:#e3e3e3 solid 2px; border-left:#e3e3e3 solid 1px;  margin-bottom:20px}
+.deliveryTable th,
+.deliveryTable td{padding:8px 10px 8px 10px; border-bottom:#e3e3e3 solid 1px; border-right:#e3e3e3 solid 1px; font-size:11px; font-weight:normal;}
+.deliveryTable th{ background:#f3f3f3; font-size:11px;}
+
+.csRecentList{ border-top:#9b9b9b solid 2px; margin-bottom:20px;}
+.csRecentList .bImg{ width:70px;}
+.csRecentList .bName{}
+.csRecentList .bIco{ width:100px; text-align:left;}
+.csRecentList .bPrice{ width:200px;}
+.csRecentList .grayBg{ background:#f4f4f4; padding:20px 0px; width:200px; text-align:center}
+.csRecentList img{vertical-align:middle}
+.csRecentList td{ padding:5px !important;}
+.csRecentList p{ padding:1px 0;}
+
+
+.csRecentListInfo{border: 1px solid #EDEDED; padding:15px;}
+.csRecentListInfo .tit{ font-weight:bold; margin-bottom:5px;}
+.csRecentListInfo .uList li{ background:url(/work/citibank/images/main/bul1.gif) no-repeat 0 6px; padding-left:5px; line-height:16px; font-size:11px;}
+
+
+.csAssRe{ padding:0px; text-align:left !important;}
+.csAssRe .head{ height:20px; padding:5px 10px; font-size:11px; background:#f9f9f9}
+.csAssRe .head .tit{ float:left}
+.csAssRe .head .date{ float:right}
+.csAssRe .ctn{ padding:10px; background:#f7faf1; font-size:11px; line-height:180%; border-bottom:#CCCCCC solid 1px;}
+
+.qnaGuideBox{ border:#e4e4e4 solid 2px; padding:15px;}
+.qnaGuideBox h4{ font-weight:bold; font-size:14px; color:#FF6633; margin-bottom:10px;}
+.qnaGuideBox p{ line-height:160%}
+.qnaGuideBox ul{}
+.qnaGuideBox ul li{ background:url(/work/citibank/images/customer/mainQnaBul.gif) no-repeat 0 6px; padding:1px 1px 1px 8px; line-height:16px; font-size:11px; }
+
+.csOrderCancelPop{ width:630px;}
+.csOrderCancelPop .head{ background:#3398cc; height:60px;}
+.csOrderCancelPop .head .tit{ float:left}
+.csOrderCancelPop .head .right{ float:right}
+.csOrderCancelPop .ctnBox{ padding:12px;}
+.csOrderCancelPop .ctnBox .title{ padding:1px 1px 1px 1px ; line-height:16px; margin-bottom:8px; font-weight:bold; }
+
+.csOrderCancelPop .orCancelList{ border:none; border-top:#cccccc solid 1px; width:100%;}
+.csOrderCancelPop .orCancelList th,
+.csOrderCancelPop .orCancelList td{ padding:5px 4px 4px 4px; text-align:center; line-height:18px; border-bottom:#ddd solid 1px;}
+.csOrderCancelPop .orCancelList th{ background:#f4f4f4; color:#333333}
+.csOrderCancelPop .orCancelList .bDate{}
+.csOrderCancelPop .orCancelList .bCode{}
+.csOrderCancelPop .orCancelList .bTit{ width:200px; text-align:left;}
+.csOrderCancelPop .orCancelList .bPrice{}
+.csOrderCancelPop .orCancelList .bEa{}
+.csOrderCancelPop .orCancelList .bPrice2{ font-weight:bold; color:#3399cc}
+
+
+.csOrderCancelPop .orderCancelPrice{ padding:15px 30px; background:#f6fcff; margin-bottom:20px; border-bottom:#bdbdbd solid 1px;}
+.csOrderCancelPop .orderCancelPrice .tList{ border:none; width:100%}
+.csOrderCancelPop .orderCancelPrice .tList th,
+.csOrderCancelPop .orderCancelPrice .tList td{ padding:4px; border:none; line-height:16px;}
+.csOrderCancelPop .orderCancelPrice .tList th{ text-align:right;}
+.csOrderCancelPop .orderCancelPrice .tList .t1{color:#ff7820; font-weight:bold; letter-spacing:-1px;}
+.csOrderCancelPop .orderCancelPrice .tList .t2{ text-align:right;}
+.csOrderCancelPop .orderCancelPrice .tList .t3{ font-weight:bold; }
+
+.orCancelListOpt{ border:none; border-top:#bababa solid 2px; width:100%; margin-bottom:15px;}
+.orCancelListOpt th,
+.orCancelListOpt td{ padding:10px 4px 9px 10px; text-align:left; border-bottom:#eeeeee solid 1px;}
+.orCancelListOpt th{ background:#f4f4f4; width:200px;}
+.orCancelListOpt input,
+.orCancelListOpt select{ border:#d4d4d4 solid 1px; padding:1px;}
+
+.csOrderCancelPop .btn{ text-align:center;}
+.csOrderCancelPop .btnList{ background:#f3ebe2; border-top:#ede3d8 solid 1px; padding:8px; width:600px;}
+
+.oderCancelComImg{ width:560px; margin:auto; padding:115px 0; border:#f4f4f4 solid 3px; text-align:center; margin-top:50px; margin-bottom:50px;}
+
+
+.csCouponPop{ width:640px;}
+.csCouponPop .head{background:url(/work/citibank/images/customer/csCouponTitBg.gif) repeat-x; height:60px; padding-left:20px;}
+.csCouponPop .head .tit{ float:left}
+.csCouponPop .head .right{ float:right}
+.csCouponPop .ctnBox{ padding:12px;}
+.csCouponPop .cpnSel { font-weight:bold; font-size:11px; margin-bottom:4px}
+.csCouponPop .cpnSel select{ width:280px;}
+.csCouponPop .cpnSch { height:32px; padding-bottom:10px;}
+.csCouponPop .cpnSch .sch{ width:251px; float:right; text-align:right; padding:6px 5px 5px 12px; line-height:16px; }
+.csCouponPop .cpnSch .sch .keyword{ border:#e4e4e4 solid 1px; padding:2px; width:180px; color:#3398cc; font-size:11px; font-weight:bold;}
+.csCouponPop .cpnTxt1{font-size:14px; color:#666666; margin-bottom:10px; font-weight:bold;}
+.csCouponPop .cpnPbox{ margin-bottom:10px;}
+.csCouponPop .cpnExImg{ padding-left:15px;}
+
+.csTaxformPop{ width:640px;}
+.csTaxformPop .head{ background:url(/work/citibank/images/customer/csTaxformTitBg.gif) repeat-x; height:60px; padding-left:20px;}
+.csTaxformPop .head .tit{ float:left}
+.csTaxformPop .head .right{ float:right}
+.csTaxformPop .ctnBox{ padding:12px;}
+.csTaxformPop .taxDisc{ font-size:11px; margin-bottom:10px;}
+
+
+.csTaxformList img{vertical-align:middle}
+.csTaxformList p{ padding:1px 0}
+.csTaxformList{ border:none; margin-bottom:10px; width:100%; border-top:#9b9b9b solid 1px;}
+.csTaxformList th,
+.csTaxformList td{ border:none; padding:8px 7px 7px 7px ; border-bottom:#dedede solid 1px; font-size:11px;}
+.csTaxformList th{ background:#f7f7f7; text-align:left; color:#333333; padding-left:20px;}
+.csTaxformList .chStar{ color:#FF3333;  font-family:Tahoma}
+.csTaxformList  input{ border:#dbdcde solid 1px;; padding:2px; background:#fff}
+.csTaxformList  textarea{ border:#dbdcde solid 1px; padding:3px; background:#fff; width:585px; height:260px;}
+.csTaxformList  .filed{ font-size:11px; padding:3px 3px 1px 0px; color:#505a62; margin-left:10px; }
+.csTaxformList{ margin-bottom:5px;}
+
+.csCounselFaq{ margin-bottom:20px;}
+.csCounselTit{ margin-bottom:3px;}
+.bbsWriteCsCounsel th{ background:#edf4f8}
+
+.csReceiptPop{ width:400px;}
+.csReceiptPop .head{}
+.csReceiptPop .ctnBox{ padding:12px;}
+.csReceiptPop .rBg{ margin:auto; width:362px;}
+
+
+
+
+
+/* 주문내역 확인레이어*/
+.csCounselPop{ display:none; width:600px; position:absolute; left:0px; top:20px;}
+.csCounselPop .top{ height:10px; font-size:0; line-height:0; background:url(/work/citibank/images/customer/csCounselPopTop.gif) no-repeat}
+.csCounselPop .bg{ padding:10px 13px 5px ;background:url(/work/citibank/images/customer/csCounselPopBg.gif) repeat-y}
+.csCounselPop .bot{ height:10px; font-size:0; line-height:0; background:url(/work/citibank/images/customer/csCounselPopBot.gif) no-repeat}
+.csCounselPop img{vertical-align:text-bottom}
+.csCounselPop .head{ height:25px; margin-bottom:3px}
+
+.csCounselPop .cpList{ border-top:#9b9b9b solid 1px; width:100%; margin-bottom:10px;}
+.csCounselPop p{ padding:1px 0;}
+
+.csCounselPop .cpList th,
+.csCounselPop .cpList td{ border:none; padding:5px 3px; text-align:center; font-size:11px; color:#666; line-height:16px; border-bottom:#cccccc solid 1px;}
+.csCounselPop .cpList th{background:#f4f4f4}
+.csCounselPop .cpList td{ border-bottom:#e1e1e1 solid 1px;}
+.csCounselPop .cpList .bTit{ text-align:left; width:200px;}
+.csCounselPop .cpList input,
+.csCounselPop .cpList select{ border:#c6d3e3 solid 1px; padding:1px; font-size:11px;}
+.csCounselPop .btnList{ padding:0}
+.csCounselPop .paginate{ padding:0px; margin:0;}
+
+
+.myorderInfoMsg{ margin-bottom:20px;}
+.myorderInfoMsg .tit{ background:url(/work/citibank/images/customer/myorderInfoBul.gif) no-repeat 0 4px; line-height:16px; font:bold 11px Dotum ; padding-left:8px; margin-bottom:4px;}
+.myorderInfoMsg .msg{ padding:0px 0px 0px 8px ; font-size:11px; line-height:18px;}
+.myorderInfoMsg .msg .btnImg{ vertical-align:middle;}
+.myorderInfo{ margin-bottom:20px;}
+
+.myorderInfoBox{ padding:20px 20px 0px 220px ; height:316px; margin-bottom:20px; background:url(/work/citibank/images/customer/myorderInfoBg.gif) no-repeat; font-size:11px;}
+.myorderInfoBox h4{font-size:11px; color:#666666; margin-bottom:10px; font-weight:bold;}
+.myorderInfoBox ul { margin-bottom:20px;}
+.myorderInfoBox ul li{ background:url(/work/citibank/images/main/basketBul01.gif) no-repeat 0 7px; padding:1px 1px 1px 8px;  line-height:18px; padding-bottom:5px;}
+
+.myorderTaxBox { border:#ededed solid 1px; padding:25px;}
+.myorderTaxBox h4{font-size:13px; color:#666666; margin-bottom:10px; font-weight:bold;}
+.myorderTaxBox ul { padding-left:17px;}
+.myorderTaxBox ul li{ list-style:decimal; padding:1px 1px 1px 0px; line-height:18px; padding-bottom:5px;}
+.myorderTaxBox ul ul { padding-left:0px;}
+.myorderTaxBox ul li li{ list-style:none; background:url(/work/citibank/images/main/basketBul01.gif) no-repeat 0 7px; padding:1px 1px 1px 8px;  line-height:18px; padding-bottom:5px;}
+
+.orderFormInfo{ padding-top:20px;}
+
+.bbsListOrder th{ padding:2px 3px !important;}
+.bbsListOrder td{ padding:12px 4px !important;}
+.bbsListOrder td p{padding:1px 0;}
+.bbsListOrder .bTit{ }
+
+.bbsListOrderS{ width:550px;}
+.bbsListOrderS td{ padding:3px 3px !important; font-size:11px !important; border-bottom:none !important;}
+.bbsListOrderS td p{font-size:11px; line-height:11px;}
+th .bbsListOrderS .bTit{ text-align:center; line-height:16px;}
+.bbsListOrderS .bTit{ text-align:left; line-height:16px;}
+.bbsListOrderS .bBtn{ width:80px;}
+
+
+.bbsListNew .bbsListOrderS{ border:none;}
+.bbsListNew .bbsListOrderS tr{ background:none !important; border:none; height:26px;}
+.bbsListNew .bbsListOrderS th{ background:none !important; border:none; line-height:14px; padding:0px !important; font-size:11px;}
+.bbsListNew .bbsListOrderS p{ font-size:11px;}
+.bbsListNew .bbsListOrderS .bTit{ width:270px;}
+.bbsListNew .bbsListOrderS .bBtn{ width:60px; *width:120px}
+.bbsListNew .bbsListOrderS .bBtn2{ width:80px; *width:120px}
+
+
+
+
+/* 
+
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

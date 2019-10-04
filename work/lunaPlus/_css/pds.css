@@ -1,0 +1,56 @@
+/* CSS Document */
+
+.downLoadBtn{  height:140px; padding:0px 0 0 20px; width:596px; overflow:hidden;  margin-bottom:5px;}
+.downLoadBtn ul{ display:inline-block;}
+.downLoadBtn ul li{ float:left; margin-right:19px;text-align:center; display:inline-block;}
+
+.artWorkWrap{ width:590px; overflow:hidden;}
+.artWorkWrap ul{padding:10px 0 10px 0px;border-bottom:#a6bde4 solid 1px; margin-bottom:10px; overflow:hidden; width:620px;}
+.artWorkBox{ width:182px; float:left; margin-right:22px; margin-bottom:35px;}
+.artWorkBox .img{padding:6px; margin-bottom:8px; background:url(/work/lunaPlus/pds/images/artWorkSSBg.gif) no-repeat;}
+.artWorkBox .img img{ vertical-align:text-bottom}
+.artWorkBox .info { height:23px;}
+.artWorkBox .info .tit{ float:left;  color:#5d5d5d; font-weight:bold; padding:3px 0px 0px 0px; height:18px; overflow:hidden; line-height:20px; text-align:center;}
+.artWorkBox .info .tit *{ color:#5d5d5d}
+.artWorkBox .info .btn{ float:right;}
+
+
+.moviePlayer{ background::#333333; position:relative; margin-bottom:30px;}
+.moviePlayer .player{ position:absolute; left:11px; top:11px;}
+.movieWrap{ width:590px; overflow:hidden; background:url(/work/lunaPlus/pds/images/movieWrapBg.gif) no-repeat;}
+.movieWrap ul{padding:30px 0 10px 34px;margin-bottom:10px; overflow:hidden; width:620px;}
+.movieBox{ width:152px; float:left; margin-right:32px; margin-bottom:35px;}
+.movieBox .img{padding:5px; margin-bottom:8px; background:url(/work/lunaPlus/pds/images/movieSSBg.gif) no-repeat;}
+.movieBox .img img{ vertical-align:text-bottom}
+.movieBox .info { height:23px;}
+.movieBox .info .tit{   color:#5d5d5d; font-weight:bold; padding:3px 0px 0px 0px; margin-bottom:10px; height:18px; line-height:20px; text-align:center;}
+.movieBox .info .tit *{ color:#5d5d5d}
+.movieBox .info .btn{ text-align:center;}
+
+/*.ssImgBig{ border:#000000 solid 1px; padding:5px; background:#1a2026; margin-bottom:10px; }
+
+.pssList{ background:#11171c; position:relative; padding:20px 0 15px 40px; width:576px;}
+.pssList .img{border:#000000 solid 1px; padding:1px; background:#1a2026; float:left; margin:0 10px 10px 0;}
+.pssList .btnSsLeft{ position:absolute; left:8px; top:84px;}
+.pssList .btnSsRight{ position:absolute; right:8px; top:84px;}
+
+.movieHead{ background:#111419; height:28px; margin-bottom:10px; position:relative;}
+.movieHead .tit{ position:absolute; left:10px; top:8px; font-size:11px; font-weight:bold;}
+.movieHead .date{ position:absolute; right:10px; top:8px; color:#505a62; font-size:10px; font-family:Tahoma;}
+.moviePlayer{background:url(/work/lunaPlus/pds/images/movieBg.gif) no-repeat #20292f; padding:7px; border:#141a20 solid 1px; margin-bottom:10px;}
+.movieList{ background:#11171c; padding:20px 0 20px 20px; width:596px; margin-bottom:20px;}
+.movieList .box{ width:135px; margin-right:12px; float:left;}
+.movieList .box .img{border:#000000 solid 1px; padding:2px; margin-bottom:7px;}
+.movieList .box .tit{ text-align:center; font-weight:bold; margin-bottom:7px;}
+.movieList .box .tit *{ color:#808181}
+.movieList .box .txt{ text-align:center; color:#4a5865; font-size:11px;}
+
+
+.wallTit{ margin-bottom:15px;}
+.wallWrap{ width:616px; overflow:hidden}
+.wallList{ width:630px; border-bottom:#2f373f solid 2px; margin-bottom:20px;}
+.wallList .box{ width:199px; margin-right:9px; text-align:center; float:left; margin-bottom:15px;}
+.wallList .box .img{border:#000000 solid 1px; padding:2px; background:#22282a; margin-bottom:6px; }
+.wallList .box .btn{ height:23px; display:inline-block;}
+.wallList .box .btn li{ float:left}
+.wallDotLine{background:url(/work/lunaPlus/pds/images/wallDot.gif) repeat-x; height:10px; line-height:1px; clear:both; margin-bottom:10px;}*/

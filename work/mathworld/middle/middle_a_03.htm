@@ -1,0 +1,914 @@
+<HTML><!-- #BeginTemplate "/Templates/main.dwt" -->
+<HEAD>
+<!-- #BeginEditable "doctitle" --> 
+<TITLE>◈ Mathworld ◈</TITLE>
+<!-- #EndEditable --> 
+<meta http-equiv="Content-Type" content="text/html; charset=">
+<link rel="stylesheet" href="../inc/style.css" type="text/css">
+<script language="JavaScript">
+<!--
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_showHideLayers() { //v3.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" background="../img_main/body_back.gif" leftmargin="20" topmargin="20" marginwidth="20" marginheight="20">
+<table width="727" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td> 
+      <table width="727" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="1"><a href="../index.htm"><img src="../img_main/logo.gif" width="189" height="46" border="0"></a></td>
+          <td width="359" background="../img_main/top_back.gif">&nbsp;</td>
+          <td width="1" align="right"><img src="../img_main/top_right.gif" width="465" height="46"></td>
+        </tr>
+      </table>
+      <table width="727" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="1"><img src="../img_main/top2_left.gif" width="9" height="36"></td>
+          <td align="right" background="../img_main/top2_back.gif"> 
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="250"> 
+                  <DIV id=Clock style="position: absolute; top: 73px; left: 49px; color: #ffffff; font-family: Arial,굴림; font-size: 7point; width: 166px; height: 9px"> 
+                  </DIV>
+                  <script language=javascript src="../inc/time.js"></script>
+                </td>
+                <td width="1"> 
+                  <map name="Map"> 
+                    <area shape="rect" coords="335,6,373,24" href="../body05/body05_1.htm"> 
+                    <area shape="rect" coords="379,6,433,24" href="../body05/body05_1.htm">
+                    <area shape="rect" coords="253,6,329,23" href="../body04/body04_1.htm">
+                    <area shape="rect" coords="192,6,252,24" href="../body03/body03_1.htm">
+                    <area shape="rect" coords="120,6,189,24" href="../body02/body02_1.htm">
+                    <area shape="rect" coords="63,6,119,24" href="../body01/body01_1.htm">
+                    <area shape="rect" coords="8,6,64,24" href="../index.htm">
+                  </map>
+                </td>
+                <td width="1"><img src="../img_main/top2_menu_a.gif" width="21" height="36"></td>
+                <td width="1"><img src="../img_main/top2_menu_b.gif" width="441" height="36" usemap="#Map" border="0"></td>
+                <td align="right" width="1"><img src="../img_main/top2_menu_c.gif" width="26" height="36"></td>
+              </tr>
+            </table>
+          </td>
+          <td width="1" align="right"><img src="../img_main/top2_right.gif" width="10" height="36"></td>
+        </tr>
+      </table>
+      <table width="727" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="1"><img src="../img_main/top3_left.gif" width="9" height="31"></td>
+          <td background="../img_main/top3_back.gif" valign="top"> 
+            <table width="706" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="84" align="center"><img src="../img_main/id.gif" width="65" height="31"></td>
+                <td width="74"> 
+                  <input type="text" name="textfield" size="8" maxlength="12" class="form01">
+                </td>
+                <td width="65"><img src="../img_main/pass.gif" width="57" height="31"></td>
+                <td width="74"> 
+                  <input type="password" name="textfield2" size="8" maxlength="12" class="form01">
+                </td>
+                <td width="19"> 
+                  <input type="checkbox" name="checkbox" value="checkbox">
+                </td>
+                <td width="41"><img src="../img_main/save.gif" width="27" height="19"> 
+                </td>
+                <td width="79"><a href="#"><img src="../img_main/login.gif" width="56" height="19" border="0"></a></td>
+                <td width="129"><a href="#"><img src="../img_main/join.gif" width="78" height="19" border="0"></a></td>
+                <td width="141" align="right"><a href="../body06/body06_1.htm"><img src="../img_main/link.gif" width="117" height="21" border="0"></a></td>
+              </tr>
+            </table>
+          </td>
+          <td align="right" width="1"><img src="../img_main/top3_right.gif" width="10" height="31"></td>
+        </tr>
+      </table>
+      <table width="727" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="150" align="right" background="../img_main/left_back.gif" valign="top" bgcolor="#FFFFFF"> 
+            <table width="138" border="0" cellspacing="0" cellpadding="0" onMouseOut="MM_showHideLayers('m1','','hide','m2','','hide','m3','','hide','h1','','hide','h2','','hide','h3','','hide')">
+              <tr> 
+                <td height="20"> 
+                  <div id="m1" style="position:absolute; left:160px; top:189px; width:131px; height:68px; z-index:1; visibility: hidden"> 
+                    <table border="0" cellspacing="1" cellpadding="2" bgcolor="#999999" width="125"  onMouseOut="MM_showHideLayers('m1','','hide')" onMouseOver="MM_showHideLayers('m1','','show')">
+                      <tr> 
+                        <td onMouseOver="this.style.backgroundColor='#ffffff'" 
+                onMouseOut="this.style.backgroundColor='#F0F0F0'" bgcolor="#f0f0f0" height="21" valign="bottom">&nbsp;&nbsp;<a href="middle_a_01.htm">개념원리강의</a></td>
+                      </tr>
+                      <tr> 
+                        <td onMouseOver="this.style.backgroundColor='#ffffff'" 
+                onMouseOut="this.style.backgroundColor='#F0F0F0'" bgcolor="#f0f0f0" height="21" valign="bottom">&nbsp;&nbsp;<a href="middle_a_02.htm">학교 
+                          기출문제 강의</a></td>
+                      </tr>
+                      <tr> 
+                        <td onMouseOver="this.style.backgroundColor='#ffffff'" 
+                onMouseOut="this.style.backgroundColor='#F0F0F0'" bgcolor="#f0f0f0" height="21" valign="bottom">&nbsp;&nbsp;<a href="middle_a_03.htm">교과서 
+                          해설강의</a></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div id="m2" style="position:absolute; left:160px; top:212px; width:131px; height:68px; z-index:2; visibility: hidden"> 
+                    <table border="0" cellspacing="1" cellpadding="2" bgcolor="#999999" width="125" onMouseOver="MM_showHideLayers('m2','','show')" onMouseOut="MM_showHideLayers('m2','','hide')">
+                      <tr> 
+                        <td onMouseOver="this.style.backgroundColor='#ffffff'" 
+                onMouseOut="this.style.backgroundColor='#F0F0F0'" bgcolor="#f0f0f0" height="21" valign="bottom">&nbsp;&nbsp;<a href="middle_b_01.htm">개념원리강의</a></td>
+                      </tr>
+                      <tr> 
+                        <td onMouseOver="this.style.backgroundColor='#ffffff'" 
+                onMouseOut="this.style.backgroundColor='#F0F0F0'" bgcolor="#f0f0f0" height="21" valign="bottom">&nbsp;&nbsp;<a href="middle_b_02.htm">학교 
+                          기출문제 강의</a></td>
+                      </tr>
+                      <tr> 
+                        <td onMouseOver="this.style.backgroundColor='#ffffff'" 
+                onMouseOut="this.style.backgroundColor='#F0F0F0'" bgcolor="#f0f0f0" height="21" valign="bottom">&nbsp;&nbsp;<a href="middle_b_03.htm">교과서 
+                          해설강의</a></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div id="m3" style="position:absolute; left:160px; top:235px; width:130px; height:93px; z-index:3; visibility: hidden"> 
+                    <table border="0" cellspacing="1" cellpadding="2" bgcolor="#999999" width="125" onMouseOver="MM_showHideLayers('m3','','show')" onMouseOut="MM_showHideLayers('m3','','hide')">
+                      <tr> 
+                        <td onMouseOver="this.style.backgroundColor='#ffffff'" 
+                onMouseOut="this.style.backgroundColor='#F0F0F0'" bgcolor="#f0f0f0" height="21" valign="bottom">&nbsp;&nbsp;<a href="middle_c_01.htm">개념원리강의</a></td>
+                      </tr>
+                      <tr> 
+                        <td onMouseOver="this.style.backgroundColor='#ffffff'" 
+                onMouseOut="this.style.backgroundColor='#F0F0F0'" bgcolor="#f0f0f0" height="21" valign="bottom">&nbsp;&nbsp;<a href="middle_c_02.htm">학교 
+                          기출문제 강의</a></td>
+                      </tr>
+                      <tr> 
+                        <td onMouseOver="this.style.backgroundColor='#ffffff'" 
+                onMouseOut="this.style.backgroundColor='#F0F0F0'" bgcolor="#f0f0f0" height="21" valign="bottom">&nbsp;&nbsp;<a href="middle_c_03.htm">교과서 
+                          해설강의</a></td>
+                      </tr>
+                      <tr>
+                        <td onMouseOver="this.style.backgroundColor='#ffffff'" 
+                onMouseOut="this.style.backgroundColor='#F0F0F0'" bgcolor="#f0f0f0" height="21" valign="bottom">&nbsp;&nbsp;<a href="middle_c_04.htm">특목고 
+                          대비강의</a></td>
+                      </tr>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+              <tr> 
+                <td><img src="../img_main/mid_menu.gif" width="130" height="31"></td>
+              </tr>
+              <tr> 
+                <td><img src="../img_main/mid_menu_0.gif" width="130" height="4"></td>
+              </tr>
+              <tr> 
+                <td><a href="middle_a.htm" onMouseOver="MM_showHideLayers('m1','','show','m2','','hide','m3','','hide','h1','','hide','h2','','hide','h3','','hide')"><img src="../img_main/mid_menu_1.gif" width="130" height="23" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a href="middle_b.htm" onMouseOver="MM_showHideLayers('m1','','hide','m2','','show','m3','','hide','h1','','hide','h2','','hide','h3','','hide')"><img src="../img_main/mid_menu_2.gif" width="130" height="23" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a href="middle_c.htm" onMouseOver="MM_showHideLayers('m1','','hide','m2','','hide','m3','','show','h1','','hide','h2','','hide','h3','','hide')"><img src="../img_main/mid_menu_3.gif" width="130" height="23" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a href="middle_d.htm"><img src="../img_main/mid_menu_4.gif" width="130" height="23" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a href="middle_e.htm"><img src="../img_main/mid_menu_5.gif" width="130" height="23" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td height="20"> 
+                  <div id="h1" style="position:absolute; left:160px; top:359px; width:131px; height:138px; z-index:4; visibility: hidden"> 
+                    <table border="0" cellspacing="1" cellpadding="2" bgcolor="#999999" width="125" onMouseOver="MM_showHideLayers('h1','','show')" onMouseOut="MM_showHideLayers('h1','','hide')">
+                      <tr> 
+                        <td onMouseOver="this.style.backgroundColor='#ffffff'" 
+                onMouseOut="this.style.backgroundColor='#F0F0F0'" bgcolor="#f0f0f0" height="21" valign="bottom">&nbsp;&nbsp;<a href="../high/high_a_01.htm">개념원리강의</a></td>
+                      </tr>
+                      <tr> 
+                        <td onMouseOver="this.style.backgroundColor='#ffffff'" 
+                onMouseOut="this.style.backgroundColor='#F0F0F0'" bgcolor="#f0f0f0" height="21" valign="bottom">&nbsp;&nbsp;<a href="../high/high_a_02.htm">학교 
+                          기출문제 강의</a></td>
+                      </tr>
+                      <tr> 
+                        <td onMouseOver="this.style.backgroundColor='#ffffff'" 
+                onMouseOut="this.style.backgroundColor='#F0F0F0'" bgcolor="#f0f0f0" height="21" valign="bottom">&nbsp;&nbsp;<a href="../high/high_a_03.htm">교과서 
+                          해설강의</a></td>
+                      </tr>
+                      <tr> 
+                        <td onMouseOver="this.style.backgroundColor='#ffffff'" 
+                onMouseOut="this.style.backgroundColor='#F0F0F0'" bgcolor="#f0f0f0" height="21" valign="bottom">&nbsp;&nbsp;<a href="../high/high_a_04.htm">참고서 
+                          해설강의</a></td>
+                      </tr>
+                      <tr> 
+                        <td onMouseOver="this.style.backgroundColor='#ffffff'" 
+                onMouseOut="this.style.backgroundColor='#F0F0F0'" bgcolor="#f0f0f0" height="21" valign="bottom">&nbsp;&nbsp;<a href="../high/high_a_05.htm">모의고사 
+                          해설강의</a></td>
+                      </tr>
+                      <tr> 
+                        <td onMouseOver="this.style.backgroundColor='#ffffff'" 
+                onMouseOut="this.style.backgroundColor='#F0F0F0'" bgcolor="#f0f0f0" height="21" valign="bottom">&nbsp;&nbsp;<a href="../high/high_a_06.htm">수능 
+                          쪽집게강의</a></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div id="h2" style="position:absolute; left:160px; top:382px; width:131px; height:138px; z-index:5; visibility: hidden"> 
+                    <table border="0" cellspacing="1" cellpadding="2" bgcolor="#999999" width="125" onMouseOver="MM_showHideLayers('h2','','show')" onMouseOut="MM_showHideLayers('h2','','hide')">
+                      <tr> 
+                        <td onMouseOver="this.style.backgroundColor='#ffffff'" 
+                onMouseOut="this.style.backgroundColor='#F0F0F0'" bgcolor="#f0f0f0" height="21" valign="bottom">&nbsp;&nbsp;<a href="../high/high_b_01.htm">개념원리강의</a></td>
+                      </tr>
+                      <tr> 
+                        <td onMouseOver="this.style.backgroundColor='#ffffff'" 
+                onMouseOut="this.style.backgroundColor='#F0F0F0'" bgcolor="#f0f0f0" height="21" valign="bottom">&nbsp;&nbsp;<a href="../high/high_b_02.htm">학교 
+                          기출문제 강의</a></td>
+                      </tr>
+                      <tr> 
+                        <td onMouseOver="this.style.backgroundColor='#ffffff'" 
+                onMouseOut="this.style.backgroundColor='#F0F0F0'" bgcolor="#f0f0f0" height="21" valign="bottom">&nbsp;&nbsp;<a href="../high/high_b_03.htm">교과서 
+                          해설강의</a></td>
+                      </tr>
+                      <tr> 
+                        <td onMouseOver="this.style.backgroundColor='#ffffff'" 
+                onMouseOut="this.style.backgroundColor='#F0F0F0'" bgcolor="#f0f0f0" height="21" valign="bottom">&nbsp;&nbsp;<a href="../high/high_b_04.htm">참고서 
+                          해설강의</a></td>
+                      </tr>
+                      <tr> 
+                        <td onMouseOver="this.style.backgroundColor='#ffffff'" 
+                onMouseOut="this.style.backgroundColor='#F0F0F0'" bgcolor="#f0f0f0" height="21" valign="bottom">&nbsp;&nbsp;<a href="../high/high_b_05.htm">모의고사 
+                          해설강의</a></td>
+                      </tr>
+                      <tr> 
+                        <td onMouseOver="this.style.backgroundColor='#ffffff'" 
+                onMouseOut="this.style.backgroundColor='#F0F0F0'" bgcolor="#f0f0f0" height="21" valign="bottom">&nbsp;&nbsp;<a href="../high/high_b_06.htm">수능 
+                          쪽집게강의</a></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div id="h3" style="position:absolute; left:160px; top:405px; width:131px; height:116px; z-index:6; visibility: hidden" onMouseOut="MM_showHideLayers('h3','','hide')" onMouseOver="MM_showHideLayers('h3','','show')"> 
+                    <table border="0" cellspacing="1" cellpadding="2" bgcolor="#999999" width="125">
+                      <tr> 
+                        <td onMouseOver="this.style.backgroundColor='#ffffff'" 
+                onMouseOut="this.style.backgroundColor='#F0F0F0'" bgcolor="#f0f0f0" height="21" valign="bottom">&nbsp;&nbsp;<a href="../high/high_c_01.htm">개념원리강의</a></td>
+                      </tr>
+                      <tr> 
+                        <td onMouseOver="this.style.backgroundColor='#ffffff'" 
+                onMouseOut="this.style.backgroundColor='#F0F0F0'" bgcolor="#f0f0f0" height="21" valign="bottom">&nbsp;&nbsp;<a href="../high/high_c_02.htm">학교 
+                          기출문제 강의</a></td>
+                      </tr>
+                      <tr> 
+                        <td onMouseOver="this.style.backgroundColor='#ffffff'" 
+                onMouseOut="this.style.backgroundColor='#F0F0F0'" bgcolor="#f0f0f0" height="21" valign="bottom">&nbsp;&nbsp;<a href="../high/high_c_03.htm">참고서 해설강의</a></td>
+                      </tr>
+                      <tr> 
+                        <td onMouseOver="this.style.backgroundColor='#ffffff'" 
+                onMouseOut="this.style.backgroundColor='#F0F0F0'" bgcolor="#f0f0f0" height="21" valign="bottom">&nbsp;&nbsp;<a href="../high/high_c_04.htm">모의고사 
+                          해설강의</a></td>
+                      </tr>
+                      <tr> 
+                        <td onMouseOver="this.style.backgroundColor='#ffffff'" 
+                onMouseOut="this.style.backgroundColor='#F0F0F0'" bgcolor="#f0f0f0" height="21" valign="bottom">&nbsp;&nbsp;<a href="../high/high_c_05.htm">수능 
+                          쪽집게강의&nbsp;</a>&nbsp;</td>
+                      </tr>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+              <tr> 
+                <td><img src="../img_main/high_menu.gif" width="130" height="31"></td>
+              </tr>
+              <tr> 
+                <td><img src="../img_main/high_menu_0.gif" width="130" height="5"></td>
+              </tr>
+              <tr> 
+                <td><a href="../high/high_a.htm" onMouseOver="MM_showHideLayers('m1','','hide','m2','','hide','m3','','hide','h1','','show','h2','','hide','h3','','hide')"><img src="../img_main/high_menu_1.gif" width="130" height="23" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a href="../high/high_b.htm" onMouseOver="MM_showHideLayers('m1','','hide','m2','','hide','m3','','hide','h1','','hide','h2','','show','h3','','hide')"><img src="../img_main/high_menu_2.gif" width="130" height="23" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a href="../high/high_c.htm" onMouseOver="MM_showHideLayers('m1','','hide','m2','','hide','m3','','hide','h1','','hide','h2','','hide','h3','','show')"><img src="../img_main/high_menu_3.gif" width="130" height="23" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a href="../high/high_d.htm"><img src="../img_main/high_menu_4.gif" width="130" height="23" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a href="../high/high_e.htm"><img src="../img_main/high_menu_5.gif" width="130" height="23" border="0"></a></td>
+              </tr>
+            </table>
+            <br>
+            <table width="115" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td><a href="ftp://ftp.atfile.com/msie/5.5sp2/kr/k_msie55sp2.zip" target="_blank"><img src="../img_main/ie55.gif" width="102" height="27" border="0" alt="인터넷익스플로러5.5"></a></td>
+              </tr>
+              <tr> 
+                <td><img src="../img_main/spacer.gif" width="100" height="3"></td>
+              </tr>
+              <tr> 
+                <td><a href="ftp://ftp.atfile.com/Acrobat/5.0.1/ar500kor.exe" target="_blank"><img src="../img_main/ar50.gif" width="102" height="27" border="0" alt="아크로뱃리더5.01"></a></td>
+              </tr>
+              <tr> 
+                <td><img src="../img_main/spacer.gif" width="100" height="3"></td>
+              </tr>
+              <tr> 
+                <td><a href="http://www.kweather.co.kr/" target="_blank"><img src="../img_main/wether.gif" width="102" height="26" border="0" alt="기상정보"></a></td>
+              </tr>
+              <tr> 
+                <td><img src="../img_main/spacer.gif" width="100" height="3"></td>
+              </tr>
+              <tr> 
+                <td><a href="http://www.englishwork.com/" target="_blank"><img src="../img_main/eng.gif" width="102" height="27" border="0" alt="잉글리쉬워크"></a></td>
+              </tr>
+              <tr> 
+                <td><img src="../img_main/spacer.gif" width="100" height="3"></td>
+              </tr>
+              <tr> 
+                <td><a href="http://www.mathworld.co.kr/" target="_blank"><img src="../img_main/bburi.gif" width="102" height="27" border="0" alt="뿌리학원"></a></td>
+              </tr>
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+            </table>
+            <br>
+            <br>
+          </td>
+          <td background="../img_main/main_back.gif" valign="top" width="577" bgcolor="#FFFFFF"><!-- #BeginEditable "center" --> 
+            <table width="577" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="577"><img src="m1_top.gif" width="569" height="85"></td>
+              </tr>
+            </table>
+            <table width="518" border="0" cellspacing="0" cellpadding="0" align="center">
+              <tr> 
+                <td width="518"><br>
+                </td>
+              </tr>
+              <tr> 
+                <td width="518">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td width="518"><img src="m1_menu03.gif" width="518" height="37" border="0" vspace="5"></td>
+              </tr>
+              <tr> 
+                <td width="518">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td width="518" valign="top" align="right">&nbsp;
+                  <TABLE cellSpacing=0 cellPadding=0 width="500" 
+                  bgColor=#999999 border=0>
+                    <TR>
+                      <TD align=middle width="518"> 
+                        <TABLE cellSpacing=1 cellPadding=2 width="100%" 
+                        align=center border=0 class="text01">
+                          <TR bgcolor="#f7f7f7" align="center"> 
+                            <TD width=134><NOBR>교과서</NOBR></TD>
+                            <TD width=157>단원명</TD>
+                            <TD width=193>강의명</TD>
+                          </TR>
+                          <TR bgcolor="#FFFFFF"> 
+                            <TD align=middle rowSpan=6 width="134">금성출판<BR>
+                              <BR>
+                              저자 :양승갑,외</TD>
+                            <TD width="157">&nbsp;1.집합과 자연수(7-가)</TD>
+                            <TD vAlign=top width="193"><NOBR>1.24쪽 연습문제</NOBR> 
+                              <BR>
+                              <NOBR>2.36쪽 연습문제</NOBR> <BR>
+                              <NOBR>3.46쪽 연습문제</NOBR> <BR>
+                              <NOBR>4.47쪽 단원평가</NOBR> <BR>
+                              <NOBR>5.49쪽 알아보기</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR> 
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;&nbsp;2.정수와 
+                              유리수(7-가)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>1.64쪽 
+                              연습문제</NOBR> <BR>
+                              <NOBR>2.84쪽 연습문제</NOBR> <BR>
+                              <NOBR>3.85쪽 단원평가</NOBR> <BR>
+                              <NOBR>4.87쪽 알아보기</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR> 
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;&nbsp;3.통계(7-나)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>04.단원평가문제(33쪽B)</NOBR> 
+                              <BR>
+                              <NOBR>01.연습문제(20쪽)</NOBR> <BR>
+                              <NOBR>02.연습문제(32쪽)</NOBR> <BR>
+                              <NOBR>03.단원평가(33쪽A)</NOBR> <BR>
+                              <NOBR>05.다시알아보기(34쪽)</NOBR> <BR>
+                              <NOBR>06.좀더알아보기(35쪽)</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR> 
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;&nbsp;4.도형의 
+                              기초(7-나)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>01. 
+                              연습문제(56쪽)</NOBR> <BR>
+                              <NOBR>02. 연습문제(74쪽)</NOBR> <BR>
+                              <NOBR>03. 단원평가문제(75쪽A)</NOBR> <BR>
+                              <NOBR>04. 단원평가문제(75쪽B)</NOBR> <BR>
+                              <NOBR>05. 다시알아보기(76쪽A)</NOBR> <BR>
+                              <NOBR>06. 다시알아보기(76쪽B)</NOBR> <BR>
+                              <NOBR>07. 좀더 알아보기(77쪽)</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR> 
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;&nbsp;5.도형의 
+                              성질(7-나)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>01. 
+                              연습문제(92쪽)</NOBR> <BR>
+                              <NOBR>02. 연습문제(107쪽)</NOBR> <BR>
+                              <NOBR>03. 단원평가문제(107쪽A)</NOBR> <BR>
+                              <NOBR>04. 단원평가문제(107쪽B)</NOBR> <BR>
+                              <NOBR>05. 다시 알아보기(108쪽)</NOBR> <BR>
+                              <NOBR>06. 좀더알아보기(109쪽)</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR> 
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;&nbsp;6.도형의 
+                              측정(7-나)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>01.연습문제(124쪽)</NOBR> 
+                              <BR>
+                              <NOBR>02.연습문제(138쪽)</NOBR> <BR>
+                              <NOBR>03.단원평가문제(139쪽A)</NOBR> <BR>
+                              <NOBR>04.단원평가문제(139B)</NOBR> <BR>
+                              <NOBR>05.다시알아보기(140쪽)</NOBR> <BR>
+                              <NOBR>06.좀더 알아보기(141쪽)</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR bgcolor="#FFFFFF"> 
+                            <TD align=middle rowSpan=8 width="134">디딤돌<BR>
+                              <BR>
+                              저자 : 이준열,장훈,최부림,남호영,이상은</TD>
+                            <TD width="157">&nbsp;1.집합과 자연수(7-가)</TD>
+                            <TD vAlign=top width="193"><NOBR>1.21쪽 연습문제</NOBR> 
+                              <BR>
+                              <NOBR>2.22쪽 집합보충</NOBR> <BR>
+                              <NOBR>3.33쪽 연습문제</NOBR> <BR>
+                              <NOBR>4.34쪽 보충.심화</NOBR> <BR>
+                              <NOBR>5.42쪽 연습문제</NOBR> <BR>
+                              <NOBR>6.43쪽 보충.심화</NOBR> <BR>
+                              <NOBR>7.44쪽 평가문제</NOBR> <BR>
+                              <NOBR>8.45쪽 평가문제</NOBR> <BR>
+                              <NOBR>9.46쪽 보충과정</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR> 
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;&nbsp;2.정수와 
+                              유리수(7-가)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>1.58쪽 
+                              연습문제</NOBR> <BR>
+                              <NOBR>2.59쪽 보충.심화</NOBR> <BR>
+                              <NOBR>3.80쪽 연습문제</NOBR> <BR>
+                              <NOBR>4.81쪽 보충.심화</NOBR> <BR>
+                              <NOBR>5.82쪽 평가문제</NOBR> <BR>
+                              <NOBR>6.83쪽 평가문제</NOBR> <BR>
+                              <NOBR>7.84쪽 보충과정</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR> 
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;&nbsp;3.문자와 
+                              식(7-가)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>01 
+                              연습문제(96쪽)</NOBR> <BR>
+                              <NOBR>02 보충.심화문제(97쪽)</NOBR> <BR>
+                              <NOBR>03 연습문제(104쪽)</NOBR> <BR>
+                              <NOBR>04 보충.심화문제(105쪽)</NOBR> <BR>
+                              <NOBR>05 단원종합문제(106쪽)</NOBR> <BR>
+                              <NOBR>06 단원평가문제(107쪽)</NOBR> <BR>
+                              <NOBR>07 단원보충과정(108쪽)</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR> 
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;&nbsp;4.일차방정식(7-가)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>01 
+                              연습문제(122쪽)</NOBR> <BR>
+                              <NOBR>02 보충.심화문제(123쪽)</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR> 
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;&nbsp;5.통계(7-나)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>1. 
+                              연습문제(16쪽)</NOBR> <BR>
+                              <NOBR>2. 보충.심화문제(17쪽)</NOBR> <BR>
+                              <NOBR>3. 연습문제(25쪽)</NOBR> <BR>
+                              <NOBR>4. 보충.심화문제(26쪽)</NOBR> <BR>
+                              <NOBR>5. 단원평가문제(27쪽)</NOBR> <BR>
+                              <NOBR>6. 단원평가문제(28쪽)</NOBR> <BR>
+                              <NOBR>7. 단원보충과정(29쪽)</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR> 
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;&nbsp;6.도형의기초(7-나)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>1. 
+                              연습문제(50쪽)</NOBR> <BR>
+                              <NOBR>2. 보충.심화문제(51쪽)</NOBR> <BR>
+                              <NOBR>3. 연습문제(66쪽)</NOBR> <BR>
+                              <NOBR>4. 보충.심화문제(67쪽)</NOBR> <BR>
+                              <NOBR>5. 단원평가문제(68쪽)</NOBR> <BR>
+                              <NOBR>6. 단원평가문제(69쪽)</NOBR> <BR>
+                              <NOBR>7. 단원보충과정(70쪽)</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR> 
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;&nbsp;7.도형의 
+                              성질(7-나)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>1. 
+                              연습문제(84쪽)</NOBR> <BR>
+                              <NOBR>2. 보충.심화문제(85쪽)</NOBR> <BR>
+                              <NOBR>3. 연습문제(94쪽)</NOBR> <BR>
+                              <NOBR>4. 보충.심화(95쪽)</NOBR> <BR>
+                              <NOBR>5. 단원평가문제(96쪽)</NOBR> <BR>
+                              <NOBR>6. 단원평가문제(97쪽)</NOBR> <BR>
+                              <NOBR>7. 단원보충과정(98쪽)</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR> 
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;&nbsp;8.도형의측정(7-나)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>1. 
+                              연습문제(113쪽)</NOBR> <BR>
+                              <NOBR>2. 보충.심화문제(114쪽)</NOBR> <BR>
+                              <NOBR>3. 연습문제(127쪽)</NOBR> <BR>
+                              <NOBR>4. 보충.심화문제(128쪽)</NOBR> <BR>
+                              <NOBR>5. 단원종합문제(129쪽)</NOBR> <BR>
+                              <NOBR>6. 단원평가문제(130쪽)</NOBR> <BR>
+                              <NOBR>7. 단원보충과정(131쪽)</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR bgcolor="#FFFFFF"> 
+                            <TD align=middle rowSpan=2 width="134">한성교육연구소<BR>
+                              <BR>
+                              저자 : 배종수,박종률,윤행원,유종광,김문환,민기열,박동익,우현철</TD>
+                            <TD width="157">&nbsp;1.집합과 자연수(7-가)</TD>
+                            <TD vAlign=top width="193"><NOBR>1.24쪽 알아보기</NOBR> 
+                              <BR>
+                              <NOBR>2.25쪽 알아보기</NOBR> <BR>
+                              <NOBR>3.26쪽 알아보기</NOBR> <BR>
+                              <NOBR>4.45쪽 알아보기</NOBR> <BR>
+                              <NOBR>5.46쪽 알아보기</NOBR> <BR>
+                              <NOBR>6.47쪽 알아보기</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR> 
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;&nbsp;2.정수와 
+                              유리수(7-가)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>1.60쪽 
+                              알아보기</NOBR> <BR>
+                              <NOBR>2.61쪽 알아보기</NOBR> <BR>
+                              <NOBR>3.62쪽 알아보기</NOBR> <BR>
+                              <NOBR>4.83쪽 알아보기</NOBR> <BR>
+                              <NOBR>5.84쪽 알아보기</NOBR> <BR>
+                              <NOBR>6.85쪽 알아보기</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR bgcolor="#FFFFFF"> 
+                            <TD align=middle rowSpan=6 width="134">두산<BR>
+                              <BR>
+                              저자 : 강옥기,정순영,이환철</TD>
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;1.집합과 자연수(7-가)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>1.25쪽 
+                              연습문제</NOBR> <BR>
+                              <NOBR>2.38쪽 연습문제</NOBR> <BR>
+                              <NOBR>3.48쪽 연습문제</NOBR> <BR>
+                              <NOBR>4.50쪽 단원마무리</NOBR> <BR>
+                              <NOBR>5.51쪽 단원마무리.발전문제</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR> 
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;&nbsp;2.정수와 
+                              유리수(7-가)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>1.65쪽 
+                              연습문제</NOBR> <BR>
+                              <NOBR>2.88쪽 연습문제</NOBR> <BR>
+                              <NOBR>3.90쪽 마무리및 보충문제</NOBR> <BR>
+                              <NOBR>4.91쪽 마무리및 발전문제</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR> 
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;&nbsp;3.통계(7-나)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>01. 
+                              연습문제(19쪽)</NOBR> <BR>
+                              <NOBR>02. 연습문제(31쪽)</NOBR> <BR>
+                              <NOBR>03. 단원마무리문제(34.35쪽)</NOBR> <BR>
+                              <NOBR>04. 보충발전문제(34.35쪽)</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR> 
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;&nbsp;4.기본도형과 
+                              작도(7-나)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>1. 
+                              연습문제(58쪽)-기본도형</NOBR> <BR>
+                              <NOBR>2. 연습문제(76쪽)-작도와 합동</NOBR> <BR>
+                              <NOBR>3. 단원마무리문제(78.79쪽)</NOBR> <BR>
+                              <NOBR>4. 보충.발전문제(78,79쪽)</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR> 
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;&nbsp;5.도형의 
+                              성질(7-나)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>01. 
+                              연습문제(93쪽)</NOBR> <BR>
+                              <NOBR>02. 연습문제(107쪽)</NOBR> <BR>
+                              <NOBR>03. 단원마무리문제(110.111쪽)</NOBR> <BR>
+                              <NOBR>04. 보충발전문제(110.111쪽)</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR> 
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;&nbsp;6.도형의 
+                              측정(7-나)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>01. 
+                              연습문제(125쪽)</NOBR> <BR>
+                              <NOBR>02. 연습문제(140쪽)</NOBR> <BR>
+                              <NOBR>03. 단원마무리문제(142.143쪽)</NOBR> <BR>
+                              <NOBR>04. 보충발전문제(142.143쪽)</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR bgcolor="#FFFFFF"> 
+                            <TD align=middle rowSpan=3 width="134">중앙교육 진흥연구소<BR>
+                              <BR>
+                              저자 : 강행고,이화영,박성기,박진석,이용완,한경연,이준홍,이혜련,송미현,박정숙</TD>
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;1.집합과 자연수(7-가)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>1.26쪽 
+                              기본.보충문제</NOBR> <BR>
+                              <NOBR>2.27쪽 연습문제</NOBR> <BR>
+                              <NOBR>3.41쪽 기본보충문제</NOBR> <BR>
+                              <NOBR>4.42쪽 연습문제</NOBR> <BR>
+                              <NOBR>5.49쪽 기본.보충문제</NOBR> <BR>
+                              <NOBR>6.50쪽 연습문제</NOBR> <BR>
+                              <NOBR>7.52쪽 종합문제</NOBR> <BR>
+                              <NOBR>8.53쪽 종합문제-발전문제</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR> 
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;&nbsp;2.정수와 
+                              유리수(7-가)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>1.67쪽 
+                              기본.보충문제</NOBR> <BR>
+                              <NOBR>2.68쪽 연습문제</NOBR> <BR>
+                              <NOBR>3.91쪽 기본 보충문제</NOBR> <BR>
+                              <NOBR>4.92쪽 연습문제</NOBR> <BR>
+                              <NOBR>5.94쪽 종합문제</NOBR> <BR>
+                              <NOBR>6.95쪽 종합문제</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR> 
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;&nbsp;3.통계(7-나)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>1. 
+                              기본.보충 학습(17쪽)</NOBR> <BR>
+                              <NOBR>2. 연습문제(18쪽)</NOBR> <BR>
+                              <NOBR>3. 기본 보충문제(27쪽)</NOBR> <BR>
+                              <NOBR>4. 연습문제(28쪽)</NOBR> <BR>
+                              <NOBR>5. 종합문제(29쪽)</NOBR> <BR>
+                              <NOBR>6. 종합문제(30쪽)</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR bgcolor="#FFFFFF"> 
+                            <TD align=middle width="134">블랙박스<BR>
+                              <BR>
+                              저자 : 고성은,김중희,최수일,강운중,박봉현,소준영 </TD>
+                            <TD width="157">&nbsp;1.수와 연산(7-가)</TD>
+                            <TD vAlign=top width="193"><NOBR>1.20쪽 평가문제</NOBR> 
+                              <BR>
+                              <NOBR>2.21쪽 보충,심화</NOBR> <BR>
+                              <NOBR>3.30쪽 평가문제</NOBR> <BR>
+                              <NOBR>4.31쪽 보충,심화</NOBR> <BR>
+                              <NOBR>5.43쪽 평가문제</NOBR> <BR>
+                              <NOBR>6.43쪽 보충,심화</NOBR> <BR>
+                              <NOBR>7 52쪽 평가문제</NOBR> <BR>
+                              <NOBR>8.53쪽 보충,심화</NOBR> <BR>
+                              <NOBR>9.70쪽 평가문제</NOBR> <BR>
+                              <NOBR>10.71쪽 보충,심화</NOBR> <BR>
+                              <NOBR>11.73쪽 종합문제</NOBR> <BR>
+                              <NOBR>12.74쪽 종합문제</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR bgcolor="#FFFFFF"> 
+                            <TD align=middle width="134">고려출판사<BR>
+                              <BR>
+                              저자 : 금종해,이만근,이미라,김영주 </TD>
+                            <TD width="157">&nbsp;1.수와 연산(7-가)</TD>
+                            <TD vAlign=top width="193"><NOBR>1.27쪽 내용확인문제</NOBR> 
+                              <BR>
+                              <NOBR>2.45쪽 내용확인문제</NOBR> <BR>
+                              <NOBR>3.57쪽 내용확인문제</NOBR> <BR>
+                              <NOBR>4.86쪽 내용확인문제</NOBR> <BR>
+                              <NOBR>5.86쪽 종합기초학습</NOBR> <BR>
+                              <NOBR>6.87쪽 종합확인문제</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR bgcolor="#FFFFFF"> 
+                            <TD align=middle rowSpan=2 width="134">대한교과서<BR>
+                              <BR>
+                            </TD>
+                            <TD width="157">&nbsp;1.집합과 자연수(7-가)</TD>
+                            <TD vAlign=top width="193"><NOBR>1.28쪽 연습문제</NOBR> 
+                              <BR>
+                              <NOBR>2.37쪽 연습문제</NOBR> <BR>
+                              <NOBR>3.45쪽 연습문제</NOBR> <BR>
+                              <NOBR>4.46쪽 끝나기전에</NOBR> <BR>
+                              <NOBR>5.47쪽 끝나기전에</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR> 
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;&nbsp;2.정수와 
+                              유리수(7-가)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>1.59쪽 
+                              연습문제</NOBR> <BR>
+                              <NOBR>2.67쪽 연습문제</NOBR> <BR>
+                              <NOBR>3.79쪽 연습문제</NOBR> <BR>
+                              <NOBR>4.80쪽 끝내기전에</NOBR> <BR>
+                              <NOBR>5.81쪽 끝내기전에</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR bgcolor="#FFFFFF"> 
+                            <TD align=middle rowSpan=6 width="134">금성교과서<BR>
+                              <BR>
+                              저자 : 조태근,임성모,정상권,이재학,이성재 </TD>
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;1.집합과 자연수(7-가)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>1.27쪽 
+                              연습문제</NOBR> <BR>
+                              <NOBR>2.35쪽 연습문제</NOBR> <BR>
+                              <NOBR>3 48쪽 연습문제</NOBR> <BR>
+                              <NOBR>4.49쪽 단원종합문제</NOBR> <BR>
+                              <NOBR>5.50쪽 단원종합문제</NOBR> <BR>
+                              <NOBR>6.51쪽 단원평가문제</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR> 
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;&nbsp;2.정수와 
+                              유리수(7-가)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>1.62쪽 
+                              연습문제</NOBR> <BR>
+                              <NOBR>2.79쪽 연습문제</NOBR> <BR>
+                              <NOBR>3.80쪽 단원종합문제</NOBR> <BR>
+                              <NOBR>4.81쪽 단원평가문제</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR> 
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;&nbsp;3.통계(7-나)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>01.연습문제(19쪽)</NOBR> 
+                              <BR>
+                              <NOBR>02.연습문제(29쪽)</NOBR> <BR>
+                              <NOBR>03.연습문제(30쪽)</NOBR> <BR>
+                              <NOBR>04.단원종합문제(31쪽)</NOBR> <BR>
+                              <NOBR>05.단원종합문제(32쪽)</NOBR> <BR>
+                              <NOBR>06.단원평가문제(33쪽)</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR> 
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;&nbsp;4.기본도형(7-나)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>01.연습문제(50쪽)</NOBR> 
+                              <BR>
+                              <NOBR>02.연습문제(52쪽)</NOBR> <BR>
+                              <NOBR>03.단원종합문제(59쪽)</NOBR> <BR>
+                              <NOBR>04.단원종합문제(60쪽)</NOBR> <BR>
+                              <NOBR>05.단원평가문제(61쪽)</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR> 
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;&nbsp;5.도형의성질(7-나)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>01.연습문제(79쪽)</NOBR> 
+                              <BR>
+                              <NOBR>02.연습문제(90쪽)</NOBR> <BR>
+                              <NOBR>03.연습문제(101쪽)</NOBR> <BR>
+                              <NOBR>04.연습문제(102쪽)</NOBR> <BR>
+                              <NOBR>05.단원종합문제(103쪽)</NOBR> <BR>
+                              <NOBR>06.단원종합문제(104쪽)</NOBR> <BR>
+                              <NOBR>07.단원평가문제(105쪽)</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR> 
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;&nbsp;6.도형의측정(7-나)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>01.연습문제(121쪽)</NOBR> 
+                              <BR>
+                              <NOBR>02.연습문제(136쪽)</NOBR> <BR>
+                              <NOBR>03.단원종합문제(137쪽)</NOBR> <BR>
+                              <NOBR>04.단원종합문제(138쪽)</NOBR> <BR>
+                              <NOBR>05.단원평가문제(139쪽)</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR bgcolor="#FFFFFF"> 
+                            <TD align=middle rowSpan=2 width="134">형설출판사<BR>
+                              <BR>
+                              저자 : 신항균</TD>
+                            <TD width="157">&nbsp;1.집합과 자연수(7-가)</TD>
+                            <TD vAlign=top width="193"><NOBR>1.26쪽 연습문제</NOBR> 
+                              <BR>
+                              <NOBR>2.41쪽 연습문제</NOBR> <BR>
+                              <NOBR>3.49쪽 연습문제</NOBR> <BR>
+                              <NOBR>4.50쪽 단원평가문제</NOBR> <BR>
+                              <NOBR>5.51쪽 보충학습문제</NOBR> <BR>
+                              <NOBR>6.52쪽 심화학습문제</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR> 
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;&nbsp;2.정수와 
+                              유리수(7-가)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>1.63쪽 
+                              연습문제</NOBR> <BR>
+                              <NOBR>2.92쪽 연습문제</NOBR> <BR>
+                              <NOBR>3.93쪽 단원평가문제</NOBR> <BR>
+                              <NOBR>4.94쪽 보충학습문제</NOBR> <BR>
+                              <NOBR>5.95쪽 심화학습문제</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR bgcolor="#FFFFFF"> 
+                            <TD align=middle rowSpan=2 width="134">한서출판사<BR>
+                              <BR>
+                            </TD>
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;1.집합과 자연수(7-가)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>1.23쪽 
+                              연습문제</NOBR> <BR>
+                              <NOBR>2.44쪽 연습문제</NOBR> <BR>
+                              <NOBR>3.46쪽 단원종합문제</NOBR> <BR>
+                              <NOBR>4.47쪽 단원종합문제</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR> 
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;&nbsp;2.정수와 
+                              유리수(7-가)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>1. 
+                              연습문제 60쪽</NOBR> <BR>
+                              <NOBR>2. 연습문제(72쪽)</NOBR> <BR>
+                              <NOBR>3. 연습문제(87쪽)</NOBR> <BR>
+                              <NOBR>4. 단원종합문제(88쪽)</NOBR> <BR>
+                              <NOBR>5. 단원종합문제(89쪽)</NOBR> <BR>
+                              <NOBR>6. 단원종합문제(90쪽)</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR bgcolor="#FFFFFF"> 
+                            <TD align=middle width="134">두레교육<BR>
+                              <BR>
+                            </TD>
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;1.집합과 자연수(7-가)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>1.20쪽 
+                              연습문제</NOBR> <BR>
+                              <NOBR>2.28쪽 연습문제</NOBR> <BR>
+                              <NOBR>3.34쪽 연습문제</NOBR> <BR>
+                              <NOBR>4.35쪽 확인해봅시다</NOBR> <BR>
+                              <NOBR>5.36쪽 풀어봅시다 .</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          <TR bgcolor="#FFFFFF"> 
+                            <TD align=middle width="134">교문사<BR>
+                              <BR>
+                            </TD>
+                            <TD bgcolor="#FFFFFF" width="157">&nbsp;1.집합과 자연수(7-가)</TD>
+                            <TD vAlign=top bgcolor="#FFFFFF" width="193"><NOBR>1.20쪽 
+                              연습문제</NOBR> <BR>
+                              <NOBR>2.35쪽 연습문제</NOBR> <BR>
+                              <NOBR>3.44쪽 연습문제</NOBR> <BR>
+                              <NOBR>4.45쪽 종합문제</NOBR> <BR>
+                            </TD>
+                          </TR>
+                          
+                        </TABLE>
+                      </TD></TR>
+                    </TABLE> </td>
+              </tr>
+              <tr> 
+                <td width="518">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td width="518">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td width="518" align="right"> 
+                  <div align="right"><img src="m1_bot_img.gif" width="409" height="195"><br>
+                    <br>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            <!-- #EndEditable --></td>
+        </tr>
+      </table>
+      <table width="727" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="1"><img src="../img_main/bottom_left.gif" width="6" height="23"></td>
+          <td background="../img_main/bottom_back.gif" align="center"><a href="mailto:webmaster@mathworld.co.kr"><img src="../img_main/copyright.gif" width="469" height="23" border="0"></a></td>
+          <td align="right" width="1"><img src="../img_main/bottom_right.gif" width="8" height="22"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+
+</BODY>
+<!-- #EndTemplate --></HTML>

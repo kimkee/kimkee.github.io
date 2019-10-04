@@ -1,1 +1,1396 @@
-연습 111 222 333 444
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<title>김기현 작업리스트</title>
+<meta charset="utf-8">
+
+<meta name="robots" content="noindex" />
+<meta name="googlebot-news" content="noindex" />
+<meta name="googlebot" content="noindex">
+<meta name="googlebot-news" content="nosnippet">
+
+<meta name="robots" content="nofollow">
+<meta name="googlebot" content="noindex">
+
+<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="noindex">
+<meta name="googlebot" content="noindex">
+
+<meta property="og:title" content="김기현 작업리스트">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://kimkee.github.io/">
+<meta property="og:image" content="http://kimkee.github.io/img/cm/icoResponsive.png">
+<meta property="og:description" content="HTML5,CSS3,jQuery,Responsive Web,Flash,Design,웹퍼블리셔 김기현 작업물">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<link href="./img/cm/fav.ico" rel="shrtcut icon">
+<link rel="apple-touch-icon" href="./img/cm/fav.png">
+<link rel="apple-touch-icon-precomposed" href="./img/cm/fav.png">
+<link href="./css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
+<link href="./css/common.css" rel="stylesheet" type="text/css">
+<script src="./js/jquery-3.4.1.js"></script>
+<script src="./js/jquery.slides.js"></script>
+<script src="./js/jquery.lazyload.js"></script>
+<script src="./js/browser.js"></script>
+<script src="./js/jquery.mCustomScrollbar.js"></script>
+<script src="./js/jquery.mousewheel.js"></script>
+<script src="./js/ui.js"></script>
+<style></style>
+</head>
+<body class="body">
+<div class="head">
+	<div class="header">
+		<div class="date">Update - 2019.09
+			<a class="log" target="_blank" href="https://www.google.com/analytics/web/?et=&authuser=#dashboard/default/a27709027w79222288p81950930/">접속로그</a>
+		</div>
+		
+		<span class="github">
+			<!-- Place this tag where you want the button to render. -->
+			<a class="github-button" href="https://github.com/kimkee" data-count-href="/kimkee/followers" data-count-api="/users/kimkee#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @kimkee on GitHub">Follow @kimkee</a>
+			<!-- Place this tag in your head or just before your close body tag. -->
+			<script async defer src="https://buttons.github.io/buttons.js"></script>
+		</span>
+		<ul class="sns" style="display:none;">
+			<li><a href="javascript:linkAmtSet();" class="twitter"><span>Twitter</span></a></li>
+			<li><a href="javascript:;" class="facebook"><span>Facebook</span></a></li>
+			<li><a href="javascript:;" class="rss"><span>RSS</span></a></li>
+		</ul>
+	</div>
+</div>
+<div class="topBtn">
+	<a href="javascript:;" class="up"><span>위로</span></a>
+	<a href="javascript:;" class="down"><span>아래로</span></a>
+</div>
+<div class="mainTop">
+	<div class="mainToper">
+		
+		<div class="hTitle">
+			<div class="title">Works List Page of Kim KeeHyun</div>
+			<div class="logoPack">
+				<span class="box">
+					<img class="browsers" src="./img/cm/icoBrowsers.png" alt="Cross Browsers">
+					<img class="html5" src="./img/cm/icoHTML5.png" alt="HTML5">
+					<img class="css3" src="./img/cm/icoCSS3.png" alt="CSS3">
+					<img class="jquery" src="./img/cm/icoJquery.png" alt="jQuery">
+					<img class="sass" src="./img/cm/icoSass.png" alt="SASS">
+					<img class="less" src="./img/cm/icoLess.png" alt="LESS">
+					<br class="br">
+					<img class="gulp" src="./img/cm/icoGulp.png" alt="Gulp">
+					<img class="adobe" src="./img/cm/icoAdobe.png" alt="Adobe">
+					<img class="android" src="./img/cm/icoAndroid.png" alt="Android">
+					<img class="ios" src="./img/cm/icoIOS.png" alt="iOS">
+					<img class="w3c" src="./img/cm/icoW3c.png" alt="W3C">
+					<img class="xe" src="./img/cm/icoXe.png" alt="Xpress Engine">
+				</span>
+				<span class="resBox">
+					<span class="txt">Responsive Web</span>
+					<img class="responsive" src="./img/cm/icoResponsive.png" alt="Responsive Web">
+				</span>
+			</div>
+		</div>
+		<script>
+		$(document).ready(function() {
+			sdRandom = Math.ceil((  Math.random() * 4)  );
+			$('#slides').slidesjs({
+				width: 700,
+				height: 506,
+				autostart: false,
+				start: 1,//sdRandom
+				play: {
+				  active: true,
+					// [boolean] Generate the play and stop buttons.
+					// You cannot use your own buttons. Sorry.
+				  effect: "slide",
+					// [string] Can be either "slide" or "fade".
+				  interval: 2000,
+					// [number] Time spent on each slide in milliseconds.
+				  auto: false,
+					// [boolean] Start playing the slideshow on load.
+				  swap: true,
+					// [boolean] show/hide stop and play buttons
+				  pauseOnHover: true,
+					// [boolean] pause a playing slideshow on hover
+				  restartDelay: 2500
+					// [number] restart delay on inactive slideshow
+				},
+				navigation: {
+				  active: true,
+				  effect: "slide"
+				},
+				pagination: {
+				  active: true,
+				  effect: "slide"
+				},
+				effect: {
+				  slide: {
+					speed: 200
+				  },
+				  fade: {
+					speed: 300,
+					crossfade: true
+				  }
+				}
+			});
+			
+			var linkStat = false;
+
+			linkAmtFunc = function(){
+				$(".contain .container .pList li .ptBox .ss a   ,   .mainTop .mainSd .slides .pBox a").each(function(index) {
+					var linkAmt = $(this).attr("href");
+					$(this).attr("href","javascript:;").css("cursor","default");
+					$(this).attr("data-url",linkAmt);
+				});
+				console.log("링크가 비활성화 됐습니다.")
+			}
+			// linkAmtFunc();
+			
+			linkAmtSet = function(){
+				$(".contain .container .pList li .ptBox .ss a   ,   .mainTop .mainSd .slides .pBox a").each(function(index) {
+					var linkAmt = $(this).attr("data-url");
+					$(this).attr("href",linkAmt).css("cursor","pointer").attr("target","_blank");
+					
+				});
+				console.log("링크가 활성화 됐습니다.")
+			}
+			//linkAmtSet()
+
+			$(document).keydown(function(event){ // M 키 이벤트
+				if(event.keyCode == 77 ){
+					if(!linkStat){
+						linkAmtSet();
+						linkStat = true;
+					}else{
+						linkAmtFunc();
+						linkStat = false;
+					}
+				}
+			});	
+	
+		});
+
+		</script>
+		<div class="mainSd">
+			<div class="mainSdIn">
+				<div class="slides" id="slides">
+					<div class="pBox"> <a><img class="img" src="./img/ss/ssHimart.jpg" alt=""></a>
+						<div class="info">
+							<div class="icoPack">
+								<span class="icoTech icoHtml">HTML</span>
+								<span class="icoTech icoCss">SCSS</span>
+								<span class="icoTech icoJquery">jQuery</span>
+								<span class="icoTech icoMobile">Mobile</span>
+							</div>
+							<div class="date">2018.09 ~ 2018.10 - 하이마트</div>
+							<div class="name">하이마트모바일</div>
+							<div class="screen"></div>
+						</div>
+					</div>
+
+					<div class="pBox"> <a><img class="img" src="./img/ss/ssGalleria.jpg" alt=""></a>
+						<div class="info">
+							<div class="icoPack">
+								<span class="icoTech icoHtml">HTML</span>
+								<span class="icoTech icoCss">CSS</span>
+								<span class="icoTech icoJquery">jQuery</span>
+							</div>
+							<div class="date">2014.10 ~ 2015.02 - 한화 S&amp;C</div>
+							<div class="name">한화갤러리아 고메이494</div>
+							<div class="screen"></div>
+						</div>
+					</div>
+					<div class="pBox"> <a><img class="img" src="./img/ss/ssChatOn2.jpg" alt=""></a>
+						<div class="info">
+							<div class="icoPack">
+								<span class="icoTech icoHtml">HTML</span>
+								<span class="icoTech icoJquery">jQuery</span>
+								<span class="icoTech icoJquery">jQuery</span>
+							</div>
+							<div class="date">2013.08 ~ 2013.01 - 삼성 SDS</div>
+							<div class="name">Samsung Chaton</div>
+							<div class="screen"></div>
+						</div>
+					</div>
+					
+					<div class="pBox"> <a href="http://kimkee.myds.me/dice/dice.php" target="_blank"><img class="img" src="./img/ss/ssDice.jpg" alt=""></a>
+						<div class="info">
+							<div class="icoPack">
+								<span class="icoTech icoJquery">jQuery</span>
+								<span class="icoTech icoCss">CSS</span>
+								<span class="icoTech icoHtml">HTML</span>
+							</div>
+							<div class="date">2016.01 ~ 2016.06 - 스포빌</div>
+							<div class="name">스포플레이 웹게임</div>
+							<div class="screen"></div>
+						</div>
+					</div>
+					
+					<div class="pBox"> <a href="http://kimkee.myds.me/MiniGame/kingkong/" target="_blank"><img class="img" src="./img/ss/ssKingkong.jpg" alt=""></a>
+						<div class="info">
+							<div class="icoPack">
+								<span class="icoTech icoHtml">HTML</span>
+								<span class="icoTech icoCss">CSS</span>
+								<span class="icoTech icoJquery">jQuery</span>
+							</div>
+							<div class="date">2016.01 ~ 2016.01 - 스포빌</div>
+							<div class="name">스포플레이 웹게임</div>
+							<div class="screen"></div>
+						</div>
+					</div>
+					<div class="pBox"> <a><img class="img" src="./img/ss/ssGalleriaM.jpg" alt=""></a>
+						<div class="info">
+							<div class="icoPack">
+								<span class="icoTech icoHtml">HTML</span>
+								<span class="icoTech icoCss">CSS</span>
+								<span class="icoTech icoJquery">jQuery</span>
+								<span class="icoTech icoMobile">Mobile</span>
+							</div>
+							<div class="date">2014.10 ~ 2015.02 - 한화 S&amp;C</div>
+							<div class="name">한화갤러리아 고메이494</div>
+							<div class="screen"></div>
+						</div>
+					</div>
+					<div class="pBox"> <a><img class="img" src="./img/ss/ssHotelShilla.jpg" alt=""></a>
+						<div class="info">
+							<div class="icoPack">
+								<span class="icoTech icoHtml">HTML</span>
+								<span class="icoTech icoCss">CSS</span>
+								<span class="icoTech icoJquery">jQuery</span>
+							</div>
+							<div class="date">2013.04 ~ 2013.07 -  삼성 SDS</div>
+							<div class="name">Hotel Shilla</div>
+							<div class="screen"></div>
+						</div>
+					</div>
+					<div class="pBox"> <a><img class="img" src="./img/ss/ssHotelShillaM.jpg" alt=""></a>
+						<div class="info">
+							<div class="icoPack">
+								<span class="icoTech icoHtml">HTML</span>
+								<span class="icoTech icoCss">CSS</span>
+								<span class="icoTech icoJquery">jQuery</span>
+							</div>
+							<div class="date">2013.04 ~ 2013.07 -  삼성 SDS</div>
+							<div class="name">Hotel Shilla Mobile</div>
+							<div class="screen"></div>
+						</div>
+					</div>
+					<div class="pBox"> <a><img class="img" src="./img/ss/ssSktstore.jpg" alt=""></a>
+						<div class="info">
+							<div class="icoPack">
+								<span class="icoTech icoHtml">HTML</span>
+								<span class="icoTech icoCss">CSS</span>
+								<span class="icoTech icoJquery">jQuery</span>
+							</div>
+							<div class="date">2013.02 ~ 2013.03 -  SK 텔레콤</div>
+							<div class="name">SK t-Store 정산시스템</div>
+							<div class="screen"></div>
+						</div>
+					</div>
+					<a href="#" class="slidesjs-previous slidesjs-navigation"><span>이전</span></a>
+					<a href="#" class="slidesjs-next slidesjs-navigation"><span>다음</span></a>
+				</div>
+			</div>
+		</div>
+		<div class="profile">
+			<div class="saleIco" style="display:none;"><img src="./img/cm/forSale.png" class="img"></div>
+			<div class="saleIco"><img src="./img/cm/soldOut.png" class="img"></div>
+			<div class="box">
+				<div class="photo"><img class="img" src="./img/cm/photo.jpg" alt="사진"></div>
+				<div class="info">
+					<div class="name">김기현</div>
+					<div class="phone"><a href="tel:010-3236-1677">010-3236-1677</a></div>
+					<div class="email">Kimkee@naver.com</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- <script src="jquery.tinyscrollbar.min.js"></script> -->
+		<script>
+		$(document).ready(function(){
+			//$('#scrollbar1').tinyscrollbar();
+			
+			
+			$("#scrollbar1").mCustomScrollbar({
+				mouseWheel:{
+					scrollAmount:400,
+					preventDefault:true
+				}	
+			});
+				
+		});
+		</script> 
+		
+		<div class="rSet">
+			<div class="career">
+				<div class="careerIn">
+					<div class="uiScrollBox" id="scrollbar1">
+						<!-- 스크롤바 class="scrollbar" 
+						<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>-->
+						<!-- 스크롤영역 class="viewport" -->
+						<div class="">
+							<div class="">
+								<ul class="list">
+									<li>
+										<div class="date">2018.09 ~ 2018.10 - 롯데</div>
+										<div class="name">하이마트</div>
+									</li>
+									<li>
+										<div class="date">2017.09 ~ 2018.02 - 아페쎄</div>
+										<div class="name">아이디룩 - APC</div>
+									</li>
+									<li>
+										<div class="date">2017.01 ~ 2017.08 - 롯데렌탈</div>
+										<div class="name">MYOMEE - 묘미</div>
+									</li>
+									<li>
+										<div class="date">2016.10 ~ 2016.12 - CJ올리브네트웍스</div>
+										<div class="name">CJ텔레닉스</div>
+									</li>
+									<li>
+										<div class="date">2016.08 ~ 2016.09 - Samsung SDS</div>
+										<div class="name">Samsung KNOX EFSS</div>
+									</li>
+									<li>
+										<div class="date">2014.05 ~ 2014.09 - spolive</div>
+										<div class="name">Spolive Website</div>
+									</li>
+									<li>
+										<div class="date">2014.09 ~ 2015.03 - 한화</div>
+										<div class="name">GOURMET494 Web Accessibility</div>
+									</li>
+									<li>
+										<div class="date">2013.08 ~ 2014.01 - SDS</div>
+										<div class="name">Samsung ChatOn Web Accessibility</div>
+									</li>
+									<li>
+										<div class="date">2014.03 ~ 2014.05 - ㈜비상교육</div>
+										<div class="name">비상교육- MasterKorea</div>
+									</li>
+									<li>
+										<div class="date">2014.02 ~ 2014.03 - ㈜큐랩 </div>
+										<div class="name">텐스푼- 게임 전문 클라우드 펀딩</div>
+									</li>
+									<li>
+										<div class="date">2013.04 ~ 2013.07 - SDS</div>
+										<div class="name">Hotel Shilla Website &amp; Mobile</div>
+									</li>
+									<li>
+										<div class="date">2013.01 ~ 2013.02 - SK Telecom</div>
+										<div class="name">SK T-store 정산시스템</div>
+									</li>
+									<li>
+										<div class="date">2012.11 ~ 2012.12 - HomePlus</div>
+										<div class="name">HomePlus MVNO Service</div>
+									</li>
+									<li>
+										<div class="date">2012.01 ~ 2012.10 - SDS</div>
+										<div class="name">Samsung ChatOn Web</div>
+									</li>
+									<li>
+										<div class="date">2011.08 ~ 2011.12 - SDS</div>
+										<div class="name">Samsung 지식경영시스템-아리샘</div>
+									</li>
+									<li>
+										<div class="date">2011.08 ~ 2011.12 - SDS</div>
+										<div class="name">Samsung - 아리샘me</div>
+									</li>
+									<li>
+										<div class="date">2011.03 ~ 2011.07 - 현대홈쇼핑 </div>
+										<div class="name">CTbank 카드 포인트샵</div>
+									</li>
+									<li>
+										<div class="date">2011.03 ~ 2011.07 - 현대홈쇼핑  </div>
+										<div class="name">KB 카드 포인트샵</div>
+									</li>
+									<li>
+										<div class="date">2009.10 ~ 2009.12 - 이야소프트  </div>
+										<div class="name">EyaSoft Groupware</div>
+									</li>
+									<li>
+										<div class="date">2010.01 ~ 2010.03 - 이야소프트 </div>
+										<div class="name">EyaSoft Customer Center</div>
+									</li>
+									<li>
+										<div class="date">2009.07 ~ 2009.09 - 이야소프트 </div>
+										<div class="name">EyaSoft PCroom</div>
+									</li>
+									<li>
+										<div class="date">2010.10 ~ 2010.12 - 이야소프트 </div>
+										<div class="name">Luna Online Game</div>
+									</li>
+									<li>
+										<div class="date">2010.06 ~ 2010.09 - 이야소프트 </div>
+										<div class="name">Angel Love Online Game</div>
+									</li>
+									<li>
+										<div class="date">2010.05 ~ 2010.05 - 이야소프트 </div>
+										<div class="name">Eda Love Online Game</div>
+									</li>
+									<li>
+										<div class="date">2009.03 ~ 2009.12 - Netts </div>
+										<div class="name">Corum Online Korea</div>
+									</li>
+									<li>
+										<div class="date">2008.07 ~ 2009.04 - Netts </div>
+										<div class="name">Florensia Online Japan</div>
+									</li>
+									<li>
+										<div class="date">2005.02 ~ 2005.03 - 뉴서울 오페라단 </div>
+										<div class="name">오페라 - 아 고구려 고구려</div>
+									</li>
+									<li>
+										<div class="date">2004.06 ~ 2004.07 - Mack </div>
+										<div class="name">Mack Official Website</div>
+									</li>
+									<li>
+										<div class="date">2007.02 ~ 2007.03 - X1 </div>
+										<div class="name">주식 커뮤니티 X1</div>
+									</li>
+									<li>
+										<div class="date">2003.09 ~ 2003.10 - INDEWAVE </div>
+										<div class="name">INDEWAVE</div>
+									</li>
+									<li>
+										<div class="date">2005.05 ~ 2005.06 - ENERTECH </div>
+										<div class="name">ENERTECH </div>
+									</li>
+									<li>
+										<div class="date">2005.05 ~ 2005.06 - Netclue </div>
+										<div class="name">Corum Online Japan</div>
+									</li>
+									<li>
+										<div class="date">2008.07 ~ 2009.04 - Netts </div>
+										<div class="name">Florensia Online Japan</div>
+									</li>
+								</ul>
+								
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="snsLink">
+				<div class="snsLinkIn">
+					<div class="twitter">
+						<a href="https://twitter.com/share" class="twitter-share-button" data-url="https://kimkee.github.io" data-via="김기현 - 포트폴리오" data-lang="en" data-related="anywhereTheJavascriptAPI" data-count="vertical">Tweet</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					</div>
+					<div class="facebook">
+						<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fkimkee.myds.me:8000%2F&amp;width&amp;layout=box_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:65px;" allowTransparency="true"></iframe>
+					</div>
+					<div class="google">
+						<!-- +1 버튼을(를) 표시하고 싶은 위치에 이 태그를 배치하세요. -->
+						<div class="g-plusone" data-size="tall" data-href="https://kimkee.github.io"></div>
+						
+						<!-- 마지막 +1 버튼 태그의 뒤에 이 태그를 배치하세요. -->
+						<script type="text/javascript">
+						//   window.___gcfg = {lang: 'ko'};
+						
+						//   (function() {
+						// 	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+						// 	po.src = 'https://apis.google.com/js/platform.js';
+						// 	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+						//   })();
+						</script>					
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="noticeWrap" style="display:none;">
+	<div class="box">
+		<span class="msg"><strong>2019년 06월01일</strong> 부터 프로젝트 <strong>투입</strong>가능합니다!</span>
+		<a href="javascript:;" class="btnClose"><span>닫기</span></a>
+	</div>
+</div>
+<style>
+img.lazy{ display:none;}
+</style>
+
+<script>
+$(document).ready(function() {
+	$("img.lazy").lazyload({
+		event : "fadeIn"
+	});
+	$("img.lazy").show().lazyload();
+	
+});
+ 
+ 
+</script>
+<div class="contain">
+	<div class="container">
+		<h3 class="title">UI/UX Development</h3>
+		<div class="pListWrap">
+			<ul class="pList">
+				<!---->
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">CSS</span>
+							<span class="icoTech icoCss">HTML</span>
+							<span class="icoTech icoJquery">JS</span>
+							<span class="icoTech icoMobile">Mobile</span>
+						</div>
+						<div class="ss"><a data-url=""><img class="img lazy" data-original="./img/ss/ssMhrM.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">CJ SHR - 모바일</div>
+						<div class="info">
+							<span class="date">2019.04 ~ 2019.05</span> -  <span class="place">CJ 올리브네트웍스</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">CSS</span>
+							<span class="icoTech icoCss">HTML</span>
+							<span class="icoTech icoJquery">JS</span>
+							<span class="icoTech icoMobile">Mobile</span>
+						</div>
+						<div class="ss"><a data-url=""><img class="img lazy" data-original="./img/ss/ssHimart.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">하이마트 - 모바일</div>
+						<div class="info">
+							<span class="date">2018.09 ~ 2018.10</span> -  <span class="place">하이마트</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">CSS</span>
+							<span class="icoTech icoCss">HTML</span>
+							<span class="icoTech icoJquery">JS</span>
+							<span class="icoTech icoMobile">Respond</span>					
+						</div>
+						<div class="ss"><a data-url=""><img class="img lazy" data-original="./img/ss/ssInsterior.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">인스테리어 - 반응형웹</div>
+						<div class="info">
+							<span class="date">2018.04 ~ 2018.08</span> -  <span class="place">인스타워즈</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">CSS</span>
+							<span class="icoTech icoCss">HTML</span>
+							<span class="icoTech icoJquery">JS</span>
+							<span class="icoTech icoMobile">Mobile</span>
+						</div>
+						<div class="ss"><a data-url=""><img class="img lazy" data-original="./img/ss/ssMlbM.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">MLB코리아 - 모바일</div>
+						<div class="info">
+							<span class="date">2018.11 ~ 2019.02</span> -  <span class="place">FNF</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">CSS</span>
+							<span class="icoTech icoCss">HTML</span>
+							<span class="icoTech icoJquery">JS</span>
+							<span class="icoTech icoMobile">PC</span>
+						</div>
+						<div class="ss"><a data-url=""><img class="img lazy" data-original="./img/ss/ssMlb.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">MLB코리아 - 웹</div>
+						<div class="info">
+							<span class="date">2018.11 ~ 2019.02</span> -  <span class="place">FNF</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">CSS</span>
+							<span class="icoTech icoCss">HTML</span>
+							<span class="icoTech icoJquery">JS</span>
+							<span class="icoTech icoMobile">Mobile</span>					
+						</div>
+						<div class="ss"><a data-url="http://kimkee.myds.me:8021"><img class="img lazy" data-original="./img/ss/ssApcM.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">아페쎄 - 모바일</div>
+						<div class="info">
+							<span class="date">2017.09 ~ 2018.02</span> -  <span class="place">아이디룩</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">CSS</span>
+							<span class="icoTech icoCss">HTML</span>
+							<span class="icoTech icoJquery">JS</span>
+							<span class="icoTech icoMobile">PC</span>					
+						</div>
+						<div class="ss"><a data-url="http://kimkee.myds.me:8020"><img class="img lazy" data-original="./img/ss/ssApc.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">아페쎄 - 웹</div>
+						<div class="info">
+							<span class="date">2017.09 ~ 2018.02</span> -  <span class="place">아이디룩</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">CSS</span>
+							<span class="icoTech icoCss">HTML</span>
+							<span class="icoTech icoJquery">JS</span>
+							<span class="icoTech icoMobile">Mobile</span>					
+						</div>
+						<div class="ss"><a data-url="http://kimkee.myds.me:8019"><img class="img lazy" data-original="./img/ss/ssMyomeeM.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">MYOMEE - 묘미</div>
+						<div class="info">
+							<span class="date">2017.01 ~ 2017.08</span> -  <span class="place">롯데렌탈</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">CSS</span>
+							<span class="icoTech icoCss">HTML</span>
+							<span class="icoTech icoJquery">JS</span>
+							<span class="icoTech icoMobile">PC</span>					
+						</div>
+						<div class="ss"><a data-url="http://kimkee.myds.me:8018"><img class="img lazy" data-original="./img/ss/ssMyomee.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">MYOMEE - 묘미</div>
+						<div class="info">
+							<span class="date">2017.01 ~ 2017.08</span> -  <span class="place">롯데렌탈</span>
+						</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">CSS</span>
+							<span class="icoTech icoCss">HTML</span>
+							<span class="icoTech icoJquery">jQuery</span>
+							<span class="icoTech icoMobile">Respond</span>					
+						</div>
+						<div class="ss"><a><img class="img lazy" data-original="./img/ss/ssCjtelenix.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">CJ텔레닉스-반응형웹</div>
+						<div class="info">
+							<span class="date">2016.10 ~ 2016.11</span> -  <span class="place">CJ올리브네트웍스</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">CSS</span>
+							<span class="icoTech icoCss">HTML</span>
+							<span class="icoTech icoJquery">jQuery</span>
+							<span class="icoTech icoMobile">Respond</span>					
+						</div>
+						<div class="ss"><a><img class="img lazy" data-original="./img/ss/ssCjwhistle.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">CJ휘슬-반응형웹</div>
+						<div class="info">
+							<span class="date">2016.11 ~ 2016.12</span> -  <span class="place">CJ올리브네트웍스</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">SASS</span>
+							<span class="icoTech icoCss">JS</span>
+							<span class="icoTech icoJquery">jQuery</span>					
+						</div>
+						<div class="ss"><a><img class="img lazy" data-original="./img/ss/ssEfss.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">삼성 KNOX EFSS</div>
+						<div class="info">
+							<span class="date">2016.08 ~ 2016.09</span> -  <span class="place">삼성 SDS</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">jQuery</span>					
+						</div>
+						<div class="ss"><a><img class="img lazy" data-original="./img/ss/ssGalleria.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">GOURMET 494 Web</div>
+						<div class="info">
+							<span class="date">2014.10 ~ 2015.02</span> -  <span class="place">한화 S&amp;C</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">jQuery</span>
+							<span class="icoTech icoMobile">Mobile</span>	
+						</div>
+						<div class="ss"><a><img class="img lazy" data-original="./img/ss/ssGalleriaM.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">GOURMET 494 Mobile</div>
+						<div class="info">
+							<span class="date">2014.10 ~ 2015.02</span> -  <span class="place">한화 S&amp;C</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">jQuery</span>
+						</div>
+						<div class="ss"><a href="http://kimkee.myds.me/dice/dice.php" target="_blank"><img class="img lazy" src="./img/cm/loadBg.gif" data-original="./img/ss/ssDice.jpg" alt=""></a></div>
+						<div class="name">스포플레이 웹게임</div>
+						<div class="info">
+							<span class="date">2016.01 ~ 2016.06</span> -  <span class="place">스포빌</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">jQuery</span>
+						</div>
+						<div class="ss"><a href="http://kimkee.myds.me/MiniGame/kingkong/" target="_blank"><img class="img lazy" src="./img/cm/loadBg.gif" data-original="./img/ss/ssKingkong.jpg" alt=""></a></div>
+						<div class="name">스포플레이 웹게임</div>
+						<div class="info">
+							<span class="date">2016.01 ~ 2016.01</span> -  <span class="place">스포빌</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">jQuery</span>
+						</div>
+						<div class="ss"><a><img class="img lazy" src="./img/cm/loadBg.gif" data-original="./img/ss/ssChatOn2.jpg" alt=""></a></div>
+						<div class="name">Samsung ChatOn Web Accessibility</div>
+						<div class="info">
+							<span class="date">2013.08 ~ 2014.01</span> -  <span class="place">삼성 SDS</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">jQuery</span>
+						</div>
+						<div class="ss"><a><img class="img lazy" data-original="./img/ss/ssHotelShilla.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">Hotel Shilla Website</div>
+						<div class="info">
+							<span class="date">2013.04 ~ 2013.07</span> -  <span class="place">삼성 SDS</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">jQuery</span>
+							<span class="icoTech icoMobile">Mobile</span>
+						</div>
+						<div class="ss"><a><img class="img lazy" data-original="./img/ss/ssHotelShillaM.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">Hotel Shilla Mobile</div>
+						<div class="info">
+							<span class="date">2013.04 ~ 2013.07</span> -  <span class="place">삼성 SDS</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">jQuery</span>
+						</div>
+						<div class="ss"><a><img class="img lazy" data-original="./img/ss/ssSktstore.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">SK t-Store 정산시스템</div>
+						<div class="info">
+							<span class="date">2013.01 ~ 2013.02</span> -  <span class="place">SK Telecom</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">jQuery</span>
+						</div>
+						<div class="ss"><a><img class="img lazy" data-original="./img/ss/ssHomeplus.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">HomePlus MVNO</div>
+						<div class="info">
+							<span class="date">2012.11 ~ 2012.12</span> -  <span class="place">삼성 SDS</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">jQuery</span>
+						</div>
+						<div class="ss"><a><img class="img lazy" data-original="./img/ss/ssChatOn1.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">Samsung ChatOn Web</div>
+						<div class="info">
+							<span class="date">2012.01 ~ 2012.10</span> -  <span class="place">삼성 SDS</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">jQuery</span>
+						</div>
+						<div class="ss"><a><img class="img lazy" src="./img/cm/loadBg.gif" data-original="./img/ss/ssSpoplay.jpg" alt=""></a></div>
+						<div class="name">스포플레이 - 웹사이트</div>
+						<div class="info">
+							<span class="date">2015.06 ~ 2016.07</span> -  <span class="place">스포빌</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">jQuery</span>
+							<span class="icoTech icoMobile">Mobile</span>
+						</div>
+						<div class="ss"><a><img class="img lazy" src="./img/cm/loadBg.gif" data-original="./img/ss/ssSpoplayM.jpg" alt=""></a></div>
+						<div class="name">스포플레이-모바일</div>
+						<div class="info">
+							<span class="date">2016.05 ~ 2016.06</span> -  <span class="place">스포빌</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">jQuery</span>
+						</div>
+						<div class="ss"><a><img class="img lazy" src="./img/cm/loadBg.gif" data-original="./img/ss/ssSpolive.jpg" alt=""></a></div>
+						<div class="name">스포라이브</div>
+						<div class="info">
+							<span class="date">2014.05 ~ 2014.09</span> -  <span class="place">스포라이브</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">jQuery</span>
+							<span class="icoTech icoMobile">Mobile</span>
+						</div>
+						<div class="ss"><a><img class="img lazy" src="./img/cm/loadBg.gif" data-original="./img/ss/ssSpoliveM.jpg" alt=""></a></div>
+						<div class="name">스포라이브-모바일</div>
+						<div class="info">
+							<span class="date">2014.05 ~ 2014.09</span> -  <span class="place">스포라이브</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">jQuery</span>
+							<span class="icoTech icoMobile">Mobile</span>
+						</div>
+						<div class="ss"><a><img class="img lazy" src="./img/cm/loadBg.gif" data-original="./img/ss/ssWshop.jpg" alt=""></a></div>
+						<div class="name">W쇼핑-모바일</div>
+						<div class="info">
+							<span class="date">2015.03 ~ 2015.05</span> -  <span class="place">TV 벼룩시장</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">jQuery</span>
+						</div>
+						<!-- role="http://kimkee.myds.me:8010" http://masterkorean.com/-->
+						<div class="ss"><a><img class="img lazy" src="./img/cm/loadBg.gif" data-original="./img/ss/ssMasterKorean.jpg" alt=""></a></div>
+						<div class="name">비상교육- MasterKorean</div>
+						<div class="info">
+							<span class="date">2014.03 ~ 2014.05</span> -  <span class="place">㈜비상교육</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">jQuery</span>
+						</div>
+						<div class="ss"><a><img class="img lazy" data-original="./img/ss/ssTenspoon.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">텐스푼</div>
+						<div class="info">
+							<span class="date">2014.02 ~ 2014.03</span> -  <span class="place">㈜큐랩</span>
+						</div>
+					</div>
+				</li>
+				<!--
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">jQuery</span>
+						</div>
+						<div class="ss"><a><img class="img lazy" data-original="./img/ss/ssArisam.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">Samsung 지식경영시스템-아리샘</div>
+						<div class="info">
+							<span class="date">2011.08 ~ 2011.12</span> -  <span class="place">삼성 SDS</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">jQuery</span>
+						</div>
+						<div class="ss"><a><img class="img lazy" data-original="./img/ss/ssArisamMe.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">Samsung 아리샘me</div>
+						<div class="info">
+							<span class="date">2011.08 ~ 2011.12</span> -  <span class="place">삼성 SDS</span>
+						</div>
+					</div>
+				</li>
+				-->
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">JS</span>
+						</div>
+						<div class="ss"><a><img class="img lazy" data-original="./img/ss/ssCitibank.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">Citibank Pointree Mall</div>
+						<div class="info">
+							<span class="date">2011.03 ~ 2011.07</span> -  <span class="place">현대홈쇼핑</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">JS</span>
+						</div>
+						<div class="ss"><img class="img lazy" data-original="./img/ss/ssKb.jpg" src="./img/cm/loadBg.gif" alt=""></div>
+						<div class="name">KB Card Pointree Mall</div>
+						<div class="info">
+							<span class="date">2011.03 ~ 2011.07</span> -  <span class="place">현대홈쇼핑</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">JS</span>
+							<span class="icoTech icoFlash">Flash</span>
+						</div>
+						<div class="ss"><a><img class="img lazy" data-original="./img/ss/ssEyaGroup.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">EyaSoft Groupware</div>
+						<div class="info">
+							<span class="date">2009.10 ~ 2009.12</span> -  <span class="place">이야소프트</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">JS</span>
+							<span class="icoTech icoFlash">Flash</span>
+						</div>
+						<div class="ss"><a><img class="img lazy" data-original="./img/ss/ssEyaCustomer.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">EyaSoft Customer Center</div>
+						<div class="info">
+							<span class="date">2010.01 ~ 2010.03</span> -  <span class="place">이야소프트</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">JS</span>
+							<span class="icoTech icoFlash">Flash</span>
+						</div>
+						<div class="ss"><a><img class="img lazy" data-original="./img/ss/ssEyaPc.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">EyaSoft PCroom</div>
+						<div class="info">
+							<span class="date">2009.07 ~ 2009.09</span> -  <span class="place">이야소프트</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">JS</span>
+							<span class="icoTech icoFlash">Flash</span>
+						</div>
+						<div class="ss"><a><img class="img lazy" data-original="./img/ss/ssLuna.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">Luna Online Game</div>
+						<div class="info">
+							<span class="date">2010.10 ~ 2010.12</span> -  <span class="place">이야소프트</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">JS</span>
+							<span class="icoTech icoFlash">Flash</span>
+						</div>
+						<div class="ss"><a><img class="img lazy" data-original="./img/ss/ssAngel.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">Angel Love Online Game</div>
+						<div class="info">
+							<span class="date">2010.06 ~ 2010.09</span> -  <span class="place">이야소프트</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">JS</span>
+							<span class="icoTech icoFlash">Flash</span>
+						</div>
+						<div class="ss"><a><img class="img lazy" data-original="./img/ss/ssEda.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">Eda Love Online Game</div>
+						<div class="info">
+							<span class="date">2010.05 ~ 2010.05</span> -  <span class="place">이야소프트</span>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<h3 class="title">Web Design &amp; UI/UX Development</h3>
+		<div class="pListWrap">
+			<ul class="pList">
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoDesign">Design</span>
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">JS</span>
+							<span class="icoTech icoFlash">Flash</span>
+						</div>
+						<div class="ss"><a><img class="img lazy" data-original="./img/ss/ssCorum.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">Corum Online Korea</div>
+						<div class="info">
+							<span class="date">2009.03 ~ 2009.12</span> -  <span class="place">Netts</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoDesign">Design</span>
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">JS</span>
+							<span class="icoTech icoFlash">Flash</span>
+						</div>
+						<div class="ss"><a><img class="img lazy" data-original="./img/ss/ssFlorensia.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">Florensia Online Japan</div>
+						<div class="info">
+							<span class="date">2008.07 ~ 2009.04</span> -  <span class="place">Netts</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoDesign">Design</span>
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">JS</span>
+							<span class="icoTech icoFlash">Flash</span>
+						</div>
+						<div class="ss"><a><img class="img lazy" data-original="./img/ss/ssAhkoguryo.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">오페라 - 아 고구려 고구려</div>
+						<div class="info">
+							<span class="date">2005.02 ~ 2005.03</span> -  <span class="place">뉴서울 오페라단</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoDesign">Design</span>
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">JS</span>
+							<span class="icoTech icoFlash">Flash</span>
+						</div>
+						<div class="ss"><a href="./work/mack/"><img class="img lazy" data-original="./img/ss/ssMack.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">Mack Official Website</div>
+						<div class="info">
+							<span class="date">2004.06 ~ 2004.07</span> -  <span class="place">Mack</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoDesign">Design</span>
+						</div>
+						<div class="ss"><a href="./work/x1/"><img class="img lazy" data-original="./img/ss/ssX1.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">주식 커뮤니티 X1</div>
+						<div class="info">
+							<span class="date">2007.02 ~ 2007.03</span> -  <span class="place">X1</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoDesign">Design</span>
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">JS</span>
+							<span class="icoTech icoFlash">Flash</span>
+						</div>
+						<div class="ss"><a href="./work/indewave/"><img class="img lazy" data-original="./img/ss/ssIndewave.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">INDEWAVE</div>
+						<div class="info">
+							<span class="date">2003.09 ~ 2003.10</span> -  <span class="place">INDEWAVE</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoDesign">Design</span>
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">JS</span>
+							<span class="icoTech icoFlash">Flash</span>
+						</div>
+						<div class="ss"><a href="./work/enertech/"><img class="img lazy" data-original="./img/ss/ssEnertech.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">ENERTECH</div>
+						<div class="info">
+							<span class="date">2005.05 ~ 2005.06</span> -  <span class="place">ENERTECH</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoDesign">Design</span>
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">JS</span>
+							<span class="icoTech icoFlash">Flash</span>
+						</div>
+						<div class="ss"><a href="./work/corumNew/"><img class="img lazy" data-original="./img/ss/ssCorumjp.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">Corum Online Japan</div>
+						<div class="info">
+							<span class="date">2005.05 ~ 2005.06</span> -  <span class="place">Netclue</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoDesign">Design</span>
+							<span class="icoTech icoHtml">HTML</span>
+							<span class="icoTech icoCss">CSS</span>
+							<span class="icoTech icoJquery">JS</span>
+							<span class="icoTech icoFlash">Flash</span>
+						</div>
+						<div class="ss"><a data-url="./work/florensia2/"><img class="img lazy" data-original="./img/ss/ssFlorensiajp.jpg" src="./img/cm/loadBg.gif" alt=""></a></div>
+						<div class="name">Florensia Online Japan</div>
+						<div class="info">
+							<span class="date">2008.07 ~ 2009.04</span> -  <span class="place">Netts</span>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+		
+		<h3 class="title">Flash ActionScript </h3>
+		<div class="pListWrap">
+			<ul class="pList">
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoFlash">ActionScript</span>
+						</div>
+						<div class="ss">
+							<a href="./work/flashContents/angel.htm" target="_blank">
+								<img class="img lazy" data-original="./img/ss/ssAngelFlash.jpg" src="./img/cm/loadBg.gif" alt="">
+							</a>
+						</div>
+						<div class="name">Angel Love Online Game</div>
+						<div class="info">
+							<span class="date">2010.06 ~ 2010.09</span> -  <span class="place">이야소프트</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoFlash">ActionScript</span>
+							<span class="icoTech icoDesign">Design</span>
+						</div>
+						<div class="ss">
+							<a href="./work/flashContents/cybertour.htm" target="_blank">
+								<img class="img lazy" data-original="./img/ss/ssCybertour.jpg" src="./img/cm/loadBg.gif" alt="">
+							</a>
+						</div>
+						<div class="name">POSREC Cybertour</div>
+						<div class="info">
+							<span class="date">2003.07 ~ 2003.11</span> -  <span class="place">포스코</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoFlash">ActionScript</span>
+							<span class="icoTech icoDesign">Design</span>
+						</div>
+						<div class="ss">
+							<a href="./work/flashContents/slot.htm" target="_blank">
+								<img class="img lazy" data-original="./img/ss/ssSlot.jpg" src="./img/cm/loadBg.gif" alt="">
+							</a>
+						</div>
+						<div class="name">Slot machine Game</div>
+						<div class="info">
+							<span class="date">2008.07 ~ 2009.04 </span> -  <span class="place"> Netts</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoFlash">ActionScript</span>
+							<span class="icoTech icoDesign">Design</span>
+						</div>
+						<div class="ss">
+							<a href="./work/flashContents/Roulette.htm" target="_blank">
+								<img class="img lazy" data-original="./img/ss/ssRoulette.jpg" src="./img/cm/loadBg.gif" alt="">
+							</a>
+						</div>
+						<div class="name">Roulette Game</div>
+						<div class="info">
+							<span class="date">2008.07 ~ 2009.04 </span> -  <span class="place">Netts</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoFlash">ActionScript</span>
+							<span class="icoTech icoDesign">Design</span>
+						</div>
+						<div class="ss">
+							<a href="./work/flashContents/game.htm" target="_blank">
+								<img class="img lazy" data-original="./img/ss/ssGame.jpg" src="./img/cm/loadBg.gif" alt="">
+							</a>
+						</div>
+						<div class="name">Shooting game </div>
+						<div class="info">
+							<span class="date">2008.07 ~ 2009.04 </span> -  <span class="place"> Netts</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ptBox">
+						<div class="icoPack">
+							<span class="icoTech icoFlash">ActionScript</span>
+							<span class="icoTech icoDesign">Design</span>
+						</div>
+						<div class="ss">
+							<a href="./work/flashContents/HighLow2.htm" target="_blank">
+								<img class="img lazy" data-original="./img/ss/ssHighLow.jpg" src="./img/cm/loadBg.gif" alt="">
+							</a>
+						</div>
+						<div class="name">High &amp; Low</div>
+						<div class="info">
+							<span class="date">2008.07 ~ 2009.04 </span> -  <span class="place"> Netts</span>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+		
+	</div>
+</div>
+<div class="foot">
+	<div class="footer">김기현</div>
+</div>
+
+<!-- Piwik 
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+	var u="//kimkee.myds.me/piwik/";
+	_paq.push(['setTrackerUrl', u+'piwik.php']);
+	_paq.push(['setSiteId', 1]);
+	var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+	g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//kimkee.myds.me/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+-->
+<!-- End Piwik Code -->
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27709027-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script>
+console.log("김기현 - kimkee@naver.com , 010-3236-1677");
+</script>
+</body>
+</html>

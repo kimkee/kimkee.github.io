@@ -1,0 +1,234 @@
+/* CSS Document */
+
+.guideTab{ background:url(/work/lunaPlus/guide/images/storyTabBg.gif) no-repeat; height:32px; margin-bottom:20px; padding-left:4px;}
+.guideTab li{ float:left}
+.guideTab li img{ vertical-align:text-bottom}
+
+.skillBox{margin-bottom:20px;}
+.skillBox .top{ background:url(/work/lunaPlus/guide/images/skillBoxTop.gif) no-repeat; height:10px; font-size:0; line-height:0;}
+.skillBox .ctn{ background:url(/work/lunaPlus/guide/images/skillBoxBg.gif) repeat-y; padding:5px 20px;}
+.skillBox .bot{ background:url(/work/lunaPlus/guide/images/skillBoxBot.gif) no-repeat; height:10px; font-size:0; line-height:0;}
+
+
+.skCate{ border:none; width:100%}
+.skCate th,
+.skCate td{ border:none; padding:5px 3px; background:url(/work/lunaPlus/guide/images/skillDot.gif) repeat-x bottom;}
+.skCate th{ width:50px; padding-left:10px; text-align:left;}
+
+.skList{}
+.skList li{ float:left; background:url(/work/lunaPlus/guide/images/skillsBar.gif) no-repeat right 3px; padding:1px 8px;}
+.skList li a{ font-size:11px;}
+.skList li.on a{ color:#5ba0e5}
+
+.sktableTit{ height:35px;}
+.sktableTit .tit{ float:left;}
+.sktableTit .btn{ float:right}
+
+.skTable{}
+.skTable{ border:none; width:100%; border-bottom:1px solid #a6bde4; font:12px Dotum; margin-bottom:10px;}
+.skTable thead tr{ background:url(/work/lunaPlus/guide/images/hImgBar.gif) no-repeat; height:32px;}
+
+.skTable thead th{ border:none; padding:0 7px; height:30px; line-height:18px; background:url(/work/lunaPlus/guide/images/hImgBar.gif) no-repeat -5px;}
+.skTable thead th.left{ background:url(/work/lunaPlus/guide/images/hImgBar.gif) no-repeat 0px;}
+.skTable thead th.right{ background:url(/work/lunaPlus/guide/images/hImgBar.gif) no-repeat right 0px;}
+.skTable tbody tr{ background:url(/work/lunaPlus/images/board/dotLine.gif) repeat-x bottom;}
+.skTable tbody tr.bgNone{ background:none}
+.skTable tbody td{ border:none; padding:10px 3px 10px 3px; text-align:center; line-height:22px; border-bottom:#e4e4e4 solid 1px;}
+.skTable .bNum{ font-size:11px; color:#505a62; font-family:Tahoma;}
+.skTable .bTit{ text-align:left;}
+.skTable .bTit strong a{color:#3c7ebb}
+.skTable .bName{ font-size:11px;  color:#505a62; font-family:Tahoma,Dotum;}
+.skTable .bDate{ font-size:11px; color:#505a62; font-family:Tahoma;}
+.skTable .bHit{ font-size:11px; color:#505a62; font-family:Tahoma;}
+.skTable .comCount{ font-size:10px; font-family:Tahoma; font-weight:bold; color:#a2bc50; padding-left:18px; padding-right:4px; display:inline-block; background:url(/_board/images/icoComent.gif) no-repeat 4px 4px;}
+
+.mapWrap{ width:552px; margin:auto;}
+
+.mapTable{ border:none; width:100%; border:#FFFFFF solid 1px; border-right:none; border-bottom:none; margin-bottom:25px;}
+.mapTable th,
+.mapTable td{border:none;border:#FFFFFF solid 1px; border-left:none; border-top:none; padding:7px 10px; font-size:11px; color:#3c7ebb}
+.mapTable th{ background:#70abef; color:#FFFFFF; font-weight:bold;}
+.mapTable td{ background:#e3f1fb}
+.mapTable a{}
+.mapTable ul { margin:5px 0;}
+.mapTable ul li{ display:inline; line-height:18px; margin-right:1px;}
+.mapTable ul li a{ display:inline-block; font-size:11px;letter-spacing:-1px; background:url(/work/lunaPlus/guide/images/mapDot.gif) no-repeat 0 7px; padding-left:7px; color:#3c7ebb}
+
+.mapList .map{ padding-bottom:10px;}
+
+
+
+.item2depth{  margin-bottom:20px; padding-bottom:20px; padding-left:10px;}
+.item2depth li{ float:left; background:url(/work/lunaPlus/guide/images/itemBul1.gif) no-repeat 0 5px; display:block; height:20px; padding:1px 7px; margin-bottom:5px; font-size:11px;}
+.item2depth li a{ font-size:11px;}
+.item2depth li.on a{ color:#4996e2}
+
+.itemSch1{ margin-bottom:20px; background:url(/work/lunaPlus/guide/images/itemSchBg.gif) no-repeat; padding:9px 0; text-align:center; clear:both;}
+.itemSch1 .sel{ border:#CCCCCC solid 1px; padding:1px; font-size:11px; color:#7f7e7e}
+.itemSch1 .keyword{ border:#CCCCCC solid 1px; padding:2px; width:100px; font-size:11px; color:#7f7e7e}
+
+.itemBallWrap{ position:relative}
+.itemBall{ width:190px; position:absolute;}
+.itemBall .ar{ background:url(/work/lunaPlus/guide/images/itemBallAr.gif) no-repeat; width:8px; height:13px; font-size:0; line-height:0; position:absolute; left:-7px; top:10px;}
+.itemBall .top{ background:url(/work/lunaPlus/guide/images/itemBallTop.gif) no-repeat; height:5px;  font-size:0; line-height:0;}
+.itemBall .ctn{ background:url(/work/lunaPlus/guide/images/itemBallBg.gif) repeat-y; padding:7px 13px;}
+.itemBall .bot{ background:url(/work/lunaPlus/guide/images/itemBallBot.gif) no-repeat; height:5px;  font-size:0; line-height:0;}
+.itemBall .tit{ color:#3c7ebb ;font-size:11px; margin-bottom:5px;}
+.itemBall .info{ color:#7f7e7e  ;font-size:11px;}
+
+.itemTable{ border:none; width:100%; border-top:2px solid #b8d5f0; border-right:1px solid #e4e4e4; font:12px Dotum; margin-bottom:10px;}
+.itemTable th{ border:none; padding:5px 2px;line-height:18px; color:#567fa8; font-size:11px; letter-spacing:-1px; font-weight:normal;border-bottom:1px solid #b8d5f0; border-left:1px solid #e4e4e4;}
+.itemTable tr{}
+.itemTable tr.bgNone{ background:none}
+.itemTable td{ border:none; color:#7f7e7e; padding:10px 3px 10px 3px; text-align:center; line-height:22px; font-size:11px; letter-spacing:-1px; border-bottom:1px solid #e4e4e4; border-left:1px solid #e4e4e4;}
+.itemTable .bNum{ font-size:11px; font-family:Tahoma;}
+.itemTable .bTit{ text-align:left; font-weight:bold;}
+.itemTable .bTit strong a{color:#3c7ebb}
+.itemTable .bName{ font-size:11px;   font-family:Tahoma,Dotum;}
+.itemTable .bDate{ font-size:11px; font-family:Tahoma;}
+.itemTable .bHit{ font-size:11px; font-family:Tahoma;}
+.itemTable .bInfo{ font-size:11px; text-align:left; padding-left:10px; font-family:Tahoma;}
+.itemTable .comCount{ font-size:10px; font-family:Tahoma; font-weight:bold; color:#a2bc50; padding-left:18px; padding-right:4px; display:inline-block; background:url(/_board/images/icoComent.gif) no-repeat 4px 4px;}
+
+.itemTable .infoWidth{ width:200px;}
+
+
+.monsterTable{ border:none; width:100%;  border-right:1px solid #f1f1f1; margin-bottom:20px; }
+.monsterTable th,
+.monsterTable td{border:none;border-bottom:1px solid #f1f1f1; border-left:1px solid #f1f1f1; color:#7f7e7e; font-size:11px; font-weight:normal; padding:10px 3px 10px 3px; text-align:center;}
+.monsterTable th{ color:#567fa8}
+.monsterTable .tit{border-top:1px solid #f1f1f1; background:#f1f1f1; color:#4f4f4f; font-weight:bold; padding-left:15px; text-align:left; font-size:12px;}
+.monsterTable .img{ border:none; background:url(/work/lunaPlus/guide/images/monsterSSBg.gif) no-repeat; padding:9px; width:117px; text-align:left;}
+
+
+
+.beginnerWrap { background:url(/work/lunaPlus/guide/images/beginnerBg.gif) no-repeat; width:800px; height:600px; position:relative }
+.beginnerWrap .head{ position:absolute; left:30px; top:25px; border-bottom:#CCCCCC solid 1px;}
+.beginnerWrap .bigBox{ position:absolute; left:30px; top:93px; width:570px; height:478px; overflow:auto;
+	scrollbar-face-color:#ffffff;
+	scrollbar-shadow-color:#e6e6e6;
+	scrollbar-highlight-color: #fffff;
+	scrollbar-3dlight-color: #c3c3c3;
+	scrollbar-darkshadow-color: #c3c3c3;
+	scrollbar-track-color: #ffffff;
+	scrollbar-arrow-color: #7b7b7b;}
+
+.beginnerWrap .menu{ position:absolute; right:18px; top:10px; }
+.beginnerWrap .menu .tit{ margin-bottom:4px;}
+.beginnerWrap .menu ul li{ background:url(/work/lunaPlus/guide/images/bul01.gif) no-repeat bottom; padding:9px 0 7px 8px; font-weight:bold; color:#FFFFFF; letter-spacing:-1px;}
+.beginnerWrap .menu ul li a{ color:#295b89;}
+.beginnerWrap .menu ul li a:hover{ color:#0c78dc}
+
+
+.sysBox{}
+.sysBox .top{ background:url(/work/lunaPlus/guide/images/systemTop.gif) no-repeat; height:80px;}
+.sysBox .ctn{ background:url(/work/lunaPlus/guide/images/systemBg.gif) repeat-y; padding:0 20px;}
+.sysBox .bot{ background:url(/work/lunaPlus/guide/images/systemBot.gif) no-repeat; height:29px;}
+
+.sysBox .menu li{ padding-bottom:10px;}
+.sysBox .menu li .top{ background:url(/work/lunaPlus/guide/images/sysBox2top.gif) no-repeat; height:16px;}
+.sysBox .menu li .ctn{ background:url(/work/lunaPlus/guide/images/sysBox2bg.gif) repeat-y; padding:0 16px; height:400px;}
+.sysBox .menu li .bot{ background:url(/work/lunaPlus/guide/images/sysBox2bot.gif) no-repeat; height:16px;}
+.sysBox .menu li .ctn .pBox{ width:516px; height:400px; overflow:auto;
+	scrollbar-face-color:#ffffff;
+	scrollbar-shadow-color:#e6e6e6;
+	scrollbar-highlight-color: #fffff;
+	scrollbar-3dlight-color: #c3c3c3;
+	scrollbar-darkshadow-color: #c3c3c3;
+	scrollbar-track-color: #ffffff;
+	scrollbar-arrow-color: #7b7b7b;
+
+}
+
+.sysBox .menu .plusInfo{ display:none;} 
+
+.begBox{ position:relative;}
+.begBox .m1{ position:absolute; left:33px; top:138px;}
+.begBox .m1 li{ float:left; margin:0px 10px 10px 0}
+.begBox .m2{ position:absolute; left:33px; top:543px;}
+.begBox .m2 li{ float:left; margin:0px 10px 10px 0}
+
+
+.jBoolWrap{ position:relative;}
+
+
+.jBool{ width:158px; position:absolute;}
+.jBool .top{ background:url(/work/lunaPlus/guide/images/characterBoolTop1.gif) no-repeat; height:13px; line-height:0px; font-size:0;}
+.jBool .ctn{ background:url(/work/lunaPlus/guide/images/characterBoolBg1.gif) repeat-y; padding:2px 10px; font-size:11px;}
+.jBool .ctn h4{ color:#3c7ebb; margin-bottom:3px;}
+.jBool .ctn p{ font-size:11px; color:#7f7e7e}
+.jBool .bot{ background:url(/work/lunaPlus/guide/images/characterBoolBot1.gif) no-repeat; height:13px; line-height:0px; font-size:0;}
+
+.jBool.jb2 .top{background:url(/work/lunaPlus/guide/images/characterBoolTop2.gif) no-repeat;}
+.jBool.jb2 .ctn{ background:url(/work/lunaPlus/guide/images/characterBoolBg2.gif) repeat-y;}
+.jBool.jb2 .ctn h4{ color:#e17d97}
+.jBool.jb2 .bot{background:url(/work/lunaPlus/guide/images/characterBoolBot2.gif) no-repeat;}
+.jBool.jb3 .top{background:url(/work/lunaPlus/guide/images/characterBoolTop3.gif) no-repeat;}
+.jBool.jb3 .ctn{ background:url(/work/lunaPlus/guide/images/characterBoolBg3.gif) repeat-y;}
+.jBool.jb3 .ctn h4{ color:#b87b5c}
+.jBool.jb3 .bot{background:url(/work/lunaPlus/guide/images/characterBoolBot3.gif) no-repeat;}
+.jBool.jb4 .top{background:url(/work/lunaPlus/guide/images/characterBoolTop4.gif) no-repeat;}
+.jBool.jb4 .ctn{ background:url(/work/lunaPlus/guide/images/characterBoolBg4.gif) repeat-y;}
+.jBool.jb4 .ctn h4{ color:#a894c8}
+.jBool.jb4 .bot{background:url(/work/lunaPlus/guide/images/characterBoolBot4.gif) no-repeat;}
+
+.jobTable{ border:none; width:555px; margin:auto; margin-bottom:10px;}
+.jobTable .right{ background-image:none;}
+.jobTable th,
+.jobTable td{ border:none; }
+.jobTable th{color:#FFFFFF; padding:8px 3px 7px; background:url(/work/lunaPlus/guide/images/character3Hbar.gif) no-repeat right bottom #bbb; width:100px; }
+.jobTable td{background:#eee;  padding:10px 5px 10px 5px ;}
+.jobInfo{ font-size:11px; width:555px; margin:auto; margin-bottom:20px;}
+
+.jobTable.j1 th{ background-color:#70abef}
+.jobTable.j1 td{ background-color:#e3f1fb}
+.jobTable.j1 td a{ color:#3c7ebb; background:url(/work/lunaPlus/guide/images/characterBoolBul1.gif) no-repeat 0 4px; padding-left:8px;}
+.jobTable.j1 td a:hover{color:#01a4e1; text-decoration:underline}
+
+.jobTable.j2 th{ background-color:#e17d97}
+.jobTable.j2 td{ background-color:#f8e6ed}
+.jobTable.j2 td a{ color:#e17d97; background:url(/work/lunaPlus/guide/images/characterBoolBul2.gif) no-repeat 0 4px; padding-left:8px;}
+.jobTable.j2 td a:hover{color:#e9406c; text-decoration:underline}
+
+.jobTable.j3 th{ background-color:#e1a97d}
+.jobTable.j3 td{ background-color:#f8ece6}
+.jobTable.j3 td a{ color:#b87b5c; background:url(/work/lunaPlus/guide/images/characterBoolBul3.gif) no-repeat 0 4px; padding-left:8px;}
+.jobTable.j3 td a:hover{color:#f4714e; text-decoration:underline}
+
+.jobTable.j4 th{ background-color:#a894c8}
+.jobTable.j4 td{ background-color:#eceaf3}
+.jobTable.j4 td a{ color:#80728e; background:url(/work/lunaPlus/guide/images/characterBoolBul4.gif) no-repeat 0 4px; padding-left:8px;}
+.jobTable.j4 td a:hover{color:#5c4671; text-decoration:underline}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

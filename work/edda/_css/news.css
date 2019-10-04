@@ -1,0 +1,54 @@
+/* CSS Document */
+
+.eventTab{ background:url(/work/edda/news/images/eventTabBg.gif) no-repeat; height:37px; margin-bottom:20px; padding-left:8px;}
+.eventTab li{ float:left}
+.eventTab li img{ vertical-align:text-bottom}
+
+.eventWrap{ margin-bottom:20px;}
+.eventBox{ background:url(/work/edda/news/images/eventDot.gif) repeat-x bottom; padding:15px; width:586px}
+.eventBox .img{ border:#000000 solid 1px; padding:1px; background:#22282a; float:left; margin-right:15px; }
+.eventBox .tit{ font-weight:bold; color:#808181; background:url(/work/edda/news/images/bul01.gif) no-repeat 0 7px; padding:3px 3px 3px 11px ; float:left; margin-bottom:5px; line-height:18px;}
+.eventBox .tit a{color:#808181}
+.eventBox .list{ float:left; width:380px; border:none;}
+.eventBox .list th{ padding:3px 3px 3px 10px ; border:none; width:60px; line-height:18px;}
+.eventBox .list td{ padding:3px; border:none; line-height:18px; color:#4a5865; font-size:11px;}
+
+
+
+
+
+
+
+
+
+
+.pollBox{ margin-bottom:20px;}
+.pollBox .top{ background:url(/work/edda/news/images/pollBoxTop.gif) no-repeat; width:100%; height:118px; position:relative;}
+.pollBox .top .tit{ font-size:16px; font-weight:bold; color:#8392a1; position:absolute; left:165px; top:18px;}
+.pollBox .top .date{  position:absolute; left:165px; top:40px; font-size:11px; line-height:18px; color:#505a62}
+.pollBox .top .info{  position:absolute; left:165px; top:60px; font-size:11px; line-height:14px; letter-spacing:-1px;}
+.pollBox .ctn{ background:url(/work/edda/news/images/pollBoxBg.gif) repeat-y; padding:20px 30px; }
+.pollBox .bot{ background:url(/work/edda/news/images/pollBoxBot.gif) no-repeat; height:21px; }
+.pollBox .pollSelList{ margin:auto; border:none;}
+.pollBox .pollSelList th,
+.pollBox .pollSelList td{ border:none; padding:8px 3px; background:url(/work/edda/news/images/pollDotLine.gif) repeat-x bottom;}
+.pollBox .pollSelList th{ width:10px;}
+.pollBtn{ text-align:center; margin-bottom:40px;}
+
+.pollBox.pView { width:568px; margin:auto; margin-bottom:20px;}
+.pollBox.pView .top{ background:url(/work/edda/news/images/pollBoxViewTop.gif) no-repeat; width:568px; height:118px; position:relative;}
+.pollBox.pView .ctn{ background:url(/work/edda/news/images/pollBoxViewBg.gif) repeat-y; padding:20px 30px; }
+.pollBox.pView .bot{ background:url(/work/edda/news/images/pollBoxViewBot.gif) no-repeat; height:21px; }
+
+.pollBox.pResult .bot{ background:url(/work/edda/news/images/pollBoxResultBot.gif) no-repeat; height:55px; position:relative; }
+.pollBox.pResult .bot .num{ position:absolute; right:30px; top:24px; font-weight:bold; font-weight:11px;}
+.pollBox.pResult .bot .num strong{ font-size:11px; color:#3680c8}
+
+
+.pollRulList{ width:440px; margin:auto;}
+.pollRulList dt{ margin-bottom:10px;}
+.pollRulList dl{}
+.pollRulList dd{ margin:0; padding:0; position:relative; height:10px; margin-bottom:20px;}
+.pollRulList dd .pollBar{ position:absolute; left:0px; top:0; width:400px; background:url(/work/edda/news/images/pollBarBg.gif) repeat-x; height:10px; font-size:0px; line-height:0;}
+.pollRulList dd .pollBar .bar{ background:url(/work/edda/news/images/pollBar.gif) repeat-x; height:10px; font-size:0px; line-height:0;}
+.pollRulList dd .rNum{ position:absolute; right:0px; top:0px; line-height:12px; color:#fa4903; font-weight:bold;}

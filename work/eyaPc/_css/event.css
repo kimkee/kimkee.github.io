@@ -1,0 +1,9 @@
+/* CSS Document */
+
+.eventBox{ margin-bottom:20px; border-bottom:#ededed solid 1px;}
+.eventBox .img{ border:#d2d2d2 solid 1px; padding:3px; float:left; margin-bottom:20px;}
+.eventBox h3{ font-weight:bold; width:433px; background:url(/event/images/icoDot.gif) repeat-x bottom; padding:5px 0; float:right}
+.eventBox .ctn{ line-height:18px;  width:433px; padding:10px 0 0 0 ; float:right}
+.eventBox .date{ font-size:11px;  width:433px; float:right; margin-bottom:20px; padding:5px 0 0 0}
+
+

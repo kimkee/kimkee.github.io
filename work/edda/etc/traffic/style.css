@@ -1,0 +1,22 @@
+/* CSS Document */
+
+
+.traffic {background:url(/work/edda/etc/traffic/images/bg.jpg) no-repeat center top !important;}
+.traffic .centerArea{width:687px; background:#00CC00; min-height:500px; _height:500px;}
+.traffic .mainCenter{ width:986px; margin:auto;}
+.traffic .mainCenter .mainArea{ padding:0px 0px 20px 13px }
+.traffic .mainCenter .leftArea{ margin-right:23px;}
+.traffic .mainCenter .loginBox{ background:url(/work/edda/etc/traffic/images/loginBoxBgMain.gif) no-repeat !important;}
+.traffic .bannerPc{ position:relative}
+.traffic .bannerPc .info{ position:absolute; left:33px; top:50px; font-size:11px; line-height:18px;}
+.traffic .tcYellow{ font-size:11px; color:#ac9b29; font-weight:bold;}
+.traffic .headTit{ background:url(/work/edda/etc/traffic/images/contentsTop.gif) no-repeat; width:687px; height:60px; position:relative;}
+.traffic .headTit .tit{ position:absolute; left:26px; top:29px; font-size:14px; font-weight:bold;}
+.traffic .headTit .date{ position:absolute; right:30px; top:35px; font-size:11px; color:#505a62}
+.traffic .contents{ background:url(/work/edda/etc/traffic/images/contentsBg.gif) repeat-x; background:#242c35; padding:0px 20px 20px 20px;}
+.traffic .contents .box{ background:#11161b; padding:30px; line-height:1.8em; margin-bottom:15px;}
+.traffic .list{ border:none; width:100%;}
+.traffic .list th,
+.traffic .list td{ border:none; border-bottom:#2f373f solid 1px; color:#7a8c9a; padding:7px 4px;}
+.traffic .list th{ text-align:left; font-weight:normal;}
+.traffic .list td{ text-align:right;}

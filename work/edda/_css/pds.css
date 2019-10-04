@@ -1,0 +1,34 @@
+/* CSS Document */
+
+.ssImgBig{ border:#000000 solid 1px; padding:5px; background:#1a2026; margin-bottom:10px; }
+
+.pssList{ background:#11171c; position:relative; padding:20px 0 15px 40px; width:576px;}
+.pssList .img{border:#000000 solid 1px; padding:1px; background:#1a2026; float:left; margin:0 10px 10px 0;}
+.pssList .btnSsLeft{ position:absolute; left:8px; top:84px;}
+.pssList .btnSsRight{ position:absolute; right:8px; top:84px;}
+
+.movieHead{ background:#111419; height:28px; margin-bottom:10px; position:relative;}
+.movieHead .tit{ position:absolute; left:10px; top:8px; font-size:11px; font-weight:bold;}
+.movieHead .date{ position:absolute; right:10px; top:8px; color:#505a62; font-size:10px; font-family:Tahoma;}
+.moviePlayer{background:url(/work/edda/pds/images/movieBg.gif) no-repeat #20292f; padding:7px; border:#141a20 solid 1px; margin-bottom:10px;}
+.movieList{ background:#11171c; padding:20px 0 20px 20px; width:596px; margin-bottom:20px;}
+.movieList .box{ width:135px; margin-right:12px; float:left;}
+.movieList .box .img{border:#000000 solid 1px; padding:2px; margin-bottom:7px;}
+.movieList .box .tit{ text-align:center; font-weight:bold; margin-bottom:7px;}
+.movieList .box .tit *{ color:#808181}
+.movieList .box .txt{ text-align:center; color:#4a5865; font-size:11px;}
+
+
+.wallTit{ margin-bottom:15px;}
+.wallWrap{ width:616px; overflow:hidden}
+.wallList{ width:630px; border-bottom:#2f373f solid 2px; margin-bottom:20px;}
+.wallList .box{ width:199px; margin-right:9px; text-align:center; float:left; margin-bottom:15px;}
+.wallList .box .img{border:#000000 solid 1px; padding:2px; background:#22282a; margin-bottom:6px; }
+.wallList .box .btn{ height:23px; display:inline-block;}
+.wallList .box .btn li{ float:left}
+.wallDotLine{background:url(/work/edda/pds/images/wallDot.gif) repeat-x; height:10px; line-height:1px; clear:both; margin-bottom:10px;}
+
+.btnDownload{ background:url(/work/edda/pds/images/downloadBtnBg.gif) no-repeat; height:108px; padding:20px 0 0 20px; width:596px; overflow:hidden}
+.btnDownload ul{ display:inline-block;}
+.btnDownload ul li{ float:left; margin-right:19px;text-align:center; display:inline-block;}
+.btnDownload .btnM{ text-align:right; padding:10px 20px 0px 0px ;}

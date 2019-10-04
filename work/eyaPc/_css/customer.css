@@ -1,0 +1,75 @@
+/* CSS Document */
+.policyBox { border:#ededed solid 1px; border-top:#adadad solid 2px; padding:30px; height:600px; overflow:auto;
+
+	scrollbar-face-color:#ffffff;
+	scrollbar-shadow-color:#dddddd;
+	scrollbar-highlight-color: #dddddd;
+	scrollbar-3dlight-color: #FFFFFF;
+	scrollbar-darkshadow-color: #FFFFFF;
+	scrollbar-track-color: #f6f6f6;
+	scrollbar-arrow-color: #dddddd;
+}
+.policyBox  h3{ font:11px Dotum; line-height:18px; margin-bottom:5px; font-weight:bold; color:#f65607}
+.policyBox  h4{ font:11px Dotum; line-height:18px; margin-bottom:5px}
+.policyBox  p{ font:11px Dotum; line-height:18px; margin-bottom:20px}
+.policyBox ol { padding-left:20px;}
+.policyBox ol li{ list-style:decimal; line-height:18px; margin-bottom:5px;}
+
+.fagSch{ background:url(/customer/images/faqSchBg.gif) no-repeat; height:58px; position:relative; margin-bottom:20px;}
+.fagSch .sch{ position:absolute; left:93px; top:19px}
+.fagSch .sch .keyword{ border:#c2c2c2 solid 1px; padding:1px; width:376px;}
+
+.joinConsultIMG{ margin-bottom:20px;}
+.joinConsultTit{}
+.joinConsultTable{}
+
+.joinConsultTable{ width:100%;margin-bottom:20px;border:none; border-top:#adadad solid 2px;}
+.joinConsultTable td{ border:none; padding:9px 0px 9px 20px; border-bottom:#ededed solid 1px; font-size:11px;}
+.joinConsultTable th{ border:none; padding:9px 10px 9px 20px; border-bottom:#ededed solid 1px; width:115px; text-align:left; background:#fafafa; font-size:12px;}
+.joinConsultTable input{ border:#c2c2c2 solid 1px; padding:2px;}
+.joinConsultTable textarea{ border:#c2c2c2 solid 1px; padding:2px; overflow:auto}
+.joinConsultTable *{ font-size:11px;}
+.joinConsultTable .textB{ font-size:12px; font-weight:bold; color:#ff7e00}
+.joinConsultTable .nobor{ border:none}
+.joinConsultTable .tLi{ margin-bottom:5px; line-height:16px;}
+.IP{ position:relative}
+.IP a{ position:absolute; margin-left:5px;}
+.IP img{ vertical-align:text-bottom}
+.joinConsultTable .ipSelect{ border:#c2c2c2 solid 1px; padding:1px; height:158px; width:368px;}
+.joinConsultTable .textRed{ color:#ff3000}
+.joinConsultTable .textRed strong{ color:#ff3000}
+
+
+
+.excluShopIMG{ margin-bottom:20px;}
+.excluShopTIt{ background:url(/customer/images/excluShopTitBg.gif) no-repeat; height:32px; position:relative}
+.excluShopTIt .tit{ position:absolute; left:0px; top:12px; font-weight:bold}
+.excluShopTIt img{ vertical-align:text-bottom; margin-bottom:1px;}
+
+.excluShopTable{ width:100%;margin-bottom:20px;border:none; border-top:#adadad solid 2px; border-collapse:collapse}
+.excluShopTable td{ border:none; padding:9px 10px 9px 10px; border:#ededed solid 1px; font-size:12px; text-align:center}
+.excluShopTable th{ border:none; padding:9px 10px 9px 10px; border:#ededed solid 1px; background:#fafafa; font-size:12px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,117 @@
+td {
+	font-family: "±¼¸²";
+	font-size: 12px;
+	line-height: 14px;
+
+
+}
+textarea {
+	font-family: "±¼¸²";
+	font-size: 12px;
+
+}
+input {
+	font-family: "±¼¸²";
+	font-size: 12px;
+
+}
+.vedana10 {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 10px;
+}
+.loginInput {
+
+}a.2:link {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+a.2:visited {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+a.2:active {
+
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+a.2:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.dot11v16 {
+	font-family: "µ¸¿ò";
+	line-height: 16px;
+	font-size: 11px;
+
+}
+.vdot {
+	background-attachment: fixed;
+	background-image:  url(/images2/v_dot.gif);
+	background-repeat: repeat-y;
+	background-position: left;
+}
+.v18 {
+	line-height: 18px;
+}
+.selet {
+	background-color: #E6E6E6;
+	font-family: "±¼¸²";
+	font-size: 12px;
+	color: #606060;
+
+}
+.vedana11 {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 11px;
+	line-height: 14px;
+
+}
+.gul11 {
+
+	font-family: "±¼¸²";
+	line-height: 14px;
+	font-size: 11px;
+}
+.gul12v13 {
+
+
+	font-family: "±¼¸²";
+	line-height: 14px;
+	font-size: 11px;
+}
+a:link {
+	color: #0D2D2D;
+	text-decoration: none;
+}
+a:visited {
+	color: #0D2D2D;
+	text-decoration: none;
+}
+a:active {
+
+	color: #0D2D2D;
+	text-decoration: none;
+}
+a:hover {
+
+
+	color: #0D2D2D;
+	text-decoration: underline;
+}
+body,{
+		scrollbar-3dlight-color:595959;
+	        scrollbar-arrow-color:595959;
+	        scrollbar-base-color:CFCFCF;
+	        scrollbar-darkshadow-color:FFFFFF;
+	        scrollbar-face-color:CFCFCF;
+	        scrollbar-highlight-color:FFFFF;
+	        scrollbar-shadow-color:595959
+}.gul12v22 {
+
+
+
+	font-family: "±¼¸²";
+	line-height: 22px;
+	font-size: 12px;
+}

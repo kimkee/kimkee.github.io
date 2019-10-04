@@ -1,0 +1,45 @@
+/*±Û·Î¹ú¼Â*/
+BODY,TD,DIV,form,TEXTAREA,center,option,pre,blockquote {font-size:12px;color:#4A4645;font-family:"µ¸¿ò";line-height:22px;}
+input,{font-size:12px;color:#333333;font-family:"??";}
+
+   body{
+	margin:0px;
+
+      /*  scrollbar-face-color:#F2F2F2;
+        scrollbar-highlight-color:#FFFFFF;
+        scrollbar-3dlight-color:#E6E6E6;
+        scrollbar-shadow-color:#D6D6DD;
+        scrollbar-darkshadow-color:#C0C0C0;
+        scrollbar-track-color:F2F2F2;
+        scrollbar-arrow-color:777777;
+		*/
+    }
+/* ±âº»¸µÅ© */
+a:link {    color: #4A4645;	text-decoration: none;}
+a:visited {	color: #4A4645;	text-decoration: none;}
+a:active {	color: #4A4645;	text-decoration: none;}
+a:hover {	color: #000000;	text-decoration: none;}
+
+.white:link {    color: #ffffff;	text-decoration: none;}
+.white:visited {	color: #ffffff;	text-decoration: none;}
+.white:active {	color: #ffffff;	text-decoration: none;}
+.white:hover {	color: #ffffff;	text-decoration:  underline;}
+.id {   border-color:#a2d5ec; 
+		border-width:1px; 
+		border-style:solid; 
+		width:98px; 
+		height:18px;
+	}
+.mainbody { background-image:url(../img/m_bg.gif); background-repeat:no-repeat; background-position:center 79px;}
+.sbody { background-image:url(../img/s_bg.gif); background-repeat:no-repeat; background-position:center 79px;}
+.style1 {
+	color: #8b7219;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.style2 {color: #1a6393}
+.style3 {
+	font-size: 13px;
+	font-weight: bold;
+}

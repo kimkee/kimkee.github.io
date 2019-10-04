@@ -1,0 +1,987 @@
+/* CSS Document */
+
+
+/* 공통 스타일 */
+html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+body,div,td,th,p,textarea{margin:0; padding:0; font-size:12px; font-family: Dotum, Tahoma, Sans-serif; color:#8D8D8D;}/*word-wrap:break-word*/
+html,body{}
+caption{display:none}
+img { border:0; }
+input,select {vertical-align:middle}
+.clear{display:block; float:none; clear:both; height:0; width:100%; font-size:0 !important; line-height:0 !important; overflow:hidden !important; margin:0 !important; padding:0 !important;}
+ul, ol, li ,dl , dt , dd { list-style:none; margin:0; padding:0 }
+h1, h2, h3, h4, h5, h6, h7 ,form { font-size:100%; font-weight:normal; margin:0; padding:0 }
+html:first-child select{padding-right:6px; height:20px;} /* Opera 9 & Below Fix */ 
+option {padding-right:6px;} /* Firefox Fix */
+legend {position:absolute; top:0; left:0; width:0; height:0; overflow:hidden; visibility:hidden; font-size:0; line-height:0;} /* For Screen Reader */ 
+a:link { color:#8D8D8D; text-decoration: none; }
+a:visited { color:#8D8D8D; text-decoration: none; }
+a:active { color:#8D8D8D; text-decoration: none; }
+a:hover { color:#313131 ; text-decoration:none; }
+textarea{ overflow:auto; line-height:160%;}
+.blind {visibility:hidden;overflow:hidden;position:absolute;width:0;height:0;font-size:0;line-height:0;}
+hr{display:none}
+fieldset{ border:0; position:relative; clear:both;}
+fieldset:after{ content:""; display:block; float:none; clear:both;}
+legend{ position:absolute; width:0; height:0; overflow:hidden; font:0/0 Sans-serif; visibility:hidden;}
+
+.png24 {tmp:expression(setPng24(this));} 
+
+.aLeft{ text-align:left !important}
+.aCenter{ text-align:center !important}
+.aRight{ text-align:right !important}
+.nobor{ border:none !important}
+.size11,
+.size11 *{ font-size:11px; !important}
+.size12{ font-size:12px; !important}
+.size14{ font-size:14px; !important}
+.bold{font-weight:bold !important}
+.normal{font-weight:normal !important}
+.under{ text-decoration:underline !important}
+.tcOrange,
+.tcOrange *,
+.tcOrange a{color:#f04425 !important}
+.tcBlue,
+.tcBlue *,
+.tcBlue a{color:#008BCC !important}
+.tcBlack,
+.tcBlack *,
+.tcBlack a{color:#2d2d2d !important}
+.tcGreen,
+.tcGreen *,
+.tcGreen a{color:#49b407 !important}
+
+.radio,
+.checkbox{ border:none !important; width:13px; height:13px;}
+
+.w10 { width:10px !important; }
+.w20 { width:20px !important; }
+.w30 { width:30px !important; }
+.w40 { width:40px !important; }
+.w50 { width:50px !important; }
+.w60 { width:60px !important; }
+.w70 { width:70px !important; }
+.w80 { width:80px !important; }
+.w90 { width:90px !important; }
+.w100 { width:100px !important; }
+.w110 { width:110px !important; }
+.w120 { width:120px !important; }
+.w130 { width:130px !important; }
+.w140 { width:140px !important; }
+.w150 { width:150px !important; }
+.w160 { width:160px !important; }
+.w170 { width:170px !important; }
+.w180 { width:180px !important; }
+.w190 { width:190px !important; }
+.w200 { width:200px !important; }
+.w210 { width:210px !important; }
+.w220 { width:220px !important; }
+.w230 { width:230px !important; }
+.w240 { width:240px !important; }
+.w250 { width:250px !important; }
+.w260 { width:260px !important; }
+.w270 { width:270px !important; }
+.w280 { width:280px !important; }
+.w290 { width:290px !important; }
+.w300 { width:300px !important; }
+.w400 { width:400px !important; }
+
+
+.uList{}
+.oList{ padding-left:20px;}
+.oList li{  list-style:decimal; line-height:160%;}
+.uList li{ list-style:none;  background:url(/work/kbpoint/images/main/bul2.gif) no-repeat 0 7px; padding:1px 1px 1px 5px; font-size:11px; line-height:160%;}
+
+
+
+.tempMenu{ border:#efefef solid 1px; padding:5px 5px 5px 5px; position:absolute; left:10px; top:10px; min-width:100px; _width:100px; background:#FFFFFF}
+.tempMenu img{vertical-align:middle}
+.tempMenu li{ background:#f7f7f7; border-bottom:1px solid #efefef; font-weight:bold;}
+.tempMenu li a{ display:inline-block; width:120px; font-size:11px; padding:5px 3px 5px 7px ; color:#555}
+.tempMenu li li{background:#fafafa; border:none; font-weight:normal;}
+.tempMenu li li a{ padding:3px 3px 3px 14px ; width:113px; background:url(/work/kbpoint/images/main/tempBul.gif) no-repeat 8px 6px;  color:#666666 }
+.tempMenu ul{ padding-top:2px; border-top:1px solid #efefef;}
+
+.tempMenu li li li{background:#fafafa; border:none; font-weight:normal;}
+.tempMenu li li li a{ padding:3px 3px 3px 14px ; width:113px; background:none; }
+.tempMenu ul ul{ padding-top:0px; border-top:none}
+
+
+#indexBody { background-color:#ffffff }
+#indexWrap { background:url(/work/kbpoint/images/main/mainBg.jpg) repeat-x center top #ffffff }
+#subBody { background-color:#ffffff }
+#subWrap { background:url(/work/kbpoint/images/main/mainBg.jpg) repeat-x center top #ffffff }
+.mainCenter{ width:988px; margin:auto; position:relative;}
+.subCenter{ width:988px; margin:auto; position:relative; background:#FFFFFF;}
+.header{ height:55px; position:relative; border-bottom:#05c150 solid 4px; margin:0px 0px 16px 0px ; z-index:100}
+.header .gnbLink{ position:absolute; top:0px; right:0px;}
+.header .gnbLink li{ float:left; margin-left:4px;}
+.header .gnbMenu{ position:absolute; top:35px; right:0px; margin-right:0px; }
+.header .gnbMenu li{float:left; background:url(/work/kbpoint/images/main/gnbMenuVar.gif) no-repeat right 2px        ; line-height:16px; padding:0px 4px 0px 4px }
+.header .gnbMenu li a{ font-size:11px; padding:2px 3px 4px 3px; display:inline-block }
+.header .gnbMenu li a:hover{ color:#FF6600}
+.header .gnbMenu .end{ background:none;}
+.header .gnbMenu .mypageMenu{ position:absolute; right:0px; top:17px; z-index:100; width:110px; border:#CCCCCC solid 1px; padding:7px 1px ; background:#FFFFFF}
+.header .gnbMenu .mypageMenu li{ float:inherit; clear:both; background:none; font-size:11px; width:110px;}
+.header .gnbMenu .mypageMenu li a{ display:inline; padding:1px;}
+.header .gnbSch{ background:url(/work/kbpoint/images/main/gnbSchBg.gif) no-repeat; height:27px; width:250px; position:absolute; left:290px; top:16px;}
+.header .gnbSch .keyword{ position:absolute; left:5px; top:6px; width:181px; border:#FFFFFF solid 0px; font-size:11px; color:#428025}
+.header .gnbSch .btnSch{ position:absolute; right:0px; top:0}
+
+
+.gnbDonation{ width:135px; height:40px; overflow:hidden;  padding:0px 0px 0px 0px ; text-align:right; position:absolute; right:300px; top:8px; cursor:pointer}
+.gnbDonation .tit{ margin-bottom:3px;}
+.gnbDonation img{vertical-align:middle}
+.gnbDonation .dPoint{ padding-left:10px; _padding-left:10px; width:150px; }
+.gnbDonation .dPoint{ height:11px; text-align:center; padding-top:0px; margin-bottom:0px;}
+.gnbDonation .dPoint .dNum{ display:block; float:left; text-align:center;  font-size:12px; color:#4ab507; font-weight:bold; font-family:Verdana; border:#EAEAEA  solid 1px; padding:1px 0px 1px 0px;  margin-right:1px; line-height:11px;}
+.gnbDonation .dPoint .dot{display:block; float:left; text-align:center;  font-size:12px; color:#4ab507; font-weight:bold; font-family:Verdana;padding:1px 0px 1px 0px;  margin-right:1px; line-height:11px;}
+.gnbDonation .dPoint .dot img{ vertical-align:middle;}
+.gnbDonation .dPoint .dWon{ border:none; padding:0; font-family:Dotum; font-size:50px; padding-top:0px;}
+
+
+.mainShopArea{  width:910px; min-height:500px; _height:500px; padding-bottom:25px; }
+.leftArea{ width:170px; height:450px; float:left;}
+.leftArea .leftMenu{ margin-bottom:27px; position:relative; z-index:10; background:url(/work/kbpoint/images/main/leftMenuBg.gif) repeat-y}
+.leftArea .leftMenu img{vertical-align:middle;}
+.leftMenu .menuTop{ margin-bottom:0px;}
+.leftMenu .menuTop img{ vertical-align:text-bottom}
+.leftMenu .mDepth1{ margin-bottom:5px;}
+.leftMenu .mDepth1 li img{ vertical-align:middle}
+.leftMenu .mDepth1 li{ margin-bottom:0px; position:relative; z-index:50}
+.leftMenu .dotBg{ background:url(/work/kbpoint/images/main/leftMenuDot.gif) no-repeat; height:12px; line-height:0px; font-size:0px;}
+.leftMenu .dotBg span,
+.leftMenu .leftMenuBot span {display:none}
+.leftMenu .mBot{ background:url(/work/kbpoint/images/main/leftMenuBg2.gif) repeat-y; padding-top:7px;}
+.leftMenu .leftMenuBot{ background:url(/work/kbpoint/images/main/leftMenuBot.gif) no-repeat; height:4px; margin-top:1px; line-height:0px; font-size:0px;}
+
+.leftMenu .mDepth2{ border:#9bd11e solid 2px; padding:10px 0px; width:150px; background:#FFFFFF; position:absolute; left:140px; top:0px; z-index:100}
+.leftMenu .mDepth2 li{ line-height:18px;}
+.leftMenu .mDepth2 li a{font-size:11px; width:142px; display:inline-block; padding:1px 0px 0px 8px;}
+.leftMenu .mDepth2 li a:hover{background:#9bd11e; color:#FFFFFF}
+.leftMenu .mDepth2{ display:none;}
+
+.leftMenu #mCate1{ top:0px;}
+.leftMenu #mCate2{ top:27px;}
+.leftMenu #mCate3{ top:47px;}
+.leftMenu #mCate4{ top:67px;}
+.leftMenu #mCate5{ top:87px;}
+.leftMenu #mCate6{ top:107px;}
+.leftMenu #mCate7{ top:127px;}
+.leftMenu #mCate8{ top:187px;}
+.leftMenu #mCate9{ top:221px;}
+.leftMenu #mCate10{ top:241px;}
+.leftMenu #mCate11{ top:254px;}
+.leftMenu #mCate12{ top:290px;}
+.leftMenu #mCate13{ top:312px;}
+.leftMenu #mCate14{ top:326px;}
+.leftMenu #mCate15{ top:351px;}
+.leftMenu #mCate16{ top:370px;}
+.leftMenu #mCate17{ top:385px;}
+.leftMenu #mCate18{ top:432px;}
+.leftMenu ul{ z-index:500}
+
+.mainShopArea .area1{ width:718px; float:right; margin-bottom:6px;}
+
+.mainRollBanner{ margin-bottom:24px; float:left; position:relative; z-index:1}
+.mainRollBanner .imgField{ width:544px; height:270px; overflow:hidden;}
+.mainRollBanner .bannerListField img{ _vertical-align:middle;}
+.mainRollBanner .bannerListField li{ float:left;}
+.mainRollBanner .bannerListField li a{ width:124px; height:20px; line-height:18px; padding:10px 0 6px 0; font-size:11px; background:#ebebeb; display:inline-block; color:#707070; text-align:center;}
+.mainRollBanner .bannerListField li.on a,
+.mainRollBanner .bannerListField li a:hover{ background:url(/work/kbpoint/images/main/mainBannerBtnBg.gif) no-repeat center 0; color:#FFFFFF;  font-weight:bold;}
+.mainRollBanner .bannerListField li a div{ font-size:11px;}
+.mainRollBanner .bannerListField li.on a div{ color:#FFFFFF}
+.mainRollBanner .bannerListField li a:hover div{ color:#FFFFFF}
+.mainRollBanner .bannerListField .btnPrev a{ width:24px; padding:0; border:none; height:36px;}
+.mainRollBanner .bannerListField .btnPrev a:hover{ padding:0; border:none;}
+.mainRollBanner .bannerListField .btnNext a{ width:24px; padding:0; border:none; height:36px; }
+.mainRollBanner .bannerListField .btnNext a:hover{width:24px; overflow:hidden; padding:0; border:none !important;  background:none;  }
+.mainRollBanner .ribon1{ position:absolute; left:0px; top:-8px;}
+.mainRollBanner .ribon2{ position:absolute; right:-29px; top:39px; z-index:100;}
+
+/*메인 이슈배너모음 */
+.mainIssuBanner{ margin-bottom:0; height:257px;}
+.mainIssuBanner table{ width:907px; border-top:#e4e4e4 solid 1px; border-left:#e4e4e4 solid 1px;}
+.mainIssuBanner table td{  border-right:#e4e4e4 solid 1px; padding:0; margin:0;}
+
+
+.mainRollBanner2 { background:url(/work/kbpoint/images/main/main_mds_bg.gif) no-repeat; width:174px; height:306px; float:right; position:relative; z-index:0;}
+.mainRollBanner2 .md_pick_title{ position:absolute; left:7px; top:0px; z-index:10;}
+.mainRollBanner2 .md_pick_list{ position:absolute; right:6px; top:12px;}
+.mainRollBanner2 .md_pick_list li{ float:left; margin-left:5px;}
+.mainRollBanner2 .md_pic_contents{position:absolute; left:2px; top:70px;}
+.mainRollBanner2 .md_pic_contents .img{ margin-bottom:15px; text-align:center;}
+.mainRollBanner2 .md_pic_contents .img img{ width:140px; height:140px;}
+.mainRollBanner2 .md_pic_contents .tit{ text-align:center; padding:0px 10px; font-weight:bold; font-size:12px; line-height:16px; height:30px; overflow:hidden; margin-bottom:5px;}
+.mainRollBanner2 .md_pic_contents .price{ text-align:center; font-size:16px; font-family:Tahoma}
+.mainRollBanner2 .md_pic_contents .price .aPrice{ text-decoration:line-through; font-size:12px; margin-bottom:3px;}
+.mainRollBanner2 .md_pic_contents .price .bPrice{ font-weight:bold; color:#3289a5;font-size:16px;}
+.mainShockPick{ background:url(/work/kbpoint/images/main/mainTodayBg3.gif) no-repeat;}
+.mainTodayPick{ background:url(/work/kbpoint/images/main/mainTodayBg3.gif) no-repeat;}
+
+
+.mainCtnBanner{ height:133px; clear:both; width:718px; overflow:hidden; margin-bottom:27px;}
+.mainCtnBanner ul{ width:745px;}
+.mainCtnBanner li{float:left; margin-right:19px;}
+
+.mainWeekBest{ width:718px; height:250px; position:relative; background:url(/work/kbpoint/images/main/wbRightImg.jpg) no-repeat right 30px;}
+.mainWeekBest .tit{ position:absolute; left:0px; top:0px;}
+.mainWeekBest .prodBoxWrap{ position:absolute; left:0px; top:20px; height:215px; overflow:hidden;}
+.mainWeekBest .prodBox { width:138px; margin-right:10px; margin-bottom:10px; float:left; position:relative;}
+.mainWeekBest .prodBox .pImg{ margin-bottom:1px; margin-bottom:5px;}
+.mainWeekBest .prodBox .pImg img{ width:138px; height:138px; border:#ebebeb solid 1px;}
+.mainWeekBest .prodBox .pIco{ position:absolute; left:0px; top:0px;}
+.mainWeekBest .prodBox .itemName{ margin-bottom:3px; line-height:14px; height:26px; overflow:hidden; text-align:center;}
+.mainWeekBest .prodBox .itemName a{ font-size:11px; line-height:14px;}
+.mainWeekBest .prodBox .itemPrice{ text-align:center; font-weight:bold; margin-bottom:3px;}
+.mainWeekBest .prodBox .icoPointree{ text-align:center;}
+
+.pointHitItem{ height:302px; width:910px;  position:relative; width:906px; overflow:hidden; margin-bottom:20px;}
+.pointHitItem .tit{ position:absolute; left:0px; top:0px;}
+.pointHitItem .tab{ position:absolute; left:128px; top:0px;}
+.pointHitItem .tab li{ float:left;}
+.pointHitItem .itemBoxWrap{ position:absolute; left:0px; top:30px; padding:26px 0px 0px 30px; width:950px; height:270px; background:url(/work/kbpoint/images/main/pointHitItemBg.gif) no-repeat 0px 2px;}
+
+.mainItemBox{ width:144px; float:left; margin:0px 32px 8px 0px; position:relative;}
+.mainItemBox .pImg{ margin-bottom:10px;}
+.mainItemBox .pImg img{ width:138px; height:138px; border:#eeeeee solid 1px;}
+.mainItemBox .pIco{ position:absolute; left:0px; top:0px; display:none;}
+.mainItemBox .itemName{line-height:14px; text-align:center; font-size:11px; margin:auto; margin-bottom:5px;  width:100px; height:28px; overflow:hidden;}
+.mainItemBox .itemPrice{ text-align:center; font-weight:bold; margin-bottom:5px; color:#000000}
+.mainItemBox .icoPointree{ text-align:center}
+
+
+
+
+.totalHitItem{ height:302px; width:910px;  position:relative; width:906px; overflow:hidden; margin-bottom:20px;}
+.totalHitItem .tit{ position:absolute; left:0px; top:0px;}
+.totalHitItem .tab{ position:absolute; left:128px; top:0px;}
+.totalHitItem .tab li{ float:left;}
+.totalHitItem .itemBoxWrap{ position:absolute; left:0px; top:30px; padding:26px 0px 0px 30px; width:950px; height:270px; background:url(/work/kbpoint/images/main/pointHitItemBg.gif) no-repeat 0px 2px;}
+
+.snsBanner{ margin-bottom:20px;}
+
+.cateBestItem{ height:320px; width:907px;  position:relative; margin-top:-3px;  overflow:hidden; margin-bottom:0px; background:url(/work/kbpoint/images/main/cBestBg.gif) no-repeat 0px -40px;}
+.cateBestItem .tit{ position:absolute; left:0px; top:0px;}
+.cateBestItem .tab{ position:absolute; left:119px; top:0px;}
+.cateBestItem .tab li{ float:left;}
+.cateBestItem .itemBoxWrap{ position:absolute; left:0px; top:60px; padding:17px 0px 0px 30px; width:950px; background:none}
+
+
+
+
+.skyArea{ position:absolute; top:74px; right:0px; width:64px; min-height:300px; _height:300px; }
+#skyBanner{ width:64px;}
+#skyBanner .banner{ margin-bottom:8px;}
+#skyBanner .basketInfoList{ border:none; width:100%; border-left:#e9e9e9 solid 1px;   margin-bottom:0px;}
+#skyBanner .basketInfoList td{ border:none; padding:3px 3px 3px 3px; border-right:#e9e9e9 solid 1px; border-top:#e9e9e9 solid 1px; font-size:11px; line-height:16px; text-align:center;}
+#skyBanner .basketInfoList .basTit{ color:#49b407; letter-spacing:-1px; padding-top:1px;}
+#skyBanner .basketInfoList .basTit a{color:#49b407}
+#skyBanner .basketInfoList .basNum{ color:#c88650;}
+#skyBanner ul,li{ margin:0; padding:0; list-style:none;}
+#skyBanner .basImg { margin-top:5px;}
+#skyBanner .basImg li{  margin-bottom:5px; }
+#skyBanner .basImg li img{ vertical-align:middle;}
+#skyBanner .basBtn{ height:16px;} 
+#skyBanner .basBtn li{ float:left; line-height:0px; font-size:0px;} 
+#skyBanner .btnTop{ line-height:0px; font-size:0px;}
+
+
+
+.footer{ width:910px; padding-bottom:30px;}
+.footer .footerLink{ height:18px; margin-left:122px; margin-bottom:5px;}
+.footer .footerLink li{ float:left;}
+.footer .companyInfo{ margin-left:122px; clear:both}
+.footer .companyInfo p{ line-height:16px; font-size:11px; color:#979696}
+.footer .companyInfo .comTel{ color:#846021}
+.footer .companyInfo .comTel a{ color:#846021}
+
+.locHome{ position:absolute; left:3px; top:1px; z-index:100}
+.loct2{ position:absolute; left:210px; top:1px; z-index:100}
+
+/* 상단 로케이션 셀렉트 메뉴 1차버젼인데 사용안함 */
+.cateSel{ position:absolute; left:50px; top:-3px; *top:-1px; z-index:100}
+.cateSel .sel { border:#dadada solid 1px; width:150px; _width:144px;}
+.cateSel .sel a{display:inline-block; line-height:13px; padding:4px 3px 2px 3px ; width:144px;  background:url(/work/kbpoint/images/main/btnSelOpen.gif) no-repeat right 1px #FFFFFF}
+.cateSel a{ display:inline-block; width:137px; font-size:11px; padding:2px 2px 1px 5px }
+.cateSel .list a:hover{background:#f7f7f7}
+.cateSel .list{ border:#dadada solid 1px; border-top:none; padding:3px; width:144px; background:#FFFFFF }
+.cateSel .list li{ line-height:18px;}
+.cateSel .list .tit{width:137px; padding:4px 2px 3px 5px; font-weight:bold;}
+.cateSel .list .tit a{}
+.cateSel2{ position:absolute; left:225px; top:-3px; z-index:100}
+
+/* 상단 로케이션 셀렉트 메뉴*/
+.selectbox1 .bar{ padding:4px 3px 3px 3px ;}
+.selectbox1 #CategoryNavi { border:#dadada solid 1px; float:left; padding:3px 3px 2px 3px; border-right:none; width:131px; z-index:1000; position:relative; cursor:pointer; }
+.selectbox1 #Lcategory,
+.selectbox1 #Mcategory,
+.selectbox1 #Mcategory_store { display:none;border:#dadada solid 1px; float:left; padding:3px 3px 2px 3px; border-top:none; background:#FFFFFF;width:150px; z-index:1000; position:relative; }
+.selectbox1 #Lcategory .categorylist_div ul li,
+.selectbox1 #Mcategory .categorylist_div ul li,
+.selectbox1 #Mcategory_store .categorylist_div ul li{ padding:3px 3px 2px 3px;}
+.selectbox1 #Lcategory .categorylist_div ul li p,
+.selectbox1 #Mcategory .categorylist_div ul li p,
+.selectbox1 #Mcategory_store .categorylist_div ul li p{ font-size:11px; cursor:pointer;}
+
+
+/*아이템 썹네일타입*/
+.itemBox{ width:170px; float:left; margin-right:13px; }
+.itemBox img{ vertical-align:middle;}
+.itemBox .pImg{ margin-bottom:5px;}
+.itemBox .pImg img{ width:168px; height:168px; border:#efefef solid 1px;}
+.itemBox .itemOpt{ padding:1px 1px 1px 1px; margin-bottom:4px; }
+.itemBox .itemOpt .itemCoupon{ color:#ffa414; font-weight:bold;}
+.itemBox .itemName{line-height:16px; font-size:12px; padding-top:3px; margin:auto; margin-bottom:7px; height:30px; overflow:hidden;}
+.itemBox .itemName .brand{ color:#CC99CC; font-weight:bold; font-size:11px; letter-spacing:-1px;}
+.itemBox .itemInfoWrap{ height:50px; margin-bottom:3px;}
+.itemBox .itemInfo{ background:#f6f6f6;   padding:8px 0 1px; margin-bottom:10px; height:38px; }
+.itemBox .itemInfo .itemPrice{ text-align:left;  padding-left:10px; margin-bottom:2px;height:16px; font-size:11px;}
+.itemBox .itemInfo .itemPrice .priceTxt{ color:#5c5c5c; font-weight:bold;}
+.itemBox .itemInfo .itemPriceSale{ text-align:left;  padding-left:10px; margin-bottom:2px;height:16px; font-size:11px;}
+.itemBox .itemInfo .itemPriceSale .priceTxt{ color:#49b407; font-weight:bold;}
+.itemBox .icoPointree{ margin-bottom:5px;}
+.itemBox .txt2{ padding:15px 5px; border-top:#e4e4e4 solid 1px;  border-bottom:#e4e4e4 solid 1px; }
+.itemBox .itemBtn img{ vertical-align:text-bottom}
+.itemBox .itemBtn{ display:none;}
+.itemLine{ border-bottom:#DBDADA solid 1px; height:1px; line-height:1px; font-size:1px; clear:both; margin-bottom:30px; padding-top:30px;}
+
+
+/* 3뎁스 관련 CSS*/
+.cateMenu3Depth {margin-bottom:20px;}
+.cateMenu3Depth .cTop{ background:url(/work/kbpoint/images/main/cateMenuTopBg3.gif) no-repeat; width:910px; height:55px;}
+.cateMenu3Depth .cTop .tit{ color:#f96c13; font-size:14px; font-weight:bold; padding:20px 0px 0px 20px }
+.cateMenu3Depth .cMenu{ width:876px; border:#878787 solid 2px; border-top:none; background:#FFFFFF; padding:5px 10px 10px 20px ; z-index:100;}
+.cateMenu3Depth  ul li{float:left; width:145px; padding:0px 0px 3px 0px; margin:0px 15px 0px 0; background:url(/work/kbpoint/images/main/cMenuListBar.gif) no-repeat right 4px; line-height:14px;}
+.cateMenu3Depth  ul li a{ font-size:11px;}
+.cateMenu3Depth .cMenu .cMenuListBrand{ padding-top:4px; width:874px;}
+.cateMenu3Depth .cMenu .cMenuListBrand li{ font-size:11px;}
+.cateMenu3Depth .txtEa{ font-size:11px; color:#66CC66; letter-spacing:-1px; margin-left:2px;}
+.cateMenu3Depth .cMenuOn{ margin-top:103px; padding-top:0px; display:none; position:absolute; left:0px; top:108px;}
+.cateMenu3Depth .cMenuListOver{overflow:hidden; position:absolute; margin-top:-9px; width:876px; border:#878787 solid 2px; border-top:none; background:#FFFFFF; padding:0px 10px 5px 20px}
+
+
+.ItemList3Depth { width:910px; overflow:hidden; padding-top:13px; border-bottom:#CCCCCC solid 1px;}
+.ItemList3Depth .itemBoxWrap{ width:940px; margin-bottom:40px; overflow:hidden;}
+.ItemList3Depth .itemBox{ width:170px; float:left; margin-right:15px; }
+
+
+.itemListPlanSaleTypeA {  padding-top:23px;}
+.itemListPlanSaleTypeA .itemBoxWrap{ width:960px; }
+.itemListPlanSaleTypeA .itemBox{ width:200px; margin-right:36px; }
+.itemListPlanSaleTypeA .itemBox .pImg img{ width:198px; height:inherit}
+
+.itemListPlanSaleTypeB {  padding-top:33px;}
+.itemListPlanSaleTypeB .itemBoxWrap{ width:960px; }
+.itemListPlanSaleTypeB .itemBox{ width:280px; margin-right:35px; }
+.itemListPlanSaleTypeB .itemBox .pImg img{ width:278px; height:inherit}
+
+.planSaleTop{ margin-bottom:20px;}
+
+.schResultHead{ background:#f4f4f4; padding:13px 0 9px 14px;border-bottom: 2px solid #F96C14}
+.schResultHead .cateTit{ background:url(/work/kbpoint/images/main/depth3Bul1.gif) no-repeat; padding-left:15px;}
+
+.moneyOption {height:20px; border-bottom:solid 1px #dbdada ;padding:10px 0 9px 10px;}
+.moneyOption .arrayPrice{}
+.moneyOption .arrayPrice li{ float:left;}
+.moneyOption .listStyle{ float:right}
+.moneyOption .listStyle li{ float:left;}
+
+.itemPaging{height:20px; border-bottom:solid 1px #dbdada ;padding:12px 0 10px 14px; text-align:center; margin-bottom:0px;}
+.itemPaging .pNum{ float:left; width:560px; text-align:center; padding-left:120px;}
+.itemPaging .pNum a{ display:inline-block; padding:1px 5px 1px 5px; border:#e4e4e4 solid 1px; margin-right:1px; }
+.itemPaging .pNum .on{ color:#66CC66; border:#66CC66 solid 1px; font-weight:bold;}
+.itemPaging .listNum{ float:right}
+.itemPaging .listNum a{ display:inline-block; padding:3px 3px 3px 3px; vertical-align:middle; }
+.itemPaging .listNum a.on{ font-weight:bold;}
+.itemPaging .itemListCheckBox{ float:left; width:20px;}
+
+/*3뎁스 리스트형*/
+.ItemList3DepthList{ border:none; width:100%;}
+.ItemList3DepthList img{ vertical-align:middle}
+.ItemList3DepthList td{ border:none; border-bottom:#DFDFDF solid 1px; padding:10px 5px; text-align:center}
+.ItemList3DepthList .bImg{width:110px;}
+.ItemList3DepthList .bName{  text-align:left; vertical-align:top; padding-top:35px;}
+.ItemList3DepthList .bBrand{ width:70px; vertical-align:top; padding-top:41px;}
+.ItemList3DepthList .benefit{ width:70px;}
+.ItemList3DepthList .benefit p{ padding:0px 0; text-align:left;}
+.ItemList3DepthList p{ text-align:center; margin-bottom:5px;}
+.ItemList3DepthList .pIco{ text-align:left; padding-left:5px;}
+.ItemList3DepthList .bSpec{ width:160px; vertical-align:top; padding-top:42px;}	
+.ItemList3DepthList .bSpec .price{ font-weight:bold; color:#008bcc}
+.ItemList3DepthList .bSpec div{ text-align:left; padding-left:5px;}
+.ItemList3DepthList .bImg img{ width:100px; height:100px;}
+.ItemList3DepthList .itemName{ margin-bottom:5px; padding-top:5px; line-height:150%;}
+.ItemList3DepthList .itemName .brand{ color:#313131; font-weight:bold; font-size:11px;}
+.ItemList3DepthList .itemPrice{  margin-bottom:5px; font-size:11px;}
+.ItemList3DepthList .itemPrice .priceTxt{ color:#5c5c5c; font-weight:bold;}
+.ItemList3DepthList .itemPriceSale{  margin-bottom:5px; font-size:11px;}
+.ItemList3DepthList .itemPriceSale .priceTxt{ color:#49b407; font-weight:bold;}
+.ItemList3DepthList .itemCoupon{ color:#ffa414; font-weight:bold;}
+.ItemList3DepthList .pAss{ font-size:11px; margin-left:4px;}
+
+/* 2뎁스 리스트 관련 CSS*/
+.shopHead{ position:relative; height:40px; border-bottom:#dddddd solid 1px; margin-bottom:10px; width:910px; z-index:50;}
+.shopHead .shopTit{ position:absolute; left:0; top:0}
+.shopHead .location{position:absolute; left:0px; top:12px; height:20px; width:500px;}
+.shopHead .btnHisBack{ position:absolute; right:0px; top:12px;}
+.subCenter2Depth .location{ left:190px;}
+
+
+.ctn2Depth{ width:718px; float:right; margin-bottom:20px;  min-height:700px; _height:600px;}
+.cateMenu2Depth {margin-bottom:20px; width:718px; position:relative; z-index:5;}
+.cateMenu2Depth .cTop{ background:url(/work/kbpoint/images/main/cateMenuTopBg.gif) no-repeat; width:718px; height:55px;}
+.cateMenu2Depth .cTop .tit{ color:#f96c13; font-size:14px; font-weight:bold; padding:20px 0px 0px 20px }
+.cateMenu2Depth .cMenu{ position:relative; border:#878787 solid 2px; border-top:none; background:#FFFFFF; padding:5px 10px 10px 10px; width:694px; overflow:hidden; }
+.cateMenu2Depth .cMenuList{ width:680px; overflow:hidden;}
+.cateMenu2Depth ul li{float:left; width:145px; padding:0px 0px 3px 10px; margin:0px 15px 0px 0; background:url(/work/kbpoint/images/main/cMenuListBar.gif) no-repeat right 4px; line-height:14px;}
+.cateMenu2Depth ul li a{font-size:11px;}
+.cateMenu2Depth .txtEa{ font-size:11px; color:#66CC66; letter-spacing:-1px; margin-left:2px;}
+.cateMenu2Depth .cMenu .cMenuListBrand{  padding-top:10px; width:680px; overflow:hidden;}
+.cateMenu2Depth .cMenu .cMenuListBrand li{ font-size:11px;}
+.cateMenu2Depth .cMenuListOver{ width:694px; overflow:hidden; position:absolute; margin-top:-9px; border:#878787 solid 2px; border-top:none; background:#FFFFFF; padding:0px 10px 10px 10px}
+
+.ItemList2Depth { width:718px; overflow:hidden; padding-top:13px; border-bottom:#CCCCCC solid 1px;}
+.ItemList2Depth .itemBoxWrap{ width:750px; margin-bottom:40px; overflow:hidden;}
+.ItemList2Depth .itemBox{ width:160px; float:left; margin-right:26px; }
+.ItemList2Depth .itemBox .pImg img{ width:158px; height:158px; border:#efefef solid 1px;}
+.ItemList2DepthList .bName {}
+.ItemList2DepthList .benefit { width:70px;}
+.ItemList2DepthList .bBrand { width:70px; vertical-align:top; padding-top:41px;}
+
+.mdTitle{ margin-bottom:10px;}
+.hotTitle{ margin-bottom:30px;}
+
+.prodBest { border:#dadada solid 2px; padding:2px; margin-bottom:20px; width:710px; overflow:hidden; position:relative; z-index:0}
+.prodBest .itemBoxWrap{ padding:9px 1px 1px 21px ; height:inherit; overflow:hidden; margin-bottom:0px; width:700px;}
+.prodBest .itemBox{ width:140px; float:left; margin-right:35px; }
+.prodBest .itemBox .pImg{ margin-bottom:3px; position:relative;}
+.prodBest .itemBox .pImg img{ width:136px; height:136px; border:none;}
+.prodBest .itemBox .pImg a{ border:#eaeaea solid 2px; display:inline-block;}
+.prodBest .itemBox .pImg a:hover{ border:#febb31 solid 2px;}
+.prodBest .itemBox .icoBest { position:absolute; left:2px; top:2px;}
+.prodBest .itemBox .icoBest img{ width:36px; height:36px;}
+.prodBest .itemBox .itemName{line-height:15px; font-size:11px; padding-top:3px; margin:auto; margin-bottom:5px; height:29px; overflow:hidden;}
+.prodBest .itemBox .itemInfo{ background:#f6f6f6;   padding:8px 0 1px; margin-bottom:10px; }
+.prodBest .itemBox .itemInfo .itemPrice{ text-align:left;  padding-left:10px; margin-bottom:5px;height:16px;}
+.prodBest .itemBox .itemInfo .itemPrice .priceTxt{ color:#5C5C5C; font-weight:bold;}
+.prodBest .itemBox .icoPointree{}
+.prodBest .itemBox .txt2{ padding:15px 5px; border-top:#e4e4e4 solid 1px;  border-bottom:#e4e4e4 solid 1px; }
+
+.ctn2Depth .itemPaging .pNum{ float:left; width:407px; text-align:center; padding-left:130px;}
+
+.mdProdType1 {float:left; width:375px;}
+.mdProdType1 .itemBox{ width:390px; margin-bottom:40px; height:230px; overflow:hidden;}
+.mdProdType1 .itemBox .pImg{ margin-bottom:10px; float:left;}
+.mdProdType1 .itemBox .pImg img{ width:208px; height:208px; border:none; border:#efefef solid 1px;}
+.mdProdType1 .itemBox .pIco{ position:absolute; left:0px; top:0px;}
+.mdProdType1 .itemBox .right{ width:170px; float:right}
+.mdProdType1 .itemBox .itemName{line-height:14px; font-size:13px; padding-top:5px; margin:auto; margin-bottom:0px; height:50px; overflow:hidden;}
+.mdProdType1 .itemBox .itemInfo{ background:#f6f6f6;   padding:10px 0 5px; margin-bottom:10px; }
+.mdProdType1 .itemBox .itemInfo .itemPrice{ text-align:left;  padding-left:10px; margin-bottom:5px;height:16px;}
+.mdProdType1 .itemBox .itemInfo .itemPrice .priceTxt{ color:#008bcc; font-weight:bold;}
+.mdProdType1 .itemBox .icoPointree{ text-align:left;}
+.mdProdType1 .itemBox .txt2{ padding:15px 5px; border-top:#e4e4e4 solid 1px;  border-bottom:#e4e4e4 solid 1px; }
+
+.mdProdType2 {float:right; width:300px; overflow:hidden; margin-bottom:15px;}
+.mdProdType2 .itemBoxWrap{ width:330px; margin-bottom:20px; height:247px; overflow:hidden;}
+.mdProdType2 .itemBox{ width:140px; float:left; margin-right:20px; }
+.mdProdType2 .itemBox .pImg{ margin-bottom:3px;}
+.mdProdType2 .itemBox .pImg img{ width:138px; height:138px; border:#efefef solid 1px;}
+.mdProdType2 .itemBox .itemName{line-height:14px; font-size:11px; padding-top:3px; margin:auto; margin-bottom:5px; height:29px; overflow:hidden;}
+.mdProdType2 .itemBox .itemInfo{ background:#f6f6f6;   padding:8px 0 1px; margin-bottom:10px; }
+.mdProdType2 .itemBox .itemInfo .itemPrice{ text-align:left;  padding-left:10px; margin-bottom:5px;height:16px;}
+.mdProdType2 .itemBox .itemInfo .itemPrice .priceTxt{ color:#008bcc; font-weight:bold;}
+.mdProdType2 .itemBox .icoPointree{ text-align:left; padding-left:10px;}
+.mdProdType2 .itemBox .txt2{ padding:15px 5px; border-top:#e4e4e4 solid 1px;  border-bottom:#e4e4e4 solid 1px; }
+
+
+.mdHotItemList {width:720px; overflow:hidden;}
+.mdHotItemList .itemBoxWrap{ width:740px;}
+
+.priceCommon{ color:#5c5c5c; font-weight:bold;}
+.priceSale{ color:#49b407; font-weight:bold;}
+
+
+/* 쿠폰,무이자,일시불,깜짝 아이콘*/
+.ctn2Depth .icoCoupon{ *margin-right:2px;}
+
+.icoCoupon{ background:url(/work/kbpoint/images/main/icoCouponBg.gif) no-repeat 0 0; margin-bottom:2px; padding:0px 0px 0px 1px; font-size:11px; height:14px; line-height:11px; display:inline-block; vertical-align:middle;  }
+.icoCoupon strong{ background:url(/work/kbpoint/images/main/icoCouponBg.gif) no-repeat right 0; padding:3px 3px 1px 1px ; height:12px; display:inline-block; letter-spacing:-1px;}
+.icoCoupon strong{ color:#FFFFFF; font-size:11px; line-height:11px; font-weight:normal}
+
+.icoSuprice{ background:url(/work/kbpoint/images/main/icoSpriceBg.gif) no-repeat 0 0; margin-bottom:2px; padding:0px 0px 0px 1px; font-size:11px; height:14px; line-height:11px; display:inline-block; vertical-align:middle;  }
+.icoSuprice strong{ background:url(/work/kbpoint/images/main/icoSpriceBg.gif) no-repeat right 0; padding:3px 3px 1px 1px ; height:12px; display:inline-block; letter-spacing:-1px;}
+.icoSuprice strong{ color:#FFFFFF; font-size:11px; line-height:11px; font-weight:normal}
+
+.icoPayOne{ background:url(/work/kbpoint/images/main/icoPayOneBg.gif) no-repeat 0 0; margin-bottom:2px; padding:0px 0px 0px 1px; font-size:11px; height:14px; line-height:11px; display:inline-block; vertical-align:middle;  }
+.icoPayOne strong{ background:url(/work/kbpoint/images/main/icoPayOneBg.gif) no-repeat right 0; padding:3px 3px 1px 1px ; height:12px; display:inline-block; letter-spacing:-1px;}
+.icoPayOne strong{ color:#FFFFFF; font-size:11px; line-height:11px; font-weight:normal}
+
+.icoMoo{ background:url(/work/kbpoint/images/main/icoMooBg.gif) no-repeat 0 0; margin-bottom:2px; padding:0px 0px 0px 1px; font-size:11px; height:14px; line-height:11px; display:inline-block; vertical-align:middle;  }
+.icoMoo strong{ background:url(/work/kbpoint/images/main/icoMooBg.gif) no-repeat right 0; padding:3px 3px 1px 1px ; height:12px; display:inline-block; letter-spacing:-1px;}
+.icoMoo strong{ color:#FFFFFF; font-size:11px; line-height:11px; font-weight:normal}
+
+.icoBenefit{ background:url(/work/kbpoint/images/main/icoBenefitBg.gif) no-repeat 0 0; margin-bottom:2px; padding:0px 0px 0px 1px; font-size:11px; height:14px; line-height:11px; display:inline-block; vertical-align:middle;  }
+.icoBenefit strong{ background:url(/work/kbpoint/images/main/icoBenefitBg.gif) no-repeat right 0; padding:3px 3px 1px 1px ; height:12px; display:inline-block; letter-spacing:-1px;}
+.icoBenefit strong{ color:#FFFFFF; font-size:11px; line-height:11px; font-weight:normal}
+
+
+/*사용가능한 쿠폰 레이어팝업*/
+.couponUse{  border:#95cc72 solid 2px; background:#f2f9e7; padding:3px; width:562px;position:absolute; left:21px; top:200px;} /**/
+.couponUse img{vertical-align:text-bottom}
+.couponUse .head{ height:28px; position:relative;}
+.couponUse .head .tit{ left:4px; top:1px; position:absolute; font-weight:bold; padding:4px 0; color:#007d40; background:none !important; border:none !important;}
+.couponUse .head .btn{ right:3px; top:3px; position:absolute;  padding:0;}
+.couponUse .ctn{ background:#FFFFFF; border:#ddf5c5 solid 1px; padding:5px; min-height:150px; _height:150px;}
+.couponUse .couponList{ border:none; width:100%; margin:0}
+.couponUse .couponList th,
+.couponUse .couponList td{ border:none; padding:3px 3px; text-align:center; font-size:11px; color:#666; line-height:16px;}
+.couponUse .couponList th{background:#f4f4f4}
+.couponUse .couponList td{ border-bottom:#f1f1f1 solid 1px;}
+.couponUse .couponList .bTit{ text-align:left; width:200px;}
+.couponUse .couponList input,
+.couponUse .couponList select{ border:#dedede solid 1px; padding:1px; font-size:11px;}
+.prdLayerPop .couponUse { top:80px; left:144px;}
+.payCoupon {position:absolute}
+.payCoupon .couponUse{left:0px; top:6px;}
+
+/*사용가능한 쿠폰 레이어팝업*/
+.couponPack{ width:340px; position:absolute; left:0px; top:73px; background:#FFF;border:2px solid #95CC72; padding:10px; }
+.couponPack img{vertical-align:text-bottom}
+.couponPack .head{ height:27px; margin-bottom:3px}
+.couponPack .head .tit{ float:left; font-weight:bold; padding-top:3px;}
+.couponPack .head .btn{ float:right}
+.couponPack .cpList{ border-top:#9b9b9b solid 2px; width:100%; margin-bottom:10px;}
+.couponPack .cpList th,
+.couponPack .cpList td{ border:none; padding:5px 3px; text-align:center !important; font-size:11px; color:#666; line-height:16px;}
+.couponPack .cpList th{background:#f4f4f4 !important}
+.couponPack .cpList td{ border-bottom:#f1f1f1 solid 1px !important ;background:none !important;}
+.couponPack .cpList .bTit{ text-align:left; width:200px;}
+.couponPack .cpList input,
+.couponPack .cpList select{ border:#c6d3e3 solid 1px; padding:1px; font-size:11px;}
+.couponPack .cpInfo{ font-size:11px; padding-left:10px; margin-bottom:5px;}
+.couponPack .btnList{ padding:0}
+.prdLayerPop .couponPack{ left:0px; top:30px;}
+
+/*배송지목록 팝업*/
+.adsListPop{ display:block; border:#e7ecf2 solid 2px; background:#e7ecf2; padding:3px; width:562px;  }
+.adsListPop img{vertical-align:text-bottom}
+.adsListPop .head{ height:25px; position:relative;}
+.adsListPop .head .tit{ left:4px; top:1px; position:absolute; font-weight:bold; padding:4px 0; color:#5a6a8e; background:none !important; border:none !important;}
+.adsListPop .head .btn{ right:3px; top:3px; position:absolute;  padding:0;}
+.adsListPop .ctn{ background:#FFFFFF; border:#d3dfee solid 1px; padding:5px; min-height:253px; _height:253px;}
+.adsListPop .adsList{ border:none; width:100%; margin:0}
+.adsListPop .adsList th,
+.adsListPop .adsList td{ border:none; padding:3px 3px; text-align:center; font-size:11px; color:#666; line-height:16px;}
+.adsListPop .adsList th{background:#f4f4f4}
+.adsListPop .adsList td{ border-bottom:#f1f1f1 solid 1px;}
+.adsListPop .adsList .bTit{ text-align:left;}
+.adsListPop .adsList input,
+.adsListPop .adsList select{ border:#c6d3e3 solid 1px; padding:1px; font-size:11px;}
+/*새 배송지 팝업*/
+.adsNewPop{ display:block; border:#e7ecf2 solid 2px; background:#e7ecf2; padding:3px; width:562px;  }
+.adsNewPop img{vertical-align:middle;}
+.adsNewPop .head{ height:25px; position:relative;}
+.adsNewPop .head .tit{ left:4px; top:1px; position:absolute; font-weight:bold; padding:4px 0; color:#5a6a8e; background:none !important; border:none !important;}
+.adsNewPop .head .btn{ right:3px; top:3px; position:absolute;  padding:0;}
+.adsNewPop .ctn{ background:#FFFFFF; border:#d3dfee solid 1px; padding:5px; min-height:210px; _height:210px;}
+.adsNewPop .adsnList{ border:none; width:100%; margin:0; border-top:#F1F1F1 solid 1px;}
+.adsNewPop .adsnList p{ margin-bottom:3px;}
+.adsNewPop .adsnList th,
+.adsNewPop .adsnList td{ border:none; padding:5px 5px; text-align:center; font-size:11px; color:#666; line-height:16px; border-bottom:#F1F1F1 solid 1px;}
+.adsNewPop .adsnList th{background:#F9F9F9}
+.adsNewPop .adsnList td{ text-align:left;}
+.adsNewPop .adsnList .bTit{ text-align:left;}
+.adsNewPop .adsnList input,
+.adsNewPop .adsnList select{ border:#c6d3e3 solid 1px; padding:1px; font-size:11px;}
+/*우편번호 팝업*/
+.zipcodePop{ display:block; background:#fff; padding:0px; width:405px; color:#101010  }
+.zipcodePop img{vertical-align:text-bottom}
+.zipcodePop .head{ }
+.zipcodePop .head .tit{  font-weight:bold; background:none !important; border:none !important;}
+.zipcodePop .head .btn{ right:3px; top:3px; position:absolute;  padding:0;}
+.zipcodePop .ctn{ background:#FFFFFF; border:#fff solid 1px; padding:10px 10px; min-height:280px; _height:280px;}
+.zipcodePop .zipListWrap{ height:150px; width:380px; overflow-x:hidden; overflow-y:scroll; }
+.zipcodePop .zipList{ border:none; width:100%; margin:0; border-top:#ffc37b solid 2px; border-left:#e0e0e0 solid 1px; }
+.zipcodePop .zipList th,
+.zipcodePop .zipList td{ border:none; padding:6px 7px; text-align:center; font-size:11px; color:#666; line-height:16px; border-bottom:#e0e0e0 solid 1px; border-right:#e0e0e0 solid 1px;}
+.zipcodePop .zipList th{background:#f4f4f4}
+.zipcodePop .zipList td{}
+.zipcodePop .zipList .bTit{ text-align:left;}
+.zipcodePop .btnSch{ border:none;}
+.zipcodePop input,
+.zipcodePop select{ font-size:11px;}
+.zipcodePop .zipInfo{ padding:5px 0; margin-bottom:9px;}
+.zipcodePop .zipInfo p{ margin-bottom:3px;}
+.zipcodePop .zipInfo .t2{ color:#50ac19}
+.zipcodePop .zipSch{ text-align:center; margin-bottom:10px;}
+.zipcodePop .zipSch .keyword{ width:100px}
+.zipcodePop .zipSch img{ vertical-align:middle;}
+.zipSchResult .ads{ width:300px;}
+.zipSchResult .t2{ margin-bottom:10px;}
+
+.optChange{border:#e7ecf2 solid 2px; background:#e7ecf2; padding:5px; width:400px;}
+.optChange img{ vertical-align:middle}
+.optChange .head{ height:25px; position:relative;}
+.optChange .head .tit{ left:4px; top:1px; position:absolute; font-weight:bold; padding:4px 0; color:#5a6a8e}
+.optChange .head .btn{ right:3px; top:3px; position:absolute;  padding:0;}
+.optChange .ctn{ background:#FFFFFF; border:#d3dfee solid 1px; padding:5px; min-height:150px; _height:150px;}
+.optChange .optChangeList{ border:none; width:100%; margin:0; border-top:#f1f1f1 solid 1px;}
+.optChange .optChangeList th,
+.optChange .optChangeList td{ border:none; padding:3px 3px; border-bottom:#f1f1f1 solid 1px; text-align:center; font-size:11px; color:#666; line-height:16px; text-align:left;}
+.optChange .optChangeList th{background:#f9f9f9; width:80px; padding-left:8px;}
+.optChange .optChangeList td{}
+.optChange .optChangeList .bTit{ text-align:left; width:200px;}
+.optChange .optChangeList input,
+.optChange .optChangeList select{ border:#f1f1f1 solid 1px; padding:1px; font-size:11px;}
+.optChange .optSelect{ width:300px;}
+
+
+.optChange .optChangeList2{ border:none; width:100%; margin:0; border-top:#f1f1f1 solid 1px;  border-left:#f1f1f1 solid 1px;}
+.optChange .optChangeList2 th,
+.optChange .optChangeList2 td{ border:none; padding:3px 7px; border-bottom:#f1f1f1 solid 1px;  border-right:#f1f1f1 solid 1px; text-align:center; font-size:11px; color:#666; line-height:16px; text-align:left;}
+.optChange .optChangeList2 th{background:#f9f9f9; width:80px; padding-left:8px;}
+.optChange .optChangeList2 .eaOpt{ width:70px;}
+.optChange .optChangeList2 .bTit{ text-align:left;  padding-left:10px;}
+.optChange .optChangeList2 input,
+.optChange .optChangeList2 select{ border:#f1f1f1 solid 1px; padding:1px; font-size:11px;}
+.optChange .optChangeList2 .price{ text-align:right; font-weight:bold; font-size:12px; width:90px;}
+
+.optChange .btnNum{width:64px; margin:auto}
+.optChange .btnNum .inputPnum{ border:#CCCCCC solid 1px; padding:2px; width:17px; float:left; height:15px; line-height:14px; margin-right:3px; vertical-align:middle;}
+.optChange .btnNum .btnArrow{ float:left; width:9px; overflow:hidden; vertical-align:middle}
+.optChange .btnNum .btnArrow a{}
+.optChange .btnNum .btnArrow img{ margin-bottom:1px; vertical-align:middle;}
+.optChange .btnNum .btnArrow span{ line-height:0px; font-size:0px; margin-bottom:1px; display:block;}
+.optChange .btnNum .btnMod{ margin-left:2px; width:26px; float:right; padding-top:4px;}
+.optChange .btnNum .btnMod img{ vertical-align:middle;}
+.optChangeInfo{ margin:10px 0; padding-left:8px;}
+.optChange .totalPrice{ text-align:right; padding:10px 0}
+.optChange .totalPrice .commonPrice{ color:#008bcc; font-weight:bold; font-size:16px;}
+
+
+.orderMemo{display:none; position:absolute; left:75px; top:-5px; z-index:100; border:#e7ecf2 solid 2px; background:#e7ecf2; padding:5px; width:400px;}
+.orderMemo img{ vertical-align:middle}
+.orderMemo .head{ height:25px; position:relative;}
+.orderMemo .head .tit{ left:4px; top:1px; position:absolute; font-weight:bold; padding:4px 0; color:#5a6a8e}
+.orderMemo .head .btn{ right:3px; top:3px; position:absolute;  padding:0;}
+.orderMemo .ctn{ background:#FFFFFF; border:#d3dfee solid 1px; padding:5px; min-height:150px; _height:150px;}
+.orderMemo .textMemo{ border:#f1f1f1 solid 1px; padding:2px; overflow:auto; width:380px; height:150px;}
+.orderMemo .oderMemoInfo{ margin:10px 0;}
+
+.recentAddsArea{position:relative}
+
+.recentAddsArea .recentAdds{ display:none; border:#657fb0 solid 2px; background:#e7ecf2; padding:3px; width:200px; position:absolute; left:215px; top:0px;}
+.recentAddsArea .recentAdds .head{ height:25px; position:relative;}
+.recentAddsArea .recentAdds .head .tit{ left:4px; top:1px; position:absolute; font-weight:bold; padding:4px 0; color:#5a6a8e}
+.recentAddsArea .recentAdds .head .btn{ right:3px; top:3px; position:absolute;  padding:0;}
+.recentAddsArea .recentAdds .ctn{ background:#FFFFFF; border:#d3dfee solid 1px; padding:5px; min-height:100px; _height:100px;}
+.recentAddsArea .recentAdds .adsList{ border:none; width:100%; margin:0}
+.recentAddsArea .recentAdds .adsList th,
+.recentAddsArea .recentAdds .adsList td{ border:none; padding:3px 3px !important; text-align:center; font-size:11px; color:#666; line-height:16px;}
+.recentAddsArea .recentAdds .adsList th{background:#f4f4f4}
+.recentAddsArea .recentAdds .adsList td{ border-bottom:#f1f1f1 solid 1px;}
+.recentAddsArea .recentAdds .adsList .bTit{ text-align:left;}
+.recentAddsArea .recentAdds .adsList input,
+.recentAddsArea .recentAdds .adsList select{ border:#c6d3e3 solid 1px; padding:1px; font-size:11px;}
+
+
+
+.pointKbPopWrap{position:relative}
+.pointKbPopWrap .pointKbPop{ display:none; border:#657fb0 solid 2px; background:#e7ecf2; padding:3px; width:300px; position:absolute; left:210px; top:-19px;}
+.pointKbPopWrap .pointKbPop img{ vertical-align:text-bottom;}
+.pointKbPopWrap .pointKbPop .head{ height:25px; position:relative;}
+.pointKbPopWrap .pointKbPop .head .tit{ left:4px; top:1px; position:absolute; font-weight:bold; padding:4px 0; color:#5a6a8e; background:none; border:none;}
+.pointKbPopWrap .pointKbPop .head .btn{ right:3px; top:3px; position:absolute;  padding:0;}
+.pointKbPopWrap .pointKbPop .ctn{ background:#FFFFFF; border:#d3dfee solid 1px; padding:5px; min-height:100px; _height:100px;}
+.pointKbPopWrap .pointKbPop .pointList{ border:none; width:100%; margin:0}
+.pointKbPopWrap .pointKbPop .pointList th,
+.pointKbPopWrap .pointKbPop .pointList td{ border:none; padding:3px 5px !important; text-align:left; font-size:11px; color:#666; line-height:16px; border-bottom:#f1f1f1 solid 1px;}
+.pointKbPopWrap .pointKbPop .pointList th{}
+.pointKbPopWrap .pointKbPop .pointList td{}
+.pointKbPopWrap .pointKbPop .pointList .bTit{ text-align:left;}
+.pointKbPopWrap .pointKbPop .pointList input,
+.pointKbPopWrap .pointKbPop .pointList select{ border:#c6d3e3 solid 1px; padding:1px; font-size:11px;}
+
+
+
+/* 검색결과 */
+.searchHead{ position:relative; height:41px; padding-bottom:1px; border-bottom:#dddddd solid 1px; margin-bottom:10px; width:910px;}
+.searchHead .schLocation .locHome{position:absolute; left:0px; top:-2px; height:20px; font-weight:bold;}
+.searchHead .schLocation{position:absolute; left:120px; top:12px; height:20px; width:200px;}
+.searchHead .schLocation .cateSelSch{ left:110px; padding-bottom:1px;}
+.searchHead .schLocation .cateSelSch .cateSelect{ border:#dadada solid 1px; padding:2px 2px 2px 2px ; color:#666; width:150px; font-size:12px; line-height:12px;}
+.searchHead .brnHisBack{ position:absolute; right:0px; top:12px;}
+.searchHead .schForm{position:absolute; left:268px; top:-3px; width:400px; }
+.searchHead .schForm .keyword{ border:#DADADA solid 1px; padding:2px; width:300px}
+
+.schTopBox{ background: #f2f1ed; padding:8px; margin-bottom:10px; }
+.schTopBox .head{ height:34px;}
+.schTopBox .head .result{ float:left; padding:3px; width:500px;}
+.schTopBox .head .result .tit{ float:left; padding:1px 1px 1px 17px;  font-size:16px; font-weight:bold; background:url(/work/kbpoint/images/main/schTopBul1.gif) no-repeat 0 3px; color:#000000; margin-right:10px;}
+.schTopBox .head .result .tit strong{ color:#49b407}
+.schTopBox .head .result .cate{:10px; height:20px; padding-top:3px}
+.schTopBox .head .result .cate li{ float:left; color:#000000; background:url(/work/kbpoint/images/main/schCateBar.gif) no-repeat 0 3px; padding:1px 1px 1px 10px; margin-left:10px; }
+.schTopBox .head .result .cate strong{ color:#49b407}
+.schTopBox .head .hotKeyword{ float:right;}
+
+
+.schTopBox .hotKeyword{ float:right; padding-top:2px; position:relative; margin-left:10px;} 
+.schTopBox .hotKeyword img{ vertical-align:middle;} 
+.schTopBox .hotKeyword .rank{ width:95px; height:22px; padding:5px 1px 1px 81px;background:url(/work/kbpoint/images/main/schRankBg.gif) no-repeat; font-weight:bold;}
+.schTopBox .hotKeyword .rankList{ display:none; position:absolute; left:68px; top:-4px;border:#CCCCCC solid 1px; padding:7px; width:90px; background:#FFFFFF}
+.schTopBox .hotKeyword .rankList li{ width:82px; overflow:hidden; background:url(/work/kbpoint/images/main/schRankNum1.gif) no-repeat 0 2px; padding:2px 1px 1px 15px ; font-weight:bold;}
+.schTopBox .hotKeyword .rankList li a{ width:100%; display:inline-block;}
+.schTopBox .hotKeyword .rankList .ra1{ background-image:url(http://image.hmall.com/static/b2b/image/KP/images/main/schRankNum1.gif)}
+.schTopBox .hotKeyword .rankList .ra2{ background-image:url(http://image.hmall.com/static/b2b/image/KP/images/main/schRankNum2.gif)}
+.schTopBox .hotKeyword .rankList .ra3{ background-image:url(http://image.hmall.com/static/b2b/image/KP/images/main/schRankNum3.gif)}
+.schTopBox .hotKeyword .rankList .ra4{ background-image:url(http://image.hmall.com/static/b2b/image/KP/images/main/schRankNum4.gif)}
+.schTopBox .hotKeyword .rankList .ra5{ background-image:url(http://image.hmall.com/static/b2b/image/KP/images/main/schRankNum5.gif)}
+.schTopBox .hotKeyword .rankList .ra6{ background-image:url(http://image.hmall.com/static/b2b/image/KP/images/main/schRankNum6.gif)}
+.schTopBox .hotKeyword .rankList .ra7{ background-image:url(http://image.hmall.com/static/b2b/image/KP/images/main/schRankNum7.gif)}
+.schTopBox .hotKeyword .rankList .ra8{ background-image:url(http://image.hmall.com/static/b2b/image/KP/images/main/schRankNum8.gif)}
+.schTopBox .hotKeyword .rankList .ra9{ background-image:url(http://image.hmall.com/static/b2b/image/KP/images/main/schRankNum9.gif)}
+.schTopBox .hotKeyword .rankList .ra10{ background-image:url(http://image.hmall.com/static/b2b/image/KP/images/main/schRankNum10.gif)}
+.schTopBox .cateBox{ border:#dfdcd5 solid 1px; padding:12px; background:#FFFFFF}
+.schTopBox .cateBox .cateList{ border:none; width:100%}
+.schTopBox .cateBox .cateList th{ width:120px; text-align:left;}
+.schTopBox .cateBox .cateList th img{margin-bottom:10px;}
+.schTopBox .cateBox .cateList th,
+.schTopBox .cateBox .cateList td{ padding:10px 1px 13px 1px ;}
+.schTopBox .cateBox .cateList .cList li{ padding:1px 1px 1px 15px; margin-bottom:7px; font-size:11px; float:left; margin-right:10px; width:120px;  background:url(/work/kbpoint/images/main/schCateBar.gif) no-repeat 0 2px;}
+.schTopBox .cateBox .cateList .cList .cNum{ font-size:10px; font-family:Tahoma}
+.schTopBox .cateBox .cateList .line{ border-bottom:#e1e1e1 solid 1px;}
+.schTopBox .cateBox .cateList .bot{ padding:25px 1px 6px 1px ;}
+
+.schTopBox .conKeyword{ margin-left:0px;}
+.schTopBox .conKeyword .rank{background-image:url(http://image.hmall.com/static/b2b/image/KP/images/main/schRank2Bg.gif)}
+.schBrand{ border:#b2b2b2 solid 1px; height:20px; margin-bottom:10px; padding:10px 10px 10px 20px; background:#f4f4f4; border-left:none; border-right:none; }
+.schBrand img{ vertical-align:middle;}
+.schBrand .tit{ float:left; margin-right:10px;}
+.schBrand .list{ float:left; height:15px; *padding-top:4px;}
+.schBrand .list li{ float:left; margin-right:10px;}
+.schBrand .btn{ float:right;}
+.schMoneyOption {height:38px; background:url(/work/kbpoint/images/main/schTabBg.gif) no-repeat    ;padding:0px 0 0px 8px; margin-bottom:3px;}
+.schMoneyOption .arrayPrice{}
+.schMoneyOption .arrayPrice li{line-height:18px; float:left; background:url(/work/kbpoint/images/main/schTabBgOff.gif) no-repeat right 0px; color:ffffff}
+.schMoneyOption .arrayPrice li a{ font-weight:bold; color:#FFFFFF; padding:10px 20px 5px 20px ; height:20px; display:inline-block }
+.schMoneyOption .arrayPrice li.on{ margin-left:-1px; background:url(/work/kbpoint/images/main/schTabBgOn.gif) repeat-x;}
+.schMoneyOption .arrayPrice li.on a{color:#4d7838 ;padding:12px 20px 3px 20px ; }
+.schMoneyOption .listStyle{ float:right}
+.schMoneyOption .listStyle li{ float:left;}
+
+.schOption{ background:#f5f5f5; padding:5px 10px ; width:890px; height:20px; line-height:18px; font-size:11px;}
+.schOption img{vertical-align:middle}
+.schOption input{vertical-align:middle}
+.schOption div{ float:left;}
+.schOption .tit{ margin-right:10px; background:url(/work/kbpoint/images/main/schOptBul1.gif) no-repeat 0 8px; padding:3px 1px 1px 10px; line-height:16px; font-weight:bold; color:#000000  }
+.schOption .hyunList{ margin-right:5px; position:relative;}
+.schOption .hyunList .selOn{ display:none; border:#CCCCCC solid 1px; position:absolute; left:0px; top:0px; margin-top:19px; width:145px; padding:4px 4px 4px 4px ; background:#FFFFFF}
+.schOption .hyunList .selOn li{ font-size:11px; padding-left:3px;}
+.schOption .hyunCheck{ margin-right:30px; font-weight:bold; color:#48ad13; _padding-top:4px;}
+.schOption .checkList{}
+.schOption .checkList li{ float:left; margin-right:3px; _padding-top:4px; }
+.schOption .btn{ margin-left:10px;}
+.schOption .priceResult {position:relative}
+.schOption .priceResult .selOn{display:none; border:#CCCCCC solid 1px; position:absolute; left:0px; top:0px; margin-top:19px; background:#FFFFFF}
+.schOption .priceResult .selOn li{ font-size:11px; padding:2px;}
+.schOption .priceResult .selOn a{ display:inline-block; width:190px; padding:1px 2px 0px 2px ;}
+.schOption .priceResult .selOn a:hover{background:#fafafa}
+
+.searchArea .itemBox .itemBtn{ display:block;}
+.searchArea .ItemList3DepthList .bBrand{ vertical-align:middle; padding-top:10px;} 
+
+#viewPop{ padding:0px;}
+#viewPop .tempMenu{ display:none;}
+#viewPop .viewPopWrap{ background:#ffffff; padding:5px; width:754px;}
+.viewPopWrap .prdViewTab{ margin-bottom:0px}
+.viewPopWrap .prdViewTab{ height:33px; overflow:hidden;}
+.viewPopWrap .prdCtn{ border:#6d6962 solid 2px; padding:5px; padding-top:15px; border-top:none; width:740px; height:650px; overflow:auto;}
+.viewPopWrap .prdCtn .prdTit{ padding-top:9px; margin-bottom:10px;}
+.viewPopWrap .prdCtn .prdTit img{ vertical-align:middle} 
+.viewPopWrap .prdCtn .prdTit .name{ font-weight:bold; font-size:16px; padding:8px 8px;}
+.viewPopWrap .prdCtn .prdTit .price{ color:#f96c14; font-size:16px;	}
+.viewPopWrap .prdViewTab {}
+.popBigImg{ float:left; }
+.popBigImg img{ border:#cecdcb solid 1px; margin-right:30px;}
+.prdCtn .thumList{ float:left;}
+.prdCtn .thumList { width:80px; overflow:hidden; }
+.prdCtn .thumList ul{ }
+.prdCtn .thumList ul li{ margin-right:7px; margin-bottom:4px;}
+.prdCtn .thumList ul li img{ border:#d7d7d7 solid 1px; vertical-align:middle; width:54px; height:54px;}
+.prdPopBox {display:none;}
+.prdPopBox .prdViewNotice{ margin-top:15px;}
+#viewPop .viewPopWrapASS{ padding:10px; width:720px;}
+#viewPop .viewPopWrapASS .bbsHead{ margin-top:10px; margin-bottom:10px;}
+
+.imgAddBox{ width:410px; position:relative; font-size:11px; margin-bottom:5px;}
+.imgAddBox .imgFileList{}
+.imgAddBox .btn{ position:absolute; right:63px; top:0px;}
+.imgAddBox .imgFileList{ width:300px; height:45px; font-size:11px;}
+.imgAddBox .imgByte{ position:absolute; right:0px; top:25px;}
+.imgAddBox .imgByte input{ width:30px; font-size:11px;}
+
+.imgAddInfo{ font-size:11px;}
+
+.starAss{ margin-left:10px;}
+.starAss dt{ float:left; width:60px; height:17px; padding-left:0px; padding-top:5px; margin-bottom:5px; font-size:11px;}
+.starAss dd{ height:20px; margin-bottom:5px; padding-top:2px;}
+.starAss dd label{ margin-right:10px;}
+
+
+.preCalcPop{ width:615px;}
+.preCalcPop .head{ background:url(/work/kbpoint/images/main/preCalcHeadBg.gif) repeat-x; height:40px;}
+.preCalcPop .head .tit{ float:left}
+.preCalcPop .head .right{ float:right}
+.preCalcPop .ctnBox{ padding:12px;}
+.preCalcList{ border:none; border-top:#bfceed solid 2px; width:100%;}
+.preCalcList th,
+.preCalcList td{ padding:4px 4px 4px 4px; text-align:center;}
+.preCalcList th{ background:#f0f5fb}
+.preCalcList th{ background:#f0f5fb}
+.preCalcList .pImg { width:50px;}
+.preCalcList .pImg img{ border:#e8e8e8 solid 1px;}
+.preCalcList .bTit{ width:300px; text-align:left;}
+.prePrice{ border:#dfe5e5 solid 2px; background:#fafafa; padding:8px; border-left:none; border-right:none; margin-bottom:20px; text-align:right;}
+.preCalcOptList .tcOrange  {color: #313131 !important;}
+.prePrice .tcOrange  {color: #313131 !important;}
+.preCalcOptList{ border:none; width:100%; border-top:#c0d3e5 solid 1px; margin-bottom:20px;}
+.preCalcOptList img{vertical-align:middle;}
+.preCalcOptList label{ margin-right:20px;}
+.preCalcOptList th,
+.preCalcOptList td{ padding:7px 8px; border:none; border-bottom:#c0d3e5 solid 1px; text-align:left;}
+.preCalcOptList th{ background:#e9f0fa; color:#274767}
+.preCalcOptList input,
+.preCalcOptList select{ border:#c0d3e5 solid 1px; padding:1px; font-size:11px; color:#666}
+.preCalcOptList .payVal{ text-align:right; width:80px;}
+
+.preTotalPay{ border:#becfed solid 2px; padding:10px 15px; margin-bottom:5px;}
+.preTotalPay .aRight{ color:#49B407 }
+.preTotalPay .w80{ color:#313131}
+.preTotalPay .normal{color:#313131}
+
+.preTotalPay table{ border:none; width:100%; border-collapse:collapse}
+.preTotalPay table th,
+.preTotalPay table td{ height:50px; vertical-align:top; border:none; padding:5px; padding-right:25px; line-height:18px; text-align:left; font-weight:bold; color:#333333}
+.preTotalPay table th{width:100px;}
+.preTotalPay .thVline{ border-left:#e4e4e4 solid 2px; padding-left:25px;}
+
+.preCalcPop .btnList{ background:#f3ebe2; border-top:#ede3d8 solid 1px; padding:8px; width:600px;}
+
+
+
+
+/* 달력 */
+.calendar{overflow:hidden; width:198px;font-family:'돋움',dotum;font-size:12px;line-height:12px;text-align:center; background:#FFFFFF}
+.calendar a{text-decoration:none !important}
+.calendar img{border:0}
+.calendar a.btn_cal{display:inline-block;width:31px;padding-right:2px;background:url(/work/kbpoint/images/main/bgBtnCal.gif) no-repeat 100% 0;font-size:11px;color:#888;letter-spacing:-1px;line-height:19px;text-decoration:none}
+.calendar a.btn_cal:hover{color:#000}
+.calendar a.btn_cal span{display:block;padding:1px 0 0 2px;background:url(/work/kbpoint/images/main/bgBtnCal.gif) no-repeat}
+.calendar .calendar_type{overflow:hidden;height:27px;background:#f2f2f2}
+.calendar .calendar_type .note{float:left;padding:7px 0 0 5px;font-size:11px;line-height:13px;letter-spacing:-1px}
+.calendar .calendar_type .note span{display:inline-block;overflow:hidden;width:65px;white-space:nowrap;text-overflow:ellipsis}
+.calendar .calendar_type .note img{margin-top:1px;vertical-align:top}
+.calendar .calendar_type .btns{float:right;padding:3px 5px 0 3px}
+.calendar .calendar_type .btns a{margin-left:-3px}
+.calendar .calendar_type .selected{color:#d00 !important}
+.calendar .calendar_period{clear:both;margin:11px 0 10px}
+.calendar .calendar_period a{display:inline-block;margin:-1px -1px 0;padding:1px;vertical-align:middle}
+.calendar .calendar_period a img{vertical-align:top}
+.calendar .calendar_period strong{display:inline-block;width:83px;font-family:verdana;font-size:13px;color:#333;line-height:15px;text-align:center}
+.calendar table{ border:none;width:168px;margin:0 auto 11px ;border-top:1px solid #f4f4f4; border-left:1px solid #f4f4f4;}
+.calendar table caption,.calendar table thead{ }
+.calendar table th,
+.calendar table td{padding:0;border:0;background:#fff;border:0;border-bottom:1px solid #f4f4f4; border-right:1px solid #f4f4f4; font-family:verdana,tahoma;font-size:10px;line-height:12px}
+.calendar table th{ font-size:11px; padding:6px 0px 5px 0px ; font-weight:normal;}
+.calendar table td.selectable a{background:#fffcb2}
+.calendar table td.selected a{background:#e5f2ff}
+.calendar table td.today a{background:#7f7f7f;color:#fff}
+.calendar table td a{display:block;width:24px;height:13px; padding:4px 0;color:#000;text-align:center;letter-spacing:-1px}
+.calendar table td.sun a{color:#f00}
+.calendar table td.sat a{color:#00f}
+.calendar .calendar_input_period{margin:0 5px 0;padding:4px 0;border-top:1px solid #e5e5e5;color:#666}
+.calendar .calendar_input_period .tilde{margin:0 -3px;font-family:tahoma;font-size:11px;color:#aaa}
+.calendar .calendar_input_period input.date{width:62px;height:14px;margin-top:1px;*margin:0 0 -1px;padding:2px 0 0 4px;border:1px solid #ccc;font-family:tahoma;font-size:11px;line-height:13px;vertical-align:top}
+.calendar .calendar_input_period a.btn_cal{color:#454545}
+
+
+
+.privacyAgreeBox{ background:#f4f4f4; padding:15px 15px; border:#cccccc solid 0px; border-left:none; border-right:none; margin-bottom:20px;}
+.privacyAgreeBox img{vertical-align:middle}
+.privacyAgreeBox .tit{ font-size:14px; font-weight:bold; margin-bottom:10px;}
+.privacyAgreeBox .box{ border:#efefef solid 1px; background:#FFFFFF; padding:10px 7px; margin-bottom:10px; height:70px; overflow:auto;
+	scrollbar-face-color:#e9e9e9;
+	scrollbar-shadow-color:#cccccc;
+	scrollbar-highlight-color: #cccccc;
+	scrollbar-3dlight-color: #FFFFFF;
+	scrollbar-darkshadow-color: #FFFFFF;
+	scrollbar-track-color: #ffffff;
+	scrollbar-arrow-color: #777777;
+}
+.privacyAgreeBox .prvBoxBtn1{ margin-left:30px;}
+
+
+/* 주문서 쿠폰, 포인트조회 */
+#innerPOPs { position:relative; z-index:99999999999; }
+#innerPOPs2 { position:relative; z-index:99999999999; }
+#pop_content_div	{ position:absolute; z-index:99999999999; background:#FFF; padding-bottom:20px; }
+#pop_div2 { position:absolute; z-index:99999999999; width:100%; background:#FFF; }
+#pop_content_div2 { position:absolute; z-index:99999999999;}
+
+
+
+
+/* 쿠폰적용 */
+.preview_buy_coupon_div{ display:block}
+.preview_buy_coupon_tbl{}
+.preview_buy_coupon_div{  border:#95cc72 solid 2px; background:#fff; padding:5px; width:340px;position:absolute; right:21px; top:160px;} /**/
+.preview_buy_coupon_div img{vertical-align:text-bottom}
+.preview_buy_coupon_div .head{ height:25px; position:relative;}
+.preview_buy_coupon_div .head .tit{ left:4px; top:1px; position:absolute; font-weight:bold; padding:4px 0; color:#007d40; background:none !important; border:none !important;}
+.preview_buy_coupon_div .head .btn{ right:3px; top:3px; position:absolute;  padding:0;}
+.preview_buy_coupon_div .ctn{ background:#FFFFFF; border:#ddf5c5 solid 1px; padding:5px; min-height:150px; _height:150px;}
+.preview_buy_coupon_div .preview_buy_coupon_tbl{ border:none; width:100%; margin:0; border-top:#ddd solid 1px; background:#FFFFFF}
+.preview_buy_coupon_div .preview_buy_coupon_tbl th,
+.preview_buy_coupon_div .preview_buy_coupon_tbl td{ border:none; padding:5px 5px; text-align:center; font-size:11px; color:#666; line-height:16px;}
+.preview_buy_coupon_div .preview_buy_coupon_tbl th{background:#f4f4f4; border-bottom:#ddd solid 1px;}
+.preview_buy_coupon_div .preview_buy_coupon_tbl td{ border-bottom:#ddd solid 1px;}
+.preview_buy_coupon_div .preview_buy_coupon_tbl .bTit{ text-align:left; width:200px;}
+.preview_buy_coupon_div .preview_buy_coupon_tbl input,
+.preview_buy_coupon_div .preview_buy_coupon_tbl select{ border:#dedede solid 1px; padding:1px; font-size:11px;}
+.preview_buy_coupon_tbl_hide{ border:none !important;}
+
+.loadScreen{ background:#000000; height:1000px; position:absolute; left:0px; top:0px; width:100%; z-index:900; opacity:.5; filter:alpha(opacity=50);}
+.loadingCounsel{ position:absolute; left:200px; top:467px; z-index:1000}
+.loadingCounsel2{ position:relative; left:280px; top:20px; z-index:1100}
+.loadingPay{ position:absolute; left:280px; top:60px; z-index:1000}
+
+.cateMenuPlanType{ background:#f1f1f3; border-top:#2c2c2c solid 1px; margin-bottom:0px; padding:4px 0 0 0px;}
+.cateMenuPlanType .cateTab{ height:27px; margin-bottom:4px; padding-left:4px;}
+.cateMenuPlanType .cateTab li{ float:left; margin-right:3px;}
+.cateMenuPlanType .cateTab li a{ width:179px; display:inline-block; font-weight:bold; text-align:center; line-height:15px; padding:6px 0px; background:url(/work/kbpoint/images/main/planSaleTabBg.gif) no-repeat;}
+.cateMenuPlanType .cateTab li a.on{ color:#F96C13}
+.cateMenuPlanType .cateTab li a:hover{color:#F96C13}
+.cateMenuPlanType .planHead{ border-top:#f96c13 solid 2px; border-bottom:#e2e2e2 solid 1px; background:#f7f7f7;  height:32px; }
+.cateMenuPlanType .planHead .tit{ float:left; padding:9px 0 0 10px; color:#f96c13; font-weight:bold;}
+.cateMenuPlanType .planHead .btn{ float:right; padding:3px 1px 1px 1px }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

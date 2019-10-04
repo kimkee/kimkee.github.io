@@ -1,0 +1,79 @@
+/* CSS Document */
+.errorArea{ min-height:400px; _height:400px;}
+.errorBox{ border:#eeeeee solid 7px; padding:30px 80px; width:450px; margin:auto; margin-top:100px; margin-bottom:100px;}
+.errorBox .hTitle{ margin:auto;}
+.errorBox .errCtn{ padding:20px 10px;}
+.errorBox .errCtn h4{ font-size:16px; color:#3a3a3a; font-weight:bold; margin-bottom:10px;}
+.errorBox .errCtn p{ line-height:200%;}
+.errorBox .btn{text-align:center}
+
+.viewPop .tempMenu{ display:none;}
+.policyPop{ width:713px;}
+.policyPop img{vertical-align:middle}
+.policyPop .pHead{ margin-bottom:10px;}
+.policyPop .pBody{ padding:20px}
+.policyPop .pBody .title{ margin-bottom:20px;}
+.policyPop .pBody .hTit{ font-weight:bold; margin-bottom:15px; padding-top:10px; margin-top:20px;}
+.policyPop .pBody .olKO{ margin-bottom:20px; margin-left:15px;}
+.policyPop .pBody .olKO li{ line-height:18px; }
+
+.policyPop .pBody .cpImg1{ width:490px; margin:auto; padding:40px 0}
+.policyPop .pBody .cpMsg{ width:490px; margin:auto; padding:20px 0; text-align:center; line-height:200%;}
+.policyPop .cpBot{ padding:10px;}
+
+.policyPop .cpImg{ margin-left:-20px; margin-bottom:15px;}
+
+.policyPop .pBody .olNum{ margin-bottom:20px; margin-left:15px; padding-left:2px;}
+.policyPop .pBody .olNum li{ line-height:18px; list-style:decimal; margin-bottom:5px; font-size:11px; }
+
+.prvList{ padding:10px 0px 10px 15px ; border:#ededed 4px solid; margin-bottom:25px;}
+.prvTable{ border:none; width:100%}
+.prvTable td{ padding:3px 0; line-height:18px; font-size:11px; letter-spacing:-1px;} 
+.policyPop .pBody .hTitPrv{ background:url(/work/kbpoint/images/etc/privacyBul01.gif) no-repeat 0 5px; padding:1px 1px 1px 10px ; font-weight:bold; margin-bottom:10px; margin-top:20px; }
+.policyPop .pBody .hTitPrv strong{ color:#4587BB}
+.policyPop .pBody .pTxt{ margin-bottom:20px; line-height:18px; font-size:11px;} 
+
+.policyPop .pBody .ulBul{  margin-left:15px; padding-left:2px;}
+.policyPop .pBody .ulBul li{ line-height:18px; list-style:circle; margin-top:5px; }
+.policyPop .pBody .ulBulS{  margin-left:15px; padding-left:2px;}
+.policyPop .pBody .ulBulS li{ line-height:18px; list-style:square; margin-top:5px; }
+
+.prvBox{ border:#ededed solid 1px; padding:20px 10px 0px 20px; margin-bottom:20px;}
+
+
+.prvTableS{ border:none; width:100%; margin:5px 0}
+.prvTableS td{ border:none; padding:1px; font-size:11px;}
+
+.insImg1{ margin-left:-20px; margin-bottom:20px;}
+.insImg{ margin-bottom:20px;}
+.insImg2{ margin-bottom:20px;}
+.privacyImg2{ margin-bottom:20px;}
+.insBox{ border-top:#dedede solid 1px; background:#f5f5f5; padding:7px 10px; margin-bottom:20px; color:#FE7701}
+
+
+
+
+
+
+/* 기부포인트 */
+
+
+.donaTop{ position:relative;}
+.donaTop .img{}
+.donaTop .date{ position:absolute; left:181px; top:102px;}
+.donaTop .date li{ float:left; font-size:24px; color:#b0b4bb; font-weight:bold; font-family:Verdana}
+.donaTop .date .yy{ margin-right:32px; *margin-right:22px; }
+.donaTop .date .mm{ margin-right:25px; *margin-right:20px;}
+.dPoint{ height:100px; text-align:center; padding-top:50px; margin-bottom:30px;}
+.dPoint .dNum{ text-align:center;  font-size:60px; color:#4ab507; font-weight:bold; font-family:Verdana; border:#CCCCCC solid 3px; padding:0px 8px 1px 8px;  margin-right:5px; line-height:60px;}
+.dPoint .dot{ background:url(/work/kbpoint/images/donation/donaNumDot.gif) no-repeat 6px 60px; height:30px; text-align:center;  font-size:69px;  width:6px;border:none; padding:0;}
+.dPoint .dot img{ vertical-align:middle;}
+.dPoint .dWon{ border:none; padding:0; font-family:Dotum; font-size:50px; padding-top:13px;}
+.donaMsg .msg{ margin-top:10px;}
+.donaMsg .msg{ margin-left:150px;}
+
+/*
+
+*/
+
+

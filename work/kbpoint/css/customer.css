@@ -1,0 +1,307 @@
+/* CSS Document */
+
+#csBody { background-color:#ffffff }
+#csWrap { background:url(/work/kbpoint/images/main/mainBg.jpg) repeat-x center top #ffffff }
+.csCenter{ width:988px; left:50%; margin-left:-494px; position:relative;}
+.mainCsArea{  width:910px; min-height:500px; _height:500px; padding-bottom:40px; }
+.mainCsArea .leftArea{ float:left; width:170px;}
+.mainCsArea .rightArea{ float:right; width:718px; position:relative;}
+.mainCsArea .quicktop{ left:-80px;}
+
+.csHead{ position:relative; height:40px; border-bottom:#dddddd solid 1px; margin-bottom:10px; width:910px;}
+.csHead .shopTit{ position:absolute; left:0; top:0}
+.csHead .location{position:absolute; left:0px; top:12px; height:20px; width:500px;}
+.csHead .brnHisBack{ position:absolute; right:0px; top:12px;}
+
+.csSubTopVisual{ margin-bottom:10px;}
+.csSubDisBox{}
+
+.csLeftMenu {margin-bottom:30px; width:170px;}
+.csLeftMenu ul{ padding:7px 7px 2px ; width:156px; background:url(/work/kbpoint/images/customer/csLeftMenuBg.gif) repeat-y}
+.csLeftMenu ul li{ padding:2px 0 0}
+.csLeftMenu .bot{ background:url(/work/kbpoint/images/customer/csLeftMenuBot.gif) no-repeat; height:6px; font-size:0px; line-height:0px}
+.csLeftMenu ul li ul {background:none; padding-top:5px; width:142px;}
+.csLeftMenu ul li ul li{ font-size:11px; padding:1px 1px 1px 12px; line-height:15px; width:100px; }
+.csLeftMenu img{ vertical-align:middle}
+.csMainCounsel{ float:left; width:369px; margin-bottom:15px; position:relative}
+.csMainCounsel ul{ position:absolute; left:28px; top:100px; width:280px;}
+.csMainCounsel ul li{float:left; width:70px; padding:1px 1px 1px 6px ; background:url(/work/kbpoint/images/customer/mainQnaBul.gif) no-repeat 0 6px; line-height:16px; font-size:11px;}
+
+
+.csMainNotice{ float:right;}
+.csMainNotice .tit{margin-bottom:10px;}
+.csMainNotice .list{ width:320px; border:none; margin-left:10px;}
+.csMainNotice .list th,
+.csMainNotice .list td{border:none; font-size:11px; line-height:14px; padding:3px 3px 3px 8px; font-weight:normal; }
+.csMainNotice .list th{ text-align:left; background:url(/work/kbpoint/images/customer/mainNoticeBul.gif) no-repeat 0px 7px;}
+.csMainNotice .list th a{ font-size:11px;}
+.csMainNotice .list td{ text-align:right}
+
+.csMainRecom{ float:left; width:214px; overflow:hidden}
+.csMainOrder{ float:left; width:220px; overflow:hidden}
+.csMainFaq{ float:left; position:relative; width:284px; overflow:hidden}
+.csMainFaq ul{ position:absolute; left:56px; top:49px;}
+.csMainFaq ul li{ font-size:11px; line-height:16px;}
+
+.csFaqList{border-top:#ff9201 solid 1px;border-bottom:#ff9201 solid 1px;}
+.csFaqList ul{ width:718px;}
+.csFaqList ul .listQ{ padding:18px 10px 16px 50px; border-bottom:#dedede solid 1px; line-height:18px; background:url(/work/kbpoint/images/customer/csFaqIcoQ.gif) no-repeat 15px 13px;font-weight:bold; cursor:pointer; }
+.csFaqList ul .listA{ display:none; padding:18px 10px 16px 50px;border-bottom:#dedede solid 1px; line-height:200%;  background:url(/work/kbpoint/images/customer/csFaqIcoA.gif) no-repeat 15px 18px #fafafa; }
+.csFaqList ul .listA img{vertical-align:middle}
+
+.csFaqTable{ border:none;}
+.csFaqTable th,
+.csFaqTable td{padding:5px 10px; background:#f6f6f6}
+.csFaqTable th{padding:3px 10px;  background:#e1e1e1; font-weight:normal;}
+
+.orderTop{ margin-bottom:20px;}
+
+.orderTable1 img, 
+.orderTable2 img{vertical-align:middle}
+.orderTable1{ width:100%; border:none; border:#d2d2d2 solid 2px; border-left:none; border-right:none; margin-bottom:20px;}
+.orderTable1 th,
+.orderTable1 td{ border:none; padding:12px 9px 12px 9px; border-bottom:#e4e4e4 solid 1px; }
+.orderTable1 th{ background:#f2f2f2}
+
+.orderFormTit{ padding:1px 1px 1px 18px; margin-bottom:10px; font-size:14px; font-weight:bold; color:#464646;  background:url(/work/kbpoint/images/customer/csOrderViewIcoBul1.gif) no-repeat 0 2px; }
+
+.orderTable2{ width:100%; border:none; border:#d2d2d2 solid 2px; border-left:none; border-right:none; margin-bottom:20px;}
+.orderTable2 th,
+.orderTable2 td{ border:none; padding:9px 12px 8px 12px; border-bottom:#e4e4e4 solid 1px; }
+.orderTable2 th{ background:#f2f2f2}
+.orderTable2 .th1{ background:#f2f2f2;}
+.orderTable2 .csOrderPrint{ margin-left:80px;}
+
+
+.baketWishList{ border:none ;border-top:#9b9b9b solid 2px; width:100%}
+.baketWishList img{vertical-align:middle}
+.baketWishList th,
+.baketWishList td{ border:none; line-height:18px; text-align:center }
+.baketWishList th{ border-bottom:#cccccc solid 1px; padding:7px 5px 6px 5px; background:#f4f4f4}
+.baketWishList td{ border-bottom:#e1e1e1 solid 1px; padding:10px 5px 10px 5px;}
+.baketWishList .bName{ text-align:left; padding-left:10px; padding-right:10px;}
+.baketWishList .bPoint{ width:70px;}
+.baketWishList .btnNum{width:79px;}
+.baketWishList .bPrice{width:79px;}
+.baketWishList .bPrice .priceCommon { color: #5C5C5C; font-weight: bold;}
+.baketWishList .bPrice .priceSale { color: #49B407; font-weight: bold;}
+.baketWishList .bPrice p{ padding:1px 0;}
+.baketWishList .benefit{ width:80px;}
+.baketWishList .benefit p{ padding:2px 0; text-align:left;}
+.baketWishList p{padding:1px 0}
+.baketWishList th{ text-align:left !important}
+
+
+
+.csCounSelTop{ margin-bottom:20px;}
+.csCounDayOpt{ border:#f3f3f3 solid 2px; padding:10px 20px; font-size:11px; margin-bottom:20px;}
+.csCounDayOpt .tit{margin-right:10px}
+.csCounDayOpt img{ vertical-align:middle}
+
+.bbsWriteCoun{ border-right:#e3e3e3 solid 1px; border-left:#e3e3e3 solid 1px !important;}
+.bbsWriteCoun th,
+.bbsWriteCoun td{border-right:#e3e3e3 solid 1px !important;border-bottom:#e3e3e3 solid 1px;}
+
+.counTable{ border:none; width:100%; border-top:#e3e3e3 solid 1px; margin-bottom:20px}
+.counTable th,
+.counTable td{padding:8px 3px 8px 3px; border-bottom:#e3e3e3 solid 1px; font-size:11px; text-align:center;}
+.counTable th{ background:#f3f3f3; font-size:11px;}
+
+.counBot{margin-bottom:20px;}
+.counTableIn{width:700px; margin-bottom:0px; border-left:#e3e3e3 solid 1px;}
+
+.deliveryTable{}
+.deliveryTable{ border:none; width:100%; border-top:#e3e3e3 solid 2px; border-left:#e3e3e3 solid 1px;  margin-bottom:20px}
+.deliveryTable th,
+.deliveryTable td{padding:8px 10px 8px 10px; border-bottom:#e3e3e3 solid 1px; border-right:#e3e3e3 solid 1px; font-size:11px; font-weight:normal;}
+.deliveryTable th{ background:#f3f3f3; font-size:11px;}
+
+
+
+
+.csRecentList{ border:none ;border-top:#9b9b9b solid 2px; width:100%}
+.csRecentList img{vertical-align:middle}
+.csRecentList th,
+.csRecentList td{ border-bottom:#cccccc solid 1px;  line-height:18px; text-align:center; padding:10px 3px  }
+.csRecentList th{ border-bottom:#cccccc solid 1px; padding:7px 5px 6px 5px; background:#f4f4f4}
+
+.csRecentList .bImg{ width:80px;}
+.csRecentList .bPrice{ width:80px }
+.csRecentList .grayBg{ background:#f9f9f9; padding:20px 0px;}
+.csRecentList .bNum{ width:20px;}
+.csRecentList .bName{ text-align:left;}
+.csRecentList .benefit{ text-align:left; width:80px;}
+.csRecentList .benefit p{ padding:1px 0;}
+
+
+
+
+
+
+
+.csAssList{table-layout:fixed; width:719px;border-top:#9B9B9B solid 2px;}
+.csAssList th{ }
+.csAssList td{ padding:1px 0;border-bottom: 1px solid #E1E1E1;}
+.csAssList .bImg{ width:80px; text-align:center;}
+.csAssList .grayBg{ background:#f9f9f9; padding:20px 0px; width:200px;}
+.csAssList .grayBg p{ text-align:center; padding:3px 0}
+.csAssList .bPrice{ width:200px}
+
+.csAssListRe{border:none}
+
+
+.csAssRe{ padding:0px; text-align:left !important; border-bottom:none !important;}
+.csAssRe .head{ height:15px; padding:5px 10px; font-size:11px; background:#f9f9f9; border-bottom:#FFFFFF solid 1px;}
+.csAssRe .head .tit{ float:left}
+.csAssRe .head .date{ float:right}
+.csAssRe .ctn{ padding:10px; background:#f7f6f0; font-size:11px; line-height:180%; border-bottom:#CCCCCC solid 1px; word-wrap:break-word;}
+.csAssRe .tcBlue{ color:#4ab507 !important}	
+
+.qnaGuideBox{ border:#e4e4e4 solid 2px; padding:15px;}
+.qnaGuideBox h4{ font-weight:bold; font-size:14px; color:#FF6633; margin-bottom:10px;}
+.qnaGuideBox p{ line-height:160%}
+.qnaGuideBox ul{}
+.qnaGuideBox ul li{ background:url(/work/kbpoint/images/customer/mainQnaBul.gif) no-repeat 0 6px; padding:1px 1px 1px 8px; line-height:16px; font-size:11px; }
+
+.csOrderCancelPop{ width:620px;}
+.csOrderCancelPop .head{ background:url(/work/kbpoint/images/main/preCalcHeadBg.gif) repeat-x; height:40px;}
+.csOrderCancelPop .head .tit{ float:left}
+.csOrderCancelPop .head .right{ float:right}
+.csOrderCancelPop .ctnBox{ padding:12px;}
+.csOrderCancelPop .ctnBox .title{ background:url(/work/kbpoint/images/customer/orderCancelBul1.gif) no-repeat 0 4px; padding:1px 1px 1px 13px ; line-height:16px; margin-bottom:8px; }
+
+.csOrderCancelPop .orCancelList{ border:none; border-top:#bababa solid 2px; width:100%;}
+.csOrderCancelPop .orCancelList th,
+.csOrderCancelPop .orCancelList td{ padding:10px 4px 9px 4px; text-align:center; line-height:18px; border-bottom:#ddd solid 1px;}
+.csOrderCancelPop .orCancelList th{ background:#f4f4f4}
+.csOrderCancelPop .orCancelList .bTit{ width:200px; text-align:left;}
+
+.csOrderCancelPop .orderCancelPrice{ padding:15px 30px; background:#F7FAF1; margin-bottom:20px; border-bottom:#bdbdbd solid 1px;}
+.csOrderCancelPop .orderCancelPrice .tList{ border:none; width:100%}
+.csOrderCancelPop .orderCancelPrice .tList th,
+.csOrderCancelPop .orderCancelPrice .tList td{ padding:4px; border:none; line-height:16px;}
+.csOrderCancelPop .orderCancelPrice .tList th{ text-align:right;}
+.csOrderCancelPop .orderCancelPrice .tList .t1{color:#ff7820; font-weight:bold; letter-spacing:-1px;}
+.csOrderCancelPop .orderCancelPrice .tList .t2{ text-align:right;}
+.csOrderCancelPop .orderCancelPrice .tList .t3{ font-weight:bold; }
+
+.orCancelListOpt{ border:none; border-top:#bababa solid 2px; width:100%; margin-bottom:15px;}
+.orCancelListOpt th,
+.orCancelListOpt td{ padding:10px 4px 9px 10px; text-align:left; border-bottom:#eeeeee solid 1px;}
+.orCancelListOpt th{ background:#f4f4f4; width:200px;}
+.orCancelListOpt input,
+.orCancelListOpt select{ border:#d4d4d4 solid 1px; padding:1px;}
+
+.csOrderCancelPop .btn{ text-align:center;}
+.csOrderCancelPop .btnList{ background:#f3ebe2; border-top:#ede3d8 solid 1px; padding:8px; width:600px;}
+
+.oderCancelComImg{ width:560px; margin:auto; padding:30px 0; border:#f4f4f4 solid 3px; text-align:center; margin-top:50px; margin-bottom:50px;}
+
+
+.csCouponPop{ width:720px;}
+.csCouponPop .head{ background:url(/work/kbpoint/images/main/preCalcHeadBg.gif) repeat-x; height:40px;}
+.csCouponPop .head .tit{ float:left}
+.csCouponPop .head .right{ float:right}
+.csCouponPop .ctnBox{ padding:12px;}
+.csCouponPop .cpnSel { font-weight:bold; font-size:11px; margin-bottom:4px}
+.csCouponPop .cpnSel select{border:#d4d4d4 solid 1px; padding:1px; width:350px;}
+.csCouponPop .cpnSch { height:32px; margin-bottom:20px; border-bottom:#efefef solid 1px; padding-bottom:10px;}
+.csCouponPop .cpnSch .sch{ width:251px; float:right; background:url(/work/kbpoint/images/customer/csCounPopSchBg.gif) no-repeat; padding:6px 5px 5px 12px; line-height:16px; }
+.csCouponPop .cpnSch .sch .keyword{ border:#d4d4d4 solid 1px; padding:1px; width:110px;}
+.csCouponPop .cpnTxt1{font-size:14px; color:#666666; margin-bottom:10px; font-weight:bold;}
+.csCouponPop .cpnPbox{ margin-bottom:10px;}
+
+
+.csTaxformPop{ width:720px;}
+.csTaxformPop .head{ background:url(/work/kbpoint/images/main/preCalcHeadBg.gif) repeat-x; height:40px;}
+.csTaxformPop .head .tit{ float:left}
+.csTaxformPop .head .right{ float:right}
+.csTaxformPop .ctnBox{ padding:12px;}
+.csTaxformPop .taxDisc{ font-size:11px; margin-bottom:10px;}
+
+.csTaxformList{ border:none; margin-bottom:10px; width:715px; margin:auto; border-top:#e7e7e7 solid 1px;}
+.csTaxformList img{vertical-align:middle}
+.csTaxformList p{ padding:2px 0}
+.csTaxformList th,
+.csTaxformList td{ border:none; padding:8px 7px 7px 7px ; border-bottom:#e7e7e7 solid 1px; text-align:left;}
+.csTaxformList th{ background:#f2f2f2; font-weight:normal}
+.csTaxformList .chStar{ color:#FF3333;  font-family:Tahoma}
+.csTaxformList  input,
+.csTaxformList  select{ border:#dbdcde solid 1px;; padding:2px; background:#fff}
+.csTaxformList  textarea{ border:#dbdcde solid 1px; padding:3px; background:#fff; width:585px; height:260px;}
+.csTaxformList  .filed{ font-size:11px; padding:3px 3px 1px 0px; color:#505a62; margin-left:10px; }
+.csTaxformList{ margin-bottom:5px;}
+
+
+.bbsListOrder thead tr{ background:url(/work/kbpoint/images/customer/hImgBar2.gif) no-repeat; height:42px;}
+.bbsListOrder thead th{ border:none; border-right:#d8d8d8 solid 1px; padding:0px 0px 0 0px !important ; height:25px; line-height:14px; background:url(/work/kbpoint/images/customer/hImgBar2.gif)  no-repeat -2px 0px; color:#5c5959}
+.bbsListOrder thead th.left{ background:url(/work/kbpoint/images/customer/hImgBar2.gif)  no-repeat 0px 0px;}
+.bbsListOrder thead th.right{ background:url(/work/kbpoint/images/customer/hImgBar2.gif)  no-repeat -2px 0px; }
+.bbsListOrder .bNum p{margin-bottom:4px;}
+.bbsListOrder .bTit{ width:250px;}
+.bbsListOrder .bPrice{ text-align:right; padding-right:4px !important;}
+.bbsListOrder .bStar{ font-size:12px; color:#42a445}
+.bbsListOrder td{ padding:5px 0px !important;}
+.bbsListOrder td p{margin-bottom:3px;}
+.bbsListOrder .hd1{ width:100px;}
+.bbsListOrder .hd2{ width:130px;}
+.bbsListOrder .hd3{  }
+
+.bbsListOrder .hd6{width:150px;}
+.bbsListOrder .price{ color:#49b407; font-family:Dotum;}
+
+.bbsListOrderS{ width:100%}
+.bbsListOrderS td{ padding:3px 0px ; font-size:11px !important; border-bottom:none !important;}
+.bbsListOrderS .bTitS{padding-left:20px !important; text-align:left; width:230px;}
+.bbsListOrderS .bStatS{ width:100px;color: #49B407;}
+.bbsListOrderS .bCancelS{ width:70px;}
+.bbsListOrderS .bHit{ width:65px;}
+
+.bbsListOrderH{ width:100%; border-left:none; }
+.bbsListOrderH tr{ background:none !important ; }
+.bbsListOrderH td{ padding:0px 0px !important ; border-bottom:none !important; color:#595959 !important;}
+.bbsListOrderH .bTitH{ text-align:center !important;}
+.bbsListOrderH .bStatH{ width:100px; border-left:#cbcbcb solid 1px;}
+.bbsListOrderH .bCancelH{ width:70px; border-left:#cbcbcb solid 1px;}
+.bbsListOrderH .bHitH{ width:65px; border-left:#cbcbcb solid 1px; border-right:none;}
+
+
+
+.inputPw{display:none; position:absolute; left:75px; top:-5px; z-index:100; border:#e7ecf2 solid 2px; background:#e7ecf2; padding:5px; width:300px;}
+.inputPw img{ vertical-align:middle}
+.inputPw .head{ height:25px; position:relative;}
+.inputPw .head .tit{ left:4px; top:1px; position:absolute; font-weight:bold; padding:4px 0; color:#5a6a8e}
+.inputPw .head .btn{ right:3px; top:3px; position:absolute;  padding:0;}
+.inputPw .ctn{ background:#FFFFFF; border:#d3dfee solid 1px; padding:20px 20px ; text-align:center; }
+.inputPw .textMemo{ border:#d3dfee solid 1px; padding:2px; overflow:auto; width:100px;}
+.inputPw .oderMemoInfo{ margin:10px 0;}
+
+
+/* 
+
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
