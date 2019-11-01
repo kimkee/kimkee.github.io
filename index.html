@@ -87,87 +87,7 @@
 				</span>
 			</div>
 		</div>
-		<script>
-		$(document).ready(function() {
-			sdRandom = Math.ceil((  Math.random() * 4)  );
-			$('#slides').slidesjs({
-				width: 700,
-				height: 506,
-				autostart: false,
-				start: 1,//sdRandom
-				play: {
-				  active: true,
-					// [boolean] Generate the play and stop buttons.
-					// You cannot use your own buttons. Sorry.
-				  effect: "slide",
-					// [string] Can be either "slide" or "fade".
-				  interval: 2000,
-					// [number] Time spent on each slide in milliseconds.
-				  auto: false,
-					// [boolean] Start playing the slideshow on load.
-				  swap: true,
-					// [boolean] show/hide stop and play buttons
-				  pauseOnHover: true,
-					// [boolean] pause a playing slideshow on hover
-				  restartDelay: 2500
-					// [number] restart delay on inactive slideshow
-				},
-				navigation: {
-				  active: true,
-				  effect: "slide"
-				},
-				pagination: {
-				  active: true,
-				  effect: "slide"
-				},
-				effect: {
-				  slide: {
-					speed: 200
-				  },
-				  fade: {
-					speed: 300,
-					crossfade: true
-				  }
-				}
-			});
-			
-			var linkStat = false;
 
-			linkAmtFunc = function(){
-				$(".contain .container .pList li .ptBox .ss a   ,   .mainTop .mainSd .slides .pBox a").each(function(index) {
-					var linkAmt = $(this).attr("href");
-					$(this).attr("href","javascript:;").css("cursor","default");
-					$(this).attr("data-url",linkAmt);
-				});
-				console.log("링크가 비활성화 됐습니다.")
-			}
-			// linkAmtFunc();
-			
-			linkAmtSet = function(){
-				$(".contain .container .pList li .ptBox .ss a   ,   .mainTop .mainSd .slides .pBox a").each(function(index) {
-					var linkAmt = $(this).attr("data-url");
-					$(this).attr("href",linkAmt).css("cursor","pointer").attr("target","_blank");
-					
-				});
-				console.log("링크가 활성화 됐습니다.")
-			}
-			//linkAmtSet()
-
-			$(document).keydown(function(event){ // M 키 이벤트
-				if(event.keyCode == 77 ){
-					if(!linkStat){
-						linkAmtSet();
-						linkStat = true;
-					}else{
-						linkAmtFunc();
-						linkStat = false;
-					}
-				}
-			});	
-	
-		});
-
-		</script>
 		<div class="mainSd">
 			<div class="mainSdIn">
 				<div class="slides" id="slides">
@@ -302,29 +222,11 @@
 			</div>
 		</div>
 		
-		<!-- <script src="jquery.tinyscrollbar.min.js"></script> -->
-		<script>
-		$(document).ready(function(){
-			//$('#scrollbar1').tinyscrollbar();
-			
-			
-			$("#scrollbar1").mCustomScrollbar({
-				mouseWheel:{
-					scrollAmount:400,
-					preventDefault:true
-				}	
-			});
-				
-		});
-		</script> 
 		
 		<div class="rSet">
 			<div class="career">
 				<div class="careerIn">
 					<div class="uiScrollBox" id="scrollbar1">
-						<!-- 스크롤바 class="scrollbar" 
-						<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>-->
-						<!-- 스크롤영역 class="viewport" -->
 						<div class="">
 							<div class="">
 								<ul class="list">
@@ -464,7 +366,6 @@
 								
 							</div>
 						</div>
-						
 					</div>
 				</div>
 			</div>
@@ -504,21 +405,7 @@
 		<a href="javascript:;" class="btnClose"><span>닫기</span></a>
 	</div>
 </div>
-<style>
-img.lazy{ display:none;}
-</style>
 
-<script>
-$(document).ready(function() {
-	$("img.lazy").lazyload({
-		event : "fadeIn"
-	});
-	$("img.lazy").show().lazyload();
-	
-});
- 
- 
-</script>
 <div class="contain">
 	<div class="container">
 		<h3 class="title">UI/UX Development</h3>
@@ -1360,24 +1247,6 @@ $(document).ready(function() {
 	<div class="footer">김기현</div>
 </div>
 
-<!-- Piwik 
-<script type="text/javascript">
-  var _paq = _paq || [];
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-	var u="//kimkee.myds.me/piwik/";
-	_paq.push(['setTrackerUrl', u+'piwik.php']);
-	_paq.push(['setSiteId', 1]);
-	var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-	g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="//kimkee.myds.me/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
--->
-<!-- End Piwik Code -->
-
-
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -1389,8 +1258,6 @@ $(document).ready(function() {
 
 </script>
 
-<script>
-console.log("김기현 - kimkee@naver.com , 010-3236-1677");
-</script>
+
 </body>
 </html>

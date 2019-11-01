@@ -37,6 +37,9 @@ caption{ font-size:0px; background:#090; height:0px; overflow:hidden; line-heigh
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{ background:#7c7c7c; border-radius:0px;}
 .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{ background:#fdfdfd;}
 
+/* lazy load */
+img.lazy{ display:none;}
+
 .body{ background:url(../img/cm/bg.jpg) repeat-x center -430px #06090e;}
 .head{ height:32px; padding:0 10px;  background:#333; border-top:#444444 solid 1px; border-left:none; border-right:none; border-bottom:#222222 solid 1px;}
 .head .header{ margin:auto; position:relative;border-left:#222222 solid 1px; }
