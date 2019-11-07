@@ -2,12 +2,10 @@
 $(document).ready(function () {    	
 
 	
-	
 	$("body" ).on( "click", ".noticeWrap .box .btnClose", function() {
 		$( this ).parent(".box").parent(".noticeWrap").slideUp(500);
 	});
 
-	
 	vBodyWidthFuc = function(){  
 		vBodyWidth = $(window).width() 
 		if(vBodyWidth <= 980){
@@ -21,7 +19,6 @@ $(document).ready(function () {
 	$(window).resize(function() { 
 		vBodyWidthFuc();
 	});
-	
 	
 	
 	// 스크롤 TOP버튼
