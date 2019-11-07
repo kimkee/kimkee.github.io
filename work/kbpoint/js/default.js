@@ -86,7 +86,7 @@ function inputFileOnChange(obj, vluin) {
 
 
 //리플달기 팝업
-function popReple() {
+function popReple() { 
   window.open('/community/popReple.asp','popReple','scrollbars=no,width=489,height=235,left=100,top=100');
 }
 

@@ -1,4 +1,4 @@
-﻿// 모바일 체크시 
+﻿// 모바일 체크시  
 /*
 var agent = navigator.userAgent;
 if (agent.match(/iPhone/) || agent.match(/iPad/) || agent.match(/Android/) || agent.match(/Windows Phone/)) {

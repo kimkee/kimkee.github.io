@@ -1,4 +1,4 @@
-﻿// JavaScript Document
+﻿// JavaScript Document 
 
 function optChangePop() {//옵션수정 팝업
   window.open('optChange.php','optChangePop','scrollbars=no,width=415,height=375,left=300,top=300');

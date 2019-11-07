@@ -1,6 +1,6 @@
 ﻿
 // 아이디첵크팝업
-function idPop() {
+function idPop() { 
   window.open('/member/idCheck1.php','idPop','scrollbars=no,width=480,height=330');
 }
 // 우편번호찾기팝업

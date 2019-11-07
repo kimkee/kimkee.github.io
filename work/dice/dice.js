@@ -1,5 +1,5 @@
 ﻿
-var data = {
+var data = { 
 	"m1" : {"left":"0"}
 };
 

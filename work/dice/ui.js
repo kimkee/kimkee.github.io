@@ -1,4 +1,4 @@
-﻿// JavaScript Document
+﻿// JavaScript Document 
 //URL에서 파라미터 읽어오기
 $urlParam = (function(a) {
 	if (a == "") return {};

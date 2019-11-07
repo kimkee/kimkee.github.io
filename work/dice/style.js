@@ -1,5 +1,4 @@
-﻿
-var uiGame = {
+﻿var uiGame = {
 	init:function(){
 		this.mals();
 		$(document).on({ // a , button 
