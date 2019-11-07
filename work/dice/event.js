@@ -1,4 +1,4 @@
-$(document).ready(function() {
+﻿$(document).ready(function() {
 
 	var $menu = $(".menu .list"),
 		$section = $("div.section"),

@@ -1,4 +1,4 @@
-
+﻿
 var uiGame = {
 	init:function(){
 		this.mals();
