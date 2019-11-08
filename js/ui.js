@@ -8,7 +8,7 @@ $(document).ready(function () {
 
 	$(window).on("load scroll resize",function(){
 		var scr = $(window).scrollTop();
-		console.log(scr);
+		// console.log(scr);
 		$("body").css({
 			"background-position-y": (scr - 400) * 0.8 
 		});
