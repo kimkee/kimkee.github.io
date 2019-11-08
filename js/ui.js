@@ -6,20 +6,22 @@ $(document).ready(function () {
 		$( this ).parent(".box").parent(".noticeWrap").slideUp(500);
 	});
 
-	vBodyWidthFuc = function(){  
-		vBodyWidth = $(window).width() 
-		if(vBodyWidth <= 980){
-			//$('#scrollbar1').tinyscrollbar_update();	
-		}
-		if(vBodyWidth > 980){
-			//$('#scrollbar1').tinyscrollbar_update();
+	$(window).on("load scroll resize",function(){
+		var scr = $(window).scrollTop();
+		console.log(scr);
+		$("body").css({
+			"background-position-y": (scr - 400) * 0.8 
+		});
+		
+		if ( scr > 700) {
+			$(".topBtn").fadeIn(200);
+		} else {
+			$(".topBtn").fadeOut(500);
+		};
 
-		}
-	}
-	$(window).resize(function() { 
-		vBodyWidthFuc();
 	});
-	
+
+
 	
 	// 스크롤 TOP버튼
 	$('.topBtn a.up').click(function () {
@@ -36,15 +38,6 @@ $(document).ready(function () {
 		return false;
 	});
 	
-	$(window).scroll(function(){
-		if ($(this).scrollTop() > 700) {
-			$(".topBtn").fadeIn(200);
-		} else {
-			$(".topBtn").fadeOut(500);
-		};
-	});
-
-
 
 	var sdRandom = Math.ceil((  Math.random() * 4)  );
 	$('#slides').slidesjs({
