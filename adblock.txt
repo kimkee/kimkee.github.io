@@ -1,0 +1,85 @@
+[Adblock Plus 2.0]
+! Checksum: 
+! Version: 201802220400
+! Title: KimkeeAdBlock
+! Last modified: 22 Feb 2018 04:00 UTC
+! Expires: 1 days (update frequency)
+! Homepage: 
+! Licence: 
+!
+!-----------------------General advert blocking filters-----------------------!
+
+
+torrentmoa.com##CENTER
+torrentmoa.com##DIV[id="addon-popup-layer"]
+slrclub.com##DIV[id="section3"]
+slrclub.com##DIV[id^="ad"]
+tomovie.net##A[href="https://www.mastabe.net/"]
+tomovie.net##A[href="https://slotkakao.com/?aff=2341"]
+tomovie.net##A[href="http://www.logic-365.com/promotion/?code=tom1"]
+tomovie.net##A[href="http://slot169.com/?aff=2341"]
+tomovie.net##A[href="https://www.hh-gold.com/promotion/?code=tomovie"]
+
+torrentmoa.com##A[href="http://www.10000w.kr/main?mall_id=torrentmoa&cm_id=x800x220"]
+tomovie.net##DIV[id="QuickMenuL"]
+tomovie.net##A[href="https://www.ppan-d.com/promotion/?code=abc"]
+tomovie.net##A[href="http://gk628.com/"]
+tomovie.net##DIV[id="container"]>div[style*="margin-top:-30px;"]
+tomovie.net##DIV[id="container"]>div[style*="margin-top:5px;"]
+slrclub.com##DIV[class="cl_spc"]
+slrclub.com##DIV[id="ad1"]
+slrclub.com##DIV[class="bl_ban"]
+slrclub.com##INS[class*="adsbyadop"]
+www.slrclub.com##DIV[id="searchWrap"]
+www.slrclub.com##div[id="logo"]
+ddanzi.com##DIV[class="add_display center mt_0"]
+ddanzi.com##DIV[class="add_display center"]
+instagram.com##DIV[class="_si7dy"]
+tomovie.net##A[href="http://gkgk3.com"]
+tomovie.net##A[href="http://h-let2015.com/"]
+tomovie.net##DIV[id="QuickMenuR"]
+tomovie.net##A[href="https://berlt6974.wixsite.com/daoserver"]
+tomovie.net##DIV[id="aside"] li>A[target="_blank"]
+ppomppu.co.kr##DIV[class="power-link"]
+ddanzi.com##DIV[id="right_side_bar"] DIV[class="add_display"]
+
+torrent.cam##DIV[id="top_banner"]
+torrent.cam##DIV[id="side_banner"]
+torrent.cam##section[id="bo_v_atc"] A[href="https://torrent.cam/page/partner_view.php"]
+
+torrent.mom##DIV[id="side_banner"]
+torrent.mom##DIV[id="top_banner"]
+
+torrentbe.com##DIV[id="banner_top_list_wrap"]
+torrentbe.com##DIV[id="banner_right_list"]
+torrentwal.com##DIV[id*="left_ad_"]
+
+@@|https://www.daum.net/|$document
+@@|https://www.naver.com/|$document
+@@|https://www.daum.net/?$document
+@@||www.megabox.co.kr/$document
+@@||www.g9.co.kr/$document
+@@|https://www.pooq.co.kr/|$document
+@@|http://viewingcat.tistory.com/|$document
+
+@@|http://bc.vc/vsH9AHl|$document
+@@|http://bc.vc/1u8vC8I|$document
+
+@@||www.lottecinema.co.kr/$document
+@@||wemakeprice.com/$document
+
+speedtest.net##DIV[class="ad dfp-top-right"]
+speedtest.net##DIV[class="dfp-container"]
+speedtest.net##DIV[class="top-horizontal"]
+speedtest.net##DIV[class="ad lower-horizontal"]
+speedtest.net##DIV[class="top-horizontal"]
+speedtest.net##DIV[class="ads-column ads-right"]
+
+@@||promotion.wemakeprice.com/$document
+@@||www.lottecinema.co.kr/$document
+@@||www.lotteimall.com/$document
+@@||kr.msi.com/$document
+
+@@||wemakeprice.com/$document
+@@||tv.kakao.com/$document
+@@||daum.net/$document
