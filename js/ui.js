@@ -20,8 +20,28 @@ $(document).ready(function () {
 		};
 
 	});
+	var poskit = function(n1,n2){		
+		n2 = ( pct * (n2-n1) / 100 )  + n1  ;
+		return [n1 , n2] ;
+	}
+	$(window).on("load scroll resize",function(){
+		var winH = $(window).height();
+		var docH = $(document).height();
+		var scrT = $(window).scrollTop();
+		pct =  Math.ceil( scrT / ( docH - winH ) * 100 );
+		scm = Math.ceil( pct * 0.75 );
+		// console.log( winH , docH , scrT ,  pct );
+		$("#barH").css({"width":pct+"%"});
 
-
+		// $(".pic.p1").html(  poskit(3,15) );
+		// $(".pic.p2").html( " "+ poskit(5,23) );
+		$(".pic.p1").css({
+			// left:  poskit(3,15)[1]+"%"
+		});
+		
+		// scmStat.init();
+		
+	});
 	
 	// 스크롤 TOP버튼
 	$('.topBtn a.up').click(function () {
