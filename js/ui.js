@@ -5,6 +5,7 @@ var ui = {
 		this.common.init();
 		this.slides.init();
 		this.link.init();
+		this.ly.init();
 	},
 	ly:{
 		init:function () {
@@ -53,49 +54,35 @@ var ui = {
 	},
 	slides:{
 		init:function () {
-			
-			var sdRandom = Math.ceil((  Math.random() * 4)  );
-			$('#slides').slidesjs({
-				width: 700,
-				height: 506,
-				autostart: false,
-				start: 1,//sdRandom
-				play: {
-					active: true,
-					// [boolean] Generate the play and stop buttons.
-					// You cannot use your own buttons. Sorry.
-					effect: "slide",
-					// [string] Can be either "slide" or "fade".
-					interval: 2000,
-					// [number] Time spent on each slide in milliseconds.
-					auto: false,
-					// [boolean] Start playing the slideshow on load.
-					swap: true,
-					// [boolean] show/hide stop and play buttons
-					pauseOnHover: true,
-					// [boolean] pause a playing slideshow on hover
-					restartDelay: 2500
-					// [number] restart delay on inactive slideshow
+			$(this.mainSd.els  ).length && this.mainSd.using();
+		},
+		mainSd:{  //  샘플1
+            els: ".mainSd #slides",
+            opt: {
+				slidesPerView: 1,
+				observer: true,
+				observeParents: true,
+				watchOverflow:true,
+				pagination: {
+					el: '.pagi',
+					clickable: true
 				},
 				navigation: {
-					active: true,
-					effect: "slide"
+					nextEl: '.navi .nav.next',
+					prevEl: '.navi .nav.prev'
 				},
-				pagination: {
-					active: true,
-					effect: "slide"
-				},
-				effect: {
-					slide: {
-					speed: 200
-					},
-					fade: {
-					speed: 300,
-					crossfade: true
-					}
-				}
-			});
-		}
+                // autoHeight:true,
+				autoplay:false,
+				preloadImages: false,
+				loop: true
+            },
+            using: function() {
+                if ( $(this.els).find(".swiper-slide").length <= 1 ) {
+                    this.opt.loop = false;
+                }
+                this.slide = new Swiper(this.els, this.opt);
+			}
+        }
 
 	},
 	common:{

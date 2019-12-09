@@ -26,6 +26,7 @@
 <link rel="apple-touch-icon" href="./img/cm/fav.png">
 <link rel="apple-touch-icon-precomposed" href="./img/cm/fav.png">
 <link href="./css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
+<link href="./css/swiper.css" rel="stylesheet" type="text/css">
 <link href="./css/common.css" rel="stylesheet" type="text/css">
 <script src="./js/jquery-3.4.1.js"></script>
 <style></style>
@@ -84,9 +85,10 @@
 		</div>
 
 		<div class="mainSd">
-			<div class="mainSdIn">
-				<div class="slides" id="slides">
-					<div class="pBox"> <a><img class="img" src="./img/ss/ssHimart.jpg" alt=""></a>
+			<div class="swiper-container mainSdIn" id="slides">
+				<ul class="swiper-wrapper slides">
+					<li class="swiper-slide pBox">
+						<a href="javascript:;"><img class="img" src="./img/ss/ssHimart.jpg" alt=""></a>
 						<div class="info">
 							<div class="icoPack">
 								<span class="icoTech icoHtml">HTML</span>
@@ -98,9 +100,9 @@
 							<div class="name">하이마트모바일</div>
 							<div class="screen"></div>
 						</div>
-					</div>
-
-					<div class="pBox"> <a><img class="img" src="./img/ss/ssGalleria.jpg" alt=""></a>
+					</li>
+					<li class="swiper-slide pBox">
+						<a href="javascript:;"><img class="img" src="./img/ss/ssGalleria.jpg" alt=""></a>
 						<div class="info">
 							<div class="icoPack">
 								<span class="icoTech icoHtml">HTML</span>
@@ -111,8 +113,9 @@
 							<div class="name">한화갤러리아 고메이494</div>
 							<div class="screen"></div>
 						</div>
-					</div>
-					<div class="pBox"> <a><img class="img" src="./img/ss/ssChatOn2.jpg" alt=""></a>
+					</li>
+					<li class="swiper-slide pBox">
+						<a href="javascript:;"><img class="img" src="./img/ss/ssChatOn2.jpg" alt=""></a>
 						<div class="info">
 							<div class="icoPack">
 								<span class="icoTech icoHtml">HTML</span>
@@ -123,9 +126,9 @@
 							<div class="name">Samsung Chaton</div>
 							<div class="screen"></div>
 						</div>
-					</div>
-					
-					<div class="pBox"> <a data-url="https://kimkee.gitlab.io/work/dice/"><img class="img" src="./img/ss/ssDice.jpg" alt=""></a>
+					</li>
+					<li class="swiper-slide pBox">
+						<a href="javascript:;" data-url="https://kimkee.gitlab.io/work/dice/"><img class="img" src="./img/ss/ssDice.jpg" alt=""></a>
 						<div class="info">
 							<div class="icoPack">
 								<span class="icoTech icoJquery">jQuery</span>
@@ -136,9 +139,9 @@
 							<div class="name">스포플레이 웹게임</div>
 							<div class="screen"></div>
 						</div>
-					</div>
-					
-					<div class="pBox"> <a data-url="https://kimkee.gitlab.io/work/MiniGame/kingkong/"><img class="img" src="./img/ss/ssKingkong.jpg" alt=""></a>
+					</li>
+					<li class="swiper-slide pBox">
+						<a href="javascript:;" data-url="https://kimkee.gitlab.io/work/MiniGame/kingkong/"><img class="img" src="./img/ss/ssKingkong.jpg" alt=""></a>
 						<div class="info">
 							<div class="icoPack">
 								<span class="icoTech icoHtml">HTML</span>
@@ -149,8 +152,9 @@
 							<div class="name">스포플레이 웹게임</div>
 							<div class="screen"></div>
 						</div>
-					</div>
-					<div class="pBox"> <a><img class="img" src="./img/ss/ssGalleriaM.jpg" alt=""></a>
+					</li>
+					<li class="swiper-slide pBox">
+						<a href="javascript:;"><img class="img" src="./img/ss/ssGalleriaM.jpg" alt=""></a>
 						<div class="info">
 							<div class="icoPack">
 								<span class="icoTech icoHtml">HTML</span>
@@ -162,8 +166,9 @@
 							<div class="name">한화갤러리아 고메이494</div>
 							<div class="screen"></div>
 						</div>
-					</div>
-					<div class="pBox"> <a><img class="img" src="./img/ss/ssHotelShilla.jpg" alt=""></a>
+					</li>
+					<li class="swiper-slide pBox">
+						<a href="javascript:;"><img class="img" src="./img/ss/ssHotelShilla.jpg" alt=""></a>
 						<div class="info">
 							<div class="icoPack">
 								<span class="icoTech icoHtml">HTML</span>
@@ -174,8 +179,9 @@
 							<div class="name">Hotel Shilla</div>
 							<div class="screen"></div>
 						</div>
-					</div>
-					<div class="pBox"> <a><img class="img" src="./img/ss/ssHotelShillaM.jpg" alt=""></a>
+					</li>
+					<li class="swiper-slide pBox">
+						<a href="javascript:;"><img class="img" src="./img/ss/ssHotelShillaM.jpg" alt=""></a>
 						<div class="info">
 							<div class="icoPack">
 								<span class="icoTech icoHtml">HTML</span>
@@ -186,8 +192,9 @@
 							<div class="name">Hotel Shilla Mobile</div>
 							<div class="screen"></div>
 						</div>
-					</div>
-					<div class="pBox"> <a><img class="img" src="./img/ss/ssSktstore.jpg" alt=""></a>
+					</li>
+					<li class="swiper-slide pBox">
+						<a href="javascript:;"><img class="img" src="./img/ss/ssSktstore.jpg" alt=""></a>
 						<div class="info">
 							<div class="icoPack">
 								<span class="icoTech icoHtml">HTML</span>
@@ -198,11 +205,14 @@
 							<div class="name">SK t-Store 정산시스템</div>
 							<div class="screen"></div>
 						</div>
-					</div>
-					<a href="#" class="slidesjs-previous slidesjs-navigation"><span>이전</span></a>
-					<a href="#" class="slidesjs-next slidesjs-navigation"><span>다음</span></a>
+					</li>
+				</ul>
+				<div class="navi">
+					<a href="javascript:;" class="nav prev">이전</a>
+					<a href="javascript:;" class="nav next">다음</a>
 				</div>
 			</div>
+			<div class="pagi"></div>
 		</div>
 		<div class="profile">
 			<div class="saleIco" style="display:none;"><img src="./img/cm/forSale.png" class="img"></div>
@@ -1242,7 +1252,8 @@
 	<div class="footer">김기현</div>
 </div>
 <!-- scripts -->
-<script src="./js/jquery.slides.js"></script>
+<!-- <script src="./js/jquery.slides.js"></script> -->
+<script src="./js/swiper.js"></script>
 <script src="./js/jquery.lazyload.js"></script>
 <script src="./js/browser.js"></script>
 <script src="./js/jquery.mCustomScrollbar.js"></script>
