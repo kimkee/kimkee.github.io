@@ -1,162 +1,175 @@
-﻿// JavaScript Document 
-$(document).ready(function () {    	
+﻿// ui script
+var ui = {
+	init:function () {
+		console.log("김기현 - kimkee@naver.com , 010-3236-1677");	
+		this.common.init();
+		this.slides.init();
+		this.link.init();
+	},
+	ly:{
+		init:function () {
 
-	
-	$("body" ).on( "click", ".noticeWrap .box .btnClose", function() {
-		$( this ).parent(".box").parent(".noticeWrap").slideUp(500);
-	});
+			$(document).on( "click", ".noticeWrap .box .btnClose", function() {
+				$( this ).parent(".box").parent(".noticeWrap").slideUp(500);
+			});
 
-	$(window).on("load scroll resize",function(){
-		var scr = $(window).scrollTop();
-		// console.log(scr);
-		$("body").css({
-			"background-position-y": (scr - 400) * 0.8 
-		});
-		
-		if ( scr > 700) {
-			$(".topBtn").fadeIn(200);
-		} else {
-			$(".topBtn").fadeOut(500);
-		};
+			$(window).on("load scroll resize",function(){
+				var scr = $(window).scrollTop();
+				// console.log(scr);
+				$("body").css({
+					"background-position-y": (scr - 400) * 0.8 
+				});
+				
+				if ( scr > 700) {
+					$(".topBtn").fadeIn(200);
+				} else {
+					$(".topBtn").fadeOut(500);
+				};
 
-	});
-	var poskit = function(n1,n2){		
-		n2 = ( pct * (n2-n1) / 100 )  + n1  ;
-		return [n1 , n2] ;
-	}
-	$(window).on("load scroll resize",function(){
-		var winH = $(window).height();
-		var docH = $(document).height();
-		var scrT = $(window).scrollTop();
-		pct =  Math.ceil( scrT / ( docH - winH ) * 100 );
-		scm = Math.ceil( pct * 0.75 );
-		// console.log( winH , docH , scrT ,  pct );
-		$("#barH").css({"width":pct+"%"});
-
-		// $(".pic.p1").html(  poskit(3,15) );
-		// $(".pic.p2").html( " "+ poskit(5,23) );
-		$(".pic.p1").css({
-			// left:  poskit(3,15)[1]+"%"
-		});
-		
-		// scmStat.init();
-		
-	});
-	
-	// 스크롤 TOP버튼
-	$('.topBtn a.up').click(function () {
-		$('body,html').animate({
-			scrollTop: 0
-		}, 300);   // 애니메이션 속도 작을 수록 빨라요~
-		return false;
-	});
-	$('.topBtn a.down').click(function () {
-		var botScroll = $(document).height();
-		$('body,html').animate({
-			scrollTop: botScroll
-		}, 300);   // 애니메이션 속도 작을 수록 빨라요~
-		return false;
-	});
-	
-
-	var sdRandom = Math.ceil((  Math.random() * 4)  );
-	$('#slides').slidesjs({
-		width: 700,
-		height: 506,
-		autostart: false,
-		start: 1,//sdRandom
-		play: {
-			active: true,
-			// [boolean] Generate the play and stop buttons.
-			// You cannot use your own buttons. Sorry.
-			effect: "slide",
-			// [string] Can be either "slide" or "fade".
-			interval: 2000,
-			// [number] Time spent on each slide in milliseconds.
-			auto: false,
-			// [boolean] Start playing the slideshow on load.
-			swap: true,
-			// [boolean] show/hide stop and play buttons
-			pauseOnHover: true,
-			// [boolean] pause a playing slideshow on hover
-			restartDelay: 2500
-			// [number] restart delay on inactive slideshow
-		},
-		navigation: {
-			active: true,
-			effect: "slide"
-		},
-		pagination: {
-			active: true,
-			effect: "slide"
-		},
-		effect: {
-			slide: {
-			speed: 200
-			},
-			fade: {
-			speed: 300,
-			crossfade: true
+			});
+			var poskit = function(n1,n2){		
+				n2 = ( pct * (n2-n1) / 100 )  + n1  ;
+				return [n1 , n2] ;
 			}
-		}
-	});
-	
-	var linkStat = false;
+			$(window).on("load scroll resize",function(){
+				var winH = $(window).height();
+				var docH = $(document).height();
+				var scrT = $(window).scrollTop();
+				pct =  Math.ceil( scrT / ( docH - winH ) * 100 );
+				scm = Math.ceil( pct * 0.75 );
+				// console.log( winH , docH , scrT ,  pct );
+				$("#barH").css({"width":pct+"%"});
 
-	var linkAmtFunc = function(){
-		$(".contain .container .pList li .ptBox .ss a   ,   .mainTop .mainSd .slides .pBox a").each(function(index) {
-			var linkAmt = $(this).attr("href");
-			$(this).attr("href","javascript:;").css("cursor","default").removeAttr("target");
-			$(this).attr("data-url",linkAmt);
-		});
-		console.log("링크가 비활성화 됐습니다.")
-	}
-	// linkAmtFunc();
-	
-	var linkAmtSet = function(){
-		$(".contain .container .pList li .ptBox .ss a   ,   .mainTop .mainSd .slides .pBox a").each(function(index) {
-			var linkAmt = $(this).attr("data-url");
-			$(this).attr("href",linkAmt).css("cursor","pointer").attr("target","_blank");
+				// $(".pic.p1").html(  poskit(3,15) );
+				// $(".pic.p2").html( " "+ poskit(5,23) );
+				$(".pic.p1").css({
+					// left:  poskit(3,15)[1]+"%"
+				});
+				
+				// scmStat.init();
+				
+			});
+		}
+	},
+	slides:{
+		init:function () {
 			
-		});
-		console.log("링크가 활성화 됐습니다.")
-	}
-	//linkAmtSet()
+			var sdRandom = Math.ceil((  Math.random() * 4)  );
+			$('#slides').slidesjs({
+				width: 700,
+				height: 506,
+				autostart: false,
+				start: 1,//sdRandom
+				play: {
+					active: true,
+					// [boolean] Generate the play and stop buttons.
+					// You cannot use your own buttons. Sorry.
+					effect: "slide",
+					// [string] Can be either "slide" or "fade".
+					interval: 2000,
+					// [number] Time spent on each slide in milliseconds.
+					auto: false,
+					// [boolean] Start playing the slideshow on load.
+					swap: true,
+					// [boolean] show/hide stop and play buttons
+					pauseOnHover: true,
+					// [boolean] pause a playing slideshow on hover
+					restartDelay: 2500
+					// [number] restart delay on inactive slideshow
+				},
+				navigation: {
+					active: true,
+					effect: "slide"
+				},
+				pagination: {
+					active: true,
+					effect: "slide"
+				},
+				effect: {
+					slide: {
+					speed: 200
+					},
+					fade: {
+					speed: 300,
+					crossfade: true
+					}
+				}
+			});
+		}
 
-	$(document).keydown(function(event){ // M 키 이벤트
-		if(event.keyCode == 77 ){
-			if(!linkStat){
-				linkAmtSet();
-				linkStat = true;
+	},
+	common:{
+		init:function(){
+
+			$("#scrollbar1").mCustomScrollbar({
+				mouseWheel:{
+					scrollAmount:400,
+					preventDefault:true
+				}	
+			});
+
+
+			$("img.lazy").lazyload({
+				event : "fadeIn"
+			});
+			$("img.lazy").show().lazyload();
+
+			// 스크롤 TOP버튼
+			$('.topBtn a.up').click(function () {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 300);   // 애니메이션 속도 작을 수록 빨라요~
+				return false;
+			});
+			$('.topBtn a.down').click(function () {
+				var botScroll = $(document).height();
+				$('body,html').animate({
+					scrollTop: botScroll
+				}, 300);   // 애니메이션 속도 작을 수록 빨라요~
+				return false;
+			});
+		}
+
+	},
+	link:{
+		init:function(){
+			var _this = this;
+			$(document).keydown(function(event){ // M 키 이벤트
+				if(event.keyCode == 77 ){
+					if(!_this.stat){
+						_this.using(true);
+						_this.stat = true;
+					}else{
+						_this.using(false);
+						_this.stat = false;
+					}
+				}
+			});	
+		},
+		stat:false,
+		using:function(st){
+			var els = ".contain .container .pList li .ptBox .ss a   ,   .mainTop .mainSd .slides .pBox a" ;
+			if (st === true) {
+				$(els).each(function(index) {
+					var linkAmt = $(this).attr("data-url");
+					$(this).attr("href",linkAmt).css("cursor","pointer").attr("target","_blank");
+					
+				});
+				console.log("링크가 활성화 됐습니다.")
 			}else{
-				linkAmtFunc();
-				linkStat = false;
+				$(els).each(function(index) {
+					var linkAmt = $(this).attr("href");
+					$(this).attr("href","javascript:;").css("cursor","default").removeAttr("target");
+					$(this).attr("data-url",linkAmt);
+				});
+				console.log("링크가 비활성화 됐습니다.")
 			}
 		}
-	});	
-	
-
-	$("#scrollbar1").mCustomScrollbar({
-		mouseWheel:{
-			scrollAmount:400,
-			preventDefault:true
-		}	
-	});
+	}
+};
 
 
-	$("img.lazy").lazyload({
-		event : "fadeIn"
-	});
-	$("img.lazy").show().lazyload();
-	
-
-	console.log("김기현 - kimkee@naver.com , 010-3236-1677");
-
-});
-
-
-
-
+ui.init();
 
 
 
