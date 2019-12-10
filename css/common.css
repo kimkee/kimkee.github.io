@@ -105,7 +105,7 @@ img.lazy{ display:none;}
 
 
 
-.mainTop .mainSd{ width:520px; height:380px;float:left;border-radius:6px; box-shadow:0 0 1px #999999;background:url(../img/cm/bgOp.png); }
+.mainTop .mainSd{width:520px;height: 380px;float:left;border-radius:6px;box-shadow:0 0 1px #999999;background:url(../img/cm/bgOp.png);}
 .mainTop .mainSd .mainSdIn{ margin:13px ; height:calc( 100% - 54px );}
 .mainTop .mainSd .slides{ position:relative; }
 .mainTop .mainSd .slides .slidesjs-container{border-radius:0px; overflow:hidden; height:326px !important;}
@@ -117,7 +117,7 @@ img.lazy{ display:none;}
 .mainTop .mainSd .slides .pBox .info .icoPack{ position:absolute; left:10px; top:9px; z-index:10;}
 .mainTop .mainSd .slides .pBox .info .date{ position:absolute; right:20px; top:7px; z-index:10; font-size:11px; color:#eee;}
 .mainTop .mainSd .slides .pBox .info .name{ position:absolute; right:20px; top:20px; z-index:10; font-size:16px; color:#f3f3f3; }
-.mainTop .mainSd .slides .pBox .info .screen{ width:100%; height:76px; position:absolute; left:0px; bottom:0px; background:#000; opacity:0.7;filter: alpha(opacity = 70); border-radius:0px 0px 0px 0px }
+.mainTop .mainSd .slides .pBox .info .screen{width:100%;height:76px;position:absolute;left:0px;bottom:0px;background:#000;opacity:0.7;filter: alpha(opacity = 70);border-radius:0px 0px 0px 0px;}
 .mainTop .mainSd .navi{ position:absolute; left:0; right: 0; bottom: 0px; }
 .mainTop .mainSd .navi .nav{ width:40px; height:78px; margin-top: -34px; position:absolute; bottom:50%; z-index:10; background:url(../img/cm/btnSlide.png) no-repeat; line-height:200px; overflow:hidden; display:block;}
 .mainTop .mainSd .navi .nav.next{ right:10px; background-position:-47px 0px;}
@@ -284,7 +284,7 @@ img.lazy{ display:none;}
 	.noticeWrap .box .btnClose{ background-position:-8px -7px; width:19px; height:20px; margin:0 0 0 5px;}
 	.noticeWrap .box .btnClose:hover{ background-position:-8px -47px;}
 	.mainTop .snsLinkIn{margin:0 -0%;}
-	.mainTop .mainSd{ width:100%; margin-bottom:10%;}
+	.mainTop .mainSd{width:100%;margin-bottom:10%;}
 	.mainTop .profile{ width:100%}
 	.mainTop .profile .box{ height:auto;}
 	.mainTop .profile .box .photo{ height:100px;}
@@ -340,14 +340,16 @@ img.lazy{ display:none;}
 	.mainTop .hTitle .logoPack .resBox .txt{ display:block; position:absolute; left:10px; top:30px; font-weight:bold;border-radius:3px; padding:2px 7px 5px 7px; color:#ddd; font-size:11px; line-height:12px;font-family:'Tahoma'; background:#222; border:#000 solid 1px; cursor:default; text-shadow:#333 1px 1px 0px}
 
 
-	.mainTop .mainSd{ height:auto;}
-
+	.mainTop .mainSd{height:auto;padding-bottom: 12px;}
 	.mainTop .mainSd .slides .slidesjs-container,
 	.mainTop .mainSd .slides .slidesjs-control,
 	.mainTop .mainSd .slides .pBox{ height:220px !important; }
 	.mainTop .mainSd .slides .pBox .img{ width:410px}	
 	.mainTop .mainSd .slides .slidesjs-play, 
 	.mainTop .mainSd .slides .slidesjs-stop{ bottom:5px;}
+	.mainTop .mainSd .navi .nav{transform: scale(0.5);margin-top: -70px;}
+	.mainTop .mainSd .pagi .swiper-pagination-bullet{width:6px; height:6px;}
+	.mainTop .mainSd .pagi .swiper-pagination-bullet-active{width:12px;}
 	.saleIco{ text-align:right;}
 	.saleIco .img{ width:95px;}
 
