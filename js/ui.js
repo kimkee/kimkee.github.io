@@ -11,7 +11,7 @@ var ui = {
 		init:function () {
 
 			$(document).on( "click", ".noticeWrap .box .btnClose", function() {
-				$( this ).parent(".box").parent(".noticeWrap").slideUp(500);
+				$( this ).closest(".noticeWrap").slideUp(500);
 			});
 
 			$(window).on("load scroll resize",function(){
@@ -54,9 +54,9 @@ var ui = {
 	},
 	slides:{
 		init:function () {
-			$(this.mainSd.els  ).length && this.mainSd.using();
+			$(this.mainSd.els).length && this.mainSd.using();
 		},
-		mainSd:{  //  샘플1
+		mainSd:{  //  mainSd
             els: ".mainSd #slides",
             opt: {
 				slidesPerView: 1,
@@ -64,7 +64,7 @@ var ui = {
 				observeParents: true,
 				watchOverflow:true,
 				pagination: {
-					el: '.pagi',
+					el: '.mainSd .pagi',
 					clickable: true
 				},
 				navigation: {

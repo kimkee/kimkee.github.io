@@ -66,7 +66,7 @@ img.lazy{ display:none;}
 .noticeWrap .box .btnClose:hover{ background-position:0px -40px;}
 .saleIco{ position:absolute; right:0px; top:200px; z-index:100; transition:all .5s ease .0s; }
 .saleIco .img{ transition:all .5s ease .0s; }
-.mainTop{ /*background:#f8f8f8;*/ padding:20px 10px 60px; position:relative;/* border-top:#FFF solid 1px;*/; margin-top: 34px;}
+.mainTop{/*background:#f8f8f8;*/padding: 20px 10px 40px;position:relative;/* border-top:#FFF solid 1px;*/margin-top: 34px;}
 .mainTop .mainToper{  min-height:520px; margin:auto;zoom:1; position:relative;}
 .mainTop .mainToper:after{clear:both;content:"";display:block;font-size:0;height:0;line-height:0;visibility:hidden}
 
@@ -106,7 +106,7 @@ img.lazy{ display:none;}
 
 
 .mainTop .mainSd{width:520px;height: 380px;float:left;border-radius:6px;box-shadow:0 0 1px #999999;background:url(../img/cm/bgOp.png);}
-.mainTop .mainSd .mainSdIn{ margin:13px ; height:calc( 100% - 54px );}
+.mainTop .mainSd .mainSdIn{margin:13px;height: calc( 100% - 54px );}
 .mainTop .mainSd .slides{ position:relative; }
 .mainTop .mainSd .slides .slidesjs-container{border-radius:0px; overflow:hidden; height:326px !important;}
 .mainTop .mainSd .slides .slidesjs-control{/*  height:326px !important; border-radius:0px; */}
@@ -126,7 +126,7 @@ img.lazy{ display:none;}
 .mainTop .mainSd .navi .nav.prev{ left:10px;}
 .mainTop .mainSd .navi .nav.prev:hover{ background-position:0 -80px;}
 .mainTop .mainSd .pagi{}
-.mainTop .mainSd .pagi{ text-align:center; padding:0px 0 0 0; line-height: 10px;}
+.mainTop .mainSd .pagi{text-align:center;padding:0px 0 0 0;line-height: 0;}
 .mainTop .mainSd .pagi li{ display:inline-block; *display:inline; zoom:1; padding:0 3px;}
 .mainTop .mainSd .pagi .swiper-pagination-bullet{ width:11px; height:11px; display:inline-block; vertical-align:middle; background:#aaa; border-radius:10px; line-height:100px; overflow:hidden; opacity:1; margin: 0 3px; outline: none;}
 .mainTop .mainSd .pagi .swiper-pagination-bullet-active{ background:#f09835; width:30px;} 
@@ -140,7 +140,7 @@ img.lazy{ display:none;}
 .icoTech.mobile{ background:#d643df; border-color:#c33acc;text-shadow:#c33acc 1px 1px;}
 
 .mainTop .profile{ float:right;  width:200px; position:relative; }
-.mainTop .profile .box{ padding:13px; height:350px; overflow:hidden;   border:#444 solid 1px;border-radius:6px; background:url(../img/cm/bgOp.png); }
+.mainTop .profile .box{padding:13px;height: 350px;overflow:hidden;border:#444 solid 1px;border-radius:6px;background:url(../img/cm/bgOp.png);}
 .mainTop .profile .box .photo{ overflow:hidden;  height:256px; margin:0 0 20px 0;}
 .mainTop .profile .box .photo .img{ width:120%; margin:-33% 0 0 -7%;}
 .mainTop .profile .box .info{ padding:0 0 0 3px;}
@@ -150,13 +150,16 @@ img.lazy{ display:none;}
 .mainTop .profile .box .email{ font-size:18px; color:#cda869}
 .mainTop .rSet{ float:left; width:200px;margin:0 0 0 20px;}
 .mainTop .career{  border-radius:6px; margin:0 0 30px 0;}
-.mainTop .career .careerIn{}
-.mainTop .career .list{}
+.mainTop .career .careerIn{
+}
+.mainTop .career .list{
+    padding: 5px 0px;
+}
 .mainTop .career .list li{ color:#FFF; padding:0px 0px 15px 0;}
 .mainTop .career .list li:last-child{ padding:0px;}
 .mainTop .career .list li .date{ font-size:11px; line-height:11px; color:#ccc; text-shadow:#000 1px 1px 0px; }
 .mainTop .career .list li .name{ font-size:13px;  color:#eee; width:99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; text-shadow:#000 1px 1px 0px;}
-.mainTop .career .uiScrollBox{ height:255px; overflow:hidden;}
+.mainTop .career .uiScrollBox{height: 378px;overflow:hidden;}
 .mainTop .career .uiScrollBox .viewport{ height:255px;}
 .mainTop .snsLink{border-radius:6px; height:92px; border-top:1px solid #444; border-bottom:1px solid #444; transition:all .5s ease .0s; }
 .mainTop .snsLinkIn{ padding:15px 0 ; text-align:center; height:62px; /*background:url(../img/cm/snsLink.png) no-repeat center center;*/}
@@ -243,10 +246,10 @@ img.lazy{ display:none;}
 	.mainTop .mainSd{ width:68%;}
 	.mainTop .profile{ width:29%}
 	.mainTop .rSet{ clear:both; margin:40px 0 0 0; width:100%; padding:0;}
-	.mainTop .career{ width:68%; float:left;}
+	.mainTop .career{/* width:68%; */float:left;}
 	.mainTop .career .uiScrollBox { height:92px;}
 	.mainTop .career .uiScrollBox .viewport{ height:92px;}
-	.mainTop .career .list li{ float:left; width:50%;}
+	.mainTop .career .list li{float:left;width: 33.3%;}
 	.mainTop .snsLink{ width:29%; float:right;}
 }
 @media screen and (min-width : 600px) and (max-width : 890px) {
@@ -343,18 +346,18 @@ img.lazy{ display:none;}
 	.mainTop .mainSd{height:auto;padding-bottom: 12px;}
 	.mainTop .mainSd .slides .slidesjs-container,
 	.mainTop .mainSd .slides .slidesjs-control,
-	.mainTop .mainSd .slides .pBox{ height:220px !important; }
+	.mainTop .mainSd .slides .pBox{height: 250px !important;}
 	.mainTop .mainSd .slides .pBox .img{ width:410px}	
 	.mainTop .mainSd .slides .slidesjs-play, 
 	.mainTop .mainSd .slides .slidesjs-stop{ bottom:5px;}
-	.mainTop .mainSd .navi .nav{transform: scale(0.5);margin-top: -70px;}
-	.mainTop .mainSd .pagi .swiper-pagination-bullet{width:6px; height:6px;}
-	.mainTop .mainSd .pagi .swiper-pagination-bullet-active{width:12px;}
+	.mainTop .mainSd .navi .nav{transform: scale(0.5);margin-top: -78px;}
+	.mainTop .mainSd .pagi .swiper-pagination-bullet{width: 8px;height: 8px;}
+	.mainTop .mainSd .pagi .swiper-pagination-bullet-active{width: 22px;}
 	.saleIco{ text-align:right;}
 	.saleIco .img{ width:95px;}
 
 	.body .contain { padding:0 10px;}
-	.contain .container .pList li .ptBox{ border-radius:3px;}
+	.contain .container .pList li .ptBox{border-radius: 5px;}
 	.contain .container .pList li .ptBox .icoPack{ padding:4px 5px 4px}
 	.contain .container .pList li .ptBox .name{ font-size:12px; line-height:12px; padding:3px 7px}
 	.contain .container .pList li .ptBox .info{ font-size:9px; padding:0 1px 8px}
@@ -366,7 +369,7 @@ img.lazy{ display:none;}
 @media screen and ( max-width:380px) {
 	.mainTop .mainSd{ }
 	.mainTop .mainSd .mainSdIn{}
-	.mainTop .mainSd .slides .pBox .img{ width:340px;}
+	.mainTop .mainSd .slides .pBox .img{width: 380px;}
 	.mainTop .mainSd .slides .slidesjs-next,
 	.mainTop .mainSd .slides .slidesjs-previous{ margin-bottom:-20px;}
 	.noticeWrap .box .msg{ font-size:13px;}
@@ -378,7 +381,7 @@ img.lazy{ display:none;}
 	.contain .container .pList li .ptBox .info{ font-size:11px; padding:0 4px 8px}
 
 	.icoTech{ border-radius:15px; font-size:12px; line-height:12px; padding:3px 8px 3px}
-	.mainSd .icoTech{ border-radius:15px; font-size:10px; line-height:12px; height:10px; padding:2px 5px 2px}
+	.mainSd .icoTech{border-radius:15px;font-size:10px;line-height:12px;height:10px;padding: 2px 5px 2px;}
 	.mainTop .mainSd .slides .pBox .info .date{ letter-spacing:-1px;}
 }
 
