@@ -102,18 +102,16 @@ var ui = {
 			$("img.lazy").show().lazyload();
 
 			// 스크롤 TOP버튼
-			$('.topBtn a.up').click(function () {
-				$('body,html').animate({
-					scrollTop: 0
-				}, 300);   // 애니메이션 속도 작을 수록 빨라요~
-				return false;
-			});
-			$('.topBtn a.down').click(function () {
-				var botScroll = $(document).height();
-				$('body,html').animate({
-					scrollTop: botScroll
-				}, 300);   // 애니메이션 속도 작을 수록 빨라요~
-				return false;
+			$(document).on("click",".topBtn a.bt",function(e){
+				var toScr ;
+				if( $(this).hasClass("down") ) {
+					toScr = $(document).height();
+				}else{
+					toScr = 0;
+				}
+				$("body,html").animate({
+					scrollTop: toScr
+				}, 300);
 			});
 		}
 
