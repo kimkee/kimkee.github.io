@@ -139,8 +139,9 @@ var ui = {
 			if (st === true) {
 				$(els).each(function(index) {
 					var linkAmt = $(this).attr("data-url");
-					$(this).attr("href",linkAmt).css("cursor","pointer").attr("target","_blank");
-					
+					if (linkAmt) {
+						$(this).attr("href",linkAmt).css("cursor","pointer").attr("target","_blank");
+					}
 				});
 				console.log("링크가 활성화 됐습니다.")
 			}else{

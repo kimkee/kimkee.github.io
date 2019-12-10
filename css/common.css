@@ -179,6 +179,7 @@ img.lazy{ display:none;}
 .contain .container .pList li .ptBox .icoPack{ margin:0px 0 0px 0px; text-align:left; padding:10px 15px 10px 15px }
 .contain .container .pList li .ptBox .ss{ margin:0 0 5px 0; padding:16px 16px 0px 16px ; border-top:1px solid #E2E2E2; background:url(../img/cm/loading.gif) no-repeat center center; background-size:15%;}
 .contain .container .pList li .ptBox .ss a{ display:block;}
+.contain .container .pList li .ptBox .ss a[href='javascript:;']{cursor:default;}
 .contain .container .pList li .ptBox .ss .img{ width:100%; vertical-align:middle; /*box-shadow:#ccc 0 0 1px;*/}
 .contain .container .pList li .ptBox .name{ margin:0 0 4px 0; padding:3px 16px; text-align:center; font-size:18px; color:#353535;overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
 .contain .container .pList li .ptBox .info{ text-align:center; padding:0px 16px 15px 16px; margin:0 0 0px 0; line-height:14px; font-size:11px; font-family:'Nanum Gothic'; color:#767676;overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
