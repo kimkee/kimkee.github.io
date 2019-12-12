@@ -17,9 +17,9 @@ var ui = {
 			$(window).on("load scroll resize",function(){
 				var scr = $(window).scrollTop();
 				// console.log(scr);
-				$("body").css({
-					"background-position-y": (scr - 400) * 0.8 
-				});
+				// $("body").css({
+				// 	"background-position-y": (scr - 400) * 0.8 
+				// });
 				
 				if ( scr > 700) {
 					$(".topBtn").fadeIn(200);
@@ -36,7 +36,7 @@ var ui = {
 				var winH = $(window).height();
 				var docH = $(document).height();
 				var scrT = $(window).scrollTop();
-				pct =  Math.ceil( scrT / ( docH - winH ) * 100 );
+				pct = Math.ceil( scrT / ( docH - winH ) * 100 );
 				scm = Math.ceil( pct * 0.75 );
 				// console.log( winH , docH , scrT ,  pct );
 				$("#barH").css({"width":pct+"%"});
@@ -119,36 +119,34 @@ var ui = {
 	link:{
 		init:function(){
 			var _this = this;
-			$(document).keydown(function(event){ // M 키 이벤트
-				if(event.keyCode == 77 ){
-					if(!_this.stat){
-						_this.using(true);
-						_this.stat = true;
-					}else{
-						_this.using(false);
-						_this.stat = false;
-					}
+			$(document).on("keydown",function(e){ // M 키 이벤트
+				if( e.keyCode == 77 && !_this.stat ){
+					_this.using(true);
+				}else{
+					_this.using(false);
 				}
 			});	
 		},
 		stat:false,
 		using:function(st){
-			var els = ".contain .container .pList li .ptBox .ss a   ,   .mainTop .mainSd .slides .pBox a" ;
+			var els = ".pList li .ptBox .ss a  ,  .mainTop .mainSd .slides .pBox a" ;
 			if (st === true) {
-				$(els).each(function(index) {
+				this.stat = true;
+				$(els).each(function() {
 					var linkAmt = $(this).attr("data-url");
 					if (linkAmt) {
 						$(this).attr("href",linkAmt).css("cursor","pointer").attr("target","_blank");
 					}
 				});
-				console.log("링크가 활성화 됐습니다.")
+				console.log("링크가 활성화 됐습니다.");
 			}else{
-				$(els).each(function(index) {
+				this.stat = false;
+				$(els).each(function() {
 					var linkAmt = $(this).attr("href");
 					$(this).attr("href","javascript:;").css("cursor","default").removeAttr("target");
 					$(this).attr("data-url",linkAmt);
 				});
-				console.log("링크가 비활성화 됐습니다.")
+				console.log("링크가 비활성화 됐습니다.");
 			}
 		}
 	}
