@@ -12,23 +12,24 @@
 
 torrentmoa.com##CENTER
 torrentmoa.com##DIV[id="addon-popup-layer"]
+torrentmoa.com##A[href="http://www.10000w.kr/main?mall_id=torrentmoa&cm_id=x800x220"]
+torrentwal2.com##DIV[id*="left_ad_"]
+
 slrclub.com##DIV[id="section3"]
 slrclub.com##DIV[id^="ad"]
 slrclub.com##DIV[class="cl_spc"]
 slrclub.com##DIV[id="ad1"]
 slrclub.com##DIV[class="bl_ban"]
 slrclub.com##INS[class*="adsbyadop"]
-www.slrclub.com##DIV[id="searchWrap"]
-www.slrclub.com##div[id="logo"]
+slrclub.com##DIV[id="searchWrap"]
+slrclub.com##div[id="logo"]
 
-torrentmoa.com##A[href="http://www.10000w.kr/main?mall_id=torrentmoa&cm_id=x800x220"]
 ddanzi.com##DIV[class="add_display center mt_0"]
 ddanzi.com##DIV[class="add_display center"]
+ddanzi.com##DIV[id="right_side_bar"] DIV[class="add_display"]
 instagram.com##DIV[class="_si7dy"]
 ppomppu.co.kr##DIV[class="power-link"]
-ddanzi.com##DIV[id="right_side_bar"] DIV[class="add_display"]
 
-torrentwal.com##DIV[id*="left_ad_"]
 
 @@|https://www.daum.net/|$document
 @@|https://www.naver.com/|$document
