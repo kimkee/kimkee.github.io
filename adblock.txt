@@ -63,3 +63,5 @@ speedtest.net##DIV[class="ads-column ads-right"]
 
 
 clien.net##DIV[class="list_top_ad"]
+clien.net##DIV[class="list_bottom_ad"]
+
