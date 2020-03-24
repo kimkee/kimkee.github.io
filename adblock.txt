@@ -60,3 +60,6 @@ speedtest.net##DIV[class="ads-column ads-right"]
 @@||wemakeprice.com/$document
 @@||tv.kakao.com/$document
 @@||daum.net/$document
+
+
+clien.net##DIV[class="list_top_ad"]
