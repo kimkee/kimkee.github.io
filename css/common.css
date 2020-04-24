@@ -40,7 +40,7 @@ img.lazy{ display:none;}
 #barH{height:2px;background-color: #ff424d;position:fixed;left:0px;top: 32px;z-index: 1000;transition: width .4s ease-out;}
 
 .body{background: url(../img/cm/bg.jpg) repeat-x center -430px #06090e fixed;}
-.head{ height:32px; padding:0 10px; position:fixed; top: 0px; width:100%; z-index:150;  background:#333; border-top:#444444 solid 1px; border-left:none; border-right:none; border-bottom:#222222 solid 1px;}
+.head{ height:32px; padding:0 10px; position:fixed; top: 0px; width:100%; z-index:150;  background:#333; /* border-top:#444444 solid 1px; */ border-left:none; border-right:none; border-bottom:#222222 solid 1px;}
 .head .header{ margin:auto; position:relative;border-left:#222222 solid 1px; }
 .head .header .date{ padding:0 0 0 15px; height:32px; line-height:31px; border-left:#3c3c3c solid 1px; color:#cda869; font-size:14px;}
 .head .header .date .log{ color:#333; display:inline-block; margin-left:20px;}
