@@ -1,1 +1,0 @@
-<?header("Location:/work/citibank/product/2DepthList.php")?>

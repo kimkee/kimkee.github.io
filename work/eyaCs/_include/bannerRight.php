@@ -1,1 +1,0 @@
-<div class="banner"><a href="#" target="_blank"><img src="/work/eyaCs/images/main/bannerUCC.gif" alt="" /></a></div>

@@ -1,1 +1,0 @@
-<div class="globalTop"><img src="/work/eyaCs/images/main/globalTop.gif" alt="" /></div>
