@@ -14,6 +14,9 @@ torrentmoa.com##CENTER
 torrentmoa.com##DIV[id="addon-popup-layer"]
 torrentmoa.com##A[href="http://www.10000w.kr/main?mall_id=torrentmoa&cm_id=x800x220"]
 torrentwal2.com##DIV[id*="left_ad_"]
+torrentonly1.com##DIV[class="top_bimg"]
+prod.danawa.com##DIV[class="ad_wide_slide"]
+
 
 slrclub.com##DIV[id="section3"]
 slrclub.com##DIV[id^="ad"]
