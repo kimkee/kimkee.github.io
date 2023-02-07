@@ -39,9 +39,10 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link href="./css/mCustomScrollbar.css" rel="stylesheet" type="text/css">
     <link href="./css/swiper.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/common.css?%REACT_APP_VERSION%">
     <!-- <link href="//unpkg.com/swiper@8.2.2/swiper-bundle.css" rel="stylesheet" type="text/css"> -->
     <script src="./js/jquery-3.4.1.js"></script>
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    
     <script>
     if ("serviceWorker" in navigator) {
         window.addEventListener("load", () => {
@@ -51,9 +52,9 @@
     </script>
 
   </head>
-  <body>
+  <body class="body">
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div class="wrap" id="root"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
