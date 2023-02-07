@@ -1,23 +1,24 @@
 import React, { useState, useEffect } from 'react';
 
 import GitHubButton from 'react-github-btn';
+// import data from './js/data.json';
+
 
 
 
 function App() {
-
+  // const [menuItems, setMenuItems] = useState([]);
+  let data;
   useEffect(() => {
     console.log('React Hooks are working!!');
-    
-    console.log('d');
 
-  });
+  } );
 
 
 
   return (
     <>
-      <Header></Header>
+      <Header update={data}></Header>
       <article className="visuals">
 				<div className="inr">
 					
@@ -111,15 +112,30 @@ function App() {
 }
 
 
-function Header(){
+function Header (){
   
-	// const [wdata, setWdata] = useState(data);
-
-
-	return(
+  
+  
+  const [data, setData] = useState();
+  const fetchJson = () => {
+    fetch("https://kimkee.github.io/js/data.json")
+    .then(response => {
+      return response.json();
+    }).then(data => {
+      setData(data);
+      console.log(data.update);
+    }).catch((e) => {
+      console.log(e.message);
+    });
+  }
+  useEffect(() => {
+    fetchJson()
+  },[])
+  
+  return(
 		<header className="header">
 			<div className="inr">
-				<div className="date"> </div>
+				<div className="date">{data?.update} </div>
 				<span className="github">
           <GitHubButton href="https://github.com/kimkee" aria-label="Follow @kimkee on GitHub">Follow @kimkee</GitHubButton>
 				</span>
