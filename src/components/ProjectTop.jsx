@@ -24,12 +24,14 @@ export default  function Project({cate , renderTech}){
 
       <div className="inr" id="slides">
         
-        <Swiper className="swiper-wrapper slides" id="data_psld"
+        <Swiper className="swiper-wrapper slides" 
           // install Swiper modules
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={0}
           slidesPerView={1}
           navigation
+          loop={{loop:true}}
+          wrapperTag="ul"
           pagination={{ clickable: true }}
           // scrollbar={{ draggable: true }}
           onSwiper={(swiper) => console.log(swiper)}
@@ -37,7 +39,7 @@ export default  function Project({cate , renderTech}){
             {
               cate?.filter( (item, i) => i < 10 ).map( (pjt, idx) => {
                   return (
-                    <SwiperSlide key={idx}  className="swiper-slide pbox">
+                    <SwiperSlide tag="li" key={idx}  className="swiper-slide pbox">
                       <span className='lk' href="#none" data-url={ pjt.urls }><img className="img" src={ pjt.imgs } alt="SS" /></span>
                       <div className="info">
                         <div className="pack">{ pjt && renderTech(pjt) }</div>

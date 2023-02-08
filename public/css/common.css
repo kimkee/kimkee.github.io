@@ -87,8 +87,8 @@ img.lazy{ display:none;}
 .notice{ display:no ne;  padding:0 10rem; background:url(../img/cm/noticeBg.png) repeat-x; border-bottom:#eecba3 solid 1rem;}
 .notice .box{  margin:auto; text-align:center;}
 .notice .box .msg{ display:inline-block; font-size:18rem; color:#543e1e; vertical-align:middle; line-height:57rem; transition:all .5s ease .0s; }
-.notice .box .close{ display:inline-block;width: 35rem; height:34rem; background:url(../img/cm/noticeClose.png) no-repeat; line-height:200rem; overflow:hidden; vertical-align:middle;margin: 0 0 0 20rem;}
-.notice .box .close:hover{ background-position:0rem -40rem;}
+.notice .box .close{display:inline-block;width: 35rem;height:34rem;background:url(../img/cm/noticeClose.png) no-repeat;background-size: 100% auto;line-height:200rem;overflow:hidden;vertical-align:middle;margin: 0 0 0 20rem;}
+.notice .box .close:hover{}
 
 .salestat{position:absolute;right:0rem;top:200rem;z-index:100;/* transition:all .5s ease .0s; */}
 .salestat .img{/* transition:all .5s ease .0s; */}
@@ -336,8 +336,8 @@ img.lazy{ display:none;}
 @media screen and ( max-width:600px) {
 	.notice{ padding:0}
 	.notice .box .msg{ font-size:16rem; letter-spacing:-1rem; line-height:40rem;}
-	.notice .box .close{ background-position:-8rem -7rem; width:19rem; height:20rem; margin:0 0 0 5rem;}
-	.notice .box .close:hover{ background-position:-8rem -47rem;}
+	.notice .box .close{/* background-position:-8rem -7rem; */width:19rem;height:20rem;margin:0 0 0 5rem;}
+	.notice .box .close:hover{/* background-position:-8rem -47rem; */}
 	.visuals .snsLinkIn{margin:0 -0%;}
 	.visuals .mnslide{width:100%;margin-bottom:10%;}
 	.visuals .profile{ width:100%}
@@ -419,22 +419,21 @@ img.lazy{ display:none;}
 	.icotech{ font-size:8rem;padding: 1rem 3rem 1rem;line-height: 11rem;}
 }
 
-@media screen and ( max-width:380px) {
+@media screen and ( max-width:320px) {
+	html{font-size: 0.9px;}
 	.visuals .mnslide{ }
 	.visuals .mnslide>.inr{}
 	.visuals .mnslide .slides .pbox .img{width: 380rem;}
 	.notice .box .msg{ font-size:13rem;}
 	.body .container{padding: 0 15rem;}
 	.container>.inr .list {margin:0rem 0rem;}
-	.container>.inr .list li{ width:100%; margin:0; margin-bottom:7% !important;}
+	/* .container>.inr .list li{ width:100%; margin:0; margin-bottom:7% !important;} */
 	.container>.inr .list li .pbox .pack{ padding:9rem 10rem;}
 	.container>.inr .list li .pbox .ss{ padding:15rem 15rem 0;}
 	.container>.inr .list li .pbox .name{ font-size:14rem; line-height:14rem;}
 	.container>.inr .list li .pbox .info{ font-size:11rem; padding:0 4rem 8rem}
 
-	.container>.inr .hdts::after {
-		margin: 0rem -15rem;
-	}
+	.container>.inr .hdts::after { margin: 0rem -15rem; }
 
 	.icotech{ border-radius:15rem;/* font-size:12rem; *//* line-height:12rem; */ padding:3rem 8rem 3rem}
 	.visuals .mnslide .icotech{border-radius:15rem;font-size:10rem;line-height: 10rem;height:10rem;padding: 2rem 5rem 2rem;}
