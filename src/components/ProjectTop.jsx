@@ -40,7 +40,7 @@ export default  function Project({cate , renderTech}){
               cate?.filter( (item, i) => i < 10 ).map( (pjt, idx) => {
                   return (
                     <SwiperSlide tag="li" key={idx}  className="swiper-slide pbox">
-                      <span className='lk' href="#none" data-url={ pjt.urls }><img className="img" src={ pjt.imgs } alt="SS" /></span>
+                      <span className='lk' href="#none" data-url={ pjt.urls }><img className="img" src={ pjt.imgs } alt="SS" loading="lazy" /></span>
                       <div className="info">
                         <div className="pack">{ pjt && renderTech(pjt) }</div>
                         <div className="date"><i className="d">{ pjt.date }</i><i className="p">{ pjt.plce }</i></div>
