@@ -103,12 +103,14 @@ img.lazy{ display:none;}
 .visuals .techs .skills{margin:0 0 10rem 0;padding:0 0 20rem 0;/* transition:all .5s ease .0s; */}
 .visuals .techs .skills .box{font-size: 0;}
 .visuals .techs .skills .br{ display:none;}
-.visuals .techs .skills img{vertical-align:middle;margin: 5rem 7rem 5rem 7rem;/* transition:all .5s ease .0s; */}
+.visuals .techs .skills img{vertical-align:middle;margin: 5rem 10rem 5rem 10rem;/* transition:all .5s ease .0s; */}
 .visuals .techs .skills img.browsers{width: 110rem;}
-.visuals .techs .skills img.jquery{width: 150rem;}
+.visuals .techs .skills img.jquery{width: 140rem;}
 .visuals .techs .skills img.html5{width: 30rem;}
 .visuals .techs .skills img.css3{width: 30rem;}
 .visuals .techs .skills img.js{width: 30rem;}
+.visuals .techs .skills img.vue{width: 44rem;}
+.visuals .techs .skills img.react{width: 48rem;}
 .visuals .techs .skills img.gulp{width:20rem;}
 .visuals .techs .skills img.adobe{width: 30rem;}
 .visuals .techs .skills img.android{width: 30rem;}
@@ -268,10 +270,12 @@ img.lazy{ display:none;}
 	.visuals .techs .skills{ text-align:center;}
 	.visuals .techs .skills img{margin: 5rem 6rem;}
 	.visuals .techs .skills img.browsers{width: 90rem;}
-	.visuals .techs .skills img.jquery{width: 110rem;}
+	.visuals .techs .skills img.jquery{width: 100rem;}
 	.visuals .techs .skills img.html5{width: 25rem;}
 	.visuals .techs .skills img.css3{width: 25rem;}
 	.visuals .techs .skills img.js{width: 25rem;}
+	.visuals .techs .skills img.vue{width: 30rem;}
+	.visuals .techs .skills img.react{width: 32rem;}
 	.visuals .techs .skills img.adobe{ width:26rem;}
 	.visuals .techs .skills img.android{ width:26rem;}
 	.visuals .techs .skills img.ios{ width:26rem;}
