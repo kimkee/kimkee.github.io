@@ -36,6 +36,10 @@ button{cursor:pointer;background: none;border: none;padding: 0;}
 .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{ background:#fdfdfd;}
 
 
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev{color: #ffffff;text-shadow: 1px 1px 3px rgb(0 0 0 / 36%)}
+.swiper .swiper-pagination-clickable .swiper-pagination-bullet{background: #ffffff;box-shadow: 1px 1px 3px rgb(0 0 0 / 36%)}
+
 /* 로딩 점3개 */
 .ui-loading{display: n one; position: fixed; left: 0; right: 0; top: 0; bottom: 0; z-index: 9000; background: rgba(0, 0, 0, 0.5)}
 .ui-loading>.bx{pointer-events: none; position: absolute; width: 50px; text-align: center; top: 50%; left: 50%; transform: translate3d(-50%,-50%,0); }
@@ -93,7 +97,7 @@ img.lazy{ display:none;}
 .salestat.open .img.sold{display: block;}
 
 .visuals{padding: 20rem 10rem 40rem;position:relative;/* border-top:#FFF solid 1rem;*/margin-top: 33rem;padding-top: 30rem;}
-.visuals>.inr{min-height:520rem;margin:auto;zoom:1;position:relative;padding-top: 0rem;}
+.visuals>.inr{min-height:500rem;margin:auto;zoom:1;position:relative;padding-top: 0rem;}
 .visuals>.inr:after{clear:both;content:"";display:block;font-size:0;height:0;line-height:0;visibility:hidden}
 
 
@@ -135,11 +139,11 @@ img.lazy{ display:none;}
 
 
 .visuals .mnslide{width:520rem;height: 380rem;float:left;border-radius:6rem;box-shadow:0 0 1rem #999999;background:url(../img/cm/bgOp.png);width:50%; overflow:hidden;}
-.visuals .mnslide>.inr{margin:13rem;height: calc( 100% - 54rem );}
+.visuals .mnslide>.inr{margin:13rem;height: calc( 100% - 25rem );}
 .visuals .mnslide .slides{ position:relative; }
 .visuals .mnslide .slides .pbox{}
-.visuals .mnslide .slides .pbox .lk{display:block;position:relative;height:100%;cursor: default;}
-.visuals .mnslide .slides .pbox .img{position:absolute;left:0rem; top: 0rem;  border-radius:0rem;  vertical-align:middle;  width:100%;}
+.visuals .mnslide .slides .pbox .lk{display:block;position:relative;height:100%;cursor: default; overflow: hidden;}
+.visuals .mnslide .slides .pbox .img{display: block; position: absolute; left: 50%; top: 50%; transform: translate(-50% , -50%); width: 100%; object-fit: cover; max-width: inherit; min-width: 100%; height: 100%;}
 .visuals .mnslide .slides .pbox .info{ position:absolute; left:0rem; bottom:0rem; width:100%; height:55rem;}
 .visuals .mnslide .slides .pbox .info .pack{ position:absolute; left:10rem; top:9rem; z-index:10;}
 .visuals .mnslide .slides .pbox .info .date{position:absolute;right:20rem;top: 5rem;z-index:10;font-size:11rem;color:#eee;}

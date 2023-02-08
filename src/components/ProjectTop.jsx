@@ -20,30 +20,41 @@ export default  function Project({cate , renderTech}){
   return(
 
     <section className="mnslide">
-      <div className="inr swiper-container" id="slides">
-        <ul className="swiper-wrapper slides" id="data_psld">
+
+
+      <div className="inr" id="slides">
+        
+        <Swiper className="swiper-wrapper slides" id="data_psld"
+          // install Swiper modules
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          spaceBetween={0}
+          slidesPerView={1}
+          navigation
+          pagination={{ clickable: true }}
+          // scrollbar={{ draggable: true }}
+          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log('slide change')}   >
             {
-              cate?.map( (cate, idx) => {
-                if(idx < 16 ) {console.log();}
-                return (
-                  <li key={idx} className="swiper-slide pbox">
-                    <span className='lk' href="#none" data-url={ cate.urls }><img className="img" src={ cate.imgs } alt="SS" /></span>
-                    <div className="info">
-                      <div className="pack">{ cate && renderTech(cate) }</div>
-                      <div className="date"><i className="d">{ cate.date }</i><i className="p">{ cate.plce }</i></div>
-                      <div className="name">{ cate.tits }</div> <div className="screen"></div>
-                    </div>
-                  </li>
-                )
-                
+              cate?.filter( (item, i) => i < 10 ).map( (pjt, idx) => {
+                  return (
+                    <SwiperSlide key={idx}  className="swiper-slide pbox">
+                      <span className='lk' href="#none" data-url={ pjt.urls }><img className="img" src={ pjt.imgs } alt="SS" /></span>
+                      <div className="info">
+                        <div className="pack">{ pjt && renderTech(pjt) }</div>
+                        <div className="date"><i className="d">{ pjt.date }</i><i className="p">{ pjt.plce }</i></div>
+                        <div className="name">{ pjt.tits }</div> <div className="screen"></div>
+                      </div>
+                    </SwiperSlide>
+                  )
               })
             }
-        </ul>
-        <div className="navi">
+        </Swiper>
+        
+        {/* <div className="navi">
           <button type="button" className="nav prev">이전</button><button type="button" className="nav next">다음</button>
-        </div>
+        </div> */}
       </div>
-      <div className="pagi"></div>
+      {/* <div className="pagi"></div> */}
     </section>
   )
 }
