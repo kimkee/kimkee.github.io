@@ -34,7 +34,7 @@ export default  function Project({cate , renderTech}){
           wrapperTag="ul"
           pagination={{ clickable: true }}
           // scrollbar={{ draggable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
+          onSwiper={(swiper) => console.log()}
           onSlideChange={() => console.log('slide change')}   >
             {
               cate?.filter( (item, i) => i < 10 ).map( (pjt, idx) => {
