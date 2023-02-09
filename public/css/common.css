@@ -254,6 +254,7 @@ img.lazy{ display:none;}
 
 
 .topbts{ display:none; position:fixed; right:5rem; bottom:50rem; z-index:150;}
+.topbts.on{display: block;}
 .topbts .bt{ width:40rem; height:40rem; display:block; line-height:100rem; overflow:hidden; background:url(../img/cm/btnTopDown.png) no-repeat;}
 .topbts .bt.up{ margin-bottom:2rem;}
 .topbts .bt.up:hover,

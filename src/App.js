@@ -6,6 +6,7 @@ import Project from './components/Project.jsx';
 import ProjectTop from './components/ProjectTop.jsx';
 import ProjectTxt from './components/ProjectTxt.jsx';
 import Skills from './components/Skills.jsx';
+import TopBts from './components/TopBts.jsx';
 
 function App() {
   const [data, setData] = useState();
@@ -45,6 +46,7 @@ function App() {
     });
     return result;
   };
+
 
   return (
     <>
@@ -100,10 +102,7 @@ function App() {
         </div>
       </main>
 
-      <nav className="topbts">
-        <button type="button" className="bt up"><span>위로</span></button>
-        <button type="button" className="bt down"><span>아래로</span></button>
-      </nav>
+      <TopBts/>
 
       <footer className="footer">
         <div className="inr">김기현</div>
