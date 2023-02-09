@@ -36,14 +36,10 @@
     <meta name="apple-mobile-web-app-title" content="KimKeeWorks">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-    <link rel="stylesheet" href="%PUBLIC_URL%/css/common.css?%REACT_APP_VER%">
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/common.css">
     
     <script>
-    if ("serviceWorker" in navigator) {
-        window.addEventListener("load", () => {
-            navigator.serviceWorker.register("./service-worker.js");
-        });
-    }
+    if ("serviceWorker" in navigator) { window.addEventListener("load", () => navigator.serviceWorker.register("./service-worker.js")); }
     </script>
 
   </head>
