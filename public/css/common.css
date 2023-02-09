@@ -144,9 +144,9 @@ img.lazy{ display:none;}
 .ps .ps__rail-x.ps--clicking,
 .ps .ps__rail-y.ps--clicking{background-color: transparent !important	;}
 
-.ps__rail-y > .ps__thumb-y,
-.ps__rail-y > .ps__thumb-y,
-.ps__rail-y .ps__thumb-y{width: 9px !important;}
+.ps .ps__rail-y > .ps__thumb-y,
+.ps .ps__rail-y > .ps__thumb-y,
+.ps .ps__rail-y .ps__thumb-y{width: 9px !important;}
 
 
 .visuals .mnslide{width:520rem;height: 380rem;float:left;border-radius:6rem;box-shadow:0 0 1rem #999999;background:url(../img/cm/bgOp.png);width:50%; overflow:hidden;}
