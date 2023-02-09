@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Header from './components/Header.jsx';
 import Project from './components/Project.jsx';
 import ProjectTop from './components/ProjectTop.jsx';
+import ProjectTxt from './components/ProjectTxt.jsx';
 import Skills from './components/Skills.jsx';
 
 function App() {
@@ -45,18 +46,6 @@ function App() {
     return result;
   };
 
-  const renderPtxt = () => {  //  프로젝트 리스트 스크롤 영역
-    const result = data.puix.map( (pjt, idx) => {
-      return (
-        <li key={idx}>
-          <div className="date"><i className="d">{ pjt.date }</i><i className="p">{ pjt.plce }</i></div>
-          <div className="name">{ pjt.tits }</div>
-        </li>
-      )
-    });
-    return result ;
-  };
-
   return (
     <>
       <Header update={data?.update} assign={data?.assign}></Header>
@@ -85,15 +74,8 @@ function App() {
             </div>
           </section>
           
-          <section className="rset">
-            <div className="career">
-              <div className="inr">
-                <div className="ut-scrolls">
-                  <ul className="list">{ data && renderPtxt()}</ul>
-                </div>
-              </div>
-            </div>
-          </section>
+          
+          <ProjectTxt cate={data?.puix} />
       
         </div>
       </article>

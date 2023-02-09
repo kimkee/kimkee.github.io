@@ -127,7 +127,7 @@ img.lazy{ display:none;}
 .visuals .techs .skills .resp{}
 .visuals .techs .skills .resp .txt{ display:none;}
 
-
+/* 스와이퍼 */
 .swiper-container .navi{position:absolute;top: 0;left:0rem;right:0rem;bottom: 0;}
 .swiper-container .navi .nav{position:absolute;top:50%;width:40rem;height:70rem;z-index:1;font-size:0;background:url(../img/cm/btnSlide.png) no-repeat;transform: translateY(-50%);}
 .swiper-container .navi .nav.prev{left:10rem}
@@ -136,6 +136,17 @@ img.lazy{ display:none;}
 .swiper-container .pagi{ position:relative;}
 .swiper-container .pagi .swiper-pagination-bullet{width:11rem; height:11rem; display:inline-block; vertical-align:middle; background:#aaa; border-radius:10rem; line-height:100rem; overflow:hidden; opacity:1;}
 
+/* perfect-scrollbar */
+.ps .ps__rail-x:hover,
+.ps .ps__rail-y:hover,
+.ps .ps__rail-x:focus,
+.ps .ps__rail-y:focus,
+.ps .ps__rail-x.ps--clicking,
+.ps .ps__rail-y.ps--clicking{background-color: transparent !important	;}
+
+.ps__rail-y > .ps__thumb-y,
+.ps__rail-y > .ps__thumb-y,
+.ps__rail-y .ps__thumb-y{width: 9px !important;}
 
 
 .visuals .mnslide{width:520rem;height: 380rem;float:left;border-radius:6rem;box-shadow:0 0 1rem #999999;background:url(../img/cm/bgOp.png);width:50%; overflow:hidden;}
@@ -291,7 +302,7 @@ img.lazy{ display:none;}
 	.salestat{ right:0rem; top:190rem;}
 	.visuals .mnslide{ width:68%;}
 	.visuals .profile{ width:29%}
-	.visuals .rset{ clear:both; margin:40rem 0 0 0; width:100%; padding:0;}
+	.visuals .rset{ clear:both; margin:20rem 0 0 0; width:100%; padding:0;}
 	.visuals .career{float:left;margin: 0 0 10rem 0;}
 	.visuals .career .ut-scrolls {height: 117rem;}
 	.visuals .career .ut-scrolls .viewport{ height:92rem;}
