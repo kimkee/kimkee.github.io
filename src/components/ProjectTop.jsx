@@ -15,7 +15,7 @@ import 'swiper/css/scrollbar';
 
 
 
-export default  function Project({cate , renderTech}){
+export default  function ProjectTop({cate , renderTech}){
   
   return(
 
