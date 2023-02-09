@@ -109,12 +109,12 @@ img.lazy{ display:none;}
 .visuals .techs .skills .br{ display:none;}
 .visuals .techs .skills img{vertical-align:middle;margin: 5rem 10rem 5rem 10rem;/* transition:all .5s ease .0s; */}
 .visuals .techs .skills img.browsers{width: 110rem;}
-.visuals .techs .skills img.jquery{width: 140rem;}
+.visuals .techs .skills img.jquery{width: 120rem;}
 .visuals .techs .skills img.html5{width: 30rem;}
 .visuals .techs .skills img.css3{width: 30rem;}
 .visuals .techs .skills img.js{width: 30rem;}
-.visuals .techs .skills img.vue{width: 44rem;}
-.visuals .techs .skills img.react{width: 48rem;}
+.visuals .techs .skills img.vue{width: 40rem;}
+.visuals .techs .skills img.react{width: 40rem;}
 .visuals .techs .skills img.gulp{width:20rem;}
 .visuals .techs .skills img.adobe{width: 30rem;}
 .visuals .techs .skills img.android{width: 30rem;}
@@ -179,6 +179,8 @@ img.lazy{ display:none;}
 
 .icotech{display: inline-flex;justify-content: center;border-radius:10rem; padding:2rem 5rem 3rem 5rem;margin: 1rem 3rem 1rem 0rem;color:#FFF; font-size:10rem; line-height:8rem;font-family:'Tahoma';background: #93533c;border: #763b26 solid 1rem; cursor:default;}
 .icotech+.icotech{/* margin-left: 4rem; */}
+.icotech.vue{ background:#41b883; border-color:#41b883;text-shadow:#41b883 1rem 1rem;}
+.icotech.react{background: #438ca1;border-color:#438ca1;text-shadow:#438ca1 1rem 1rem;}
 .icotech.html{ background:#b8d650; border-color:#aac647;text-shadow:#abc74a 1rem 1rem;}
 .icotech.css{ background:#f09835; border-color:#dc8829;text-shadow:#d7882f 1rem 1rem;}
 .icotech.js{ background:#43cdeb; border-color:#3cbcd8;text-shadow:#3cb9d4 1rem 1rem;}
@@ -394,6 +396,8 @@ img.lazy{ display:none;}
 	.visuals .techs .skills img.html5{ width:20rem; }
 	.visuals .techs .skills img.css3{ width:20rem; }
 	.visuals .techs .skills img.js{ width:20rem; }
+	.visuals .techs .skills img.vue{width: 24rem;}
+	.visuals .techs .skills img.react{width: 24rem;}
 	.visuals .techs .skills img.sass{width:30rem;}
 	.visuals .techs .skills img.less{width:38rem;}
 	.visuals .techs .skills .br{ /* display:block; */}

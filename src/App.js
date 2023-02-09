@@ -28,6 +28,8 @@ function App() {
 
   const renderTech = (pjt) => {  // 프로젝트 스킬 아이콘
     const  skcls = {
+      "VUE": "icotech vue",
+      "REACT": "icotech react",
       "HTML": "icotech html",
       "CSS": "icotech css",
       "SASS": "icotech css",
