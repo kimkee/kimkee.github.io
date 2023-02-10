@@ -73,7 +73,7 @@ img.lazy{ display:none;}
 .header>.inr .date{ padding:0 0 0 15rem; height:32rem; line-height:31rem; border-left:#3c3c3c solid 1rem; color:#cda869; font-size:14rem;}
 .header>.inr .date .log{ color:#333; display:inline-block; margin-left:20rem;}
 
-.header>.inr .github{position:absolute;right: 21rem;top:5rem;}
+.header>.inr .github{position:absolute;right: 21rem;top:5rem; line-height:1rem;}
 .header>.inr .sns{ position:absolute; right:0rem; top:0rem; border-right:#3c3c3c solid 1rem;}
 .header>.inr .sns li{ float:left; height:32rem; border-left:#222222 solid 1rem; }
 .header>.inr .sns li a{ display:block; background:url(../img/cm/sns.png) no-repeat; height:32rem; width:32rem; line-height:100rem; overflow:hidden; border-left:#3c3c3c solid 1rem; }
