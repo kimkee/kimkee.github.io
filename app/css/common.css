@@ -146,7 +146,7 @@ img.lazy{ display:none;}
 
 .ps .ps__rail-y > .ps__thumb-y,
 .ps .ps__rail-y > .ps__thumb-y,
-.ps .ps__rail-y .ps__thumb-y{width: 9px !important;}
+.ps .ps__rail-y .ps__thumb-y{width: 6px !important;}
 
 
 .visuals .mnslide{width:520rem;height: 380rem;float:left;border-radius:6rem;box-shadow:0 0 1rem #999999;background:url(../img/cm/bgOp.png);width:50%; overflow:hidden;}
@@ -202,7 +202,7 @@ img.lazy{ display:none;}
 .visuals .career{  border-radius:6rem; margin:0 0 30rem 0;}
 .visuals .career>.inr{ }
 .visuals .career .list{ padding: 5rem 0rem; }
-.visuals .career .list li{ color:#FFF; padding:0rem 0rem 15rem 0;}
+.visuals .career .list li{color:#FFF;padding: 0rem 0rem 10rem 0;}
 .visuals .career .list li:last-child{ padding:0rem;}
 .visuals .career .list li .date{ font-size:11rem; line-height:11rem; color:#ccc; text-shadow:#000 1rem 1rem 0rem; }
 .visuals .career .list li .date .d{font-style: normal;}
@@ -255,9 +255,9 @@ img.lazy{ display:none;}
 .footer>.inr{width:100%;max-width:1300rem;}
 
 
-.topbts{ display:none; position:fixed; right:5rem; bottom:50rem; z-index:150;}
+.topbts{ display:none; position:fixed; right:15rem; bottom:50rem; z-index:150;}
 .topbts.on{display: block;}
-.topbts .bt{ width:40rem; height:40rem; display:block; line-height:100rem; overflow:hidden; background:url(../img/cm/btnTopDown.png) no-repeat;}
+.topbts .bt{width:40rem;height:40rem;display:block;line-height:100rem;overflow:hidden;background:url(../img/cm/btnTopDown.png) no-repeat;background-size: 90rem 85rem;}
 .topbts .bt.up{ margin-bottom:2rem;}
 .topbts .bt.up:hover,
 .topbts .bt.up:active{ background-position:-50rem 0rem;}
@@ -307,7 +307,7 @@ img.lazy{ display:none;}
 	.visuals .profile{ width:29%}
 	.visuals .rset{ clear:both; margin:20rem 0 0 0; width:100%; padding:0;}
 	.visuals .career{float:left;margin: 0 0 10rem 0;}
-	.visuals .career .ut-scrolls {height: 117rem;}
+	.visuals .career .ut-scrolls {height: 200rem;}
 	.visuals .career .ut-scrolls .viewport{ height:92rem;}
 	.visuals .career .list li{float:left;width: 33.3%;}
 	.visuals .snsLink{ width:29%; float:right;}
@@ -358,15 +358,17 @@ img.lazy{ display:none;}
 	.visuals .profile .box{ height:auto;}
 	.visuals .profile .box .photo{ height:100rem;}
 	.visuals .profile .box .photo .img{ margin:-68% 0 0 -17%;}
-	.visuals .career .list li{ clear:both; width:100%;}
+	.visuals .career .list li{display: flex;justify-content: space-between;width: 100%; }
+	.visuals .career .list li .name{text-align: right;}
+	.visuals .career .list li .date{display: flex;}
 	.salestat{ top:90rem;}
 	.salestat .img{ width:135rem;}
 	.icotech{ border-radius:15rem; font-size:11rem;line-height:13rem;/* height:13rem; */padding:2rem 5rem 2rem 5rem;}
 
 	.visuals .career{ width:100%; clear:both;  }
 	.visuals .career .ut-scrolls .viewport{ height:160rem;}
-	.visuals .career .list li .date{font-size:14rem;line-height: 21rem;}
-	.visuals .career .list li .name{ font-size:16rem;}
+	.visuals .career .list li .date{font-size: 13rem;line-height: 21rem;}
+	.visuals .career .list li .name{font-size: 14rem;}
 	.visuals .snsLink{ width:100%; clear:both; margin-bottom:10%}
 
 	.visuals .profile .box .name,
@@ -412,9 +414,7 @@ img.lazy{ display:none;}
 	.visuals .techs .skills .resp{display:block; position:relative;}
 	.visuals .techs .skills .resp .txt{ display:block; position:absolute; left:10rem; top:30rem; font-weight:bold;border-radius:3rem; padding:2rem 7rem 5rem 7rem; color:#ddd; font-size:11rem; line-height:12rem;font-family:'Tahoma'; background:#222; border:#000 solid 1rem; cursor:default; text-shadow:#333 1rem 1rem 0rem}
 	 */
-	.container>.inr .hdts::after {
-		margin: 0rem -10rem;
-	}
+	.container>.inr .hdts::after { margin: 0rem -10rem; }
 	.visuals .mnslide{height:auto;padding-bottom: 12rem;}
 	.visuals .mnslide .slides .pbox{height: 250rem !important;}
 	.visuals .mnslide .slides .pbox .img{ width:410rem}	
@@ -436,14 +436,14 @@ img.lazy{ display:none;}
 }
 
 @media screen and ( max-width:320px) {
-	html{font-size: 0.9px;}
+	html{font-size: 0.8px;}
 	.visuals .mnslide{ }
 	.visuals .mnslide>.inr{}
 	.visuals .mnslide .slides .pbox .img{width: 380rem;}
 	.notice .box .msg{ font-size:13rem;}
 	.body .container{padding: 0 15rem;}
 	.container>.inr .list {margin:0rem 0rem;}
-	/* .container>.inr .list li{ width:100%; margin:0; margin-bottom:7% !important;} */
+
 	.container>.inr .list li .pbox .pack{ padding:9rem 10rem;}
 	.container>.inr .list li .pbox .ss{ padding:15rem 15rem 0;}
 	.container>.inr .list li .pbox .name{ font-size:14rem; line-height:14rem;}
@@ -456,8 +456,8 @@ img.lazy{ display:none;}
 	.visuals .mnslide .slides .pbox .info .date{ letter-spacing:-1rem;}
 }
 
-@media screen and ( max-width:320px) {
-	
+@media screen and ( max-width:310px) {
+	.container>.inr .list li{ width:100%; margin:0; margin-bottom:7% !important;}
 }
 
 @media all and (min-device-aspect-ratio:5/4) {}
