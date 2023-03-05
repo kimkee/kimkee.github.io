@@ -34,6 +34,7 @@ export default  function ProjectTop({cate , renderTech}){
           wrapperTag="ul"
           pagination={{ clickable: true }}
           // scrollbar={{ draggable: true }}
+          initialSlide={ Math.floor( Math.random() * 10 ) }
           onSwiper={(swiper) => console.log()}
           onSlideChange={() => console.log('slide change')}   >
             {
