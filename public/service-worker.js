@@ -1,5 +1,5 @@
 // 캐시 이름
-const CACHE_NAME = "cache-v5";
+const CACHE_NAME = "cache-v6";
 
 
 // 캐싱할 파일
@@ -100,7 +100,7 @@ self.addEventListener("fetch", (event) => {
 		fetch(event.request).catch(() =>
 			caches
 				.open(CACHE_NAME)
-				.then((cache) => cache.match("/offline.html"))
+				.then((cache) => cache.match("./offline.html"))
 		)
 	);
 });
