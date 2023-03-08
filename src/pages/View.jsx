@@ -67,6 +67,8 @@ export default function View() {
       
       <article className="pop-layer c pop-works">
         <div className="pbd">
+          {data ?
+          <>
           <div className="phd">
             <div className="inr">
               {
@@ -97,6 +99,10 @@ export default function View() {
               }
             </main>
           </div>
+          </>
+          :
+          <div className="ui-loading-dot"><div className="bx"><em><i></i></em></div></div>
+          }
         </div>
       </article>
 

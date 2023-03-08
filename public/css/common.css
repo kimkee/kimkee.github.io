@@ -43,16 +43,16 @@ button{cursor:pointer;background: none;border: none;padding: 0;}
 .swiper .swiper-pagination-clickable .swiper-pagination-bullet{background: #ffffff;box-shadow: 1px 1px 3px rgb(0 0 0 / 36%)}
 
 /* 로딩 점3개 */
-.ui-loading{display: n one; position: fixed; left: 0; right: 0; top: 0; bottom: 0; z-index: 9000; background: rgba(0, 0, 0, 0.5)}
-.ui-loading>.bx{pointer-events: none; position: absolute; width: 50px; text-align: center; top: 50%; left: 50%; transform: translate3d(-50%,-50%,0); }
-.ui-loading>.bx em{display: flex; justify-content: center;}
-.ui-loading>.bx em i,
-.ui-loading>.bx em::before,
-.ui-loading>.bx em::after{width: 6px; height: 6px; display: inline-flex; background-color: #ffffff; border-radius: 10px; margin: 0px 2px; animation: bounce 0.5s alternate infinite; content: "";}
-.ui-loading>.bx em::before{}
-.ui-loading>.bx em i{animation-delay: 0.16s;}
-.ui-loading>.bx em::after{animation-delay: 0.32s;}
-.ui-loading>.bx::after{content: "LOADING..."; font-size: 10px; margin-left: 4px; text-align: center; margin-top: 10px; display: block; color: #ffffff;}
+.ui-loading-dot{display: n one; position: fixed; left: 0; right: 0; top: 0; bottom: 0; z-index: 9000; background: rgba(0, 0, 0, 0.5)}
+.ui-loading-dot>.bx{pointer-events: none; position: absolute; width: 50px; text-align: center; top: 50%; left: 50%; transform: translate3d(-50%,-50%,0); }
+.ui-loading-dot>.bx em{display: flex; justify-content: center;}
+.ui-loading-dot>.bx em i,
+.ui-loading-dot>.bx em::before,
+.ui-loading-dot>.bx em::after{width: 6px; height: 6px; display: inline-flex; background-color: #ffffff; border-radius: 10px; margin: 0px 2px; animation: bounce 0.5s alternate infinite; content: "";}
+.ui-loading-dot>.bx em::before{}
+.ui-loading-dot>.bx em i{animation-delay: 0.16s;}
+.ui-loading-dot>.bx em::after{animation-delay: 0.32s;}
+.ui-loading-dot>.bx::after{content: "LOADING..."; font-size: 10px; margin-left: 4px; text-align: center; margin-top: 10px; display: block; color: #ffffff;}
 @keyframes bounce {
 	from{
 		transform: scaleX(1.15);
@@ -62,7 +62,8 @@ button{cursor:pointer;background: none;border: none;padding: 0;}
 	}
 }
 
- 
+.body.is-lock{height: 100%; overflow-y:initial;}
+html.is-lock {height: 100%;width: 100%;overflow: hidden;position: fixed;}
 
 /* lazy load */
 img.lazy{ display:none;}
@@ -297,11 +298,17 @@ img.lazy{ display:none;}
 .pop-works .pbox .info{text-align: right;position: relative;padding: 20rem 10rem 20rem 150rem;margin:0 0 0rem 0;line-height:14rem;font-size: 16rem;overflow: hidden;white-space: nowrap;display: flex;flex-direction: column;gap: 15rem;color: #d1d1d1;}
 .pop-works .pbox .date{ color: #333333;} 
 .pop-works .pbox .place{ color: #333333;}
-
+.pop-works .ui-loading-dot{background: #ffffff;}
+.pop-works .ui-loading-dot{ min-height: 480rem; position: static; color: #333333;}
+.pop-works .ui-loading-dot>.bx::after{color: #333333;}
+.pop-works .ui-loading-dot>.bx em i,
+.pop-works .ui-loading-dot>.bx em::before,
+.pop-works .ui-loading-dot>.bx em::after{background-color: #666;}
 
 @media screen and ( max-width:600px) {
 	.pop-layer.c .pbd{vertical-align: bottom;border-radius: 30rem 30rem 0rem 0rem;}
 	.pop-layer.c .pct .poptents{padding-bottom: calc(20rem + env(safe-area-inset-bottom));}
+	.pop-works .ui-loading-dot{ min-height: 100vw;}
 }
 
 
