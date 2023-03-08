@@ -13,10 +13,9 @@ export default function App() {
       <Router>
         
             <Routes>
-              <Route path="/" element={<Home />} >
-                <Route path="/:cate" element={<Home /> }>
-                  <Route path=":id" element={<View />} />
-                </Route>
+              <Route path="/" element={<Home />} />
+              <Route path=":cate" element={<Home />}>
+                <Route path=":id" element={<View />} />
               </Route>
             </Routes>
 

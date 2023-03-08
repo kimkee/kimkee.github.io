@@ -30,7 +30,7 @@ export default function View() {
   console.log(params);
   console.log(cate ,  idx);
   useEffect(() => {
-    data && ui.lock.using(true);
+    ui.lock.using(true);
     document.querySelector(".pop-works").classList.add("on");
     fetchJson();
     return ()=>{
@@ -38,7 +38,7 @@ export default function View() {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   },[]);
-
+  
   // if(!data) return <div>Loding....</div>
   return (
     <>

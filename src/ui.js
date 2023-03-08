@@ -162,7 +162,7 @@
                 ui.lock.stat = false;
                 body.forEach(body => body.classList.remove("is-lock"));
                 html.style.top = "";
-                // window.scrollTo(0, ui.lock.sct)
+                window.scrollTo(0, ui.lock.sct)
                 // $(this.els).unbind("touchmove scroll");
                 setTimeout(() => {
                     body.forEach(body => body.classList.remove("is-lock-end"));

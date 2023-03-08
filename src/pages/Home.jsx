@@ -74,6 +74,9 @@ export default function Home() {
           <button type="button" className="close"><span>닫기</span></button>
         </div>
       </article>
+      
+      <Outlet />
+
       <main className="container">
         <div className="inr">
           
@@ -87,8 +90,6 @@ export default function Home() {
       </main>
 
       <TopBts/>
-
-      <Outlet />
 
       <footer className="footer">
         <div className="inr">김기현</div>

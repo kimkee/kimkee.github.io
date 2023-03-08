@@ -1,10 +1,11 @@
 
 import React from "react";
-
+import ui from '../ui.js';
 export default  function TopBts(){
   const scrollEvent = ()=>{
     var scr = document.documentElement.scrollTop;
-    if ( scr > 700) {
+    if ( ui.lock.stat) return;
+    if ( scr > 700 ) {
       document.querySelector(".topbts").classList.add('on');
     } else {
       document.querySelector(".topbts").classList.remove('on');

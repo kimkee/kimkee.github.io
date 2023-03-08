@@ -203,7 +203,7 @@ img.lazy{ display:none;}
 .visuals .profile .box .email{ font-size:18rem; color:#cda869}
 .visuals .rset{ float:left; width:200rem;margin:0 0 0 20rem;}
 .visuals .career{  border-radius:6rem; margin:0 0 30rem 0;}
-.visuals .career>.inr{ }
+.visuals .career>.inr{  }
 .visuals .career .list{ padding: 5rem 0rem; }
 .visuals .career .list li{color:#FFF;padding: 0rem 0rem 10rem 0;}
 .visuals .career .list li:last-child{ padding:0rem;}
@@ -212,7 +212,7 @@ img.lazy{ display:none;}
 .visuals .career .list li .date .d::after{content:" - "; margin-left:5px;}
 .visuals .career .list li .date .p{font-style: normal; margin-left:5px;}
 .visuals .career .list li .name{margin-top:7px; font-size:13rem;  color:#eee; width:99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; text-shadow:#000 1rem 1rem 0rem;}
-.visuals .career .ut-scrolls{height: 378rem;overflow:hidden;}
+.visuals .career .ut-scrolls{height: 378rem;overflow:hidden;padding: 0rem 10rem 0rem 0rem;}
 .visuals .career .ut-scrolls .viewport{ height:255rem;}
 .visuals .snsLink{border-radius:6rem; height:92rem; border-top:1rem solid #444; border-bottom:1rem solid #444; transition:all .5s ease .0s; }
 .visuals .snsLinkIn{ padding:15rem 0 ; text-align:center; height:62rem; /*background:url(../img/cm/snsLink.png) no-repeat center center;*/}
