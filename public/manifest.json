@@ -8,12 +8,7 @@
       "sizes": "64x64"
     },
     {
-      "src": "./img/logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "./img/logo512.png",
+      "src": "./img/icon_app.png",
       "type": "image/png",
       "sizes": "512x512"
     }
