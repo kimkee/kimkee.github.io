@@ -1,22 +1,32 @@
 
 import React from "react";
+import { Link } from 'react-router-dom';
 
-export default  function Project({cate , title , renderTech}){
+export default  function Project({data , cate, title , renderTech}){
   
+  // if(!data) return <div>로딩중....</div>
   return(
     <section className="mplist">
       <div className="hdts"><h3 className="title">{title}</h3></div>
       <div className="plists">
+            {/* {console.log(cate)} */}
           <ul className="list ui">
             {
-              cate?.map( (cate, idx) =>{
+              
+              data[cate].map( (pjt, idx) =>{
+                // console.log(pjt , idx);
                 return (<li key={idx}>
                   <div className="pbox">
-                    {<div className="pack">{ cate && renderTech(cate) }</div>}
-                    <div className="ss"><span className='lk' data-url={ cate.urls }><img className="img" data-original={ cate.imgs } src={ cate.imgs } alt={ cate.tits } loading="lazy" /></span></div>
-                    <div className="name">{ cate.tits }</div>
+                    {<div className="pack">{ pjt && renderTech(pjt) }</div>}
+                    <div className="ss">
+                      
+                      <Link className='lk' to={""+cate+'/'+idx}  data-url={ pjt.urls }>
+                        <img className="img" data-original={ pjt.imgs } src={ pjt.imgs } alt={ pjt.tits } loading="lazy" />
+                      </Link>
+                    </div>
+                    <div className="name">{ pjt.tits }</div>
                     <div className="info">
-                      <span className="date">{ cate.date }</span> - <span className="place">{ cate.plce }</span>
+                      <span className="date">{ pjt.date }</span> - <span className="place">{ pjt.plce }</span>
                     </div>
                   </div>
                 </li>)

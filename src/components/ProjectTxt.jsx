@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import PerfectScrollbar from 'perfect-scrollbar';
 import 'perfect-scrollbar/css/perfect-scrollbar.css';
-export default  function ProjectTxt({cate}){
+export default  function ProjectTxt({data,cate}){
   useEffect(() => {
     const container = document.querySelector('#ut-scrolls');
     const ps = new
@@ -21,7 +21,7 @@ export default  function ProjectTxt({cate}){
           <div className="ut-scrolls" id="ut-scrolls" >
             <ul className="list">
               { 
-                cate?.map( (pjt, idx) =>{
+                data[cate].map( (pjt, idx) =>{
                   return (
                     <li key={idx}>
                       <div className="date"><i className="d">{ pjt.date }</i><i className="p">{ pjt.plce }</i></div>

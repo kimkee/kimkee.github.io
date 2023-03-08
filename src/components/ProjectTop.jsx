@@ -1,10 +1,8 @@
-
 import React from "react";
-
+import { Link } from 'react-router-dom';
 
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -15,7 +13,7 @@ import 'swiper/css/scrollbar';
 
 
 
-export default  function ProjectTop({cate , renderTech}){
+export default  function ProjectTop({data, cate , renderTech}){
   
   return(
 
@@ -38,10 +36,12 @@ export default  function ProjectTop({cate , renderTech}){
           onSwiper={(swiper) => console.log()}
           onSlideChange={() => console.log('slide change')}   >
             {
-              cate?.filter( (item, i) => i < 10 ).map( (pjt, idx) => {
+              data[cate].filter( (item, i) => i < 10 ).map( (pjt, idx) => {
                   return (
                     <SwiperSlide tag="li" key={idx}  className="swiper-slide pbox">
-                      <span className='lk' href="#none" data-url={ pjt.urls }><img className="img" src={ pjt.imgs } alt={pjt.tits} loading="lazy" /></span>
+                      <Link className='lk' to={""+cate+'/'+idx}  data-url={ pjt.urls }>
+                        <img className="img" src={ pjt.imgs } alt={pjt.tits} loading="lazy" />
+                      </Link>
                       <div className="info">
                         <div className="pack">{ pjt && renderTech(pjt) }</div>
                         <div className="date"><i className="d">{ pjt.date }</i><i className="p">{ pjt.plce }</i></div>
