@@ -67,36 +67,30 @@ export default function View() {
       
       <article className="pop-layer c pop-works">
         <div className="pbd">
-          {data ?
+          { data ?
           <>
           <div className="phd">
             <div className="inr">
-              {
-                data && 
-                <h1 className="ptit">{data[cate][idx].tits}</h1>
-                
-              }
+              <h1 className="ptit">{data[cate][idx].tits}</h1>
               <button type="button" className="btn-pop-close"  onClick={ () => { navigate(-1) } }><i className="fa-regular fa-xmark"></i></button>
             </div>
           </div>
           <div className="pct">
             <main className="poptents">
-              { data &&
+              
               <div className="pbox">
                 <div className="ss">
                   <div className="pic"><img className="img" src={data[cate][idx].imgs} alt="" /></div>
                 </div>
                 <div className="info">
                   <div className="pack">
-                    { data && 
                     <Tech pjt={data[cate][idx]}/>
-                    }
                   </div>
                   <span className="place">{data[cate][idx].plce}</span>
                   <span className="date">{data[cate][idx].date}</span>
                 </div>
               </div>
-              }
+              
             </main>
           </div>
           </>

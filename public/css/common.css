@@ -270,7 +270,7 @@ img.lazy{ display:none;}
 
 
 /* 팝업 레이어 c */
-.pop-layer.c{display: none; position:fixed;left:0rem;right:0rem;top:0rem;bottom:0;z-index:1000;background-color: rgba(0,0,0,0);outline:none;touch-action: none !important;transition: background-color 0.4s !important;}
+.pop-layer.c{display: n one; position:fixed;left:0rem;right:0rem;top:0rem;bottom:0;z-index:1000;background-color: rgba(0,0,0,0);outline:none;touch-action: none !important;transition: background-color 0.4s !important;}
 .pop-layer.c.on{display:block;background-color: rgba(0,0,0,0.3);}
 .pop-layer.c.on .pbd{transform: translateY(0%);}
 .pop-layer.c{white-space:nowrap;text-align:center;font-size: 0rem;padding: 10rem 0rem 0rem 0rem;}
@@ -298,7 +298,7 @@ img.lazy{ display:none;}
 .pop-works .pbox .info{text-align: right;position: relative;padding: 20rem 10rem 20rem 150rem;margin:0 0 0rem 0;line-height:14rem;font-size: 16rem;overflow: hidden;white-space: nowrap;display: flex;flex-direction: column;gap: 15rem;color: #d1d1d1;}
 .pop-works .pbox .date{ color: #333333;} 
 .pop-works .pbox .place{ color: #333333;}
-.pop-works .ui-loading-dot{background: #ffffff;}
+.pop-works .ui-loading-dot{background: transparent;}
 .pop-works .ui-loading-dot{ min-height: 480rem; position: static; color: #333333;}
 .pop-works .ui-loading-dot>.bx::after{color: #333333;}
 .pop-works .ui-loading-dot>.bx em i,
