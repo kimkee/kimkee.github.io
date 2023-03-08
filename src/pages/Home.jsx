@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Outlet, useParams, useNavigate } from 'react-router-dom';
+import { Outlet } from 'react-router-dom'; // , useParams, useNavigate 
 
 import Header from '../components/Header.jsx';
 import Project from '../components/Project.jsx';
@@ -29,28 +29,7 @@ export default function Home() {
     fetchJson();  
   },[]);
 
-  const renderTech = (pjt) => {  // 프로젝트 스킬 아이콘
-    const  skcls = {
-      "VUE": "icotech vue",
-      "REACT": "icotech react",
-      "HTML": "icotech html",
-      "CSS": "icotech css",
-      "SASS": "icotech css",
-      "JS": "icotech js",
-      "Mobile": "icotech mobile",
-      "PC": "icotech pc",
-      "Respond": "icotech mobile",
-      "Design": "icotech design",
-      "Flash": "icotech flash",
-      "ActionScript": "icotech flash" ,
-    };
-    const result =  pjt.tech.map( (pjt, idx) => {
-      // console.log(skcls[pjt]);
-      skcls[pjt] === undefined && (skcls[pjt] = "icotech") ;
-      return( <em key={idx} className={skcls[pjt]}>{pjt}</em> );
-    });
-    return result;
-  };
+
   if(!data) return <div>로딩중...</div>;
   return (
     <>
@@ -61,7 +40,7 @@ export default function Home() {
           
           <Skills />
       
-          <ProjectTop renderTech={renderTech} data={data} cate="puix" />
+          <ProjectTop data={data} cate="puix" />
       
           <section className="profile">
             <div className="salestat">
@@ -95,22 +74,19 @@ export default function Home() {
       </article>
       <main className="container">
         <div className="inr">
-        
-        
           
-          <Project renderTech={renderTech} data={data} cate="puix" title='UI/UX Development'/>
+          <Project data={data} cate="puix" title='UI/UX Development'/>
 
-          <Project renderTech={renderTech} data={data} cate="pdeg" title='Web Design &amp; UI/UX Development'/>
+          <Project data={data} cate="pdeg" title='Web Design &amp; UI/UX Development'/>
 
-          <Project renderTech={renderTech} data={data} cate="pfla" title='Flash ActionScript'/>
-        
+          <Project data={data} cate="pfla" title='Flash ActionScript'/>
       
         </div>
       </main>
 
       <TopBts/>
 
-      <Outlet renderTech={renderTech} />
+      <Outlet />
 
       <footer className="footer">
         <div className="inr">김기현</div>

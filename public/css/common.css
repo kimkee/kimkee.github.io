@@ -274,40 +274,23 @@ img.lazy{ display:none;}
 .pop-layer.c.on .pbd{transform: translateY(0%);}
 .pop-layer.c{white-space:nowrap;text-align:center;font-size: 0rem;padding: 10rem 0rem 0rem 0rem;}
 .pop-layer.c::after{content: '';width:0;height:100%;display:inline-block;vertical-align:middle;}
-.pop-layer.c.slide-out-leave-active .pbd{transform: translateY(110%);}
-.pop-layer.c .pbd{transform: translateY(110%);transition: transform 0.3s cubic-bezier(0, 0.7, 0.4, 1) 0s;background:#ffffff;font-size: 14rem;bottom: 10rem;display:inline-block;vertical-align: bottom;text-align:left;white-space:normal;/* max-width: 630rem; */width: calc(100% - 0rem);margin-bottom: 0rem;overflow: initial;border-radius: 30rem 30rem 0rem 0rem;position: initial;}
+.pop-layer.c .pbd{transform: translateY(110%);transition: transform 0.3s cubic-bezier(0, 0.7, 0.4, 1) 0s;background:#ffffff;font-size: 14rem;bottom: 10rem;display:inline-block;vertical-align: middle;text-align:left;white-space:normal;max-width: 480rem;width: calc(100% - 0rem);margin-bottom: 0rem;overflow: initial;border-radius: 20rem 20rem 20rem 20rem;position: initial;}
 .pop-layer.c .phd{position: relative;height: 60rem;}
 .pop-layer.c .phd>.inr{position:relative;background-color: transparent;height: 60rem;display: flex;justify-content: center;align-items: center;}
 .pop-layer.c .phd .ptit{font-size: 18rem;text-align: center;padding: 0rem 0rem 0rem 0rem;font-weight: 700;max-width: calc(100vw - 90rem);white-space: nowrap;overflow: hidden;text-overflow: ellipsis;color: #333333;}
-.pop-layer.c .phd button.close{ background: url(../img/cm/pop-layerClose.png)}
 .pop-layer.c .pct{overflow-y: auto;  -webkit-overflow-scrolling: touch;}
 .pop-layer.c .pct .poptents{padding: 15rem 20rem 20rem 20rem;padding-bottom: calc(20rem + env(safe-area-inset-bottom));}
-.pop-layer.c .pct .poptents.nopad{padding: 0rem;padding-bottom: calc(0rem + env(safe-area-inset-bottom));}
 .pop-layer.c .pbt{min-height: auto;padding: 15rem 20rem 15rem 20rem;}
-.pop-layer.c .pbt .bots{}
 .pop-layer.c .pbt .btn{font-size: 14rem;}
 .pop-layer.c .btn-pop-close{position: absolute;right: 17rem;top: 17rem;font-size: 28rem;width: 30rem;height: 30rem;color: #333333;}
 .pop-layer.c .btn-pop-close i{}
-.pop-layer.c .popbts{ padding: 15rem 0 10rem 0; }
-.pop-layer.c .popbts .bts{}
-.pop-layer.c .popbts .bts .btn{width: 100%; font-size:14rem;}
-.pop-layer.c .popbts .bts .btn+.btn{margin-top: 5rem;}
-.pop-layer.c .popbts .bot{margin-top: 15rem;}
-.pop-layer.c .popbts .bot .btn{width: 100%; font-size:14rem;}
-.pop-layer.c .popbtm{ padding-top: 5rem; }
-.pop-layer.c .popbtm ul.bts{}
-.pop-layer.c .popbtm ul.bts>li{}
-.pop-layer.c .popbtm ul.bts>li:last-child{border-bottom: 1rem solid #eeeeee;}
-.pop-layer.c .popbtm ul.bts>li{border-top: 1rem solid #eeeeee;}
-.pop-layer.c .popbtm ul.bts>li .bt{font-size:15rem;height: 58rem;text-align: center;width: 100%;}
-
 
 .pop-works{}
 .pop-works.c .pct .poptents{padding-top:0rem;}
 .pop-works .ss .img{max-width: 100%;}
 .pop-works .pbox{position: relative;}
-.pop-works .pbox .pack{position: absolute;left: 0rem;top: 20rem;text-align:left;padding: 0rem 0rem;line-height: 1;/* background: rgb(255 255 255 / 52%); */display: flex;border-radius: 16rem;}
-.pop-works .pbox .ss{margin: 0 0 0rem 0; position: relative;}
+.pop-works .pbox .pack{position: absolute;left: 0rem;top: 20rem;text-align:left;padding: 0rem 0rem;line-height: 1; display: flex;border-radius: 16rem;}
+.pop-works .pbox .ss{margin: 0 0 0rem 0; position: relative; min-height: 200rem;}
 .pop-works .pbox .ss .pic{display:block;padding-bottom: calc(500% / 750 * 100);position:relative;border: #999999 solid 2rem;overflow: hidden; border-radius: 15rem;}
 .pop-works .pbox .ss .img{vertical-align:middle;position:absolute;left: 50%; top: 50%; transform: translate3d(-50%, -50%, 0);}
 .pop-works .pbox .name{margin:0 0 4rem 0;padding:3rem 16rem;text-align:center;font-size:18rem;color:#353535;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
@@ -315,6 +298,11 @@ img.lazy{ display:none;}
 .pop-works .pbox .date{ color: #333333;} 
 .pop-works .pbox .place{ color: #333333;}
 
+
+@media screen and ( max-width:600px) {
+	.pop-layer.c .pbd{vertical-align: bottom;border-radius: 30rem 30rem 0rem 0rem;}
+	.pop-layer.c .pct .poptents{padding-bottom: calc(20rem + env(safe-area-inset-bottom));}
+}
 
 
 @media screen and (max-width:1100px) {

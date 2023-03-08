@@ -1,6 +1,7 @@
-
 import React from "react";
 import { Link } from 'react-router-dom';
+
+import Tech from '../components/Tech.jsx';
 
 export default  function Project({data , cate, title , renderTech}){
   
@@ -17,7 +18,7 @@ export default  function Project({data , cate, title , renderTech}){
                 // console.log(pjt , idx);
                 return (<li key={idx}>
                   <div className="pbox">
-                    {<div className="pack">{ pjt && renderTech(pjt) }</div>}
+                    {<div className="pack">{ <Tech pjt={pjt}/>  }</div>}
                     <div className="ss">
                       
                       <Link className='lk' to={""+cate+'/'+idx}  data-url={ pjt.urls }>

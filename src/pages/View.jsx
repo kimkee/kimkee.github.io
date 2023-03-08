@@ -43,9 +43,8 @@ export default function View() {
       return response.json();
     }).then(data => {
       setData(data);
-      console.log(data);
+      // console.log(data);
       console.log(data[cate][idx])
-      
     }).catch((e) => {
       console.log(e.message);
     });
@@ -59,6 +58,7 @@ export default function View() {
     return ()=>{
       ui.lock.using(false);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   },[]);
 
   // if(!data) return <div>Loding....</div>

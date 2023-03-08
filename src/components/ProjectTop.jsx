@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 
+import Tech from '../components/Tech.jsx';
+
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -43,7 +45,7 @@ export default  function ProjectTop({data, cate , renderTech}){
                         <img className="img" src={ pjt.imgs } alt={pjt.tits} loading="lazy" />
                       </Link>
                       <div className="info">
-                        <div className="pack">{ pjt && renderTech(pjt) }</div>
+                        <div className="pack">{ <Tech pjt={pjt}/> }</div>
                         <div className="date"><i className="d">{ pjt.date }</i><i className="p">{ pjt.plce }</i></div>
                         <div className="name">{ pjt.tits }</div> <div className="screen"></div>
                       </div>
