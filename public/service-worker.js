@@ -6,6 +6,7 @@ const CACHE_NAME = "cache-v8";
 const FILES_TO_CACHE = [
 	"./offline.html",
 	"./img/cm/fav.ico",
+	"./img/icon_app.png",
 	"./img/icons/icon-app.png",
 	"./img/ss/ssLhmk.jpg",
 	"./img/ss/ssAboutpet.jpg",
