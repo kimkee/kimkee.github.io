@@ -21,7 +21,7 @@ export default  function ProjectTxt({data,cate}){
           <div className="ut-scrolls" id="ut-scrolls" >
             <ul className="list">
               { 
-                data[cate].map( (pjt, idx) =>{
+                data[cate].filter( pjt => pjt.hide !== true ).map( (pjt, idx) =>{
                   return (
                     <li key={idx}>
                       <div className="date"><i className="d">{ pjt.date }</i><i className="p">{ pjt.plce }</i></div>

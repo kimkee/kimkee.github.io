@@ -13,15 +13,10 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-
-
-export default  function ProjectTop({data, cate , renderTech}){
+export default  function ProjectTop({data, cate }){
   
   return(
-
     <section className="mnslide">
-
-
       <div className="inr" id="slides">
         
         <Swiper className="swiper-wrapper slides" 
@@ -38,7 +33,7 @@ export default  function ProjectTop({data, cate , renderTech}){
           onSwiper={(swiper) => console.log()}
           onSlideChange={() => console.log('slide change')}   >
             {
-              data[cate].filter( (item, i) => i < 10 ).map( (pjt, idx) => {
+              data[cate].filter( (pjt, i) => i < 10 && pjt.hide !== true ).map( (pjt, idx) => {
                   return (
                     <SwiperSlide tag="li" key={idx}  className="swiper-slide pbox">
                       <Link className='lk' to={""+cate+'/'+idx}  data-url={ pjt.urls }>
@@ -54,12 +49,9 @@ export default  function ProjectTop({data, cate , renderTech}){
               })
             }
         </Swiper>
-        
-        {/* <div className="navi">
-          <button type="button" className="nav prev">이전</button><button type="button" className="nav next">다음</button>
-        </div> */}
+
       </div>
-      {/* <div className="pagi"></div> */}
+
     </section>
   )
 }

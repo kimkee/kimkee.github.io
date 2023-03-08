@@ -1,8 +1,7 @@
 
-import React from "react";
-
 export default  function renderTech({pjt}){
-	const  skcls = {
+
+	const skcls = {
 		"VUE": "icotech vue",
 		"REACT": "icotech react",
 		"HTML": "icotech html",
@@ -16,11 +15,6 @@ export default  function renderTech({pjt}){
 		"Flash": "icotech flash",
 		"ActionScript": "icotech flash" ,
 	};
-	const result =  pjt.tech.map( (pjt, idx) => {
-		// console.log(skcls[pjt]);
-		skcls[pjt] === undefined && (skcls[pjt] = "icotech") ;
-		return( <em key={idx} className={skcls[pjt]}>{pjt}</em> );
-	});
-	return result;
+	return pjt.tech.map( (pjt, idx) => <em key={idx} className={`icotech ${skcls[pjt] || ''}`}>{pjt}</em> );
 	
 }

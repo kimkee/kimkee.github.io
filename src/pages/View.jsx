@@ -80,7 +80,7 @@ export default function View() {
               
               <div className="pbox">
                 <div className="ss">
-                  <div className="pic"><img className="img" src={data[cate][idx].imgs} alt="" /></div>
+                  <div className="pic"><img className="img" src={data[cate][idx].imgs} alt={data[cate][idx].tits} /></div>
                 </div>
                 <div className="info">
                   <div className="pack">

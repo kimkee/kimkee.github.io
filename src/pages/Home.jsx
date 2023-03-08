@@ -60,7 +60,6 @@ export default function Home() {
             </div>
           </section>
           
-          
           <ProjectTxt data={data} cate="puix" />
       
         </div>

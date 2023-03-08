@@ -3,24 +3,21 @@ import { Link } from 'react-router-dom';
 
 import Tech from '../components/Tech.jsx';
 
-export default  function Project({data , cate, title , renderTech}){
+export default  function Project({data , cate, title }){
   
   // if(!data) return <div>로딩중....</div>
   return(
     <section className="mplist">
       <div className="hdts"><h3 className="title">{title}</h3></div>
       <div className="plists">
-            {/* {console.log(cate)} */}
           <ul className="list ui">
             {
-              
-              data[cate].map( (pjt, idx) =>{
-                // console.log(pjt , idx);
+              data[cate].filter( pjt => pjt.hide !== true ).map( (pjt, idx) =>{
+                // console.log(pjt.hide , idx);
                 return (<li key={idx}>
                   <div className="pbox">
                     {<div className="pack">{ <Tech pjt={pjt}/>  }</div>}
                     <div className="ss">
-                      
                       <Link className='lk' to={""+cate+'/'+idx}  data-url={ pjt.urls }>
                         <img className="img" data-original={ pjt.imgs } src={ pjt.imgs } alt={ pjt.tits } loading="lazy" />
                       </Link>
