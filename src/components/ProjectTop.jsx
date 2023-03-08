@@ -35,15 +35,17 @@ export default  function ProjectTop({data, cate }){
             {
               data[cate].filter( (pjt, i) => i < 10 && pjt.hide !== true ).map( (pjt, idx) => {
                   return (
-                    <SwiperSlide tag="li" key={idx}  className="swiper-slide pbox">
-                      <Link className='lk' to={""+cate+'/'+idx}  data-url={ pjt.urls }>
-                        <img className="img" src={ pjt.imgs } alt={pjt.tits} loading="lazy" />
+                    <SwiperSlide tag="li" key={idx}  className="swiper-slide">
+                      <Link className="pbox" to={""+cate+'/'+idx}  data-url={ pjt.urls }>
+                        <span className='lk' to={""+cate+'/'+idx}  data-url={ pjt.urls }>
+                          <img className="img" src={ pjt.imgs } alt={pjt.tits} loading="lazy" />
+                        </span>
+                        <div className="info">
+                          <div className="pack">{ <Tech pjt={pjt}/> }</div>
+                          <div className="date"><i className="d">{ pjt.date }</i><i className="p">{ pjt.plce }</i></div>
+                          <div className="name">{ pjt.tits }</div> <div className="screen"></div>
+                        </div>
                       </Link>
-                      <div className="info">
-                        <div className="pack">{ <Tech pjt={pjt}/> }</div>
-                        <div className="date"><i className="d">{ pjt.date }</i><i className="p">{ pjt.plce }</i></div>
-                        <div className="name">{ pjt.tits }</div> <div className="screen"></div>
-                      </div>
                     </SwiperSlide>
                   )
               })

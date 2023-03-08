@@ -15,18 +15,18 @@ export default  function Project({data , cate, title }){
               data[cate].filter( pjt => pjt.hide !== true ).map( (pjt, idx) =>{
                 // console.log(pjt.hide , idx);
                 return (<li key={idx}>
-                  <div className="pbox">
+                  <Link to={""+cate+'/'+idx}  data-url={ pjt.urls } className="pbox">
                     {<div className="pack">{ <Tech pjt={pjt}/>  }</div>}
                     <div className="ss">
-                      <Link className='lk' to={""+cate+'/'+idx}  data-url={ pjt.urls }>
+                      <span className='lk'>
                         <img className="img" data-original={ pjt.imgs } src={ pjt.imgs } alt={ pjt.tits } loading="lazy" />
-                      </Link>
+                      </span>
                     </div>
                     <div className="name">{ pjt.tits }</div>
                     <div className="info">
                       <span className="date">{ pjt.date }</span> - <span className="place">{ pjt.plce }</span>
                     </div>
-                  </div>
+                  </Link>
                 </li>)
               })
             }
