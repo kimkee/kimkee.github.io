@@ -3,7 +3,24 @@
     "assign": "2023년 10월 11일", 
     "opened": false,
     "puix": [
-
+        {
+            "hide": true,
+            "tits": "REACT+TMDB",
+            "date": "2023.01 ~ 2023.03",
+            "plce": "Toy Project",
+            "tech": ["REACT", "TMDB", "JS", "Mobile" ],
+            "imgs": "",
+            "urls": ""
+        },
+        {
+            "hide": true,
+            "tits": "VUE+Firebase",
+            "date": "2022.10 ~ 2022.12",
+            "plce": "Toy Project",
+            "tech": ["VUE", "Firebase", "JS", "Mobile" ],
+            "imgs": "",
+            "urls": ""
+        },
         {
             "hide": false,
             "tits": "KB금융그룹 경쟁력강화",
@@ -30,6 +47,7 @@
             "urls": "https://kimkee.gitlab.io/bithumb/static/mo/html/common/LRC-01-001.html"
         },
         {
+            "hide": true,
             "tits": "교보생명",
             "date": "2021.09 ~ 2022.04",
             "plce": "교보생명",

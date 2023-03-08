@@ -7,30 +7,6 @@ import ui from '../ui.js';
 
 export default function View() {
 
-
-  // const renderTech = (pjt) => {  // 프로젝트 스킬 아이콘
-  //   const  skcls = {
-  //     "VUE": "icotech vue",
-  //     "REACT": "icotech react",
-  //     "HTML": "icotech html",
-  //     "CSS": "icotech css",
-  //     "SASS": "icotech css",
-  //     "JS": "icotech js",
-  //     "Mobile": "icotech mobile",
-  //     "PC": "icotech pc",
-  //     "Respond": "icotech mobile",
-  //     "Design": "icotech design",
-  //     "Flash": "icotech flash",
-  //     "ActionScript": "icotech flash" ,
-  //   };
-  //   const result =  pjt.tech.map( (pjt, idx) => {
-  //     // console.log(skcls[pjt]);
-  //     skcls[pjt] === undefined && (skcls[pjt] = "icotech") ;
-  //     return( <em key={idx} className={skcls[pjt]}>{pjt}</em> );
-  //   });
-  //   return result;
-  // };
-
   let params = useParams()
   let navigate = useNavigate();
 
@@ -41,10 +17,12 @@ export default function View() {
     fetch("./js/data.json")
     .then(response => {
       return response.json();
-    }).then(data => {
-      setData(data);
-      // console.log(data);
-      console.log(data[cate][idx])
+    }).then(data => {      
+      setData(
+        // hide가 true 면 제거
+        data[cate].filter( pjt => pjt.hide !== true )
+      );      
+      console.log(data[idx])
     }).catch((e) => {
       console.log(e.message);
     });
@@ -71,7 +49,7 @@ export default function View() {
           <>
           <div className="phd">
             <div className="inr">
-              <h1 className="ptit">{data[cate][idx].tits}</h1>
+              <h1 className="ptit">{data[idx].tits}</h1>
               <button type="button" className="btn-pop-close"  onClick={ () => { navigate(-1) } }><i className="fa-regular fa-xmark"></i></button>
             </div>
           </div>
@@ -80,14 +58,14 @@ export default function View() {
               
               <div className="pbox">
                 <div className="ss">
-                  <div className="pic"><img className="img" src={data[cate][idx].imgs} alt={data[cate][idx].tits} /></div>
+                  <div className="pic"><img className="img" src={data[idx].imgs} alt={data[idx].tits} /></div>
                 </div>
                 <div className="info">
                   <div className="pack">
-                    <Tech pjt={data[cate][idx]}/>
+                    <Tech pjt={data[idx]}/>
                   </div>
-                  <span className="place">{data[cate][idx].plce}</span>
-                  <span className="date">{data[cate][idx].date}</span>
+                  <span className="place">{data[idx].plce}</span>
+                  <span className="date">{data[idx].date}</span>
                 </div>
               </div>
               
