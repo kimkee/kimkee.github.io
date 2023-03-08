@@ -9,100 +9,6 @@
         docHeight: () => parseInt(document.documentElement.scrollHeight || document.body.clientHeight),
         scrollTop: () => parseInt(document.documentElement.scrollTop)
     },
-    star:{
-        point:{
-            0: `  <i class="fa-duotone fa-star-sharp"></i>
-                    <i class="fa-duotone fa-star-sharp"></i>
-                    <i class="fa-duotone fa-star-sharp"></i>
-                    <i class="fa-duotone fa-star-sharp"></i>
-                    <i class="fa-duotone fa-star-sharp"></i>`,
-
-            0.5:` <i class="fa-duotone fa-star-sharp-half"></i>
-                    <i class="fa-duotone fa-star-sharp"></i>
-                    <i class="fa-duotone fa-star-sharp"></i>
-                    <i class="fa-duotone fa-star-sharp"></i>
-                    <i class="fa-duotone fa-star-sharp"></i>`,
-
-            1:`   <i class="fa-solid fa-star-sharp"></i>
-                    <i class="fa-duotone fa-star-sharp"></i>
-                    <i class="fa-duotone fa-star-sharp"></i>
-                    <i class="fa-duotone fa-star-sharp"></i>
-                    <i class="fa-duotone fa-star-sharp"></i>`,
-
-            1.5:` <i class="fa-solid fa-star-sharp"></i>
-                    <i class="fa-duotone fa-star-sharp-half"></i>
-                    <i class="fa-duotone fa-star-sharp"></i>
-                    <i class="fa-duotone fa-star-sharp"></i>
-                    <i class="fa-duotone fa-star-sharp"></i>`,
-
-            2:`   <i class="fa-solid fa-star-sharp"></i>
-                    <i class="fa-solid fa-star-sharp"></i>
-                    <i class="fa-duotone fa-star-sharp"></i>
-                    <i class="fa-duotone fa-star-sharp"></i>
-                    <i class="fa-duotone fa-star-sharp"></i>`,
-
-            2.5:` <i class="fa-solid fa-star-sharp"></i>
-                    <i class="fa-solid fa-star-sharp"></i>
-                    <i class="fa-duotone fa-star-sharp-half"></i>
-                    <i class="fa-duotone fa-star-sharp"></i>
-                    <i class="fa-duotone fa-star-sharp"></i>`,
-
-            3:`   <i class="fa-solid fa-star-sharp"></i>
-                    <i class="fa-solid fa-star-sharp"></i>
-                    <i class="fa-solid fa-star-sharp"></i>
-                    <i class="fa-duotone fa-star-sharp"></i>
-                    <i class="fa-duotone fa-star-sharp"></i>`,
-
-            3.5:` <i class="fa-solid fa-star-sharp"></i>
-                    <i class="fa-solid fa-star-sharp"></i>
-                    <i class="fa-solid fa-star-sharp"></i>
-                    <i class="fa-duotone fa-star-sharp-half"></i>
-                    <i class="fa-duotone fa-star-sharp"></i>`,
-
-            4:`   <i class="fa-solid fa-star-sharp"></i>
-                    <i class="fa-solid fa-star-sharp"></i>
-                    <i class="fa-solid fa-star-sharp"></i>
-                    <i class="fa-solid fa-star-sharp"></i>
-                    <i class="fa-duotone fa-star-sharp"></i>`,
-
-            4.5:` <i class="fa-solid fa-star-sharp"></i>
-                    <i class="fa-solid fa-star-sharp"></i>
-                    <i class="fa-solid fa-star-sharp"></i>
-                    <i class="fa-solid fa-star-sharp"></i>
-                    <i class="fa-duotone fa-star-sharp-half"></i>`,
-
-            5:`   <i class="fa-solid fa-star-sharp"></i>
-                    <i class="fa-solid fa-star-sharp"></i>
-                    <i class="fa-solid fa-star-sharp"></i>
-                    <i class="fa-solid fa-star-sharp"></i>
-                    <i class="fa-solid fa-star-sharp"></i>`,
-        },
-        set:function(num){
-            let n = Number( (Math.round( num  * 100)  / 100).toFixed(1) )  / 2 ;
-            // let _this = this;
-            let r = 0;
-            // console.log(Object.keys(this.point).sort() );
-            Object.keys(this.point).sort().reverse().forEach( p => {
-                if( n <= Number(p)) r = Number(p)  ;
-            });
-            
-            // console.log(n , r);
-            return this.point[ Number(r) ]
-            // return this.point[ Number(r) ]
-
-            // if( n <= 0)  return this.point[0];
-            // if( n <= 0.5)  return this.point[0.5];
-            // if( n <= 1)  return this.point[1];
-            // if( n <= 1.5)  return this.point[1.5];
-            // if( n <= 2)  return this.point[2];
-            // if( n <= 2.5)  return this.point[2.5];
-            // if( n <= 3)  return this.point[3];
-            // if( n <= 3.5)  return this.point[3.5];
-            // if( n <= 4)  return this.point[4];
-            // if( n <= 4.5)  return this.point[4.5];
-            // if( n <= 5)  return this.point[5];
-        }
-    },
     popup:{
         evt:function(){
             
@@ -119,34 +25,6 @@
         
         }
     },
-    // elip:{ // 5줄이상 내용더보기 
-	// 	init:function(){
-	// 		this.evt();
-	// 		this.set();
-	// 	},
-	// 	evt:function(){
-	// 		$(document).on("click", "[data-ui='elips'] .btn-tog", function() {
-	// 			if ($(this).closest("[data-ui='elips']").hasClass("open")) {
-	// 				$(this).closest("[data-ui='elips']").removeClass("open");
-	// 				$(this).text("내용더보기");
-	// 			} else {
-	// 				$(this).closest("[data-ui='elips']").addClass("open");
-	// 				$(this).text("내용닫기");
-	// 			}
-	// 		});
-	// 	},
-	// 	set:function(){
-	// 		$("[data-ui='elips']").each(function(){
-	// 			var txtH = $(this).find(".txt");
-				
-	// 			if(txtH.height()>105){
-	// 				txtH.closest("[data-ui='elips']").addClass("elips");
-	// 			}else{
-	// 				txtH.closest("[data-ui='elips']").removeClass("elips");
-	// 			}
-	// 		});
-	// 	}
-	// },
     alert: function (msg, params) { // 커스텀 알럿
 
         let opt = Object.assign({
@@ -262,7 +140,7 @@
         }
     },
     lock: { // 스크롤 막기,풀기
-        sct: 0,
+        
         stat: false,
         els: ".pop-layer  , .ui-confrim , .ui-alert",
         set: function () {
@@ -284,7 +162,7 @@
                 ui.lock.stat = false;
                 body.forEach(body => body.classList.remove("is-lock"));
                 html.style.top = "";
-                window.scrollTo(0, ui.lock.sct)
+                // window.scrollTo(0, ui.lock.sct)
                 // $(this.els).unbind("touchmove scroll");
                 setTimeout(() => {
                     body.forEach(body => body.classList.remove("is-lock-end"));

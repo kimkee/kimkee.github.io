@@ -26,7 +26,10 @@ export default function Home() {
 
   useEffect(() => {
     console.log(ui);
-    fetchJson();  
+    fetchJson();
+    return ()=>{
+      // ui.lock.sct = ui.viewport.scrollTop();
+    }
   },[]);
 
 

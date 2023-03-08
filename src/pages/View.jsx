@@ -30,7 +30,7 @@ export default function View() {
   console.log(params);
   console.log(cate ,  idx);
   useEffect(() => {
-    ui.lock.using(true);
+    data && ui.lock.using(true);
     document.querySelector(".pop-works").classList.add("on");
     fetchJson();
     return ()=>{
