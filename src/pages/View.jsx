@@ -1,33 +1,35 @@
 import React, { useState, useEffect } from 'react';
 import {useParams, useNavigate} from 'react-router-dom'; //,useOutletContext  
 
+import Tech from '../components/Tech.jsx';
+
 import ui from '../ui.js';
 
 export default function View() {
 
 
-  const renderTech = (pjt) => {  // 프로젝트 스킬 아이콘
-    const  skcls = {
-      "VUE": "icotech vue",
-      "REACT": "icotech react",
-      "HTML": "icotech html",
-      "CSS": "icotech css",
-      "SASS": "icotech css",
-      "JS": "icotech js",
-      "Mobile": "icotech mobile",
-      "PC": "icotech pc",
-      "Respond": "icotech mobile",
-      "Design": "icotech design",
-      "Flash": "icotech flash",
-      "ActionScript": "icotech flash" ,
-    };
-    const result =  pjt.tech.map( (pjt, idx) => {
-      // console.log(skcls[pjt]);
-      skcls[pjt] === undefined && (skcls[pjt] = "icotech") ;
-      return( <em key={idx} className={skcls[pjt]}>{pjt}</em> );
-    });
-    return result;
-  };
+  // const renderTech = (pjt) => {  // 프로젝트 스킬 아이콘
+  //   const  skcls = {
+  //     "VUE": "icotech vue",
+  //     "REACT": "icotech react",
+  //     "HTML": "icotech html",
+  //     "CSS": "icotech css",
+  //     "SASS": "icotech css",
+  //     "JS": "icotech js",
+  //     "Mobile": "icotech mobile",
+  //     "PC": "icotech pc",
+  //     "Respond": "icotech mobile",
+  //     "Design": "icotech design",
+  //     "Flash": "icotech flash",
+  //     "ActionScript": "icotech flash" ,
+  //   };
+  //   const result =  pjt.tech.map( (pjt, idx) => {
+  //     // console.log(skcls[pjt]);
+  //     skcls[pjt] === undefined && (skcls[pjt] = "icotech") ;
+  //     return( <em key={idx} className={skcls[pjt]}>{pjt}</em> );
+  //   });
+  //   return result;
+  // };
 
   let params = useParams()
   let navigate = useNavigate();
@@ -84,7 +86,9 @@ export default function View() {
                 </div>
                 <div className="info">
                   <div className="pack">
-                    { data && renderTech(data[cate][idx]) }
+                    { data && 
+                    <Tech pjt={data[cate][idx]}/>
+                    }
                   </div>
                   <span className="place">{data[cate][idx].plce}</span>
                   <span className="date">{data[cate][idx].date}</span>
