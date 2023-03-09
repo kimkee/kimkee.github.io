@@ -14,7 +14,7 @@ export default function View() {
   let idx = params.id;
   const [data, setData] = useState();
   const fetchJson = () => {
-    fetch("./js/data.json")
+    fetch(process.env.REACT_APP_PUBLIC_URL +"js/data.json")
     .then(response => {
       return response.json();
     }).then(data => {      
@@ -58,7 +58,7 @@ export default function View() {
               
               <div className="pbox">
                 <div className="ss">
-                  <div className="pic"><img className="img" src={data[idx].imgs} alt={data[idx].tits} /></div>
+                  <div className="pic"><img className="img" src={ process.env.REACT_APP_PUBLIC_URL + data[idx].imgs} alt={data[idx].tits} /></div>
                 </div>
                 <div className="info">
                   <div className="pack">

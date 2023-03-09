@@ -13,7 +13,7 @@ import ui from '../ui.js';
 export default function Home() {
   const [data, setData] = useState();
   const fetchJson = () => {
-    fetch("./js/data.json")
+    fetch(process.env.REACT_APP_PUBLIC_URL+"js/data.json")
     .then(response => {
       return response.json();
     }).then(data => {
