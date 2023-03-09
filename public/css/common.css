@@ -281,6 +281,7 @@ img.lazy{ display:none;}
 .pop-works .pbox .info{text-align: right;position: relative;padding: 20rem 10rem 20rem 150rem;margin:0 0 0rem 0;line-height:14rem;font-size: 16rem;overflow: hidden;white-space: nowrap;display: flex;flex-direction: column;gap: 15rem;color: #d1d1d1;}
 .pop-works .pbox .date{ color: #333333;} 
 .pop-works .pbox .place{ color: #333333;}
+.pop-works .pbox .icotech{font-size:12rem; padding: 3rem 5rem;}
 .pop-works .ui-loading-dot{background: transparent;}
 .pop-works .ui-loading-dot{ min-height: 480rem; position: static; color: #333333;}
 .pop-works .ui-loading-dot>.bx::after{color: #333333;}
