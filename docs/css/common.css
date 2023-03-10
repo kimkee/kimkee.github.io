@@ -275,7 +275,7 @@ img.lazy{ display:none;}
 .pop-works .pbox{position: relative;}
 .pop-works .pbox .pack{position: absolute;left: 0rem;top: 20rem;text-align:left;padding: 0rem 0rem;line-height: 1; display: flex;border-radius: 16rem;}
 .pop-works .pbox .ss{margin: 0 0 0rem 0; position: relative; min-height: 200rem;}
-.pop-works .pbox .ss .pic{display:block;padding-bottom: calc(500% / 750 * 100);position:relative;border: #999999 solid 2rem;overflow: hidden; border-radius: 15rem;}
+.pop-works .pbox .ss .pic{display:block;padding-bottom: calc(500% / 700 * 100);position:relative;border: #999999 solid 2rem;overflow: hidden; border-radius: 15rem;}
 .pop-works .pbox .ss .img{vertical-align:middle;position:absolute;left: 50%; top: 50%; transform: translate3d(-50%, -50%, 0);}
 .pop-works .pbox .name{margin:0 0 4rem 0;padding:3rem 16rem;text-align:center;font-size:18rem;color:#353535;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
 .pop-works .pbox .info{text-align: right;position: relative;padding: 20rem 10rem 20rem 150rem;margin:0 0 0rem 0;line-height:14rem;font-size: 16rem;overflow: hidden;white-space: nowrap;display: flex;flex-direction: column;gap: 15rem;color: #d1d1d1;}
