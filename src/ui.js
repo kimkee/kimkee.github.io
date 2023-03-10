@@ -1,4 +1,4 @@
-﻿const ui = {
+const ui = {
     e:1,
     aaa:function(){
         console.log("dsfafsafdsffsafasfdfas");
