@@ -33,7 +33,7 @@ export default  function ProjectTop({data, cate }){
           onSwiper={(swiper) => console.log()}
           onSlideChange={() => console.log('slide change')}   >
             {
-              data[cate].filter( (pjt, i) => i < 10 && pjt.hide !== true ).map( (pjt, idx) => {
+              data[cate].filter( (pjt, i) => pjt.hide !== true ).filter( (pjt, i) => i < 10 ).map( (pjt, idx) => {
                   return (
                     <SwiperSlide tag="li" key={idx}  className="swiper-slide">
                       <Link className="pbox" to={""+cate+'/'+idx}  data-url={ pjt.urls }>

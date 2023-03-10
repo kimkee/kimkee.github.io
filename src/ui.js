@@ -1,8 +1,4 @@
 const ui = {
-    e:1,
-    aaa:function(){
-        console.log("dsfafsafdsffsafasfdfas");
-    },
     viewport: {
         height: () => parseInt(window.visualViewport ? visualViewport.height : window.innerHeight),
         width: () => parseInt(window.visualViewport ? visualViewport.width : window.innerWidth),
@@ -127,7 +123,7 @@ const ui = {
             if (!document.querySelectorAll("body>.ui-loading-dot").length) {
                 // var els = '<div class="ui-loading"><em></em></div>';
                 var els =
-                    `<div class="ui-loading-dot">
+                `<div class="ui-loading-dot">
                     <div class="bx"><em><i></i></em></div>
                 </div>`;
                 document.querySelector("body").insertAdjacentHTML("afterbegin", els);
