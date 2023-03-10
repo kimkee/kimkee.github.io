@@ -49,12 +49,12 @@ export default function Home() {
             <div className="salestat">
               {
                 data.opened === true
-                ? <img src="./img/cm/forSale.png" className="img sale" alt="FORSALE" loading="lazy" />
-                : <img src="./img/cm/soldOut.png" className="img sold" alt="SOLDOUT" loading="lazy" />
+                ? <img src={process.env.REACT_APP_PUBLIC_URL+"img/cm/forSale.png"} className="img sale" alt="FORSALE" loading="lazy" />
+                : <img src={process.env.REACT_APP_PUBLIC_URL+"img/cm/soldOut.png"} className="img sold" alt="SOLDOUT" loading="lazy" />
               }
             </div>
             <div className="box">
-              <div className="photo"><img className="img" src="./img/cm/photo.jpg" alt="사진" loading="lazy" /></div>
+              <div className="photo"><img className="img" src={process.env.REACT_APP_PUBLIC_URL+"img/cm/photo.jpg"} alt="사진" loading="lazy" /></div>
               <div className="info">
                 <div className="name">김기현</div>
                 <div className="phone"><a href="tel:010-3236-1677">010-3236-1677</a></div>
