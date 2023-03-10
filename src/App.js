@@ -1,6 +1,6 @@
 import React from 'react';
 // import { HashRouter,BrowserRouter, Routes, Route,Router , useLocation ,useHash,Switch } from 'react-router-dom';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 
@@ -10,7 +10,7 @@ export default function App() {
   console.log("=="+process.env.REACT_APP_PUBLIC_URL+"=="+process.env.PUBLIC_URL+"==");
   return (
     <>
-      <Router /* basename={process.env.PUBLIC_URL} */  >
+      <Router basename={process.env.REACT_APP_PUBLIC_URL}  >
         
             <Routes>
               <Route path="/" element={<Home />} />
