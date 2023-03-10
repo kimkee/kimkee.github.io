@@ -223,7 +223,7 @@ img.lazy{ display:none;}
 .container>.inr .list li .pbox{display: block;  background:#fff; border-radius:6rem; border:1rem solid #ddd;}
 .container>.inr .list li .pbox .pack{ margin:0rem 0 0rem 0rem; text-align:left; padding:10rem 15rem 10rem 15rem }
 .container>.inr .list li .pbox .ss{margin:0 0 5rem 0;padding:16rem 16rem 0rem 16rem;border-top:1rem solid #E2E2E2;/* background:url(../img/cm/loading.gif) no-repeat center center; */background-size:15%;}
-.container>.inr .list li .pbox .ss .lk{display:block;padding-bottom: calc(506% / 700 * 100);position:relative;;}
+.container>.inr .list li .pbox .ss .lk{display:block;padding-bottom: calc(500% / 700 * 100);position:relative;;}
 .container>.inr .list li .pbox .ss .lk[href='javascript:;']{cursor:default;}
 .container>.inr .list li .pbox .ss .img{ width:100%; vertical-align:middle; position:absolute; left:0;top: 0; /*box-shadow:#ccc 0 0 1rem;*/}
 .container>.inr .list li .pbox .name{ margin:0 0 4rem 0; padding:3rem 16rem; text-align:center; font-size:18rem; color:#353535;overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
