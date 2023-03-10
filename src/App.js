@@ -12,12 +12,12 @@ export default function App() {
     <>
       <Router basename={process.env.REACT_APP_PUBLIC_URL}  >
         
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path=":cate" element={<Home />}>
-                <Route path=":id" element={<View />} />
-              </Route>
-            </Routes>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path=":cate" element={<Home />}>
+            <Route path=":id" element={<View />} />
+          </Route>
+        </Routes>
 
       </Router>
     </>
