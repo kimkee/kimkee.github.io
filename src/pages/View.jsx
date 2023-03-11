@@ -22,13 +22,13 @@ export default function View() {
         // hide가 true 면 제거
         data[cate].filter( pjt => pjt.hide !== true )
       );      
-      console.log(data[idx])
+      // console.log(data[idx])
     }).catch((e) => {
       console.log(e.message);
     });
   }
-  console.log(params);
-  console.log(cate ,  idx);
+  // console.log(params);
+  // console.log(cate ,  idx);
   useEffect(() => {
     ui.lock.using(true);
     document.querySelector(".pop-works").classList.add("on");

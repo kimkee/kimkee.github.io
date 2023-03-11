@@ -31,7 +31,7 @@ export default  function ProjectTop({data, cate }){
           // scrollbar={{ draggable: true }}
           initialSlide={ Math.floor( Math.random() * 10 ) }
           onSwiper={(swiper) => console.log()}
-          onSlideChange={() => console.log('slide change')}   >
+          onSlideChange={() => { /* console.log('slide change') */}  }   >
             {
               data[cate].filter( (pjt, i) => pjt.hide !== true ).filter( (pjt, i) => i < 10 ).map( (pjt, idx) => {
                   return (
