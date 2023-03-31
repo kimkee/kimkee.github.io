@@ -1,9 +1,22 @@
 const ui = {
+    init: function(){
+        this.dark.init();
+    },
     viewport: {
         height: () => parseInt(window.visualViewport ? visualViewport.height : window.innerHeight),
         width: () => parseInt(window.visualViewport ? visualViewport.width : window.innerWidth),
         docHeight: () => parseInt(document.documentElement.scrollHeight || document.body.clientHeight),
         scrollTop: () => parseInt(document.documentElement.scrollTop)
+    },
+    dark:{
+        init:function(){
+            this.set();
+        },
+        set:function(){
+            if (window.matchMedia("(prefers-color-scheme: dark)").matches){
+                document.documentElement.classList.add("dark");
+            }
+        }
     },
     popup:{
         evt:function(){
@@ -167,5 +180,6 @@ const ui = {
         }
     },
 };
+ui.init();
 window.ui = ui;
 export default ui
