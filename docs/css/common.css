@@ -521,5 +521,13 @@ img.lazy{ display:none;}
 .dark .container>.inr .list li .pbox .info{color: #dddddd;}
 .dark .container>.inr .list li .pbox .name{color: #dddddd;}
 .dark .icotech{ }
+.dark .pop-layer.c .pbd{background-color: #333;}
+.dark .pop-layer.c .phd .ptit{ color: #aaa;}
+.dark .pop-works .pbox .place{ color: #999999;}
+.dark .pop-works .pbox .date{ color: #999999;}
+.dark .pop-layer.c .btn-pop-close{ color: #999999;}
+.dark .pop-works .pbox .ss .pic{ border-color: #000000;}
+.dark .icotech{ }
+
 .dark{}
 @media (prefers-color-scheme: dark) { }

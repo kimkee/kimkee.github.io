@@ -6,7 +6,7 @@ export default  function Header ({update}){
   return(
     <header className="header">
       <div className="inr">
-        <div className="date">{update} </div>
+        <div className="date">{update} {process.env.REACT_APP_VER}</div>
         <span className="github">
           <GitHubButton href="https://github.com/kimkee" aria-label="Follow @kimkee on GitHub">Follow @kimkee</GitHubButton>
         </span>
