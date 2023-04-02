@@ -226,7 +226,7 @@ img.lazy{ display:none;}
 .container>.inr .list li .pbox .ss .lk{display:block;padding-bottom: calc(500% / 700 * 100);position:relative;;}
 .container>.inr .list li .pbox .ss .lk[href='javascript:;']{cursor:default;}
 .container>.inr .list li .pbox .ss .img{ width:100%; vertical-align:middle; position:absolute; left:0;top: 0;}
-.container>.inr .list li .pbox .name{ margin:0 0 4rem 0; padding:3rem 16rem; text-align:center; font-size:18rem; color:#353535;overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.container>.inr .list li .pbox .name{ margin:0 0 4rem 0; padding:5rem 16rem 3rem 16rem; text-align:center; font-size:18rem; color:#353535;overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
 .container>.inr .list li .pbox .info{ text-align:center; padding:0rem 16rem 15rem 16rem; margin:0 0 0rem 0; line-height:14rem; font-size:11rem; font-family:'Nanum Gothic'; color:#767676;overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
 .container>.inr .list li .pbox .date{}
 .container>.inr .list li .pbox .place{}
@@ -453,7 +453,7 @@ img.lazy{ display:none;}
 	.body .container {}
 	.container>.inr .list li .pbox{border-radius: 8rem;}
 	.container>.inr .list li .pbox .pack{}
-	.container>.inr .list li .pbox .name{ font-size:12rem; line-height:12rem; padding:3rem 7rem}
+	.container>.inr .list li .pbox .name{ font-size:12rem; line-height:12rem; padding:5rem 7rem 3rem 7rem}
 	.container>.inr .list li .pbox .info{ font-size:9rem; padding:0 1rem 8rem}
 	.container>.inr .list li .pbox .ss{}
 
@@ -514,7 +514,7 @@ img.lazy{ display:none;}
 /* window.matchMedia("(prefers-color-scheme: dark)").matches; */
 .dark .container{background: #222222; border-color: #444444; }
 .dark .container>.inr .hdts{background: #222222;}
-.dark .container>.inr .hdts::after{background: #444444;}
+.dark .container>.inr .hdts::after{background: #333333;}
 .dark .container>.inr .hdts .title{ color: #999999;}
 .dark .container>.inr .list li .pbox{ background-color: #333; border-color: #444444; }
 .dark .container>.inr .list li .pbox .ss{border-color: #444444;}
