@@ -33,7 +33,7 @@ export default function Home() {
   },[]);
 
 
-  if(!data) return <div>로딩중...</div>;
+  if(!data) return <div className="ui-loading-dot"><div className="bx"><em><i></i></em></div></div>;
   return (
     <>
       
