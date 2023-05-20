@@ -77,3 +77,4 @@ m.clien.net##DIV[class="main_section_contents"] [class="shop_naver"]
 www.clien.net##DIV[class*="board_upper_image"]
 www.clien.net###div_content .board_upper_html TABLE
 
+search.naver.com##DIV[class="ad_section section _pl_section bg_type_v2"]
