@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import {useParams, useNavigate} from 'react-router-dom'; //,useOutletContext  
 
-import Tech from '../components/Tech.jsx';
+import Tech from '@/components/Tech.jsx';
 
-import ui from '../ui.js';
+import ui from '@/ui.js';
 
 export default function View() {
 

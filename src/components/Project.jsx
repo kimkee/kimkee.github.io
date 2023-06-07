@@ -1,7 +1,8 @@
-import React from "react";
+// import React from "react";
 import { Link } from 'react-router-dom';
+import Tech from '@/components/Tech.jsx';
 
-import Tech from '../components/Tech.jsx';
+const PUBLIC_URL = import.meta.env.VITE_REACT_APP_PUBLIC_URL;
 
 export default  function Project({data , cate, title }){
   
@@ -19,7 +20,7 @@ export default  function Project({data , cate, title }){
                     {<div className="pack">{ <Tech pjt={pjt}/>  }</div>}
                     <div className="ss">
                       <span className='lk'>
-                        <img className="img" data-original={ pjt.imgs } src={ import.meta.env.VITE_REACT_APP_PUBLIC_URL+pjt.imgs } alt={ pjt.tits } loading="lazy" />
+                        <img className="img" data-original={ pjt.imgs } src={ PUBLIC_URL+pjt.imgs } alt={ pjt.tits } loading="lazy" />
                       </span>
                     </div>
                     <div className="name">{ pjt.tits }</div>

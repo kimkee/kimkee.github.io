@@ -1,6 +1,6 @@
 
 import React from "react";
-import ui from '../ui.js';
+import ui from '@/ui.js';
 export default  function TopBts(){
   const scrollEvent = ()=>{
     var scr = document.documentElement.scrollTop;

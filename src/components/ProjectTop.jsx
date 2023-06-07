@@ -1,7 +1,7 @@
-import React from "react";
+// import React from "react";
 import { Link } from 'react-router-dom';
 
-import Tech from '../components/Tech.jsx';
+import Tech from '@/components/Tech.jsx';
 
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';

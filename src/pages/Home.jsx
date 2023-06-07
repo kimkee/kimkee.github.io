@@ -1,19 +1,20 @@
 import  { useState, useEffect } from 'react';
 import { Outlet } from 'react-router-dom'; // , useParams, useNavigate 
 
-import Header from '../components/Header.jsx';
-import Project from '../components/Project.jsx';
-import ProjectTop from '../components/ProjectTop.jsx';
-import ProjectTxt from '../components/ProjectTxt.jsx';
-import Skills from '../components/Skills.jsx';
-import TopBts from '../components/TopBts.jsx';
+import Header from '@/components/Header.jsx';
+import Project from '@/components/Project.jsx';
+import ProjectTop from '@/components/ProjectTop.jsx';
+import ProjectTxt from '@/components/ProjectTxt.jsx';
+import Skills from '@/components/Skills.jsx';
+import TopBts from '@/components/TopBts.jsx';
+import ui from '@/ui.js';
 
-import ui from '../ui.js';
+const PUBLIC_URL = import.meta.env.VITE_REACT_APP_PUBLIC_URL;
 
 export default function Home() {
   const [data, setData] = useState();
   const fetchJson = () => {
-    fetch(import.meta.env.VITE_REACT_APP_PUBLIC_URL+"js/data.json")
+    fetch(PUBLIC_URL+"js/data.json")
     .then(response => {
       return response.json();
     }).then(data => {
@@ -49,12 +50,12 @@ export default function Home() {
             <div className="salestat">
               {
                 data.opened === true
-                ? <img src={import.meta.env.VITE_REACT_APP_PUBLIC_URL+"img/cm/forSale.png"} className="img sale" alt="FORSALE" loading="lazy" />
-                : <img src={import.meta.env.VITE_REACT_APP_PUBLIC_URL+"img/cm/soldOut.png"} className="img sold" alt="SOLDOUT" loading="lazy" />
+                ? <img src={PUBLIC_URL+"img/cm/forSale.png"} className="img sale" alt="FORSALE" loading="lazy" />
+                : <img src={PUBLIC_URL+"img/cm/soldOut.png"} className="img sold" alt="SOLDOUT" loading="lazy" />
               }
             </div>
             <div className="box">
-              <div className="photo"><img className="img" src={import.meta.env.VITE_REACT_APP_PUBLIC_URL+"img/cm/photo.jpg"} alt="사진" loading="lazy" /></div>
+              <div className="photo"><img className="img" src={PUBLIC_URL+"img/cm/photo.jpg"} alt="사진" loading="lazy" /></div>
               <div className="info">
                 <div className="name">김기현</div>
                 <div className="phone"><a href="tel:010-3236-1677">010-3236-1677</a></div>
