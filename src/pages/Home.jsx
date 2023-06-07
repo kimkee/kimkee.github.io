@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { Outlet } from 'react-router-dom'; // , useParams, useNavigate 
 
 import Header from '../components/Header.jsx';
@@ -13,7 +13,7 @@ import ui from '../ui.js';
 export default function Home() {
   const [data, setData] = useState();
   const fetchJson = () => {
-    fetch(process.env.REACT_APP_PUBLIC_URL+"js/data.json")
+    fetch(import.meta.env.VITE_REACT_APP_PUBLIC_URL+"js/data.json")
     .then(response => {
       return response.json();
     }).then(data => {
@@ -49,12 +49,12 @@ export default function Home() {
             <div className="salestat">
               {
                 data.opened === true
-                ? <img src={process.env.REACT_APP_PUBLIC_URL+"img/cm/forSale.png"} className="img sale" alt="FORSALE" loading="lazy" />
-                : <img src={process.env.REACT_APP_PUBLIC_URL+"img/cm/soldOut.png"} className="img sold" alt="SOLDOUT" loading="lazy" />
+                ? <img src={import.meta.env.VITE_REACT_APP_PUBLIC_URL+"img/cm/forSale.png"} className="img sale" alt="FORSALE" loading="lazy" />
+                : <img src={import.meta.env.VITE_REACT_APP_PUBLIC_URL+"img/cm/soldOut.png"} className="img sold" alt="SOLDOUT" loading="lazy" />
               }
             </div>
             <div className="box">
-              <div className="photo"><img className="img" src={process.env.REACT_APP_PUBLIC_URL+"img/cm/photo.jpg"} alt="사진" loading="lazy" /></div>
+              <div className="photo"><img className="img" src={import.meta.env.VITE_REACT_APP_PUBLIC_URL+"img/cm/photo.jpg"} alt="사진" loading="lazy" /></div>
               <div className="info">
                 <div className="name">김기현</div>
                 <div className="phone"><a href="tel:010-3236-1677">010-3236-1677</a></div>

@@ -38,7 +38,7 @@ export default  function ProjectTop({data, cate }){
                     <SwiperSlide tag="li" key={idx}  className="swiper-slide">
                       <Link className="pbox" to={""+cate+'/'+idx}  data-url={ pjt.urls }>
                         <span className='lk' to={""+cate+'/'+idx}  data-url={ pjt.urls }>
-                          <img className="img" src={ process.env.REACT_APP_PUBLIC_URL+pjt.imgs } alt={pjt.tits} loading="lazy" />
+                          <img className="img" src={ import.meta.env.VITE_REACT_APP_PUBLIC_URL+pjt.imgs } alt={pjt.tits} loading="lazy" />
                         </span>
                         <div className="info">
                           <div className="pack">{ <Tech pjt={pjt}/> }</div>

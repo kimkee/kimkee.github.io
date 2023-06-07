@@ -1,9 +1,10 @@
 
-import React from "react";
+// import React from "react";
 import GitHubButton from 'react-github-btn';
 
-export default  function Header ({update}){
-  const ver =  (process.env.REACT_APP_VER).slice(0,10)
+export default  function Header (){
+  // const ver =  (process.env.REACT_APP_VER).slice(0,10)
+  const ver =  (import.meta.env.VITE_REACT_APP_VER).slice(0,10)
   return(
     <header className="header">
       <div className="inr">
