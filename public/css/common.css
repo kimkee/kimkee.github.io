@@ -258,7 +258,7 @@ img.lazy{ display:none;}
 .pop-layer.c.on .pbd{transform: translateY(0%);}
 .pop-layer.c{white-space:nowrap;text-align:center;font-size: 0rem;padding: 10rem 0rem 0rem 0rem;}
 .pop-layer.c::after{content: '';width:0;height:100%;display:inline-block;vertical-align:middle;}
-.pop-layer.c .pbd{transform: translateY(110%);transition: transform 0.3s cubic-bezier(0, 0.7, 0.4, 1) 0s;background:#ffffff;font-size: 14rem;bottom: 10rem;display:inline-block;vertical-align: middle;text-align:left;white-space:normal;max-width: 480rem;width: calc(100% - 0rem);margin-bottom: 0rem;overflow: initial;border-radius: 20rem 20rem 20rem 20rem;position: initial;}
+.pop-layer.c .pbd{transform: translateY(110%);transition: transform 0.3s cubic-bezier(0, 0.7, 0.4, 1) 0s;background:#ffffff;font-size: 14rem;bottom: 10rem;display:inline-block;vertical-align: middle;text-align:left;white-space:normal;max-width: 680rem;width: calc(100% - 0rem);margin-bottom: 0rem;overflow: initial;border-radius: 20rem 20rem 20rem 20rem;position: initial;}
 .pop-layer.c .phd{position: relative;height: 60rem;}
 .pop-layer.c .phd>.inr{position:relative;background-color: transparent;height: 60rem;display: flex;justify-content: center;align-items: center;}
 .pop-layer.c .phd .ptit{font-size: 18rem;text-align: center;padding: 0rem 0rem 0rem 0rem;font-weight: 700;max-width: calc(100vw - 90rem);white-space: nowrap;overflow: hidden;text-overflow: ellipsis;color: #333333;}
