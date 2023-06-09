@@ -34,7 +34,8 @@ export default function Home() {
   },[]);
 
 
-  if(!data) return <div className="ui-loading-dot"><div className="bx"><em><i></i></em></div></div>;
+  // if(!data) return <div className="ui-loading-dot"><div className="bx"><em><i></i></em></div></div>;
+  if(!data) return <span className="ui-load-glx full"> <span className="gbx"> <em className="bx"> <i></i> <i></i> <i></i> <i></i> </em> </span> </span>;
   return (
     <>
       
