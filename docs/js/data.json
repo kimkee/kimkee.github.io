@@ -4,22 +4,31 @@
     "opened": false,
     "puix": [
         {
-            "hide": true,
+            "hide": false,
             "tits": "REACT+TMDB",
-            "date": "2023.01 ~ 2023.03",
-            "plce": "Toy Project",
-            "tech": ["REACT", "TMDB", "JS", "Mobile" ],
-            "imgs": "",
+            "date": "2023.01 ~ 2023.12",
+            "plce": "롯데카드",
+            "tech": ["HTML", "JS", "CSS" ],
+            "imgs": "img/ss/ssDigiloca.jpg",
             "urls": ""
         },
         {
-            "hide": true,
+            "hide": false,
+            "tits": "REACT+TMDB",
+            "date": "2023.01 ~ 2023.03",
+            "plce": "Toy Project React",
+            "tech": ["REACT", "TMDB", "JS", "Mobile" ],
+            "imgs": "img/ss/ssReact.jpg",
+            "urls": "https://kimkee.github.io/react/"
+        },
+        {
+            "hide": false,
             "tits": "VUE+Firebase",
             "date": "2022.10 ~ 2022.12",
-            "plce": "Toy Project",
+            "plce": "Toy Project Vue",
             "tech": ["VUE", "Firebase", "JS", "Mobile" ],
-            "imgs": "",
-            "urls": ""
+            "imgs": "img/ss/ssVue.jpg",
+            "urls": "https://kimkee.github.io/vue/"
         },
         {
             "hide": false,
