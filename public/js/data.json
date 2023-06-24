@@ -16,7 +16,7 @@
             "hide": false,
             "tits": "REACT+TMDB",
             "date": "2023.01 ~ 2023.03",
-            "plce": "Toy Project React",
+            "plce": "Toy Project",
             "tech": ["REACT", "TMDB", "JS", "Mobile" ],
             "imgs": "img/ss/ssReact.jpg",
             "urls": "https://kimkee.github.io/react/"
@@ -25,7 +25,7 @@
             "hide": false,
             "tits": "VUE+Firebase",
             "date": "2022.10 ~ 2022.12",
-            "plce": "Toy Project Vue",
+            "plce": "Toy Project",
             "tech": ["VUE", "Firebase", "JS", "Mobile" ],
             "imgs": "img/ss/ssVue.jpg",
             "urls": "https://kimkee.github.io/vue/"
