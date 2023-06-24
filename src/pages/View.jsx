@@ -27,6 +27,8 @@ export default function View() {
       console.log(e.message);
     });
   }
+
+  const Imgss = ()=> <img className="img" src={ import.meta.env.VITE_REACT_APP_PUBLIC_URL + data[idx].imgs} alt={data[idx].tits} />;
   // console.log(params);
   // console.log(cate ,  idx);
   useEffect(() => {
@@ -58,7 +60,10 @@ export default function View() {
               
               <div className="pbox">
                 <div className="ss">
-                  <div className="pic"><img className="img" src={ import.meta.env.VITE_REACT_APP_PUBLIC_URL + data[idx].imgs} alt={data[idx].tits} /></div>
+                { data[idx].link 
+                  ? <a href={data[idx].link} target="_blank" className="pic"><Imgss /></a> 
+                  : <div className="pic"><Imgss /></div>
+                }
                 </div>
                 <div className="info">
                   <div className="pack">

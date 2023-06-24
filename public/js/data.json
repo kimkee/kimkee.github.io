@@ -10,7 +10,8 @@
             "plce": "롯데카드",
             "tech": ["HTML", "JS", "CSS" ],
             "imgs": "img/ss/ssDigiloca.jpg",
-            "urls": ""
+            "urls": "",
+            "link": ""
         },
         {
             "hide": false,
@@ -19,7 +20,8 @@
             "plce": "Toy Project",
             "tech": ["REACT", "TMDB", "JS", "Mobile" ],
             "imgs": "img/ss/ssReact.jpg",
-            "urls": "https://kimkee.github.io/react/"
+            "urls": "https://kimkee.github.io/react/",
+            "link": "https://kimkee.github.io/react/"
         },
         {
             "hide": false,
@@ -28,7 +30,8 @@
             "plce": "Toy Project",
             "tech": ["VUE", "Firebase", "JS", "Mobile" ],
             "imgs": "img/ss/ssVue.jpg",
-            "urls": "https://kimkee.github.io/vue/"
+            "urls": "https://kimkee.github.io/vue/",
+            "link": "https://kimkee.github.io/vue/"
         },
         {
             "hide": false,
