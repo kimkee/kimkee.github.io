@@ -14,7 +14,7 @@ export default function View() {
   let idx = params.id;
   const [data, setData] = useState();
   const fetchJson = () => {
-    fetch(import.meta.env.VITE_REACT_APP_PUBLIC_URL +"js/data.json")
+    fetch(import.meta.env.VITE_REACT_APP_PUBLIC_URL +"js/data.json?"+import.meta.env.VITE_REACT_APP_VER)
     .then(response => {
       return response.json();
     }).then(data => {      

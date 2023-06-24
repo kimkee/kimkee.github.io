@@ -14,7 +14,7 @@ const PUBLIC_URL = import.meta.env.VITE_REACT_APP_PUBLIC_URL;
 export default function Home() {
   const [data, setData] = useState();
   const fetchJson = () => {
-    fetch(PUBLIC_URL+"js/data.json")
+    fetch(PUBLIC_URL+"js/data.json?"+import.meta.env.VITE_REACT_APP_VER)
     .then(response => {
       return response.json();
     }).then(data => {
