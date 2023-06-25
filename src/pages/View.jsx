@@ -61,7 +61,7 @@ export default function View() {
               <div className="pbox">
                 <div className="ss">
                 { data[idx].link 
-                  ? <a href="javascript:;" onClick={ ()=> window.open(  data[idx].link, '_system') }  className="pic"><i class="fa-solid fa-up-right-from-square"></i><Imgss /></a> 
+                  ? <a href={data[idx].link} target="_blank" className="pic"><i class="fa-solid fa-up-right-from-square"></i><Imgss /></a> 
                   : <div className="pic"><Imgss /></div>
                 }
                 </div>
