@@ -335,7 +335,7 @@ img.lazy{ display:none;}
 @media screen and (max-width:980px) {
 	.head{ padding:0rem;}
 	.header>.inr .date,
-	.header>.inr{ border-left:none;}
+	.header>.inr{border-left:none;padding-left: 0rem;}
 	.header>.inr,	
 	.notice .box,
 	.visuals>.inr,
@@ -447,7 +447,7 @@ img.lazy{ display:none;}
 
 @media screen and ( max-width:480px) {
 	.head { padding:0 2rem;}
-	.header>.inr .date{ font-size:12rem;}
+	.header>.inr .date{font-size:12rem;padding-left: 0rem;}
 	.notice .box .msg{ font-size:14rem;}
 	.visuals .techs .title{ font-size:20rem;}
 	.visuals .techs .skills{ padding:0 0 5rem 0; margin:-10rem 0 5rem 0;}
