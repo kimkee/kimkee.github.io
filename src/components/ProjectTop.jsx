@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Tech from '@/components/Tech.jsx';
 
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Navigation, Pagination, Scrollbar, A11y,FreeMode  } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -12,6 +12,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import 'swiper/css/free-mode';
 
 export default  function ProjectTop({data, cate }){
   
@@ -21,12 +22,17 @@ export default  function ProjectTop({data, cate }){
         
         <Swiper className="swiper-wrapper slides" 
           // install Swiper modules
-          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          modules={[Navigation, Pagination, Scrollbar, A11y, FreeMode]}
           spaceBetween={0}
           slidesPerView={1}
           navigation
           loop={{loop:true}}
           wrapperTag="ul"
+          freeMode={{
+            enabled: true,
+            sticky: true,
+          }}
+          sti={true}
           pagination={{ clickable: true }}
           // scrollbar={{ draggable: true }}
           initialSlide={ Math.floor( Math.random() * 10 ) }
