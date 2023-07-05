@@ -28,6 +28,7 @@ export default  function ProjectTop({data, cate }){
           navigation
           loop={{loop:true}}
           wrapperTag="ul"
+          speed={600}
           freeMode={{
             enabled: true,
             sticky: true,
