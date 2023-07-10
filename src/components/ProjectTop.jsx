@@ -29,11 +29,11 @@ export default  function ProjectTop({data, cate }){
           loop={{loop:true}}
           wrapperTag="ul"
           speed={300}
-          freeMode={{
-            enabled: true,
-            sticky: true,
-          }}
-          sti={true}
+          // freeMode={{
+          //   enabled: true,
+          //   sticky: true,
+          // }}
+          
           pagination={{ clickable: true }}
           // scrollbar={{ draggable: true }}
           initialSlide={ Math.floor( Math.random() * 10 ) }
