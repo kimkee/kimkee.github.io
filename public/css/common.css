@@ -23,6 +23,12 @@ label{ margin:0 0 0 0; padding:0rem 0 0 0;}
 em{ font-style:normal;}
 caption{ font-size:0rem; background:#090; height:0rem; overflow:hidden; line-height:0rem;}
 button{cursor:pointer;background: none;border: none;padding: 0;}
+
+:root {
+    --safe-top: calc( env(safe-area-inset-top)  );
+    --safe-bottom: calc( env(safe-area-inset-bottom)  );
+}
+
 /* 스크롤박스CSS */
 .ut-scrolls{ position:relative;}
 .ut-scrolls .viewport {overflow: hidden; position: relative;}
@@ -97,7 +103,7 @@ img.lazy{ display:none;}
 #barH{height:2rem;background-color: #ff424d;position:fixed;left:0rem;top: 32rem;z-index: 1000;transition: width .4s ease-out;}
 
 .body{background: url(../img/cm/bg.jpg) repeat-x center -430rem #06090e fixed;}
-.header{ height:32rem; padding:0 10rem; position:fixed; top: 0rem; width:100%; z-index:150;  background:#333; border-left:none; border-right:none; border-bottom:#222222 solid 1rem;}
+.header{height: calc( 6rem + var(--safe-top) );padding:0 10rem;padding-top: calc( 0rem + var(--safe-top) );position:fixed;top: 0;width:100%;z-index:150;background:#333;border-left:none;border-right:none;border-bottom:#222222 solid 1rem;}
 .header>.inr{ margin:auto; position:relative;border-left:#222222 solid 1rem; }
 .header>.inr .date{ padding:0 0 0 15rem; height:32rem; line-height:31rem; border-left:#3c3c3c solid 1rem; color:#cda869; font-size:14rem;}
 .header>.inr .date .log{ color:#333; display:inline-block; margin-left:20rem;}
@@ -125,7 +131,7 @@ img.lazy{ display:none;}
 .salestat.open .img.sale{display: block;}
 .salestat.open .img.sold{display: block;}
 
-.visuals{padding: 20rem 10rem 20rem;position:relative;margin-top: 33rem;padding-top: 30rem;}
+.visuals{padding: 20rem 10rem 20rem;position:relative;margin-top: calc( 33rem + var(--safe-top) );padding-top: 30rem;}
 .visuals>.inr{min-height:500rem;margin:auto;zoom:1;position:relative;padding-top: 0rem;}
 .visuals>.inr:after{clear:both;content:"";display:block;font-size:0;height:0;line-height:0;visibility:hidden}
 
