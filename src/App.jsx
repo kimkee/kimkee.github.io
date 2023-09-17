@@ -9,7 +9,7 @@ export default function App() {
   console.log("=="+import.meta.env.VITE_REACT_APP_PUBLIC_URL);
   return (
     <>
-      <Router basename={import.meta.env.VITE_REACT_APP_PUBLIC_URL}>
+      <Router basename='/'>
         
         <Routes>
           <Route path="/" element={<Home />} />
