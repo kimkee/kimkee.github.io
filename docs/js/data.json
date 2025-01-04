@@ -1,6 +1,6 @@
 {
     "update": "Update - 2023.02",
-    "assign": "2023년 10월 11일", 
+    "assign": "2025년 01월 01일", 
     "opened": false,
     "puix": [
         {
@@ -20,8 +20,8 @@
             "plce": "Toy Project",
             "tech": ["REACT", "TMDB", "JS", "Mobile" ],
             "imgs": "img/ss/ssReact.jpg",
-            "urls": "https://kimkee.github.io/react/",
-            "link": "https://kimkee.github.io/react/"
+            "urls": "https://kplex.pages.dev/",
+            "link": "https://kplex.pages.dev/"
         },
         {
             "hide": false,
